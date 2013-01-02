@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 24, 2012 at 09:54 AM
+-- Generation Time: Jan 02, 2013 at 04:55 AM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -77,8 +77,7 @@ CREATE TABLE IF NOT EXISTS `academic_base_competence` (
 INSERT INTO `academic_base_competence` (`base_competence_id`, `base_competence_title`, `base_competence_period`, `base_competence_semester`, `base_competence_teacher`, `base_competence_subject`, `base_competence_grade`, `base_competence_mlc`, `base_competence_entry`, `base_competence_entry_update`) VALUES
 ('201212060001', 'Pengenalan Komputer', 1, 1, '201212010049', 2, 1, 80, '2012-12-06 12:26:44', '2012-12-19 12:06:45'),
 ('201212060002', 'Internet', 1, 1, '201212010049', 2, 2, 75, '2012-12-06 13:22:37', '2012-12-06 13:22:42'),
-('201212190001', 'Perkembangan Komputer', 1, 1, '201212010049', 2, 1, 80, '2012-12-19 09:53:09', '2012-12-19 11:59:02'),
-('201212190002', 'ojo ngono', 1, 1, '201212010049', 2, 1, 90, '2012-12-19 12:00:10', '2012-12-19 12:00:10');
+('201212190001', 'Perkembangan Komputer', 1, 1, '201212010049', 2, 1, 80, '2012-12-19 09:53:09', '2012-12-19 11:59:02');
 
 -- --------------------------------------------------------
 
@@ -797,7 +796,7 @@ INSERT INTO `academic_period` (`period_id`, `period_years_start`, `period_years_
 CREATE TABLE IF NOT EXISTS `academic_recapitulation_type` (
   `recapitulation_type_id` tinyint(4) NOT NULL,
   `recapitulation_type_title` varchar(50) NOT NULL,
-  `recapitulation_type_reference` varchar(50) DEFAULT NULL,
+  `recapitulation_type_reference` varchar(50) NOT NULL,
   `recapitulation_type_entry` datetime NOT NULL,
   `recapitulation_type_entry_update` datetime NOT NULL,
   PRIMARY KEY (`recapitulation_type_id`)
@@ -810,12 +809,10 @@ CREATE TABLE IF NOT EXISTS `academic_recapitulation_type` (
 INSERT INTO `academic_recapitulation_type` (`recapitulation_type_id`, `recapitulation_type_title`, `recapitulation_type_reference`, `recapitulation_type_entry`, `recapitulation_type_entry_update`) VALUES
 (1, 'Nilai Harian', '-', '2012-11-17 22:12:02', '2012-11-17 22:12:05'),
 (2, 'Nilai Tugas', '-', '2012-11-17 22:11:57', '2012-11-17 22:12:00'),
-(3, 'Nilai UTS', '-', '2012-11-17 22:12:20', '2012-11-17 22:12:23'),
-(4, 'Nilai Ulum', '-', '2012-11-17 22:15:01', '2012-11-17 22:15:04'),
-(5, 'Nilai Sikap', '-', '2012-11-17 22:18:24', '2012-11-17 22:18:27'),
-(6, 'Nilai Ekstrakurikuler', '-', '2012-11-17 22:19:35', '2012-11-17 22:19:38'),
-(7, 'Nilai Ahlak dan Kepribadian', '-', '2012-11-17 22:23:26', '2012-11-17 22:23:30'),
-(8, 'Absensi', '-', '2012-11-17 22:36:41', '2012-11-17 22:36:44');
+(3, 'Nilai Sikap', '-', '2012-11-17 22:12:20', '2012-11-17 22:12:23'),
+(4, 'Nilai UTS', '-', '2012-11-17 22:15:01', '2012-11-17 22:15:04'),
+(5, 'Nilai Ulum', '-', '2012-11-17 22:18:24', '2012-11-17 22:18:27'),
+(6, 'Absensi', '-', '2012-11-17 22:36:41', '2012-11-17 22:36:44');
 
 -- --------------------------------------------------------
 
@@ -1105,6 +1102,32 @@ INSERT INTO `academic_score_mid` (`score_mid_id`, `score_mid_value`, `score_mid_
 ('201212130028', 80, '121307028', 1, 1, 2, '2012-12-13 22:36:58', '2012-12-13 22:54:56'),
 ('201212130029', 80, '121307029', 1, 1, 2, '2012-12-13 22:36:58', '2012-12-13 22:54:56'),
 ('201212130030', 68, '121307030', 1, 1, 2, '2012-12-13 22:36:58', '2012-12-13 22:54:56');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `academic_score_percentase`
+--
+
+CREATE TABLE IF NOT EXISTS `academic_score_percentase` (
+  `score_percentase_id` varchar(12) NOT NULL,
+  `score_percentase_recap` tinyint(4) DEFAULT NULL,
+  `score_percentase_teacher` varchar(12) DEFAULT NULL,
+  `score_percentase_subject` tinyint(4) NOT NULL,
+  `score_percentase_grade` tinyint(2) NOT NULL,
+  `score_percentase_period` tinyint(4) NOT NULL,
+  `score_percentase_semester` tinyint(1) NOT NULL,
+  `score_percentase_value` float NOT NULL,
+  `score_percentase_entry` datetime NOT NULL,
+  `score_percentase_entry_update` datetime NOT NULL,
+  PRIMARY KEY (`score_percentase_id`),
+  KEY `academic_score_percentase_fk1` (`score_percentase_recap`),
+  KEY `academic_score_percentase_fk2` (`score_percentase_teacher`),
+  KEY `academic_score_percentase_fk3` (`score_percentase_subject`),
+  KEY `academic_score_percentase_fk4` (`score_percentase_grade`),
+  KEY `academic_score_percentase_fk5` (`score_percentase_period`),
+  KEY `academic_score_percentase_fk6` (`score_percentase_semester`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -2197,6 +2220,7 @@ CREATE TABLE IF NOT EXISTS `academic_task_description` (
   `task_description_garde` tinyint(2) NOT NULL,
   `task_description_title` varchar(250) NOT NULL,
   `task_description` text,
+  `task_description_mlc` float NOT NULL,
   `task_description_entry` datetime NOT NULL,
   `task_description_entry_update` datetime NOT NULL,
   PRIMARY KEY (`task_description_id`),
@@ -2211,9 +2235,9 @@ CREATE TABLE IF NOT EXISTS `academic_task_description` (
 -- Dumping data for table `academic_task_description`
 --
 
-INSERT INTO `academic_task_description` (`task_description_id`, `task_description_subject`, `task_description_teacher`, `task_description_period`, `task_description_semester`, `task_description_garde`, `task_description_title`, `task_description`, `task_description_entry`, `task_description_entry_update`) VALUES
-('201212130001', 2, '201212010049', 1, 1, 1, ' Membuat Topologi Jaringan', 'Membuat Gambar Topologi Jaringan Suatu Warnet', '2012-12-13 00:00:00', '2012-12-13 00:00:00'),
-('201212130002', 2, '201212010048', 1, 1, 1, 'Membuat Kabel Jaringan', '', '2012-12-13 00:00:00', '2012-12-13 00:00:00');
+INSERT INTO `academic_task_description` (`task_description_id`, `task_description_subject`, `task_description_teacher`, `task_description_period`, `task_description_semester`, `task_description_garde`, `task_description_title`, `task_description`, `task_description_mlc`, `task_description_entry`, `task_description_entry_update`) VALUES
+('201212130001', 2, '201212010049', 1, 1, 1, 'sang juaran', 'harus coba', 90, '2012-12-13 00:00:00', '2012-12-27 12:41:03'),
+('201212130002', 2, '201212010048', 1, 1, 1, 'Membuat Kabel Jaringan', '', 0, '2012-12-13 00:00:00', '2012-12-13 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -2234,7 +2258,9 @@ CREATE TABLE IF NOT EXISTS `academic_teaching` (
   PRIMARY KEY (`teaching_id`),
   KEY `academic_teaching_fk1` (`teaching_teacher`),
   KEY `academic_teaching_fk3` (`teaching_subject`),
-  KEY `academic_teaching_fk2` (`teaching_classgroup`)
+  KEY `academic_teaching_fk2` (`teaching_classgroup`),
+  KEY `academic_teaching_fk4` (`teaching_period`),
+  KEY `academic_teaching_fk5` (`teaching_semester`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -3849,6 +3875,17 @@ ALTER TABLE `academic_score_mid`
   ADD CONSTRAINT `academic_score_mid_fk4` FOREIGN KEY (`score_mid_subject`) REFERENCES `academic_subject` (`subject_id`) ON UPDATE CASCADE;
 
 --
+-- Constraints for table `academic_score_percentase`
+--
+ALTER TABLE `academic_score_percentase`
+  ADD CONSTRAINT `academic_score_percentase_fk1` FOREIGN KEY (`score_percentase_recap`) REFERENCES `academic_recapitulation_type` (`recapitulation_type_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_score_percentase_fk2` FOREIGN KEY (`score_percentase_teacher`) REFERENCES `employees` (`employees_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_score_percentase_fk3` FOREIGN KEY (`score_percentase_subject`) REFERENCES `academic_subject` (`subject_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_score_percentase_fk4` FOREIGN KEY (`score_percentase_grade`) REFERENCES `academic_grade` (`grade_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_score_percentase_fk5` FOREIGN KEY (`score_percentase_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_score_percentase_fk6` FOREIGN KEY (`score_percentase_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
+
+--
 -- Constraints for table `academic_score_task`
 --
 ALTER TABLE `academic_score_task`
@@ -3923,7 +3960,9 @@ ALTER TABLE `academic_task_description`
 ALTER TABLE `academic_teaching`
   ADD CONSTRAINT `academic_teaching_fk1` FOREIGN KEY (`teaching_teacher`) REFERENCES `employees` (`employees_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_teaching_fk2` FOREIGN KEY (`teaching_classgroup`) REFERENCES `academic_classgroup` (`classgroup_id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `academic_teaching_fk3` FOREIGN KEY (`teaching_subject`) REFERENCES `academic_subject` (`subject_id`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `academic_teaching_fk3` FOREIGN KEY (`teaching_subject`) REFERENCES `academic_subject` (`subject_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_teaching_fk4` FOREIGN KEY (`teaching_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_teaching_fk5` FOREIGN KEY (`teaching_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
 -- Constraints for table `asset_infrastructure`
