@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 09, 2013 at 10:37 AM
+-- Generation Time: Jan 10, 2013 at 09:16 AM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -2556,6 +2556,33 @@ INSERT INTO `digilib_book_resource` (`book_resource_id`, `book_resource_title`) 
 (1, 'Pembelian'),
 (3, 'Pinjaman'),
 (2, 'Sumbangan');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `digilib_book_temp_barcodeprint`
+--
+
+CREATE TABLE IF NOT EXISTS `digilib_book_temp_barcodeprint` (
+  `book_temp_barcodeprint` int(11) NOT NULL,
+  `book_temp_barcodeprint_register` varchar(13) NOT NULL,
+  `book_temp_barcodeprint_session` varchar(50) NOT NULL,
+  PRIMARY KEY (`book_temp_barcodeprint`),
+  UNIQUE KEY `digilib_book_temp_barcodeprint_u1` (`book_temp_barcodeprint_register`,`book_temp_barcodeprint_session`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `digilib_book_temp_barcodeprint`
+--
+
+INSERT INTO `digilib_book_temp_barcodeprint` (`book_temp_barcodeprint`, `book_temp_barcodeprint_register`, `book_temp_barcodeprint_session`) VALUES
+(5, '121126001001', 'jrcs3itbvg28vg8c6t9hn61bi7'),
+(6, '121126001001', 'm63qo14m7igcu2soesum44t5n0'),
+(7, '121126001002', 'm63qo14m7igcu2soesum44t5n0'),
+(1, '121126002001', '8lt0feb6pof39km2v9el19b0j0'),
+(3, '121126002001', 'u5g4k1qtq22ukbdcu420infcc5'),
+(2, '121126002002', '8lt0feb6pof39km2v9el19b0j0'),
+(4, '121126002002', 'u5g4k1qtq22ukbdcu420infcc5');
 
 -- --------------------------------------------------------
 
@@ -7752,6 +7779,12 @@ ALTER TABLE `digilib_book_language_temp`
 ALTER TABLE `digilib_book_register`
   ADD CONSTRAINT `digilib_book_register_fk1` FOREIGN KEY (`book_id`) REFERENCES `digilib_book` (`book_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `digilib_book_register_fk2` FOREIGN KEY (`book_condition`) REFERENCES `digilib_book_condition` (`book_condition_id`) ON UPDATE CASCADE;
+
+--
+-- Constraints for table `digilib_book_temp_barcodeprint`
+--
+ALTER TABLE `digilib_book_temp_barcodeprint`
+  ADD CONSTRAINT `digilib_book_temp_barcodeprint_fk1` FOREIGN KEY (`book_temp_barcodeprint_register`) REFERENCES `digilib_book_register` (`book_register_id`) ON UPDATE CASCADE;
 
 --
 -- Constraints for table `digilib_borrowed_history`
