@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 10, 2013 at 09:16 AM
+-- Generation Time: Jan 14, 2013 at 01:51 AM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -2599,6 +2599,7 @@ CREATE TABLE IF NOT EXISTS `digilib_borrowed_history` (
   `borrowed_history_finish` date NOT NULL,
   `borrowed_history_status` tinyint(1) NOT NULL,
   `borrowed_history_return` date DEFAULT NULL,
+  `borrowed_history_penalty` float DEFAULT NULL,
   PRIMARY KEY (`borrowed_history_id`),
   KEY `digilib_borrowed_history_fk1` (`borrowed_history_type`),
   KEY `digilib_borrowed_history_fk2` (`borrowed_history_members`),
@@ -2609,8 +2610,9 @@ CREATE TABLE IF NOT EXISTS `digilib_borrowed_history` (
 -- Dumping data for table `digilib_borrowed_history`
 --
 
-INSERT INTO `digilib_borrowed_history` (`borrowed_history_id`, `borrowed_history_type`, `borrowed_history_members`, `borrowed_history_book`, `borrowed_history_star`, `borrowed_history_finish`, `borrowed_history_status`, `borrowed_history_return`) VALUES
-(1, 1, '1213100001', '121126001001', '2013-01-08', '2013-01-09', 0, NULL);
+INSERT INTO `digilib_borrowed_history` (`borrowed_history_id`, `borrowed_history_type`, `borrowed_history_members`, `borrowed_history_book`, `borrowed_history_star`, `borrowed_history_finish`, `borrowed_history_status`, `borrowed_history_return`, `borrowed_history_penalty`) VALUES
+(1, 1, '1213100001', '121126001001', '2013-01-08', '2013-01-09', 1, '2013-01-11', NULL),
+(2, 1, '1213100001', '121126001001', '2013-01-10', '2013-01-12', 1, '2013-01-13', 2000);
 
 -- --------------------------------------------------------
 
@@ -6725,6 +6727,7 @@ CREATE TABLE IF NOT EXISTS `digilib_members_temp_printcard` (
 --
 
 INSERT INTO `digilib_members_temp_printcard` (`temp_id`, `temp_members`, `temp_session`) VALUES
+(5, '1213100001', '5e3cd71tb10f1uu4pglsmn3716'),
 (3, '1213100001', 'i473slcbji4c5aa8me40hvv546'),
 (1, '1213100001', 'ijf1srhcu2oi6uqru2r3dlrr10'),
 (2, '1213100001', 'oeuqj0cdo6rkth4icm349djsi5'),
