@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 14, 2013 at 01:51 AM
+-- Generation Time: Jan 17, 2013 at 10:14 AM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -2612,7 +2612,10 @@ CREATE TABLE IF NOT EXISTS `digilib_borrowed_history` (
 
 INSERT INTO `digilib_borrowed_history` (`borrowed_history_id`, `borrowed_history_type`, `borrowed_history_members`, `borrowed_history_book`, `borrowed_history_star`, `borrowed_history_finish`, `borrowed_history_status`, `borrowed_history_return`, `borrowed_history_penalty`) VALUES
 (1, 1, '1213100001', '121126001001', '2013-01-08', '2013-01-09', 1, '2013-01-11', NULL),
-(2, 1, '1213100001', '121126001001', '2013-01-10', '2013-01-12', 1, '2013-01-13', 2000);
+(2, 1, '1213100001', '121126001001', '2013-01-10', '2013-01-12', 1, '2013-01-13', 2000),
+(3, 1, '1213100003', '121126001004', '2013-01-15', '2013-01-16', 0, NULL, NULL),
+(4, 1, '1213100006', '121126007001', '2013-01-16', '2013-01-17', 1, '2013-01-16', 0),
+(5, 1, '1213100006', '121126010001', '2013-01-16', '2013-01-17', 1, '2013-01-16', 0);
 
 -- --------------------------------------------------------
 
@@ -2627,6 +2630,13 @@ CREATE TABLE IF NOT EXISTS `digilib_borrowed_return_temp` (
   PRIMARY KEY (`borrowed_return_temp_id`),
   UNIQUE KEY `digilib_borrowed_return_temp_u1` (`borrowed_return_temp_history`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `digilib_borrowed_return_temp`
+--
+
+INSERT INTO `digilib_borrowed_return_temp` (`borrowed_return_temp_id`, `borrowed_return_temp_history`, `borrowed_return_temp_entry`) VALUES
+(1, 3, '2013-01-16');
 
 -- --------------------------------------------------------
 
@@ -2646,6 +2656,13 @@ CREATE TABLE IF NOT EXISTS `digilib_borrowed_temp` (
   KEY `digilib_borrowed_temp_fk1` (`borrowed_temp_type`),
   KEY `digilib_borrowed_temp_fk3` (`borrowed_temp_member`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `digilib_borrowed_temp`
+--
+
+INSERT INTO `digilib_borrowed_temp` (`borrowed_temp_id`, `borrowed_temp_type`, `borrowed_temp_book`, `borrowed_temp_member`, `borrowed_temp_start`, `borrowed_temp_finish`) VALUES
+(1, 1, '121126001001', '1213100001', '2013-01-16', '2013-01-17');
 
 -- --------------------------------------------------------
 
@@ -6370,7 +6387,7 @@ INSERT INTO `digilib_ddc` (`ddc_id`, `ddc_classification_number`, `ddc_title`, `
 (3794, '2X5.4', 'Doa dan Wirid', 'Kelaskan di sini tahlil, tahlilan, istighosah', '3', 141),
 (3796, '2X3.3', 'Iman Kepada Kitab-kitab Allah', 'Kelaskan di sini Taurat, Zabur, Injil<br>Jangan gunakan \r\nuntuk&nbsp;Al-Qur''an; kelaskan&nbsp;di nomor 2X1<br>Jangan gunakan \r\nuntuk&nbsp;Al-Qur''an dan terjemahan; kelaskan&nbsp;di nomor 2X1.2', '3', 141),
 (3797, '394', 'Kebiasaan-kebiasaan umum', '', '3', 151),
-(3798, '350', 'Administrasi Negara, Cabang Eksekutif dari Pemerintah. Ilmu Militer', '', '3', 147);
+(3798, '350', 'Administrasi Negara, Cabang Eksekutif dari Pemerintah. Ilmu Militer.', '', '3', 147);
 
 -- --------------------------------------------------------
 
@@ -6706,7 +6723,8 @@ INSERT INTO `digilib_members` (`members_id`, `members_name`, `members_gender`, `
 ('1314010276', 'Eman Sulaeman', 1, 'Subang', '1985-08-05', 'Kp. Palabuan Sukamelang', NULL, NULL, NULL, 'photo_201301081357616216.jpg', 3, NULL, 1, '2013-01-08', '2013-01-08'),
 ('1314010277', 'Wawan Setiawan', 1, 'Subang', '1986-05-28', 'Kp. Palabuan Sukamelang', NULL, NULL, 'setiawan_wawan68@ymail.com', 'photo_201301081357616191.jpg', 3, NULL, 1, '2013-01-08', '2013-01-08'),
 ('1314010279', 'Enang Surahmat', 1, 'Subang', '1980-07-07', 'Palabuan Sukamelang', NULL, NULL, NULL, 'photo_201301081357616147.jpg', 3, NULL, 1, '2013-01-08', '2013-01-08'),
-('1314010280', 'Yeni Mulyani Agustin', 2, 'Subang', '1989-01-02', 'Jln. Nusa Indah Blok Cicadas', '', '', '', NULL, 3, '', 1, '2013-01-08', '2013-01-08');
+('1314010280', 'Yeni Mulyani Agustin', 2, 'Subang', '1989-01-02', 'Jln. Nusa Indah Blok Cicadas', '', '', '', NULL, 3, '', 1, '2013-01-08', '2013-01-08'),
+('1314010281', 'heseweleh ojo ngono', 2, 's', '1950-01-01', 'sss', '058542', '852300', NULL, NULL, 1, 'hhh', 1, '2013-01-14', '2013-01-14');
 
 -- --------------------------------------------------------
 
@@ -7622,7 +7640,7 @@ CREATE TABLE IF NOT EXISTS `public_menu` (
   `is_active` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`menu_id`),
   KEY `fk_public_menu_web_id` (`web_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
 
 --
 -- Dumping data for table `public_menu`
@@ -7630,25 +7648,49 @@ CREATE TABLE IF NOT EXISTS `public_menu` (
 
 INSERT INTO `public_menu` (`menu_id`, `menu_title`, `menu_link`, `menu_parent`, `menu_group`, `menu_order`, `level`, `web_id`, `is_protect`, `is_active`) VALUES
 (1, 'Beranda', 'dashboard', NULL, 1, 1, '1', 1, 1, 1),
-(2, 'Data Master', '#', NULL, 1, 2, '1', 1, 1, 1),
-(3, 'Logout', 'login/stop', NULL, 1, 6, '1', 1, 1, 1),
-(4, 'Login', '#', NULL, 1, 7, '1', 1, 0, 1),
-(5, 'Data DDC (Dewey Decimal Classification)', 'ddc', 2, 1, 1, '2', 1, 1, 1),
+(2, 'Pengolahan Data', '#', NULL, 1, 2, '1', 1, 1, 1),
+(3, 'Logout', 'login/stop', NULL, 1, 7, '1', 1, 1, 1),
+(4, 'Login', '#', NULL, 1, 8, '1', 1, 0, 1),
+(5, 'Data DDC (Dewey Decimal Classification)', 'ddc', 16, 1, 1, '3', 1, 1, 1),
 (6, 'Data Buku', '#', 2, 1, 2, '2', 1, 1, 1),
-(7, 'Daftar Penerbit', 'publisher', 6, 1, 1, '3', 1, 1, 1),
-(9, 'Daftar Katalog', 'catalogue', 6, 1, 3, '3', 1, 1, 1),
-(10, 'Daftar Koleksi', 'collection', 6, 1, 4, '3', 1, 1, 1),
+(7, 'Daftar Penerbit', 'publisher', 6, 1, 2, '3', 1, 1, 1),
+(9, 'Katalog Buku', 'catalogue', 6, 1, 3, '3', 1, 1, 1),
+(10, 'Buku Induk', 'collection', 6, 1, 4, '3', 1, 1, 1),
 (11, 'Transaksi', '#', NULL, 1, 3, '1', 1, 1, 1),
 (12, 'Peminjaman Buku', 'borrow', 11, 1, 1, '2', 1, 1, 1),
 (13, 'Anggota', 'members', NULL, 1, 4, '1', 1, 1, 1),
 (14, 'Laporan', '#', NULL, 1, 5, '1', 1, 1, 1),
 (15, 'Pengembalian Buku', 'returnbook', 11, 1, 2, '2', 1, 1, 1),
-(16, 'Data Mentah', '#', 2, 1, 3, '2', 1, 1, 1),
-(17, 'Keterangan Pengarang', 'authordescription', 16, 1, 1, '3', 1, 1, 1),
-(18, 'Sumber Buku', 'booksource', 16, 1, 2, '3', 1, 1, 1),
-(19, 'Data Umum', '#', 2, 1, 4, '2', 1, 1, 1),
-(20, 'Daftar Bahasa', 'language', 19, 1, 1, '3', 1, 1, 1),
-(21, 'Mata Uang', 'accountingsymbol', 19, 1, 2, '3', 1, 1, 1);
+(16, 'Data Master', '#', 2, 1, 1, '2', 1, 1, 1),
+(17, 'Keterangan Pengarang', 'authordescription', 16, 1, 2, '3', 1, 1, 1),
+(18, 'Sumber Buku', 'booksource', 6, 1, 1, '3', 1, 1, 1),
+(20, 'Daftar Bahasa', 'language', 16, 1, 3, '3', 1, 1, 1),
+(21, 'Mata Uang', 'accountingsymbol', 16, 1, 4, '3', 1, 1, 1),
+(22, 'Grafik Peminjaman', 'chart', NULL, 1, 6, '1', 1, 1, 1),
+(23, 'Peminjaman Buku', 'report/borrow', 14, 1, 1, '2', 1, 1, 1),
+(24, 'Denda', 'report/pinalty', 14, 1, 1, '2', 1, 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `public_period`
+--
+
+CREATE TABLE IF NOT EXISTS `public_period` (
+  `period_id` int(11) NOT NULL,
+  `period_start` int(11) NOT NULL,
+  `period_finish` int(11) NOT NULL,
+  `period_status` tinyint(4) NOT NULL,
+  PRIMARY KEY (`period_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `public_period`
+--
+
+INSERT INTO `public_period` (`period_id`, `period_start`, `period_finish`, `period_status`) VALUES
+(1, 2012, 2013, 1),
+(2, 2013, 2014, 0);
 
 -- --------------------------------------------------------
 
