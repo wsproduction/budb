@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2013 at 10:14 AM
+-- Generation Time: Feb 02, 2013 at 01:56 AM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -2614,8 +2614,8 @@ INSERT INTO `digilib_borrowed_history` (`borrowed_history_id`, `borrowed_history
 (1, 1, '1213100001', '121126001001', '2013-01-08', '2013-01-09', 1, '2013-01-11', NULL),
 (2, 1, '1213100001', '121126001001', '2013-01-10', '2013-01-12', 1, '2013-01-13', 2000),
 (3, 1, '1213100003', '121126001004', '2013-01-15', '2013-01-16', 0, NULL, NULL),
-(4, 1, '1213100006', '121126007001', '2013-01-16', '2013-01-17', 1, '2013-01-16', 0),
-(5, 1, '1213100006', '121126010001', '2013-01-16', '2013-01-17', 1, '2013-01-16', 0);
+(4, 1, '1213100006', '121126007001', '2013-01-16', '2013-01-17', 1, '2013-01-16', 2000),
+(5, 1, '1213100006', '121126010001', '2013-01-16', '2013-01-17', 1, '2013-01-16', 2000);
 
 -- --------------------------------------------------------
 
@@ -7081,7 +7081,7 @@ CREATE TABLE IF NOT EXISTS `digilib_user` (
 --
 
 INSERT INTO `digilib_user` (`user_id`, `username`, `password`, `user_group_id`, `full_name`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, 'Warman Suganda'),
+(1, 'admin', '2c835eeada294ff02febbeb45012fd0f', 1, 'Warman Suganda'),
 (2, 'operator', '4b583376b2767b923c3e1da60d10de59', 2, 'Purwanto');
 
 -- --------------------------------------------------------
@@ -7640,7 +7640,7 @@ CREATE TABLE IF NOT EXISTS `public_menu` (
   `is_active` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`menu_id`),
   KEY `fk_public_menu_web_id` (`web_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=27 ;
 
 --
 -- Dumping data for table `public_menu`
@@ -7667,8 +7667,10 @@ INSERT INTO `public_menu` (`menu_id`, `menu_title`, `menu_link`, `menu_parent`, 
 (20, 'Daftar Bahasa', 'language', 16, 1, 3, '3', 1, 1, 1),
 (21, 'Mata Uang', 'accountingsymbol', 16, 1, 4, '3', 1, 1, 1),
 (22, 'Grafik Peminjaman', 'chart', NULL, 1, 6, '1', 1, 1, 1),
-(23, 'Peminjaman Buku', 'report/borrow', 14, 1, 1, '2', 1, 1, 1),
-(24, 'Denda', 'report/pinalty', 14, 1, 1, '2', 1, 1, 1);
+(23, 'Buku Yang Dipinjam', 'report/borrow', 14, 1, 1, '2', 1, 1, 1),
+(24, 'Denda', 'report/pinalty', 14, 1, 3, '2', 1, 1, 1),
+(25, 'Peminjam Buku', 'report/borrower', 14, 1, 2, '2', 1, 1, 1),
+(26, 'Beranda', 'index/index', NULL, 1, 1, '1', 2, 0, 1);
 
 -- --------------------------------------------------------
 
