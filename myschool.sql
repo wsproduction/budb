@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 06, 2013 at 07:46 AM
--- Server version: 5.5.16
--- PHP Version: 5.3.8
+-- Waktu pembuatan: 06. Februari 2013 jam 20:03
+-- Versi Server: 5.5.16
+-- Versi PHP: 5.3.8
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_achievement_contest_type`
+-- Struktur dari tabel `academic_achievement_contest_type`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_achievement_contest_type` (
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `academic_achievement_contest_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_achievement_contest_type`
+-- Dumping data untuk tabel `academic_achievement_contest_type`
 --
 
 INSERT INTO `academic_achievement_contest_type` (`achievement_contest_type_id`, `achievement_contest_type_title`, `achievement_contest_type_isother`, `achievement_contest_type_entry`, `achievement_contest_type_entry_update`) VALUES
@@ -48,7 +48,7 @@ INSERT INTO `academic_achievement_contest_type` (`achievement_contest_type_id`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_base_competence`
+-- Struktur dari tabel `academic_base_competence`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_base_competence` (
@@ -71,7 +71,7 @@ CREATE TABLE IF NOT EXISTS `academic_base_competence` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_base_competence`
+-- Dumping data untuk tabel `academic_base_competence`
 --
 
 INSERT INTO `academic_base_competence` (`base_competence_id`, `base_competence_title`, `base_competence_period`, `base_competence_semester`, `base_competence_teacher`, `base_competence_subject`, `base_competence_grade`, `base_competence_mlc`, `base_competence_entry`, `base_competence_entry_update`) VALUES
@@ -83,7 +83,7 @@ INSERT INTO `academic_base_competence` (`base_competence_id`, `base_competence_t
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_classgroup`
+-- Struktur dari tabel `academic_classgroup`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_classgroup` (
@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS `academic_classgroup` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_classgroup`
+-- Dumping data untuk tabel `academic_classgroup`
 --
 
 INSERT INTO `academic_classgroup` (`classgroup_id`, `classgroup_grade`, `classgroup_name`, `classgroup_room`, `classgroup_period`, `classgroup_semester`, `classgroup_guardian`, `classgroup_entry`, `classgroup_entry_update`) VALUES
@@ -139,7 +139,7 @@ INSERT INTO `academic_classgroup` (`classgroup_id`, `classgroup_grade`, `classgr
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_classhistory`
+-- Struktur dari tabel `academic_classhistory`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_classhistory` (
@@ -156,7 +156,7 @@ CREATE TABLE IF NOT EXISTS `academic_classhistory` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_classhistory`
+-- Dumping data untuk tabel `academic_classhistory`
 --
 
 INSERT INTO `academic_classhistory` (`classhistory_id`, `classhistory_student`, `classhistory_classgroup`, `classhistory_status`, `classhistory_entry`, `classhistory_entry_update`) VALUES
@@ -585,7 +585,7 @@ INSERT INTO `academic_classhistory` (`classhistory_id`, `classhistory_student`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_classhistory_status`
+-- Struktur dari tabel `academic_classhistory_status`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_classhistory_status` (
@@ -597,7 +597,7 @@ CREATE TABLE IF NOT EXISTS `academic_classhistory_status` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_classhistory_status`
+-- Dumping data untuk tabel `academic_classhistory_status`
 --
 
 INSERT INTO `academic_classhistory_status` (`classhistory_status_id`, `classhistory_status_title`, `classhistory_status_entry`, `classhistory_status_entry_update`) VALUES
@@ -612,7 +612,7 @@ INSERT INTO `academic_classhistory_status` (`classhistory_status_id`, `classhist
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_classroom`
+-- Struktur dari tabel `academic_classroom`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_classroom` (
@@ -624,7 +624,7 @@ CREATE TABLE IF NOT EXISTS `academic_classroom` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_classroom`
+-- Dumping data untuk tabel `academic_classroom`
 --
 
 INSERT INTO `academic_classroom` (`classroom_id`, `classroom_name`, `classroom_entry`, `classroom_update`) VALUES
@@ -643,7 +643,7 @@ INSERT INTO `academic_classroom` (`classroom_id`, `classroom_name`, `classroom_e
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_extracurricular`
+-- Struktur dari tabel `academic_extracurricular`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_extracurricular` (
@@ -655,7 +655,7 @@ CREATE TABLE IF NOT EXISTS `academic_extracurricular` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_extracurricular`
+-- Dumping data untuk tabel `academic_extracurricular`
 --
 
 INSERT INTO `academic_extracurricular` (`extracurricular_id`, `extracurricular_name`, `extracurricular_entry`, `extracurricular_entry_update`) VALUES
@@ -665,7 +665,7 @@ INSERT INTO `academic_extracurricular` (`extracurricular_id`, `extracurricular_n
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_extracurricular_coach_history`
+-- Struktur dari tabel `academic_extracurricular_coach_history`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_extracurricular_coach_history` (
@@ -683,7 +683,7 @@ CREATE TABLE IF NOT EXISTS `academic_extracurricular_coach_history` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_extracurricular_coach_history`
+-- Dumping data untuk tabel `academic_extracurricular_coach_history`
 --
 
 INSERT INTO `academic_extracurricular_coach_history` (`extracurricular_coach_history_id`, `extracurricular_coach_history_name`, `extracurricular_coach_history_field`, `extracurricular_coach_history_period`, `extracurricular_coach_history_totaltime`, `extracurricular_coach_history_entry`, `extracurricular_coach_history_entry_update`) VALUES
@@ -692,7 +692,7 @@ INSERT INTO `academic_extracurricular_coach_history` (`extracurricular_coach_his
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_grade`
+-- Struktur dari tabel `academic_grade`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_grade` (
@@ -705,7 +705,7 @@ CREATE TABLE IF NOT EXISTS `academic_grade` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_grade`
+-- Dumping data untuk tabel `academic_grade`
 --
 
 INSERT INTO `academic_grade` (`grade_id`, `grade_title`, `grade_name`, `grade_entry`, `grade_entry_update`) VALUES
@@ -716,7 +716,7 @@ INSERT INTO `academic_grade` (`grade_id`, `grade_title`, `grade_name`, `grade_en
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_mlc`
+-- Struktur dari tabel `academic_mlc`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_mlc` (
@@ -736,7 +736,7 @@ CREATE TABLE IF NOT EXISTS `academic_mlc` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_mlc`
+-- Dumping data untuk tabel `academic_mlc`
 --
 
 INSERT INTO `academic_mlc` (`mlc_id`, `mlc_subject`, `mlc_period`, `mlc_semester`, `mlc_grade`, `mlc_value`, `mlc_entry`, `mlc_entry_update`) VALUES
@@ -776,7 +776,7 @@ INSERT INTO `academic_mlc` (`mlc_id`, `mlc_subject`, `mlc_period`, `mlc_semester
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_period`
+-- Struktur dari tabel `academic_period`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_period` (
@@ -790,7 +790,7 @@ CREATE TABLE IF NOT EXISTS `academic_period` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_period`
+-- Dumping data untuk tabel `academic_period`
 --
 
 INSERT INTO `academic_period` (`period_id`, `period_years_start`, `period_years_end`, `period_status`, `period_entry`, `period_entry_update`) VALUES
@@ -800,7 +800,7 @@ INSERT INTO `academic_period` (`period_id`, `period_years_start`, `period_years_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_recapitulation_type`
+-- Struktur dari tabel `academic_recapitulation_type`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_recapitulation_type` (
@@ -813,7 +813,7 @@ CREATE TABLE IF NOT EXISTS `academic_recapitulation_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_recapitulation_type`
+-- Dumping data untuk tabel `academic_recapitulation_type`
 --
 
 INSERT INTO `academic_recapitulation_type` (`recapitulation_type_id`, `recapitulation_type_title`, `recapitulation_type_reference`, `recapitulation_type_entry`, `recapitulation_type_entry_update`) VALUES
@@ -827,31 +827,128 @@ INSERT INTO `academic_recapitulation_type` (`recapitulation_type_id`, `recapitul
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_score`
+-- Struktur dari tabel `academic_report_publishing`
+--
+
+CREATE TABLE IF NOT EXISTS `academic_report_publishing` (
+  `report_publishing_id` int(11) NOT NULL,
+  `report_publishing_date` date NOT NULL,
+  `report_publishing_period` tinyint(4) NOT NULL,
+  `report_publishing_semester` tinyint(1) NOT NULL,
+  `report_publishing_type` tinyint(1) NOT NULL,
+  `report_publishing_entry` datetime NOT NULL,
+  `report_publishing_entry_update` datetime NOT NULL,
+  PRIMARY KEY (`report_publishing_id`),
+  KEY `academic_report_publishing_fk2` (`report_publishing_period`),
+  KEY `academic_report_publishing_fk3` (`report_publishing_semester`),
+  KEY `academic_report_publishing_fk1` (`report_publishing_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `academic_report_publishing`
+--
+
+INSERT INTO `academic_report_publishing` (`report_publishing_id`, `report_publishing_date`, `report_publishing_period`, `report_publishing_semester`, `report_publishing_type`, `report_publishing_entry`, `report_publishing_entry_update`) VALUES
+(1, '2012-10-13', 1, 1, 1, '2013-02-06 19:29:35', '2013-02-06 19:29:38'),
+(2, '2012-12-22', 1, 1, 2, '2013-02-06 19:30:14', '2013-02-06 19:30:17');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `academic_score`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score` (
-  `score_id` bigint(20) unsigned NOT NULL,
-  `score_period` tinyint(4) NOT NULL,
-  `score_semester` tinyint(1) NOT NULL,
+  `score_id` varchar(20) NOT NULL,
   `score_student` varchar(10) NOT NULL,
   `score_subject` tinyint(4) NOT NULL,
+  `score_period` tinyint(4) NOT NULL,
+  `score_semester` tinyint(1) NOT NULL,
+  `score_type` tinyint(1) NOT NULL,
   `score_value` float unsigned NOT NULL,
   `score_entry` datetime NOT NULL,
-  `score_update` datetime NOT NULL,
-  `score_status` tinyint(1) unsigned NOT NULL,
+  `score_entry_update` datetime NOT NULL,
+  `score_status` tinyint(1) NOT NULL,
   PRIMARY KEY (`score_id`),
   KEY `academic_score_fk3` (`score_student`),
   KEY `academic_score_fk5` (`score_status`),
   KEY `academic_score_fk2` (`score_semester`),
   KEY `academic_score_fk1` (`score_period`),
-  KEY `academic_score_fk4` (`score_subject`)
+  KEY `academic_score_fk4` (`score_subject`),
+  KEY `academic_score_fk6` (`score_type`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `academic_score`
+--
+
+INSERT INTO `academic_score` (`score_id`, `score_student`, `score_subject`, `score_period`, `score_semester`, `score_type`, `score_value`, `score_entry`, `score_entry_update`, `score_status`) VALUES
+('201212130001', '121307001', 10, 1, 1, 1, 80, '2013-02-07 01:00:43', '2013-02-07 01:36:34', 1),
+('201212130002', '121307030', 10, 1, 1, 1, 78, '2013-02-07 01:02:13', '2013-02-07 01:36:34', 1),
+('201302070001', '121307002', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070002', '121307003', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070003', '121307005', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070004', '121307006', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070005', '121307007', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070006', '121307008', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070007', '121307009', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070008', '121307010', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070009', '121307011', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070010', '121307012', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070011', '121307013', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070012', '121307014', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070013', '121307015', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070014', '121307016', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070015', '121307017', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
+('201302070016', '121307018', 10, 1, 1, 1, 50, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
+('201302070017', '121307019', 10, 1, 1, 1, 50, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
+('201302070018', '121307020', 10, 1, 1, 1, 50, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
+('201302070019', '121307021', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
+('201302070020', '121307022', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
+('201302070021', '121307004', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
+('201302070022', '121307023', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
+('201302070023', '121307024', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
+('201302070024', '121307025', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
+('201302070025', '121307026', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
+('201302070026', '121307027', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
+('201302070027', '121307028', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
+('201302070028', '121307029', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
+('201302070029', '121307001', 10, 1, 1, 2, 85, '2013-02-07 01:36:39', '2013-02-07 01:37:02', 1),
+('201302070030', '121307002', 10, 1, 1, 2, 78, '2013-02-07 01:36:39', '2013-02-07 01:37:02', 1),
+('201302070031', '121307003', 10, 1, 1, 2, 78, '2013-02-07 01:36:39', '2013-02-07 01:37:02', 1),
+('201302070032', '121307005', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070033', '121307006', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070034', '121307007', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070035', '121307008', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070036', '121307009', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070037', '121307010', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070038', '121307011', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070039', '121307012', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070040', '121307013', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070041', '121307014', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070042', '121307015', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070043', '121307016', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070044', '121307017', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070045', '121307018', 10, 1, 1, 2, 50, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070046', '121307019', 10, 1, 1, 2, 50, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070047', '121307020', 10, 1, 1, 2, 50, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070048', '121307021', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070049', '121307022', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070050', '121307004', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070051', '121307023', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070052', '121307024', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070053', '121307025', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070054', '121307026', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070055', '121307027', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070056', '121307028', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070057', '121307029', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070058', '121307030', 10, 1, 1, 2, 85, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
+('201302070059', '111207001', 13, 1, 1, 1, 80, '2013-02-07 01:54:03', '2013-02-07 01:54:03', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_score_attitude`
+-- Struktur dari tabel `academic_score_attitude`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_attitude` (
@@ -871,7 +968,7 @@ CREATE TABLE IF NOT EXISTS `academic_score_attitude` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_score_attitude`
+-- Dumping data untuk tabel `academic_score_attitude`
 --
 
 INSERT INTO `academic_score_attitude` (`score_attitude_id`, `score_attitude_value`, `score_attitude_student`, `score_attitude_period`, `score_attitude_semester`, `score_attitude_subject`, `score_attitude_entry`, `score_attitude_entry_update`) VALUES
@@ -909,7 +1006,7 @@ INSERT INTO `academic_score_attitude` (`score_attitude_id`, `score_attitude_valu
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_score_daily`
+-- Struktur dari tabel `academic_score_daily`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_daily` (
@@ -931,7 +1028,7 @@ CREATE TABLE IF NOT EXISTS `academic_score_daily` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_score_daily`
+-- Dumping data untuk tabel `academic_score_daily`
 --
 
 INSERT INTO `academic_score_daily` (`score_daily_id`, `score_daily_student`, `score_daily_period`, `score_daily_semester`, `score_daily_value`, `score_daily_competence`, `score_daily_type`, `score_daily_entry`, `score_daily_entry_update`) VALUES
@@ -969,7 +1066,7 @@ INSERT INTO `academic_score_daily` (`score_daily_id`, `score_daily_student`, `sc
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_score_extracurricular`
+-- Struktur dari tabel `academic_score_extracurricular`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_extracurricular` (
@@ -989,7 +1086,7 @@ CREATE TABLE IF NOT EXISTS `academic_score_extracurricular` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_score_extracurricular`
+-- Dumping data untuk tabel `academic_score_extracurricular`
 --
 
 INSERT INTO `academic_score_extracurricular` (`score_extracurricular_id`, `score_extracurricular_student`, `score_extracurricular_value`, `score_extracurricular`, `score_extracurricular_period`, `score_extracurricular_semester`, `score_extracurricular_entry`, `score_extracurricular_entry_update`) VALUES
@@ -998,7 +1095,7 @@ INSERT INTO `academic_score_extracurricular` (`score_extracurricular_id`, `score
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_score_final`
+-- Struktur dari tabel `academic_score_final`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_final` (
@@ -1017,46 +1114,10 @@ CREATE TABLE IF NOT EXISTS `academic_score_final` (
   KEY `academic_score_final_fk2` (`score_final_subject`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `academic_score_final`
---
-
-INSERT INTO `academic_score_final` (`score_final_id`, `score_final_student`, `score_final_subject`, `score_final_period`, `score_final_semester`, `score_final_value`, `score_final_entry`, `score_final_entry_update`) VALUES
-('201301300001', '121307001', 10, 1, 1, 81, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300002', '121307002', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300003', '121307003', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300004', '121307005', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300005', '121307006', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300006', '121307007', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300007', '121307008', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300008', '121307009', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300009', '121307010', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300010', '121307011', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300011', '121307012', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300012', '121307013', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300013', '121307014', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300014', '121307015', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300015', '121307016', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300016', '121307017', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300017', '121307018', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300018', '121307019', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300019', '121307020', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300020', '121307021', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300021', '121307022', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300022', '121307004', 10, 1, 1, 78, '2013-01-30 17:38:37', '2013-01-30 17:38:37'),
-('201301300023', '121307023', 10, 1, 1, 78, '2013-01-30 17:38:38', '2013-01-30 17:38:38'),
-('201301300024', '121307024', 10, 1, 1, 78, '2013-01-30 17:38:38', '2013-01-30 17:38:38'),
-('201301300025', '121307025', 10, 1, 1, 78, '2013-01-30 17:38:38', '2013-01-30 17:38:38'),
-('201301300026', '121307026', 10, 1, 1, 78, '2013-01-30 17:38:38', '2013-01-30 17:38:38'),
-('201301300027', '121307027', 10, 1, 1, 78, '2013-01-30 17:38:38', '2013-01-30 17:38:38'),
-('201301300028', '121307028', 10, 1, 1, 78, '2013-01-30 17:38:38', '2013-01-30 17:38:38'),
-('201301300029', '121307029', 10, 1, 1, 78, '2013-01-30 17:38:38', '2013-01-30 17:38:38'),
-('201301300030', '121307030', 10, 1, 1, 82, '2013-01-30 17:38:38', '2013-01-30 17:38:38');
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_score_mid`
+-- Struktur dari tabel `academic_score_mid`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_mid` (
@@ -1075,47 +1136,10 @@ CREATE TABLE IF NOT EXISTS `academic_score_mid` (
   KEY `academic_score_mid_fk4` (`score_mid_subject`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `academic_score_mid`
---
-
-INSERT INTO `academic_score_mid` (`score_mid_id`, `score_mid_value`, `score_mid_student`, `score_mid_period`, `score_mid_semester`, `score_mid_subject`, `score_mid_entry`, `score_mid_entry_update`) VALUES
-('201212130001', 70, '121307001', 1, 1, 10, '2012-12-13 21:57:30', '2013-02-02 09:33:17'),
-('201212130002', 78, '121307002', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130003', 78, '121307003', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130004', 78, '121307005', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130005', 78, '121307006', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130006', 78, '121307007', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130007', 78, '121307008', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130008', 78, '121307009', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130009', 78, '121307010', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130010', 78, '121307011', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130011', 78, '121307012', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130012', 78, '121307013', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130013', 78, '121307014', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130014', 78, '121307015', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130015', 78, '121307016', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130016', 78, '121307017', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130017', 78, '121307018', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130018', 78, '121307019', 1, 1, 10, '2012-12-13 22:36:57', '2013-02-02 09:33:17'),
-('201212130019', 78, '121307020', 1, 1, 10, '2012-12-13 22:36:58', '2013-02-02 09:33:17'),
-('201212130020', 78, '121307021', 1, 1, 10, '2012-12-13 22:36:58', '2013-02-02 09:33:17'),
-('201212130021', 78, '121307022', 1, 1, 10, '2012-12-13 22:36:58', '2013-02-02 09:33:17'),
-('201212130022', 78, '121307004', 1, 1, 10, '2012-12-13 22:36:58', '2013-02-02 09:33:17'),
-('201212130023', 78, '121307023', 1, 1, 10, '2012-12-13 22:36:58', '2013-02-02 09:33:17'),
-('201212130024', 78, '121307024', 1, 1, 10, '2012-12-13 22:36:58', '2013-02-02 09:33:17'),
-('201212130025', 78, '121307025', 1, 1, 10, '2012-12-13 22:36:58', '2013-02-02 09:33:17'),
-('201212130026', 78, '121307026', 1, 1, 10, '2012-12-13 22:36:58', '2013-02-02 09:33:17'),
-('201212130027', 78, '121307027', 1, 1, 10, '2012-12-13 22:36:58', '2013-02-02 09:33:17'),
-('201212130028', 78, '121307028', 1, 1, 10, '2012-12-13 22:36:58', '2013-02-02 09:33:17'),
-('201212130029', 78, '121307029', 1, 1, 10, '2012-12-13 22:36:58', '2013-02-02 09:33:17'),
-('201212130030', 82, '121307030', 1, 1, 10, '2012-12-13 22:36:58', '2013-02-02 09:33:17'),
-('201302060001', 80, '111207001', 1, 1, 13, '2013-02-06 13:21:18', '2013-02-06 13:21:18');
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_score_percentase`
+-- Struktur dari tabel `academic_score_percentase`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_percentase` (
@@ -1139,7 +1163,7 @@ CREATE TABLE IF NOT EXISTS `academic_score_percentase` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_score_percentase`
+-- Dumping data untuk tabel `academic_score_percentase`
 --
 
 INSERT INTO `academic_score_percentase` (`score_percentase_id`, `score_percentase_recap`, `score_percentase_teacher`, `score_percentase_subject`, `score_percentase_grade`, `score_percentase_period`, `score_percentase_semester`, `score_percentase_value`, `score_percentase_entry`, `score_percentase_entry_update`) VALUES
@@ -1153,19 +1177,26 @@ INSERT INTO `academic_score_percentase` (`score_percentase_id`, `score_percentas
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_score_status`
+-- Struktur dari tabel `academic_score_status`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_status` (
-  `score_status_id` tinyint(1) unsigned NOT NULL,
+  `score_status_id` tinyint(1) NOT NULL,
   `score_status_title` varchar(20) NOT NULL,
   PRIMARY KEY (`score_status_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `academic_score_status`
+--
+
+INSERT INTO `academic_score_status` (`score_status_id`, `score_status_title`) VALUES
+(1, 'Belum Disetujui');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_score_task`
+-- Struktur dari tabel `academic_score_task`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_task` (
@@ -1181,7 +1212,7 @@ CREATE TABLE IF NOT EXISTS `academic_score_task` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_score_task`
+-- Dumping data untuk tabel `academic_score_task`
 --
 
 INSERT INTO `academic_score_task` (`score_task_id`, `score_task_value`, `score_task_student`, `score_task_description`, `score_task_entry`, `score_task_entry_update`) VALUES
@@ -1219,29 +1250,27 @@ INSERT INTO `academic_score_task` (`score_task_id`, `score_task_value`, `score_t
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_score_type`
+-- Struktur dari tabel `academic_score_type`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_type` (
   `score_type_id` tinyint(1) NOT NULL,
-  `score_type_symbol` char(1) DEFAULT NULL,
-  `score_type_description` varchar(20) NOT NULL,
+  `score_type_description` varchar(30) NOT NULL,
   PRIMARY KEY (`score_type_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_score_type`
+-- Dumping data untuk tabel `academic_score_type`
 --
 
-INSERT INTO `academic_score_type` (`score_type_id`, `score_type_symbol`, `score_type_description`) VALUES
-(1, 'T', 'Teori'),
-(2, 'P', 'Praktikum'),
-(3, 'R', 'Remedial');
+INSERT INTO `academic_score_type` (`score_type_id`, `score_type_description`) VALUES
+(1, 'Tengah Semester'),
+(2, 'Akhir Semester');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_semester`
+-- Struktur dari tabel `academic_semester`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_semester` (
@@ -1251,7 +1280,7 @@ CREATE TABLE IF NOT EXISTS `academic_semester` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_semester`
+-- Dumping data untuk tabel `academic_semester`
 --
 
 INSERT INTO `academic_semester` (`semester_id`, `semester_name`) VALUES
@@ -1261,7 +1290,7 @@ INSERT INTO `academic_semester` (`semester_id`, `semester_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_student`
+-- Struktur dari tabel `academic_student`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student` (
@@ -1307,7 +1336,7 @@ CREATE TABLE IF NOT EXISTS `academic_student` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_student`
+-- Dumping data untuk tabel `academic_student`
 --
 
 INSERT INTO `academic_student` (`student_nis`, `student_name`, `student_gender`, `student_nisn`, `student_nik`, `student_birthplace`, `student_birthdate`, `student_religion`, `student_religionother`, `student_residance`, `student_residanceother`, `student_address`, `student_rt`, `student_rw`, `student_village`, `student_subdisctrict`, `student_city`, `student_zipcode`, `student_distance`, `student_distanceother`, `student_transportation`, `student_phonenumber1`, `student_phonenumber2`, `student_email`, `student_height`, `student_weight`, `student_specialneeds`, `student_pin`, `student_entry`, `student_entry_update`, `student_status`) VALUES
@@ -1924,7 +1953,7 @@ INSERT INTO `academic_student` (`student_nis`, `student_name`, `student_gender`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_student_academic_history`
+-- Struktur dari tabel `academic_student_academic_history`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_academic_history` (
@@ -1943,7 +1972,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_academic_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_student_achievement`
+-- Struktur dari tabel `academic_student_achievement`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_achievement` (
@@ -1965,7 +1994,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_achievement` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_student_achievement_level`
+-- Struktur dari tabel `academic_student_achievement_level`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_achievement_level` (
@@ -1977,7 +2006,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_achievement_level` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_student_achievement_level`
+-- Dumping data untuk tabel `academic_student_achievement_level`
 --
 
 INSERT INTO `academic_student_achievement_level` (`achievement_level_id`, `achievement_level_title`, `achievement_level_entry`, `achievement_level_entry_update`) VALUES
@@ -1991,7 +2020,7 @@ INSERT INTO `academic_student_achievement_level` (`achievement_level_id`, `achie
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_student_parent`
+-- Struktur dari tabel `academic_student_parent`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_parent` (
@@ -2027,7 +2056,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_parent` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_student_parent_icome`
+-- Struktur dari tabel `academic_student_parent_icome`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_parent_icome` (
@@ -2039,7 +2068,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_parent_icome` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_student_parent_icome`
+-- Dumping data untuk tabel `academic_student_parent_icome`
 --
 
 INSERT INTO `academic_student_parent_icome` (`student_parent_icome_id`, `student_parent_icome_description`, `student_parent_icome_entry`, `student_parent_icome_entry_update`) VALUES
@@ -2050,7 +2079,7 @@ INSERT INTO `academic_student_parent_icome` (`student_parent_icome_id`, `student
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_student_parent_identity`
+-- Struktur dari tabel `academic_student_parent_identity`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_parent_identity` (
@@ -2062,7 +2091,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_parent_identity` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_student_parent_identity`
+-- Dumping data untuk tabel `academic_student_parent_identity`
 --
 
 INSERT INTO `academic_student_parent_identity` (`student_parent_identity_id`, `student_parent_identity_title`, `student_parent_identity_entry`, `student_parent_identity_entry_update`) VALUES
@@ -2073,7 +2102,7 @@ INSERT INTO `academic_student_parent_identity` (`student_parent_identity_id`, `s
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_student_residance`
+-- Struktur dari tabel `academic_student_residance`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_residance` (
@@ -2086,7 +2115,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_residance` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_student_residance`
+-- Dumping data untuk tabel `academic_student_residance`
 --
 
 INSERT INTO `academic_student_residance` (`student_residance_id`, `student_residance_name`, `student_resident_isother`, `student_residance_entry`, `student_residance_entry_update`) VALUES
@@ -2100,7 +2129,7 @@ INSERT INTO `academic_student_residance` (`student_residance_id`, `student_resid
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_student_scholarship`
+-- Struktur dari tabel `academic_student_scholarship`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_scholarship` (
@@ -2120,7 +2149,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_scholarship` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_student_scholarship_type`
+-- Struktur dari tabel `academic_student_scholarship_type`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_scholarship_type` (
@@ -2133,7 +2162,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_scholarship_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_student_scholarship_type`
+-- Dumping data untuk tabel `academic_student_scholarship_type`
 --
 
 INSERT INTO `academic_student_scholarship_type` (`scholarship_type_id`, `scholarship_type_title`, `scholarship_isother`, `scholarship_type_entry`, `scholarship_type_entry_update`) VALUES
@@ -2146,7 +2175,7 @@ INSERT INTO `academic_student_scholarship_type` (`scholarship_type_id`, `scholar
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_student_special_needs`
+-- Struktur dari tabel `academic_student_special_needs`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_special_needs` (
@@ -2159,7 +2188,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_special_needs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_student_special_needs`
+-- Dumping data untuk tabel `academic_student_special_needs`
 --
 
 INSERT INTO `academic_student_special_needs` (`student_special_needs_id`, `student_special_needs_name`, `student_special_needs_isother`, `student_special_needs_entry`, `student_special_needs_entry_update`) VALUES
@@ -2189,7 +2218,7 @@ INSERT INTO `academic_student_special_needs` (`student_special_needs_id`, `stude
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_subject`
+-- Struktur dari tabel `academic_subject`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_subject` (
@@ -2204,7 +2233,7 @@ CREATE TABLE IF NOT EXISTS `academic_subject` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_subject`
+-- Dumping data untuk tabel `academic_subject`
 --
 
 INSERT INTO `academic_subject` (`subject_id`, `subject_name`, `subject_category`, `subject_order`, `subject_entry`, `subject_entry_update`) VALUES
@@ -2220,12 +2249,12 @@ INSERT INTO `academic_subject` (`subject_id`, `subject_name`, `subject_category`
 (10, 'Teknologi Informasi dan Komunikasi', 2, 1, '2012-11-17 23:05:03', '2012-11-17 23:05:06'),
 (11, 'PTD', 2, 2, '2013-02-05 10:52:42', '2013-02-05 10:52:44'),
 (12, 'Bahasa Sunda', 3, 1, '2012-11-17 23:31:20', '2012-11-17 23:31:22'),
-(13, 'Desain Grafis', 3, 1, '2013-02-06 10:51:48', '2013-02-06 10:51:51');
+(13, 'Desain Grafis', 3, 2, '2013-02-06 10:51:48', '2013-02-06 10:51:51');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_subject_category`
+-- Struktur dari tabel `academic_subject_category`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_subject_category` (
@@ -2237,7 +2266,7 @@ CREATE TABLE IF NOT EXISTS `academic_subject_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_subject_category`
+-- Dumping data untuk tabel `academic_subject_category`
 --
 
 INSERT INTO `academic_subject_category` (`subject_category_id`, `subject_category_title`, `subject_category_entry`, `subject_category_entry_update`) VALUES
@@ -2248,7 +2277,7 @@ INSERT INTO `academic_subject_category` (`subject_category_id`, `subject_categor
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_task_description`
+-- Struktur dari tabel `academic_task_description`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_task_description` (
@@ -2272,7 +2301,7 @@ CREATE TABLE IF NOT EXISTS `academic_task_description` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_task_description`
+-- Dumping data untuk tabel `academic_task_description`
 --
 
 INSERT INTO `academic_task_description` (`task_description_id`, `task_description_subject`, `task_description_teacher`, `task_description_period`, `task_description_semester`, `task_description_garde`, `task_description_title`, `task_description`, `task_description_mlc`, `task_description_entry`, `task_description_entry_update`) VALUES
@@ -2282,7 +2311,7 @@ INSERT INTO `academic_task_description` (`task_description_id`, `task_descriptio
 -- --------------------------------------------------------
 
 --
--- Table structure for table `academic_teaching`
+-- Struktur dari tabel `academic_teaching`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_teaching` (
@@ -2304,7 +2333,7 @@ CREATE TABLE IF NOT EXISTS `academic_teaching` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `academic_teaching`
+-- Dumping data untuk tabel `academic_teaching`
 --
 
 INSERT INTO `academic_teaching` (`teaching_id`, `teaching_teacher`, `teaching_classgroup`, `teaching_subject`, `teaching_total_time`, `teaching_period`, `teaching_semester`, `teaching_entry`, `teaching_entry_update`) VALUES
@@ -2658,7 +2687,7 @@ INSERT INTO `academic_teaching` (`teaching_id`, `teaching_teacher`, `teaching_cl
 -- --------------------------------------------------------
 
 --
--- Table structure for table `asset_infrastructure`
+-- Struktur dari tabel `asset_infrastructure`
 --
 
 CREATE TABLE IF NOT EXISTS `asset_infrastructure` (
@@ -2674,7 +2703,7 @@ CREATE TABLE IF NOT EXISTS `asset_infrastructure` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `asset_infrastructure`
+-- Dumping data untuk tabel `asset_infrastructure`
 --
 
 INSERT INTO `asset_infrastructure` (`infrastructure_id`, `infrastructure_name`, `infrastructure_wide`, `infrastructure_description`, `infrastructure_condition`, `infrastructure_entry`, `infrastructure_entry_update`) VALUES
@@ -2683,7 +2712,7 @@ INSERT INTO `asset_infrastructure` (`infrastructure_id`, `infrastructure_name`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `asset_infrastructure_condition`
+-- Struktur dari tabel `asset_infrastructure_condition`
 --
 
 CREATE TABLE IF NOT EXISTS `asset_infrastructure_condition` (
@@ -2695,7 +2724,7 @@ CREATE TABLE IF NOT EXISTS `asset_infrastructure_condition` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `asset_infrastructure_condition`
+-- Dumping data untuk tabel `asset_infrastructure_condition`
 --
 
 INSERT INTO `asset_infrastructure_condition` (`infrastructure_condition_id`, `infrastructure_condition_title`, `infrastructure_condition_entry`, `infrastructure_condition_update`) VALUES
@@ -2706,7 +2735,7 @@ INSERT INTO `asset_infrastructure_condition` (`infrastructure_condition_id`, `in
 -- --------------------------------------------------------
 
 --
--- Table structure for table `employees`
+-- Struktur dari tabel `employees`
 --
 
 CREATE TABLE IF NOT EXISTS `employees` (
@@ -2752,79 +2781,77 @@ CREATE TABLE IF NOT EXISTS `employees` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `employees`
+-- Dumping data untuk tabel `employees`
 --
 
 INSERT INTO `employees` (`employees_id`, `employees_nik`, `employees_nip`, `employees_nuptk`, `employess_name`, `employees_gender`, `employees_birthplace`, `employees_birthdate`, `employees_religion`, `employees_religionother`, `employees_address`, `employees_rt`, `employees_rw`, `employees_village`, `employees_subdisctrict`, `employees_city`, `employees_zipcode`, `employees_transportation`, `employees_distance`, `employees_distanceother`, `employees_phone1`, `employees_phone2`, `employees_email`, `employees_photo`, `employees_desc`, `employees_marriage_status`, `employees_total_children`, `employees_mother_name`, `employees_status`, `employees_entry`, `employees_entry_update`) VALUES
 ('000000000000', NULL, NULL, NULL, 'Lainnya', 1, 0, '2013-02-06', 1, NULL, '-', NULL, NULL, NULL, NULL, 170, NULL, -1, -1, NULL, NULL, NULL, NULL, NULL, 9, 2, NULL, NULL, 1, '2013-02-06 11:53:24', '2013-02-06 11:53:27'),
-('201212010001', '3215011001015644', '195505021980031007', '1834733635200032', 'Hasanuddin', 1, 0, '1955-05-02', 1, '', 'Jln. Jeruk 1 No. 28 Blok 3 Perumnas', 74, 20, 'KARANGANYAR', '1964', 170, '41211', -1, -1, '', '(0260) 42013', '085294632255', '', '', 1, 1, 3, 'Hj. Wasiah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010002', '3213035803560012', '150218831', '5644734636300022', 'Titi Reswati', 2, 0, '1956-03-12', 1, '', 'Blok Mekarwangi', 65, 14, 'CIGADUNG', '1964', 170, '41213', -1, -1, '', '0260-413016', '081572048414', '', '', 1, 1, 3, 'Upi', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010003', '32130156475', '195607161982060100', '1048734636200023', 'Munawir', 1, 0, '1956-07-16', 1, '', 'Btn. Kartini 175', 17, 6, 'WANAREJA', '1964', 170, '41200', -1, -1, '', '(0260) 41378', '085222033509', '', '', 1, 1, 2, 'Isah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010004', '3213036603570004', '195703264977032002', '1658735636300012', 'E. Heni Rodiah', 2, 0, '1957-03-26', 1, '', 'Komp. P Dan K No. 1 Tegal Kalapa ', 22, 5, 'DANGDEUR', '1964', 170, '41212', -1, -1, '', '0260-412098', '08122411885', 'henimulyadi@yahoo.com', '', 1, 1, 1, 'H. Siti Djuaenah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010005', '3213031001580003', '195801101991031002', '4442736637200032', 'Buddy Kusnadi', 1, 0, '1958-01-10', 1, '', 'Jl. Sawo 1 No. 27 Blok III Perumnas Subang', 73, 20, 'KARANGANYAR', '1964', 170, '41211', -1, -1, '', '0260-413126', '08122243898', 'kusnadi_b@yahoo.com', '', 1, 1, 0, 'Siti Mariah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010006', '3213171310580003', '195810131984031007', '5345736638200013', 'Iing Harin', 1, 0, '1958-10-13', 1, '', 'Griya Cinangsi Pesona Praja B1 No. 4', 18, 5, 'CINANGSI', '2133', 170, '41285', -1, -1, '', '', '082115340120', 'harin_iing@yahoo.co.id', '', 1, 1, 3, 'Odah Karyah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010007', '3213034610590008', '195910061981032005', '9338737639300033', 'Endang Eko Harini Muchtari', 2, 0, '1959-10-06', 3, '', 'Btn. Ciheuleut Indah A14', 38, 13, 'PASIRKAREUMBI', '1964', 170, '41214', -1, -1, '', '0260-412640', '081322912443', '', '', 1, 1, 2, 'Sri Hartini', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010008', '3213172802611809', '196102281981121001', '3560739640200012', 'Joko Triyoga Nursanto', 1, 0, '1961-02-28', 1, '', 'Perum Btn. Kartini', 17, 6, 'WANAREJA', '1964', 170, '41200', -1, -1, '', '(0260) 42065', '085659928061', '', '', 1, 1, 3, 'Sumiyatini', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010001', '3215011001015644', '195505021980031007', '1834733635200032', 'Hasanuddin,S.Pd.', 1, 0, '1955-05-02', 1, '', 'Jln. Jeruk 1 No. 28 Blok 3 Perumnas', 74, 20, 'KARANGANYAR', '1964', 170, '41211', -1, -1, '', '(0260) 42013', '085294632255', '', '', 1, 1, 3, 'Hj. Wasiah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010002', '3213035803560012', '150218831', '5644734636300022', 'Titi Reswati, S.Pd.I.', 2, 0, '1956-03-12', 1, '', 'Blok Mekarwangi', 65, 14, 'CIGADUNG', '1964', 170, '41213', -1, -1, '', '0260-413016', '081572048414', '', '', 1, 1, 3, 'Upi', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010003', '32130156475', '195607161982060100', '1048734636200023', 'Munawir, S.Ag.', 1, 0, '1956-07-16', 1, '', 'Btn. Kartini 175', 17, 6, 'WANAREJA', '1964', 170, '41200', -1, -1, '', '(0260) 41378', '085222033509', '', '', 1, 1, 2, 'Isah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010004', '3213036603570004', '195703264977032002', '1658735636300012', 'E. Heni Rodiah, S.Pd.,M.M.Pd.', 2, 0, '1957-03-26', 1, '', 'Komp. P Dan K No. 1 Tegal Kalapa ', 22, 5, 'DANGDEUR', '1964', 170, '41212', -1, -1, '', '0260-412098', '08122411885', 'henimulyadi@yahoo.com', '', 1, 1, 1, 'H. Siti Djuaenah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010005', '3213031001580003', '195801101991031002', '4442736637200032', 'Buddy Kusnadi, S.Pd.', 1, 0, '1958-01-10', 1, '', 'Jl. Sawo 1 No. 27 Blok III Perumnas Subang', 73, 20, 'KARANGANYAR', '1964', 170, '41211', -1, -1, '', '0260-413126', '08122243898', 'kusnadi_b@yahoo.com', '', 1, 1, 0, 'Siti Mariah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010006', '3213171310580003', '195810131984031007', '5345736638200013', 'Iing Harin, S.Pd.', 1, 0, '1958-10-13', 1, '', 'Griya Cinangsi Pesona Praja B1 No. 4', 18, 5, 'CINANGSI', '2133', 170, '41285', -1, -1, '', '', '082115340120', 'harin_iing@yahoo.co.id', '', 1, 1, 3, 'Odah Karyah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010007', '3213034610590008', '195910061981032005', '9338737639300033', 'Endang Eko Harini Muchtari, S.Pd.', 2, 0, '1959-10-06', 3, '', 'Btn. Ciheuleut Indah A14', 38, 13, 'PASIRKAREUMBI', '1964', 170, '41214', -1, -1, '', '0260-412640', '081322912443', '', '', 1, 1, 2, 'Sri Hartini', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010008', '3213172802611809', '196102281981121001', '3560739640200012', 'Joko Triyoga Nursanto, S.Pd.', 1, 0, '1961-02-28', 1, '', 'Perum Btn. Kartini', 17, 6, 'WANAREJA', '1964', 170, '41200', -1, -1, '', '(0260) 42065', '085659928061', '', '', 1, 1, 3, 'Sumiyatini', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
 ('201212010009', '3213020407616960', '196107041983031008', '8036739640200023', 'Sukenda', 1, 0, '1961-07-04', 1, '', 'Cisaat Bojongloa Cisalak', 10, 3, 'BOJONGLOA', '2118', 170, '41283', -1, -1, '', '0260-472262', '081321963357', '', '', 1, 1, 3, 'Surpi', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010010', '3213036909610003', '196109191981112001', '1251739640300043', 'Siswati Marliana', 2, 0, '1961-09-19', 1, '', 'Jln. Mangga V Perumnas Blok 8 ', 38, 12, 'SUKAMELANG', '1964', 170, '41251', -1, -1, '', '0260-421215', '085221882811', '', '', 1, 1, 2, 'Rd. Patimah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010011', '3215011003016425', '196206051984032016', '3937740641300092', 'Endang Winarni', 2, 0, '1962-05-06', 1, '', 'Btn. Ciheuleut Blok A3 No. 31', 42, 14, 'PASIRKAREUMBI', '1964', 170, '41214', -1, -1, '', '0260-414461', '081320444151', '', '', 1, 1, 2, 'Siti Aminah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010010', '3213036909610003', '196109191981112001', '1251739640300043', 'Siswati Marliana, S.Pd.Ek', 2, 0, '1961-09-19', 1, '', 'Jln. Mangga V Perumnas Blok 8 ', 38, 12, 'SUKAMELANG', '1964', 170, '41251', -1, -1, '', '0260-421215', '085221882811', '', '', 1, 1, 2, 'Rd. Patimah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010011', '3215011003016425', '196206051984032016', '3937740641300092', 'Endang Winarni, S.Pd.', 2, 0, '1962-05-06', 1, '', 'Btn. Ciheuleut Blok A3 No. 31', 42, 14, 'PASIRKAREUMBI', '1964', 170, '41214', -1, -1, '', '0260-414461', '081320444151', '', '', 1, 1, 2, 'Siti Aminah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
 ('201212010012', '3213032508620001', '196208251987031006', '9160740641200033', 'Dayat', 1, 0, '1962-08-25', 1, '', 'Jln. RA. Kartini', 32, 12, 'SOKLAT', '1964', 170, '41215', -1, -1, '', '', '', '', '', 1, 1, 2, 'Karyati', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010013', '3213035007620004', '196202101983022003', '7542740641300042', 'Arminah', 2, 0, '1962-10-02', 1, '', 'Jln. Sawo Iv No. 5 Perumnas', 83, 23, 'KARANGANYAR', '1964', 170, '41211', -1, -1, '', '(0260) 41374', '', '', '', 1, 1, 2, 'Ukat Sukati', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010014', '3213032604630005', '196304261984121003', '6758741642200022', 'R. Muhamad Zaenal Arifin', 1, 0, '1963-04-26', 1, '', 'Btn. Subang Jaya Blok C/31', 40, 10, 'KARANGANYAR', '1964', 170, '41211', -1, -1, '', '0260-420402', '08122259466', 'ramza63@gmail.com', '', 1, 1, 3, 'E. Suangsih', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010015', '3213035402640010', '196402141998032001', '3546742642300012', 'Suryati', 2, 0, '1964-02-14', 1, '', 'Cimereta', 22, 8, 'Pasirkareumbi', '1964', 170, '41214', -1, -1, '', '', '085324222514', '', '', 1, 1, 3, 'A. Anengsih', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010016', '3213032302640004', '196402231984121001', '7555742643200012', 'Misjum Komarudin', 1, 0, '1964-02-23', 1, '', 'Jl. Panji Blok Sukamekar', 71, 19, 'CIGADUNG', '1964', 170, '41213', -1, -1, '', '0260-418193', '085222597819', '', '', 1, 1, 3, 'Walsih', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010017', '3213035504640005', '196404151998022003', '5737742642300012', 'Ade Hetti Heriyani', 2, 0, '1964-04-15', 1, '', 'Jl. Apel Raya Blok2 No. 74 Perumnas', 81, 22, 'Karanganyar', '1964', 170, '41211', -1, -1, '', '0260-415907', '08122185794', '', '', 1, 1, 3, 'Saonah Kurniatin', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010018', '3213034907660869', '196607091991032004', '9041744646300043', 'Rini Supiani', 2, 0, '1966-07-09', 1, '', 'Btn. Ciereng Blok D No.2', 45, 13, 'DANGDEUR', '1964', 170, '41212', -1, -1, '', '', '081321522437', 'rinisupiani@yahoo.com', '', 1, 1, 4, 'Encum Supiah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010019', '3213036712660003', '196612271990032010', '5559744644300003', 'Karwati', 2, 0, '1966-12-27', 1, '', 'Kp. Palabuan', 3, 7, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '', '081321462336', '', '', 1, 1, 3, 'Armesih', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010020', '3213030104670008', '196704011995121001', '5733745648200042', 'Nurhadi', 1, 0, '1967-04-01', 1, '', 'Jln. Jaksa No. 1 Sukajaya', 50, 13, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '', '085220744774', 'nahateki@yahoo.com', '', 1, 1, 2, 'Mianah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010021', '3213036707670008', '196707271998022002', '6059745647300083', 'Enok Ratnaningsih', 2, 0, '1967-07-27', 1, '', 'Jl. Letjen Soeprapto  No. 33', 4, 1, 'SOKLAT', '1964', 170, '41215', -1, -1, '', '', '085221463256', 'enokratnaningsih@yahoo.co.id', '', 1, 3, 3, 'Uneh', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010022', '3213030209670004', '196709021992011001', '3234745647200023', 'Ii Heri Hermawan', 1, 0, '1967-09-02', 1, '', 'Palabuan', 3, 7, 'SUKAMELANG', '1964', 170, '41251', -1, -1, '', '', '081321462337', 'i2heri@yahoo.co.id', '', 1, 1, 3, 'Mas Mariam Pramulyati', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010023', '3213126812670001', '19671281992022001', '5550745648300033', 'Ema Nurmala', 2, 0, '1967-12-18', 1, '', 'Blok Mekarwangi', 73, 14, 'Cigadung', '1964', 170, '41213', -1, -1, '', '0260-480179', '081214691410', '', '', 1, 1, 2, 'MS. Juariah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010024', '3213034203680009', '196803021994032007', '7634746648300062', 'Wara Sri Utami', 2, 0, '1968-03-02', 1, '', 'Jln. R. Dedeng S No. 40', 19, 7, 'PASIRKAREUMBI', '1964', 170, '41214', -1, -1, '', '0260-414268', '082129462807', 'warasriutami@yahoo.co.id', '', 1, 1, 2, 'Hj. Djuhrijah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010025', '3213170903690002', '196903091995121001', '6641747649200032', 'Entuy Kurniayusup', 1, 0, '1969-03-09', 1, '', 'Griya Cinangsi Asri Blok A No 19 B', 14, 5, 'CINANGSI', '2133', 170, '41285', -1, -1, '', '0260-421661', '08157046693', '', '', 1, 1, 2, 'Hj. Ii', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010026', '3213281303690001', '196903131994121003', '0645747649200042', 'H. Opa Mustopa', 1, 0, '1969-03-13', 1, '', 'Kp. Pulekan', 18, 5, 'BALINGBING', '2144', 170, '41252', -1, -1, '', '', '081320967272', '', '', 1, 1, 3, 'Hj. Khodijah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010027', '3213037010690003', '196910301998022002', '3362747649300033', 'Siti Suci Winarni', 2, 0, '1969-10-30', 1, '', 'RSS Sidodadi Blok C No. 292', 47, 15, 'PASIRKAREUMBI', '1964', 170, '41214', -1, -1, '', '0260-7423040', '081394520073', 'chi_wien@ymail.com', '', 1, 1, 1, 'Hj. Siti Halimah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010028', '3213036407700003', '197007241995122001', '3056748650300063', 'Rina Diana Dewi', 2, 0, '1970-07-24', 1, '', 'Jl. P. Timor No. 1 Cikalapa', 31, 11, 'PASIRKAREUMBI', '1964', 170, '41214', -1, -1, '', '0260-421709', '081220208724', '', '', 1, 1, 3, 'E. Suherti', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010029', '3213032903063743', '197103271999031001', '2659745652200002', 'Warlim Setiawan', 1, 0, '1971-03-27', 1, '', 'Jl. Kh. Dewantara Komp Pdk No. 8', 22, 5, 'DANGDEUR', '1964', 170, '41212', -1, -1, '', '0260- 412637', '085321221941', 'warlimsetiawan@yahoo.co.id', '', 1, 1, 3, 'Umi', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
-('201212010030', '3213191206710002', '197106121998022002', '2944749650300022', 'Umas Mastuti', 2, 0, '1971-06-12', 1, '', 'Kp. Cikahuripan', 1, 1, 'Sukahurip', '2135', 170, '41286', -1, -1, '', '', '085222302196', '', '', 1, 1, 2, 'Rohati', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010031', '3213036507710008', '197107251997022003', '1057749651300063', 'Euis Haura Puspanurani', 2, 0, '1971-07-25', 1, '', 'Jln. Sutaatmaja Blok Sukahayu', 63, 9, 'CIGADUNG', '1964', 170, '41213', -1, -1, '', '0260-414795', '081320054784', 'euishaura@yahoo.co.id', '', 1, 1, 3, 'Hj. E. Hapsoh', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010032', '3213037108720001', '197208311998022002', '8163750652300043', 'Sri Suryanti', 2, 0, '1972-08-31', 1, '', 'Perumahan Surya Cigadung Blok L.21', 34, 8, 'CIGADUNG', '1964', 170, '41213', -1, -1, '', '0260-413275', '08122145407', 'suryanti308@ymail.com', '', 1, 1, 0, 'Maryati', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010033', '3213174409720001', '', '6236750652300053', 'Nur Romlah', 2, 0, '1972-09-04', 1, '', 'Griya Cipaku Blok E1 No. 26', 29, 7, 'CIBOGO', '2133', 170, '41200', -1, -1, '', '', '085222665003', 'nur_spensa@yahoo.co.id', '', 9, 1, 2, 'Yayah Rugayah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010013', '3213035007620004', '196202101983022003', '7542740641300042', 'Arminah, S.Pd.', 2, 0, '1962-10-02', 1, '', 'Jln. Sawo Iv No. 5 Perumnas', 83, 23, 'KARANGANYAR', '1964', 170, '41211', -1, -1, '', '(0260) 41374', '', '', '', 1, 1, 2, 'Ukat Sukati', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010014', '3213032604630005', '196304261984121003', '6758741642200022', 'R. Muhamad Zaenal Arifin, S.Pd.', 1, 0, '1963-04-26', 1, '', 'Btn. Subang Jaya Blok C/31', 40, 10, 'KARANGANYAR', '1964', 170, '41211', -1, -1, '', '0260-420402', '08122259466', 'ramza63@gmail.com', '', 1, 1, 3, 'E. Suangsih', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010015', '3213035402640010', '196402141998032001', '3546742642300012', 'Dra. Suryati', 2, 0, '1964-02-14', 1, '', 'Cimereta', 22, 8, 'Pasirkareumbi', '1964', 170, '41214', -1, -1, '', '', '085324222514', '', '', 1, 1, 3, 'A. Anengsih', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010016', '3213032302640004', '196402231984121001', '7555742643200012', 'Misjum Komarudin, S.Pd.Mat', 1, 0, '1964-02-23', 1, '', 'Jl. Panji Blok Sukamekar', 71, 19, 'CIGADUNG', '1964', 170, '41213', -1, -1, '', '0260-418193', '085222597819', '', '', 1, 1, 3, 'Walsih', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010017', '3213035504640005', '196404151998022003', '5737742642300012', 'Dra. Ade Hetti Heriyani', 2, 0, '1964-04-15', 1, '', 'Jl. Apel Raya Blok2 No. 74 Perumnas', 81, 22, 'Karanganyar', '1964', 170, '41211', -1, -1, '', '0260-415907', '08122185794', '', '', 1, 1, 3, 'Saonah Kurniatin', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010018', '3213034907660869', '196607091991032004', '9041744646300043', 'Rini Supiani, S.Pd.', 2, 0, '1966-07-09', 1, '', 'Btn. Ciereng Blok D No.2', 45, 13, 'DANGDEUR', '1964', 170, '41212', -1, -1, '', '', '081321522437', 'rinisupiani@yahoo.com', '', 1, 1, 4, 'Encum Supiah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010019', '3213036712660003', '196612271990032010', '5559744644300003', 'Karwati, S.Pd.', 2, 0, '1966-12-27', 1, '', 'Kp. Palabuan', 3, 7, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '', '081321462336', '', '', 1, 1, 3, 'Armesih', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010020', '3213030104670008', '196704011995121001', '5733745648200042', 'Nurhadi, S.Pd.', 1, 0, '1967-04-01', 1, '', 'Jln. Jaksa No. 1 Sukajaya', 50, 13, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '', '085220744774', 'nahateki@yahoo.com', '', 1, 1, 2, 'Mianah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010021', '3213036707670008', '196707271998022002', '6059745647300083', 'Dra.Enok Ratnaningsih', 2, 0, '1967-07-27', 1, '', 'Jl. Letjen Soeprapto  No. 33', 4, 1, 'SOKLAT', '1964', 170, '41215', -1, -1, '', '', '085221463256', 'enokratnaningsih@yahoo.co.id', '', 1, 3, 3, 'Uneh', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010022', '3213030209670004', '196709021992011001', '3234745647200023', 'Ii Heri Hermawan, S.Pd.', 1, 0, '1967-09-02', 1, '', 'Palabuan', 3, 7, 'SUKAMELANG', '1964', 170, '41251', -1, -1, '', '', '081321462337', 'i2heri@yahoo.co.id', '', 1, 1, 3, 'Mas Mariam Pramulyati', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010023', '3213126812670001', '19671281992022001', '5550745648300033', 'Ema Nurmala, S.Pd.,M.M.Pd.', 2, 0, '1967-12-18', 1, '', 'Blok Mekarwangi', 73, 14, 'Cigadung', '1964', 170, '41213', -1, -1, '', '0260-480179', '081214691410', '', '', 1, 1, 2, 'MS. Juariah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010024', '3213034203680009', '196803021994032007', '7634746648300062', 'Dra. Wara Sri Utami', 2, 0, '1968-03-02', 1, '', 'Jln. R. Dedeng S No. 40', 19, 7, 'PASIRKAREUMBI', '1964', 170, '41214', -1, -1, '', '0260-414268', '082129462807', 'warasriutami@yahoo.co.id', '', 1, 1, 2, 'Hj. Djuhrijah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010025', '3213170903690002', '196903091995121001', '6641747649200032', 'Entuy Kurniayusup, S.Pd.', 1, 0, '1969-03-09', 1, '', 'Griya Cinangsi Asri Blok A No 19 B', 14, 5, 'CINANGSI', '2133', 170, '41285', -1, -1, '', '0260-421661', '08157046693', '', '', 1, 1, 2, 'Hj. Ii', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010026', '3213281303690001', '196903131994121003', '0645747649200042', 'Drs. H. Opa Mustopa', 1, 0, '1969-03-13', 1, '', 'Kp. Pulekan', 18, 5, 'BALINGBING', '2144', 170, '41252', -1, -1, '', '', '081320967272', '', '', 1, 1, 3, 'Hj. Khodijah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010027', '3213037010690003', '196910301998022002', '3362747649300033', 'Siti Suci Winarni, S.Pd.', 2, 0, '1969-10-30', 1, '', 'RSS Sidodadi Blok C No. 292', 47, 15, 'PASIRKAREUMBI', '1964', 170, '41214', -1, -1, '', '0260-7423040', '081394520073', 'chi_wien@ymail.com', '', 1, 1, 1, 'Hj. Siti Halimah', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010028', '3213036407700003', '197007241995122001', '3056748650300063', 'Rina Diana Dewi, S.Pd.,M.M.Pd.', 2, 0, '1970-07-24', 1, '', 'Jl. P. Timor No. 1 Cikalapa', 31, 11, 'PASIRKAREUMBI', '1964', 170, '41214', -1, -1, '', '0260-421709', '081220208724', '', '', 1, 1, 3, 'E. Suherti', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010029', '3213032903063743', '197103271999031001', '2659745652200002', 'Warlim Setiawan, S.Pd.', 1, 0, '1971-03-27', 1, '', 'Jl. Kh. Dewantara Komp Pdk No. 8', 22, 5, 'DANGDEUR', '1964', 170, '41212', -1, -1, '', '0260- 412637', '085321221941', 'warlimsetiawan@yahoo.co.id', '', 1, 1, 3, 'Umi', 1, '2012-12-01 09:32:22', '2012-12-01 09:32:22'),
+('201212010030', '3213191206710002', '197106121998022002', '2944749650300022', 'Umas Mastuti, SE.', 2, 0, '1971-06-12', 1, '', 'Kp. Cikahuripan', 1, 1, 'Sukahurip', '2135', 170, '41286', -1, -1, '', '', '085222302196', '', '', 1, 1, 2, 'Rohati', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010031', '3213036507710008', '197107251997022003', '1057749651300063', 'Euis Haura Puspanurani, S.Pd.', 2, 0, '1971-07-25', 1, '', 'Jln. Sutaatmaja Blok Sukahayu', 63, 9, 'CIGADUNG', '1964', 170, '41213', -1, -1, '', '0260-414795', '081320054784', 'euishaura@yahoo.co.id', '', 1, 1, 3, 'Hj. E. Hapsoh', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010032', '3213037108720001', '197208311998022002', '8163750652300043', 'Sri Suryanti, S.Pd.', 2, 0, '1972-08-31', 1, '', 'Perumahan Surya Cigadung Blok L.21', 34, 8, 'CIGADUNG', '1964', 170, '41213', -1, -1, '', '0260-413275', '08122145407', 'suryanti308@ymail.com', '', 1, 1, 0, 'Maryati', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010033', '3213174409720001', '', '6236750652300053', 'Nur Romlah, SE.', 2, 0, '1972-09-04', 1, '', 'Griya Cipaku Blok E1 No. 26', 29, 7, 'CIBOGO', '2133', 170, '41200', -1, -1, '', '', '085222665003', 'nur_spensa@yahoo.co.id', '', 9, 1, 2, 'Yayah Rugayah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
 ('201212010034', '3213031603730015', '', '5648751653200022', 'R. Rahadian Kusuma', 1, 0, '1973-03-16', 1, '', 'Jl. Mayjen Mt. Haryono 26', 23, 5, 'CIGADUNG', '1964', 170, '41213', -1, -1, '', '0260-411740', '085221108822', '', '', 9, 2, 0, 'Ade Suparsih', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010035', '3213035304740001', '', '3745752653300022', 'Ine Laksmi Mayasari', 2, 0, '1974-04-13', 1, '', 'Jln. Otista No. 235/6 ', 94, 26, 'KARANGANYAR', '1964', 170, '41211', -1, -1, '', '', '087828255690', '', '', 5, 1, 2, 'Dindin Rosdianah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010036', '3213172812750003', '', '6560753655200013', 'Dadan Gunawan', 1, 0, '1975-12-28', 1, '', 'Griya Pesona Praja Blok. C4/10', 20, 6, 'Cinangsi', '2133', 170, '41285', -1, -1, '', '0260-417842', '085315499123', 'dadan.gunawan73@yahoo.com', '', 8, 1, 3, 'Imas Wirat Suwartika', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010035', '3213035304740001', '', '3745752653300022', 'Ine Laksmi Mayasari, A.Md.', 2, 0, '1974-04-13', 1, '', 'Jln. Otista No. 235/6 ', 94, 26, 'KARANGANYAR', '1964', 170, '41211', -1, -1, '', '', '087828255690', '', '', 5, 1, 2, 'Dindin Rosdianah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010036', '3213172812750003', '', '6560753655200013', 'Dadan Gunawan, S.S.', 1, 0, '1975-12-28', 1, '', 'Griya Pesona Praja Blok. C4/10', 20, 6, 'Cinangsi', '2133', 170, '41285', -1, -1, '', '0260-417842', '085315499123', 'dadan.gunawan73@yahoo.com', '', 8, 1, 3, 'Imas Wirat Suwartika', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
 ('201212010037', '3213175307760001', '', '7045754657300003', 'M. Suryamah', 2, 0, '1976-07-13', 1, '', 'Griya Permata Blok D2/01', 31, 1, 'Cibogo', '2133', 170, '41285', -1, -1, '', '', '081127872976', 'suryamah.mamah@yahoo.com', '', 9, 1, 2, 'Oneng', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010038', '3213031512760001', '197612152008011002', '', 'Budi Sagitariawan', 1, 0, '1976-12-15', 1, '', 'BTN Ciheuleut', 41, 13, 'Pasirkareumbi', '1964', 170, '41214', -1, -1, '', '', '081322514662', '', '', 1, 1, 2, 'Dede Nawangsih', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010039', '3213033005710010', '', '8862755657200012', 'Meidilah Yusup', 1, 0, '1977-05-30', 1, '', 'Jln. S. Sukandi 69 Gg. Asem No. 1', 26, 7, 'KARANGANYAR', '1964', 170, '41211', -1, -1, '', '0260-420577', '085223321235', 'm3d1_skl@yahoo.com', '', 6, 1, 1, 'Yayah Rugayah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010038', '3213031512760001', '197612152008011002', '', 'Budi Sagitariawan, S.Pd.', 1, 0, '1976-12-15', 1, '', 'BTN Ciheuleut', 41, 13, 'Pasirkareumbi', '1964', 170, '41214', -1, -1, '', '', '081322514662', '', '', 1, 1, 2, 'Dede Nawangsih', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010039', '3213033005710010', '', '8862755657200012', 'Meidilah Yusup, S.Pd.', 1, 0, '1977-05-30', 1, '', 'Jln. S. Sukandi 69 Gg. Asem No. 1', 26, 7, 'KARANGANYAR', '1964', 170, '41211', -1, -1, '', '0260-420577', '085223321235', 'm3d1_skl@yahoo.com', '', 6, 1, 1, 'Yayah Rugayah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
 ('201212010040', '3215011002014947', '', '1448757659200012', 'Dodo Suryadi', 1, 0, '1979-01-16', 1, '', 'Jln. Ra. Kartini Rt. 29 Rw. 08', 29, 8, 'SOKLAT', '1964', 170, '41215', -1, -1, '', '', '085222871565', '', '', 9, 1, 1, 'Rasih', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010041', '3215011002012079', '', '3538758660200033', 'Dicky Mulyana', 1, 0, '1980-06-12', 1, '', 'Jln. Di. Panjaitan No. 47 Sukasari', 17, 5, 'SOKLAT', '1964', 170, '41215', -1, -1, '', '0260-416085', '08170221018', '', '', 8, 1, 2, 'Yuyu Sukaesih', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010042', '3215011004016619', '198107022008011016', '4034759660200030', 'Budi Ramdhani', 1, 0, '1981-07-02', 1, '', 'Jln. Emo K No. 67', 27, 9, 'Pasirkareumbi', '1964', 170, '41214', -1, -1, '', '', '085221106932', '', '', 1, 1, 2, 'Ade Anengsih', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010041', '3215011002012079', '', '3538758660200033', 'Dicky Mulyana, S.Pd.', 1, 0, '1980-06-12', 1, '', 'Jln. Di. Panjaitan No. 47 Sukasari', 17, 5, 'SOKLAT', '1964', 170, '41215', -1, -1, '', '0260-416085', '08170221018', '', '', 8, 1, 2, 'Yuyu Sukaesih', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010042', '3215011004016619', '198107022008011016', '4034759660200030', 'Budi Ramdhani, S.Si.', 1, 0, '1981-07-02', 1, '', 'Jln. Emo K No. 67', 27, 9, 'Pasirkareumbi', '1964', 170, '41214', -1, -1, '', '', '085221106932', '', '', 1, 1, 2, 'Ade Anengsih', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
 ('201212010043', '3213031212810011', '', '', 'Asep Sugandi', 1, 0, '1981-12-12', 1, '', 'Jln. Mayor Dedeng S No. 27', 18, 6, 'Pasirkareumbi', '1964', 170, '41214', -1, -1, '', '', '085220214097', 'soe_ganteng@yahoo.com', '', 9, 2, 0, 'Ernah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010044', '3213036306830014', '', '4955761663300022', 'May Budi Susanty', 2, 0, '1983-06-23', 1, '', 'Jl. S. Parman No. 18', 40, 6, 'SOKLAT', '1964', 170, '41215', -1, -1, '', '0260-413805', '085624974816', '', '', 9, 1, 1, 'Heni Hanafiah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010045', '3213031209830003', '198309122009021003', '9244761662200033', 'Purwanto', 1, 0, '1983-09-12', 1, '', 'Perumnas Blok V No. 22', 0, 0, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '', '081215686180', '', '', 1, 1, 1, 'Sariyah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010046', '3213034301840009', '19840132006042005', '7435762662300002', 'Fera Maulidya Sukarno', 2, 0, '1984-01-03', 1, '', 'Komp. Puri Subang Asri Blok. A No. 01', 0, 0, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '', '082127710711', 'feramaulidya84@yahoo.com', '', 1, 1, 1, 'ST Sjubaedah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010047', '3213174110840020', '', '6333762663300073', 'Oktafiyanti', 2, 0, '1984-10-01', 1, '', 'BTN Griya Pesona Praja Blok. C7 No. 32', 22, 6, 'Cinangsi', '2133', 170, '41285', -1, -1, '', '', '085315224888', '', '', 6, 1, 1, 'Nining Yuningsih', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010048', '3273161412870003', '', '', 'Iman Muttaqin', 1, 0, '1987-12-14', 1, '', 'Jln. Ibrahim Adjie No. 433', 7, 8, 'Kebon Kangkung', '2260', 177, '40284', -1, -1, '', '', '085750285030', 'kura_kura_terbang@yahoo.com', '', 8, 2, 0, 'Sri Supartini', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010044', '3213036306830014', '', '4955761663300022', 'May Budi Susanty, S.Pd.', 2, 0, '1983-06-23', 1, '', 'Jl. S. Parman No. 18', 40, 6, 'SOKLAT', '1964', 170, '41215', -1, -1, '', '0260-413805', '085624974816', '', '', 9, 1, 1, 'Heni Hanafiah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010045', '3213031209830003', '198309122009021003', '9244761662200033', 'Purwanto, SE.', 1, 0, '1983-09-12', 1, '', 'Perumnas Blok V No. 22', 0, 0, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '', '081215686180', '', '', 1, 1, 1, 'Sariyah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010046', '3213034301840009', '19840132006042005', '7435762662300002', 'Fera Maulidya Sukarno, S.Pd.', 2, 0, '1984-01-03', 1, '', 'Komp. Puri Subang Asri Blok. A No. 01', 0, 0, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '', '082127710711', 'feramaulidya84@yahoo.com', '', 1, 1, 1, 'ST Sjubaedah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010047', '3213174110840020', '', '6333762663300073', 'Oktafiyanti, S.Sn.', 2, 0, '1984-10-01', 1, '', 'BTN Griya Pesona Praja Blok. C7 No. 32', 22, 6, 'Cinangsi', '2133', 170, '41285', -1, -1, '', '', '085315224888', '', '', 6, 1, 1, 'Nining Yuningsih', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010048', '3273161412870003', '', '', 'Iman Muttaqin, S.Kom.', 1, 0, '1987-12-14', 1, '', 'Jln. Ibrahim Adjie No. 433', 7, 8, 'Kebon Kangkung', '2260', 177, '40284', -1, -1, '', '', '085750285030', 'kura_kura_terbang@yahoo.com', '', 8, 2, 0, 'Sri Supartini', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
 ('201212010049', '3213072409880002', '', '', 'Warman Suganda, S.Kom.', 1, 0, '1988-09-24', 1, '', 'Kp. Jawura', 7, 3, 'Sumbersari', '2123', 170, '41200', -1, -1, '', '', '085222229880', 'warmansuganda@yahoo.com', '', 9, 2, 0, 'Kaltem', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010050', '3213034211890008', '', '', 'Pipit Siti Latifah', 2, 0, '1989-11-02', 1, '', 'Jln. Nenas 2 No. 36 Perumnas', 45, 8, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '0260-411382', '085722475499', 'luvarista@gmail.com', '', 8, 2, 0, 'Titin Sumartini', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010050', '3213034211890008', '', '', 'Pipit Siti Latifah, S.Pd.', 2, 0, '1989-11-02', 1, '', 'Jln. Nenas 2 No. 36 Perumnas', 45, 8, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '0260-411382', '085722475499', 'luvarista@gmail.com', '', 8, 2, 0, 'Titin Sumartini', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
 ('201212010051', '3213110408900001', '', '', 'Risnandar', 1, 0, '1990-08-04', 1, '', 'Jln. Eyang Tirtapraja Pamanukan', 2, 3, 'Pamanukan', '2127', 170, '41254', -1, -1, '', '', '08987170840', 'rhyeez@gmail.com', '', 9, 2, 0, 'Tinah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010052', '3213034408800004', '', '', 'Hilga Salita Agnetiyas', 2, 0, '1998-09-04', 1, '', 'Jln. Otista Gg. Lika No. 34', 38, 10, 'Karanganyar', '1964', 170, '41211', -1, -1, '', '0260-420458', '085659078850', 'hilga_englishc@yahoo.com', '', 8, 2, 0, 'Aat Setiawati', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010053', '1461758659300052', '', '1461758659300052', 'Yeyen Rohaemi', 2, 0, '1980-01-29', 1, '', 'Kp. Cibatu', 1, 1, 'Tanjungsiang', '2130', 170, '41284', -1, -1, '', '', '081320166819', 'yeyenrohaemi@ymail.com', '', 6, 1, 1, 'Oyah Rukoyah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010054', '3213030512690006', '196912051997021005', '0537747650200023', 'A. Kuswara Abdul Gani', 1, 0, '1969-12-05', 1, '', 'Blok Sukahayu Jln. Sutaatmaja', 63, 9, 'Cigadung', '1964', 170, '41213', -1, -1, '', '', '081320734014', 'ganiabdul53@ymail.com', '', 1, 1, 3, 'Usih Rustini', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010055', '321303550989009', '', '', 'Sekar Fitri Puji Lestari', 2, 0, '1989-09-15', 1, '', 'Pasirharja No. 156', 16, 10, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '', '082121729628', 'dhe_unga@yahoo.co.id', '', 8, 1, 0, 'Nia Heni Kania', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010056', '3213032310710006', '197110231995121001', '3355749650200003', 'Asep Wahyudin', 1, 0, '1971-10-23', 1, '', 'BTN Sukajaya', 59, 17, 'Cigadung', '1964', 170, '41213', -1, -1, '', '', '085220935198', 'cheepy_ydas@yahoo.co.id', '', 1, 1, 2, 'Solihat', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010052', '3213034408800004', '', '', 'Hilga Salita Agnetiyas, S.Pd.', 2, 0, '1998-09-04', 1, '', 'Jln. Otista Gg. Lika No. 34', 38, 10, 'Karanganyar', '1964', 170, '41211', -1, -1, '', '0260-420458', '085659078850', 'hilga_englishc@yahoo.com', '', 8, 2, 0, 'Aat Setiawati', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010053', '1461758659300052', '', '1461758659300052', 'Yeyen Rohaemi, S.Pd.', 2, 0, '1980-01-29', 1, '', 'Kp. Cibatu', 1, 1, 'Tanjungsiang', '2130', 170, '41284', -1, -1, '', '', '081320166819', 'yeyenrohaemi@ymail.com', '', 6, 1, 1, 'Oyah Rukoyah', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010054', '3213030512690006', '196912051997021005', '0537747650200023', 'A. Kuswara Abdul Gani, S.Pd.', 1, 0, '1969-12-05', 1, '', 'Blok Sukahayu Jln. Sutaatmaja', 63, 9, 'Cigadung', '1964', 170, '41213', -1, -1, '', '', '081320734014', 'ganiabdul53@ymail.com', '', 1, 1, 3, 'Usih Rustini', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010055', '321303550989009', '', '', 'Sekar Fitri Puji Lestari, S.Pd.', 2, 0, '1989-09-15', 1, '', 'Pasirharja No. 156', 16, 10, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '', '082121729628', 'dhe_unga@yahoo.co.id', '', 8, 1, 0, 'Nia Heni Kania', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
+('201212010056', '3213032310710006', '197110231995121001', '3355749650200003', 'Asep Wahyudin, S.Pd.,M.M.Pd.', 1, 0, '1971-10-23', 1, '', 'BTN Sukajaya', 59, 17, 'Cigadung', '1964', 170, '41213', -1, -1, '', '', '085220935198', 'cheepy_ydas@yahoo.co.id', '', 1, 1, 2, 'Solihat', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
 ('201212010057', '3213030508850042', '', '', 'Eman Sulaeman', 1, 0, '1985-08-05', 1, '', 'Kp. Palabuan Sukamelang', 3, 7, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '', '085222335469', '', '', 9, 1, 1, 'Ate Setiawati', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
 ('201212010058', '3213032805860002', '', '', 'Wawan Setiawan', 1, 0, '1986-05-28', 1, '', 'Kp. Palabuan Sukamelang', 3, 7, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '', '082127287600', 'setiawan_wawan68@ymail.com', '', 9, 1, 2, 'Sewi', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
-('201212010059', '3213031511750001', '', '', 'Hafit Supriadi', 1, 0, '1975-11-15', 1, '', 'BTN Kartini No. 235', 17, 6, 'Wanareja', '1964', 170, '41285', -1, -1, '', '0260-413559', '082128661975', 'supriyadihafiet30@gmail.com', '', 9, 2, 0, 'T. Mia Ratmiati', 1, '2012-12-01 09:32:23', '2012-12-01 09:32:23'),
 ('201212010060', '3213030404790002', '', '', 'Enang Surahmat', 1, 0, '1980-07-07', 1, '', 'Palabuan Sukamelang', 3, 7, 'Sukamelang', '1964', 170, '41251', -1, -1, '', '', '083818037894', '', '', 9, 2, 0, 'Jumnah', 1, '2012-12-01 09:32:24', '2012-12-01 09:32:24'),
 ('201212010061', '3213034201890012', '', '', 'Yeni Mulyani Agustin', 2, 0, '1989-01-02', 1, '', 'Jln. Nusa Indah Blok Cicadas', 44, 3, 'Dangdeur', '1964', 170, '41212', -1, -1, '', '', '087760646036', '', '', 9, 1, 0, 'Suminar Sari', 1, '2012-12-01 09:32:24', '2012-12-01 09:32:24'),
-('201212010062', '3213036407940008', '', '', 'Herda Shavaringga Fadilah', 1, 0, '1994-07-24', 1, '', 'Sukamekar', 30, 19, 'Cigadung', '1964', 170, '41213', -1, -1, '', '', '08985617317', 'ndha_the_andity@yahoo.co.id', '', 9, 2, 0, 'Tati Zubaedah', 1, '2012-12-01 09:32:24', '2012-12-01 09:32:24'),
-('201212010063', '3213030406680003', '195606041979031005', '9936734637200010', 'Rasidi', 1, 0, '1956-06-04', 1, '', 'Kampung Cicadas', 12, 17, 'DANGDEUR', '1964', 170, '41212', -1, -1, '', '', '085220005046', '', '', 1, 1, 3, 'Sulikah Calmi', 7, '2012-12-01 09:32:24', '2012-12-01 09:32:24');
+('201212010062', '3213036407940008', '', '', 'Herda Shavaringga Fadilah', 1, 0, '1994-07-24', 1, '', 'Sukamekar', 30, 19, 'Cigadung', '1964', 170, '41213', -1, -1, '', '', '08985617317', 'ndha_the_andity@yahoo.co.id', '', 9, 2, 0, 'Tati Zubaedah', 1, '2012-12-01 09:32:24', '2012-12-01 09:32:24');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `employees_jobdescription`
+-- Struktur dari tabel `employees_jobdescription`
 --
 
 CREATE TABLE IF NOT EXISTS `employees_jobdescription` (
@@ -2837,7 +2864,7 @@ CREATE TABLE IF NOT EXISTS `employees_jobdescription` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `employees_jobdescription`
+-- Dumping data untuk tabel `employees_jobdescription`
 --
 
 INSERT INTO `employees_jobdescription` (`jobdescription_id`, `jobdescription_title`, `jobdescription_status`, `jobdescription_entry`, `jobdescription_entry_update`) VALUES
@@ -2854,7 +2881,7 @@ INSERT INTO `employees_jobdescription` (`jobdescription_id`, `jobdescription_tit
 -- --------------------------------------------------------
 
 --
--- Table structure for table `employees_marriage_status`
+-- Struktur dari tabel `employees_marriage_status`
 --
 
 CREATE TABLE IF NOT EXISTS `employees_marriage_status` (
@@ -2866,7 +2893,7 @@ CREATE TABLE IF NOT EXISTS `employees_marriage_status` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `employees_marriage_status`
+-- Dumping data untuk tabel `employees_marriage_status`
 --
 
 INSERT INTO `employees_marriage_status` (`marriage_status_id`, `marriage_status_title`, `marriage_status_entry`, `marriage_status_entry_update`) VALUES
@@ -2877,7 +2904,7 @@ INSERT INTO `employees_marriage_status` (`marriage_status_id`, `marriage_status_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `employees_status`
+-- Struktur dari tabel `employees_status`
 --
 
 CREATE TABLE IF NOT EXISTS `employees_status` (
@@ -2889,7 +2916,7 @@ CREATE TABLE IF NOT EXISTS `employees_status` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `employees_status`
+-- Dumping data untuk tabel `employees_status`
 --
 
 INSERT INTO `employees_status` (`employees_status_id`, `employees_status_title`, `employees_status_entry`, `employees_status_entry_update`) VALUES
@@ -2905,7 +2932,7 @@ INSERT INTO `employees_status` (`employees_status_id`, `employees_status_title`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `myschool_apps`
+-- Struktur dari tabel `myschool_apps`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_apps` (
@@ -2921,7 +2948,7 @@ CREATE TABLE IF NOT EXISTS `myschool_apps` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `myschool_apps`
+-- Dumping data untuk tabel `myschool_apps`
 --
 
 INSERT INTO `myschool_apps` (`apps_id`, `apps_alias`, `apps_name`, `apps_short_description`, `apps_baner`, `apps_status`, `apps_entry`, `apps_entry_update`) VALUES
@@ -2931,7 +2958,7 @@ INSERT INTO `myschool_apps` (`apps_id`, `apps_alias`, `apps_name`, `apps_short_d
 -- --------------------------------------------------------
 
 --
--- Table structure for table `myschool_apps_access`
+-- Struktur dari tabel `myschool_apps_access`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_apps_access` (
@@ -2949,7 +2976,7 @@ CREATE TABLE IF NOT EXISTS `myschool_apps_access` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `myschool_apps_accessdetail`
+-- Struktur dari tabel `myschool_apps_accessdetail`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_apps_accessdetail` (
@@ -2970,7 +2997,7 @@ CREATE TABLE IF NOT EXISTS `myschool_apps_accessdetail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `myschool_apps_menu`
+-- Struktur dari tabel `myschool_apps_menu`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_apps_menu` (
@@ -2989,7 +3016,7 @@ CREATE TABLE IF NOT EXISTS `myschool_apps_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `myschool_apps_menu`
+-- Dumping data untuk tabel `myschool_apps_menu`
 --
 
 INSERT INTO `myschool_apps_menu` (`menu_id`, `menu_apps`, `menu_title`, `menu_link`, `menu_level`, `menu_parent`, `menu_icons`, `menu_status`, `menu_entry`, `menu_entry_update`) VALUES
@@ -3000,7 +3027,7 @@ INSERT INTO `myschool_apps_menu` (`menu_id`, `menu_apps`, `menu_title`, `menu_li
 -- --------------------------------------------------------
 
 --
--- Table structure for table `myschool_apps_modul`
+-- Struktur dari tabel `myschool_apps_modul`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_apps_modul` (
@@ -3017,7 +3044,7 @@ CREATE TABLE IF NOT EXISTS `myschool_apps_modul` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `myschool_apps_modul`
+-- Dumping data untuk tabel `myschool_apps_modul`
 --
 
 INSERT INTO `myschool_apps_modul` (`modul_id`, `modul_apps`, `modul_name`, `modul_description`, `modul_parent`, `modul_status`, `modul_entry`, `modul_update`) VALUES
@@ -3026,7 +3053,7 @@ INSERT INTO `myschool_apps_modul` (`modul_id`, `modul_apps`, `modul_name`, `modu
 -- --------------------------------------------------------
 
 --
--- Table structure for table `myschool_isa`
+-- Struktur dari tabel `myschool_isa`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_isa` (
@@ -3039,7 +3066,7 @@ CREATE TABLE IF NOT EXISTS `myschool_isa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `myschool_isa`
+-- Dumping data untuk tabel `myschool_isa`
 --
 
 INSERT INTO `myschool_isa` (`isa_id`, `isa_title`, `isa_dbroot`, `isa_entry`, `isa_update`) VALUES
@@ -3049,7 +3076,7 @@ INSERT INTO `myschool_isa` (`isa_id`, `isa_title`, `isa_dbroot`, `isa_entry`, `i
 -- --------------------------------------------------------
 
 --
--- Table structure for table `myschool_user`
+-- Struktur dari tabel `myschool_user`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_user` (
@@ -3068,7 +3095,7 @@ CREATE TABLE IF NOT EXISTS `myschool_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `myschool_user`
+-- Dumping data untuk tabel `myschool_user`
 --
 
 INSERT INTO `myschool_user` (`user_id`, `user_references`, `user_name`, `user_password`, `user_about`, `user_photo_profile`, `user_isa`, `user_entry`, `user_update`, `user_status`) VALUES
@@ -3122,7 +3149,7 @@ INSERT INTO `myschool_user` (`user_id`, `user_references`, `user_name`, `user_pa
 -- --------------------------------------------------------
 
 --
--- Table structure for table `myschool_usergroup`
+-- Struktur dari tabel `myschool_usergroup`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_usergroup` (
@@ -3137,7 +3164,7 @@ CREATE TABLE IF NOT EXISTS `myschool_usergroup` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `myschool_userprivilege`
+-- Struktur dari tabel `myschool_userprivilege`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_userprivilege` (
@@ -3153,7 +3180,7 @@ CREATE TABLE IF NOT EXISTS `myschool_userprivilege` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_city`
+-- Struktur dari tabel `public_city`
 --
 
 CREATE TABLE IF NOT EXISTS `public_city` (
@@ -3168,7 +3195,7 @@ CREATE TABLE IF NOT EXISTS `public_city` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_city`
+-- Dumping data untuk tabel `public_city`
 --
 
 INSERT INTO `public_city` (`city_id`, `city_name`, `city_province`, `city_status`, `city_entry`, `city_entry_update`) VALUES
@@ -3573,7 +3600,7 @@ INSERT INTO `public_city` (`city_id`, `city_name`, `city_province`, `city_status
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_country`
+-- Struktur dari tabel `public_country`
 --
 
 CREATE TABLE IF NOT EXISTS `public_country` (
@@ -3585,7 +3612,7 @@ CREATE TABLE IF NOT EXISTS `public_country` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_country`
+-- Dumping data untuk tabel `public_country`
 --
 
 INSERT INTO `public_country` (`country_id`, `country_name`, `country_entry`, `country_entry_update`) VALUES
@@ -3594,7 +3621,7 @@ INSERT INTO `public_country` (`country_id`, `country_name`, `country_entry`, `co
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_distance`
+-- Struktur dari tabel `public_distance`
 --
 
 CREATE TABLE IF NOT EXISTS `public_distance` (
@@ -3607,7 +3634,7 @@ CREATE TABLE IF NOT EXISTS `public_distance` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_distance`
+-- Dumping data untuk tabel `public_distance`
 --
 
 INSERT INTO `public_distance` (`distance_id`, `distance_title`, `distance_isother`, `distance_entry`, `distance_entry_update`) VALUES
@@ -3617,7 +3644,7 @@ INSERT INTO `public_distance` (`distance_id`, `distance_title`, `distance_isothe
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_education`
+-- Struktur dari tabel `public_education`
 --
 
 CREATE TABLE IF NOT EXISTS `public_education` (
@@ -3629,7 +3656,7 @@ CREATE TABLE IF NOT EXISTS `public_education` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_education`
+-- Dumping data untuk tabel `public_education`
 --
 
 INSERT INTO `public_education` (`education_id`, `educaition_title`, `education_entry`, `education_entry_update`) VALUES
@@ -3647,7 +3674,7 @@ INSERT INTO `public_education` (`education_id`, `educaition_title`, `education_e
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_gender`
+-- Struktur dari tabel `public_gender`
 --
 
 CREATE TABLE IF NOT EXISTS `public_gender` (
@@ -3657,7 +3684,7 @@ CREATE TABLE IF NOT EXISTS `public_gender` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_gender`
+-- Dumping data untuk tabel `public_gender`
 --
 
 INSERT INTO `public_gender` (`gender_id`, `gender_title`) VALUES
@@ -3667,7 +3694,7 @@ INSERT INTO `public_gender` (`gender_id`, `gender_title`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_job`
+-- Struktur dari tabel `public_job`
 --
 
 CREATE TABLE IF NOT EXISTS `public_job` (
@@ -3680,7 +3707,7 @@ CREATE TABLE IF NOT EXISTS `public_job` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_job`
+-- Dumping data untuk tabel `public_job`
 --
 
 INSERT INTO `public_job` (`job_id`, `job_name`, `job_isother`, `job_entry`, `job_entry_update`) VALUES
@@ -3701,7 +3728,7 @@ INSERT INTO `public_job` (`job_id`, `job_name`, `job_isother`, `job_entry`, `job
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_province`
+-- Struktur dari tabel `public_province`
 --
 
 CREATE TABLE IF NOT EXISTS `public_province` (
@@ -3716,7 +3743,7 @@ CREATE TABLE IF NOT EXISTS `public_province` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_province`
+-- Dumping data untuk tabel `public_province`
 --
 
 INSERT INTO `public_province` (`province_id`, `province_name`, `province_country`, `province_status`, `province_entry`, `province_entry_update`) VALUES
@@ -3757,7 +3784,7 @@ INSERT INTO `public_province` (`province_id`, `province_name`, `province_country
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_religion`
+-- Struktur dari tabel `public_religion`
 --
 
 CREATE TABLE IF NOT EXISTS `public_religion` (
@@ -3770,7 +3797,7 @@ CREATE TABLE IF NOT EXISTS `public_religion` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_religion`
+-- Dumping data untuk tabel `public_religion`
 --
 
 INSERT INTO `public_religion` (`religion_id`, `religion_name`, `religion_isother`, `religion_entry`, `religion_entry_update`) VALUES
@@ -3785,7 +3812,7 @@ INSERT INTO `public_religion` (`religion_id`, `religion_name`, `religion_isother
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_transportation`
+-- Struktur dari tabel `public_transportation`
 --
 
 CREATE TABLE IF NOT EXISTS `public_transportation` (
@@ -3798,7 +3825,7 @@ CREATE TABLE IF NOT EXISTS `public_transportation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_transportation`
+-- Dumping data untuk tabel `public_transportation`
 --
 
 INSERT INTO `public_transportation` (`transportation_id`, `transportation_name`, `transportation_isother`, `transportation_entry`, `transportation_update`) VALUES
@@ -3812,11 +3839,11 @@ INSERT INTO `public_transportation` (`transportation_id`, `transportation_name`,
 (7, 'Perahu Penyebrangan/Rakit/Getek', 0, '2012-11-10 09:22:19', '2012-11-10 09:22:21');
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `academic_base_competence`
+-- Ketidakleluasaan untuk tabel `academic_base_competence`
 --
 ALTER TABLE `academic_base_competence`
   ADD CONSTRAINT `academic_base_competence_fk1` FOREIGN KEY (`base_competence_teacher`) REFERENCES `employees` (`employees_id`) ON UPDATE CASCADE,
@@ -3826,7 +3853,7 @@ ALTER TABLE `academic_base_competence`
   ADD CONSTRAINT `academic_base_competence_fk5` FOREIGN KEY (`base_competence_grade`) REFERENCES `academic_grade` (`grade_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_classgroup`
+-- Ketidakleluasaan untuk tabel `academic_classgroup`
 --
 ALTER TABLE `academic_classgroup`
   ADD CONSTRAINT `academic_classgroup_fk1` FOREIGN KEY (`classgroup_grade`) REFERENCES `academic_grade` (`grade_id`) ON UPDATE CASCADE,
@@ -3837,7 +3864,7 @@ ALTER TABLE `academic_classgroup`
   ADD CONSTRAINT `academic_classgroup_fk6` FOREIGN KEY (`classgroup_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_classhistory`
+-- Ketidakleluasaan untuk tabel `academic_classhistory`
 --
 ALTER TABLE `academic_classhistory`
   ADD CONSTRAINT `academic_classhistory_fk1` FOREIGN KEY (`classhistory_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
@@ -3845,7 +3872,7 @@ ALTER TABLE `academic_classhistory`
   ADD CONSTRAINT `academic_classhistory_fk3` FOREIGN KEY (`classhistory_status`) REFERENCES `academic_classhistory_status` (`classhistory_status_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_extracurricular_coach_history`
+-- Ketidakleluasaan untuk tabel `academic_extracurricular_coach_history`
 --
 ALTER TABLE `academic_extracurricular_coach_history`
   ADD CONSTRAINT `academic_extracurricular_coach_history_fk1` FOREIGN KEY (`extracurricular_coach_history_name`) REFERENCES `employees` (`employees_id`) ON UPDATE CASCADE,
@@ -3853,7 +3880,7 @@ ALTER TABLE `academic_extracurricular_coach_history`
   ADD CONSTRAINT `academic_extracurricular_coach_history_fk3` FOREIGN KEY (`extracurricular_coach_history_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_mlc`
+-- Ketidakleluasaan untuk tabel `academic_mlc`
 --
 ALTER TABLE `academic_mlc`
   ADD CONSTRAINT `academic_mlc_fk1` FOREIGN KEY (`mlc_subject`) REFERENCES `academic_subject` (`subject_id`) ON UPDATE CASCADE,
@@ -3862,17 +3889,26 @@ ALTER TABLE `academic_mlc`
   ADD CONSTRAINT `academic_mlc_fk4` FOREIGN KEY (`mlc_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_score`
+-- Ketidakleluasaan untuk tabel `academic_report_publishing`
+--
+ALTER TABLE `academic_report_publishing`
+  ADD CONSTRAINT `academic_report_publishing_fk1` FOREIGN KEY (`report_publishing_type`) REFERENCES `academic_score_type` (`score_type_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_report_publishing_fk2` FOREIGN KEY (`report_publishing_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_report_publishing_fk3` FOREIGN KEY (`report_publishing_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
+
+--
+-- Ketidakleluasaan untuk tabel `academic_score`
 --
 ALTER TABLE `academic_score`
   ADD CONSTRAINT `academic_score_fk1` FOREIGN KEY (`score_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_score_fk2` FOREIGN KEY (`score_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_score_fk3` FOREIGN KEY (`score_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_score_fk4` FOREIGN KEY (`score_subject`) REFERENCES `academic_subject` (`subject_id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `academic_score_fk5` FOREIGN KEY (`score_status`) REFERENCES `academic_score_status` (`score_status_id`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `academic_score_fk5` FOREIGN KEY (`score_status`) REFERENCES `academic_score_status` (`score_status_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_score_fk6` FOREIGN KEY (`score_type`) REFERENCES `academic_score_type` (`score_type_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_score_attitude`
+-- Ketidakleluasaan untuk tabel `academic_score_attitude`
 --
 ALTER TABLE `academic_score_attitude`
   ADD CONSTRAINT `academic_score_attitude_fk1` FOREIGN KEY (`score_attitude_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
@@ -3881,17 +3917,16 @@ ALTER TABLE `academic_score_attitude`
   ADD CONSTRAINT `academic_score_attitude_fk4` FOREIGN KEY (`score_attitude_subject`) REFERENCES `academic_subject` (`subject_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_score_daily`
+-- Ketidakleluasaan untuk tabel `academic_score_daily`
 --
 ALTER TABLE `academic_score_daily`
-  ADD CONSTRAINT `academic_score_daily_fk1` FOREIGN KEY (`score_daily_type`) REFERENCES `academic_score_type` (`score_type_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_score_daily_fk2` FOREIGN KEY (`score_daily_competence`) REFERENCES `academic_base_competence` (`base_competence_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_score_daily_fk3` FOREIGN KEY (`score_daily_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_score_daily_fk5` FOREIGN KEY (`score_daily_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_score_daily_fk6` FOREIGN KEY (`score_daily_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_score_extracurricular`
+-- Ketidakleluasaan untuk tabel `academic_score_extracurricular`
 --
 ALTER TABLE `academic_score_extracurricular`
   ADD CONSTRAINT `academic_score_extracurricular_fk1` FOREIGN KEY (`score_extracurricular`) REFERENCES `academic_extracurricular` (`extracurricular_id`) ON UPDATE CASCADE,
@@ -3900,7 +3935,7 @@ ALTER TABLE `academic_score_extracurricular`
   ADD CONSTRAINT `academic_score_extracurricular_fk4` FOREIGN KEY (`score_extracurricular_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_score_final`
+-- Ketidakleluasaan untuk tabel `academic_score_final`
 --
 ALTER TABLE `academic_score_final`
   ADD CONSTRAINT `academic_score_final_fk1` FOREIGN KEY (`score_final_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
@@ -3909,7 +3944,7 @@ ALTER TABLE `academic_score_final`
   ADD CONSTRAINT `academic_score_final_fk4` FOREIGN KEY (`score_final_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_score_mid`
+-- Ketidakleluasaan untuk tabel `academic_score_mid`
 --
 ALTER TABLE `academic_score_mid`
   ADD CONSTRAINT `academic_score_mid_fk1` FOREIGN KEY (`score_mid_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
@@ -3918,7 +3953,7 @@ ALTER TABLE `academic_score_mid`
   ADD CONSTRAINT `academic_score_mid_fk4` FOREIGN KEY (`score_mid_subject`) REFERENCES `academic_subject` (`subject_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_score_percentase`
+-- Ketidakleluasaan untuk tabel `academic_score_percentase`
 --
 ALTER TABLE `academic_score_percentase`
   ADD CONSTRAINT `academic_score_percentase_fk1` FOREIGN KEY (`score_percentase_recap`) REFERENCES `academic_recapitulation_type` (`recapitulation_type_id`) ON UPDATE CASCADE,
@@ -3929,14 +3964,14 @@ ALTER TABLE `academic_score_percentase`
   ADD CONSTRAINT `academic_score_percentase_fk6` FOREIGN KEY (`score_percentase_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_score_task`
+-- Ketidakleluasaan untuk tabel `academic_score_task`
 --
 ALTER TABLE `academic_score_task`
   ADD CONSTRAINT `academic_score_task_fk1` FOREIGN KEY (`score_task_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_score_task_fk2` FOREIGN KEY (`score_task_description`) REFERENCES `academic_task_description` (`task_description_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_student`
+-- Ketidakleluasaan untuk tabel `academic_student`
 --
 ALTER TABLE `academic_student`
   ADD CONSTRAINT `academic_student_fk1` FOREIGN KEY (`student_gender`) REFERENCES `public_gender` (`gender_id`) ON UPDATE CASCADE,
@@ -3948,14 +3983,14 @@ ALTER TABLE `academic_student`
   ADD CONSTRAINT `academic_student_fk7` FOREIGN KEY (`student_distance`) REFERENCES `public_distance` (`distance_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_student_academic_history`
+-- Ketidakleluasaan untuk tabel `academic_student_academic_history`
 --
 ALTER TABLE `academic_student_academic_history`
   ADD CONSTRAINT `academic_student_academic_history_fk1` FOREIGN KEY (`academic_history_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_student_academic_history_fk2` FOREIGN KEY (`academic_history_level`) REFERENCES `public_education` (`education_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_student_achievement`
+-- Ketidakleluasaan untuk tabel `academic_student_achievement`
 --
 ALTER TABLE `academic_student_achievement`
   ADD CONSTRAINT `academic_student_achievement_fk1` FOREIGN KEY (`student_achievement_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
@@ -3963,7 +3998,7 @@ ALTER TABLE `academic_student_achievement`
   ADD CONSTRAINT `academic_student_achievement_fk3` FOREIGN KEY (`student_achievement_contest_type`) REFERENCES `academic_achievement_contest_type` (`achievement_contest_type_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_student_parent`
+-- Ketidakleluasaan untuk tabel `academic_student_parent`
 --
 ALTER TABLE `academic_student_parent`
   ADD CONSTRAINT `academic_student_parent_fk1` FOREIGN KEY (`student_parent_of`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
@@ -3975,20 +4010,20 @@ ALTER TABLE `academic_student_parent`
   ADD CONSTRAINT `academic_student_parent_fk7` FOREIGN KEY (`student_parent_religion`) REFERENCES `public_religion` (`religion_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_student_scholarship`
+-- Ketidakleluasaan untuk tabel `academic_student_scholarship`
 --
 ALTER TABLE `academic_student_scholarship`
   ADD CONSTRAINT `academic_student_scholarship_fk1` FOREIGN KEY (`student_scholarship_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_student_scholarship_fk2` FOREIGN KEY (`student_scholarship_type`) REFERENCES `academic_student_scholarship_type` (`scholarship_type_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_subject`
+-- Ketidakleluasaan untuk tabel `academic_subject`
 --
 ALTER TABLE `academic_subject`
   ADD CONSTRAINT `academic_subject_fk1` FOREIGN KEY (`subject_category`) REFERENCES `academic_subject_category` (`subject_category_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_task_description`
+-- Ketidakleluasaan untuk tabel `academic_task_description`
 --
 ALTER TABLE `academic_task_description`
   ADD CONSTRAINT `academic_task_description_fk1` FOREIGN KEY (`task_description_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE,
@@ -3998,7 +4033,7 @@ ALTER TABLE `academic_task_description`
   ADD CONSTRAINT `academic_task_description_fk5` FOREIGN KEY (`task_description_garde`) REFERENCES `academic_grade` (`grade_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `academic_teaching`
+-- Ketidakleluasaan untuk tabel `academic_teaching`
 --
 ALTER TABLE `academic_teaching`
   ADD CONSTRAINT `academic_teaching_fk1` FOREIGN KEY (`teaching_teacher`) REFERENCES `employees` (`employees_id`) ON UPDATE CASCADE,
@@ -4008,13 +4043,13 @@ ALTER TABLE `academic_teaching`
   ADD CONSTRAINT `academic_teaching_fk5` FOREIGN KEY (`teaching_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `asset_infrastructure`
+-- Ketidakleluasaan untuk tabel `asset_infrastructure`
 --
 ALTER TABLE `asset_infrastructure`
   ADD CONSTRAINT `asset_infrastructure_fk1` FOREIGN KEY (`infrastructure_condition`) REFERENCES `asset_infrastructure_condition` (`infrastructure_condition_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `employees`
+-- Ketidakleluasaan untuk tabel `employees`
 --
 ALTER TABLE `employees`
   ADD CONSTRAINT `employees_fk1` FOREIGN KEY (`employees_desc`) REFERENCES `employees_jobdescription` (`jobdescription_id`) ON UPDATE CASCADE,
@@ -4026,52 +4061,52 @@ ALTER TABLE `employees`
   ADD CONSTRAINT `employees_fk7` FOREIGN KEY (`employees_marriage_status`) REFERENCES `employees_marriage_status` (`marriage_status_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `myschool_apps_access`
+-- Ketidakleluasaan untuk tabel `myschool_apps_access`
 --
 ALTER TABLE `myschool_apps_access`
   ADD CONSTRAINT `myschool_apps_access_fk1` FOREIGN KEY (`access_usergroup`) REFERENCES `myschool_usergroup` (`usergroup_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `myschool_apps_access_fk2` FOREIGN KEY (`access_apps`) REFERENCES `myschool_apps` (`apps_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `myschool_apps_accessdetail`
+-- Ketidakleluasaan untuk tabel `myschool_apps_accessdetail`
 --
 ALTER TABLE `myschool_apps_accessdetail`
   ADD CONSTRAINT `myschool_apps_accessdetail_fk1` FOREIGN KEY (`accessdetail_access`) REFERENCES `myschool_apps_access` (`access_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `myschool_apps_accessdetail_fk2` FOREIGN KEY (`accessdetail_modul`) REFERENCES `myschool_apps_modul` (`modul_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `myschool_apps_menu`
+-- Ketidakleluasaan untuk tabel `myschool_apps_menu`
 --
 ALTER TABLE `myschool_apps_menu`
   ADD CONSTRAINT `myschool_apps_menu_fk1` FOREIGN KEY (`menu_apps`) REFERENCES `myschool_apps` (`apps_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `myschool_apps_modul`
+-- Ketidakleluasaan untuk tabel `myschool_apps_modul`
 --
 ALTER TABLE `myschool_apps_modul`
   ADD CONSTRAINT `myschool_apps_modul_fk1` FOREIGN KEY (`modul_apps`) REFERENCES `myschool_apps` (`apps_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `myschool_user`
+-- Ketidakleluasaan untuk tabel `myschool_user`
 --
 ALTER TABLE `myschool_user`
   ADD CONSTRAINT `myschool_user_fk1` FOREIGN KEY (`user_isa`) REFERENCES `myschool_isa` (`isa_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `myschool_userprivilege`
+-- Ketidakleluasaan untuk tabel `myschool_userprivilege`
 --
 ALTER TABLE `myschool_userprivilege`
   ADD CONSTRAINT `myschool_userprivilege_fk1` FOREIGN KEY (`userprivilege_user`) REFERENCES `myschool_user` (`user_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `myschool_userprivilege_fk2` FOREIGN KEY (`userprivilege_group`) REFERENCES `myschool_usergroup` (`usergroup_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `public_city`
+-- Ketidakleluasaan untuk tabel `public_city`
 --
 ALTER TABLE `public_city`
   ADD CONSTRAINT `public_city_fk1` FOREIGN KEY (`city_province`) REFERENCES `public_province` (`province_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `public_province`
+-- Ketidakleluasaan untuk tabel `public_province`
 --
 ALTER TABLE `public_province`
   ADD CONSTRAINT `public_province_fk1` FOREIGN KEY (`province_country`) REFERENCES `public_country` (`country_id`) ON UPDATE CASCADE;
