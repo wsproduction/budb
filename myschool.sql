@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Waktu pembuatan: 06. Februari 2013 jam 20:03
--- Versi Server: 5.5.16
--- Versi PHP: 5.3.8
+-- Generation Time: Feb 07, 2013 at 10:24 AM
+-- Server version: 5.5.16
+-- PHP Version: 5.3.8
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_achievement_contest_type`
+-- Table structure for table `academic_achievement_contest_type`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_achievement_contest_type` (
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `academic_achievement_contest_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_achievement_contest_type`
+-- Dumping data for table `academic_achievement_contest_type`
 --
 
 INSERT INTO `academic_achievement_contest_type` (`achievement_contest_type_id`, `achievement_contest_type_title`, `achievement_contest_type_isother`, `achievement_contest_type_entry`, `achievement_contest_type_entry_update`) VALUES
@@ -48,7 +48,7 @@ INSERT INTO `academic_achievement_contest_type` (`achievement_contest_type_id`, 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_base_competence`
+-- Table structure for table `academic_base_competence`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_base_competence` (
@@ -71,7 +71,7 @@ CREATE TABLE IF NOT EXISTS `academic_base_competence` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_base_competence`
+-- Dumping data for table `academic_base_competence`
 --
 
 INSERT INTO `academic_base_competence` (`base_competence_id`, `base_competence_title`, `base_competence_period`, `base_competence_semester`, `base_competence_teacher`, `base_competence_subject`, `base_competence_grade`, `base_competence_mlc`, `base_competence_entry`, `base_competence_entry_update`) VALUES
@@ -83,7 +83,7 @@ INSERT INTO `academic_base_competence` (`base_competence_id`, `base_competence_t
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_classgroup`
+-- Table structure for table `academic_classgroup`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_classgroup` (
@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS `academic_classgroup` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_classgroup`
+-- Dumping data for table `academic_classgroup`
 --
 
 INSERT INTO `academic_classgroup` (`classgroup_id`, `classgroup_grade`, `classgroup_name`, `classgroup_room`, `classgroup_period`, `classgroup_semester`, `classgroup_guardian`, `classgroup_entry`, `classgroup_entry_update`) VALUES
@@ -139,7 +139,7 @@ INSERT INTO `academic_classgroup` (`classgroup_id`, `classgroup_grade`, `classgr
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_classhistory`
+-- Table structure for table `academic_classhistory`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_classhistory` (
@@ -156,7 +156,7 @@ CREATE TABLE IF NOT EXISTS `academic_classhistory` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_classhistory`
+-- Dumping data for table `academic_classhistory`
 --
 
 INSERT INTO `academic_classhistory` (`classhistory_id`, `classhistory_student`, `classhistory_classgroup`, `classhistory_status`, `classhistory_entry`, `classhistory_entry_update`) VALUES
@@ -585,7 +585,7 @@ INSERT INTO `academic_classhistory` (`classhistory_id`, `classhistory_student`, 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_classhistory_status`
+-- Table structure for table `academic_classhistory_status`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_classhistory_status` (
@@ -597,7 +597,7 @@ CREATE TABLE IF NOT EXISTS `academic_classhistory_status` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_classhistory_status`
+-- Dumping data for table `academic_classhistory_status`
 --
 
 INSERT INTO `academic_classhistory_status` (`classhistory_status_id`, `classhistory_status_title`, `classhistory_status_entry`, `classhistory_status_entry_update`) VALUES
@@ -612,7 +612,7 @@ INSERT INTO `academic_classhistory_status` (`classhistory_status_id`, `classhist
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_classroom`
+-- Table structure for table `academic_classroom`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_classroom` (
@@ -624,7 +624,7 @@ CREATE TABLE IF NOT EXISTS `academic_classroom` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_classroom`
+-- Dumping data for table `academic_classroom`
 --
 
 INSERT INTO `academic_classroom` (`classroom_id`, `classroom_name`, `classroom_entry`, `classroom_update`) VALUES
@@ -643,7 +643,7 @@ INSERT INTO `academic_classroom` (`classroom_id`, `classroom_name`, `classroom_e
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_extracurricular`
+-- Table structure for table `academic_extracurricular`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_extracurricular` (
@@ -655,7 +655,7 @@ CREATE TABLE IF NOT EXISTS `academic_extracurricular` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_extracurricular`
+-- Dumping data for table `academic_extracurricular`
 --
 
 INSERT INTO `academic_extracurricular` (`extracurricular_id`, `extracurricular_name`, `extracurricular_entry`, `extracurricular_entry_update`) VALUES
@@ -665,7 +665,7 @@ INSERT INTO `academic_extracurricular` (`extracurricular_id`, `extracurricular_n
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_extracurricular_coach_history`
+-- Table structure for table `academic_extracurricular_coach_history`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_extracurricular_coach_history` (
@@ -683,7 +683,7 @@ CREATE TABLE IF NOT EXISTS `academic_extracurricular_coach_history` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_extracurricular_coach_history`
+-- Dumping data for table `academic_extracurricular_coach_history`
 --
 
 INSERT INTO `academic_extracurricular_coach_history` (`extracurricular_coach_history_id`, `extracurricular_coach_history_name`, `extracurricular_coach_history_field`, `extracurricular_coach_history_period`, `extracurricular_coach_history_totaltime`, `extracurricular_coach_history_entry`, `extracurricular_coach_history_entry_update`) VALUES
@@ -692,7 +692,7 @@ INSERT INTO `academic_extracurricular_coach_history` (`extracurricular_coach_his
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_grade`
+-- Table structure for table `academic_grade`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_grade` (
@@ -705,7 +705,7 @@ CREATE TABLE IF NOT EXISTS `academic_grade` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_grade`
+-- Dumping data for table `academic_grade`
 --
 
 INSERT INTO `academic_grade` (`grade_id`, `grade_title`, `grade_name`, `grade_entry`, `grade_entry_update`) VALUES
@@ -716,7 +716,7 @@ INSERT INTO `academic_grade` (`grade_id`, `grade_title`, `grade_name`, `grade_en
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_mlc`
+-- Table structure for table `academic_mlc`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_mlc` (
@@ -736,7 +736,7 @@ CREATE TABLE IF NOT EXISTS `academic_mlc` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_mlc`
+-- Dumping data for table `academic_mlc`
 --
 
 INSERT INTO `academic_mlc` (`mlc_id`, `mlc_subject`, `mlc_period`, `mlc_semester`, `mlc_grade`, `mlc_value`, `mlc_entry`, `mlc_entry_update`) VALUES
@@ -776,7 +776,7 @@ INSERT INTO `academic_mlc` (`mlc_id`, `mlc_subject`, `mlc_period`, `mlc_semester
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_period`
+-- Table structure for table `academic_period`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_period` (
@@ -790,7 +790,7 @@ CREATE TABLE IF NOT EXISTS `academic_period` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_period`
+-- Dumping data for table `academic_period`
 --
 
 INSERT INTO `academic_period` (`period_id`, `period_years_start`, `period_years_end`, `period_status`, `period_entry`, `period_entry_update`) VALUES
@@ -800,7 +800,7 @@ INSERT INTO `academic_period` (`period_id`, `period_years_start`, `period_years_
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_recapitulation_type`
+-- Table structure for table `academic_recapitulation_type`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_recapitulation_type` (
@@ -813,7 +813,7 @@ CREATE TABLE IF NOT EXISTS `academic_recapitulation_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_recapitulation_type`
+-- Dumping data for table `academic_recapitulation_type`
 --
 
 INSERT INTO `academic_recapitulation_type` (`recapitulation_type_id`, `recapitulation_type_title`, `recapitulation_type_reference`, `recapitulation_type_entry`, `recapitulation_type_entry_update`) VALUES
@@ -827,7 +827,7 @@ INSERT INTO `academic_recapitulation_type` (`recapitulation_type_id`, `recapitul
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_report_publishing`
+-- Table structure for table `academic_report_publishing`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_report_publishing` (
@@ -845,7 +845,7 @@ CREATE TABLE IF NOT EXISTS `academic_report_publishing` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_report_publishing`
+-- Dumping data for table `academic_report_publishing`
 --
 
 INSERT INTO `academic_report_publishing` (`report_publishing_id`, `report_publishing_date`, `report_publishing_period`, `report_publishing_semester`, `report_publishing_type`, `report_publishing_entry`, `report_publishing_entry_update`) VALUES
@@ -855,100 +855,96 @@ INSERT INTO `academic_report_publishing` (`report_publishing_id`, `report_publis
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_score`
+-- Table structure for table `academic_score`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score` (
   `score_id` varchar(20) NOT NULL,
   `score_student` varchar(10) NOT NULL,
-  `score_subject` tinyint(4) NOT NULL,
-  `score_period` tinyint(4) NOT NULL,
-  `score_semester` tinyint(1) NOT NULL,
+  `score_teaching` varchar(12) NOT NULL,
   `score_type` tinyint(1) NOT NULL,
   `score_value` float unsigned NOT NULL,
+  `score_status` tinyint(1) NOT NULL,
   `score_entry` datetime NOT NULL,
   `score_entry_update` datetime NOT NULL,
-  `score_status` tinyint(1) NOT NULL,
   PRIMARY KEY (`score_id`),
   KEY `academic_score_fk3` (`score_student`),
   KEY `academic_score_fk5` (`score_status`),
-  KEY `academic_score_fk2` (`score_semester`),
-  KEY `academic_score_fk1` (`score_period`),
-  KEY `academic_score_fk4` (`score_subject`),
+  KEY `academic_score_fk1` (`score_teaching`),
   KEY `academic_score_fk6` (`score_type`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_score`
+-- Dumping data for table `academic_score`
 --
 
-INSERT INTO `academic_score` (`score_id`, `score_student`, `score_subject`, `score_period`, `score_semester`, `score_type`, `score_value`, `score_entry`, `score_entry_update`, `score_status`) VALUES
-('201212130001', '121307001', 10, 1, 1, 1, 80, '2013-02-07 01:00:43', '2013-02-07 01:36:34', 1),
-('201212130002', '121307030', 10, 1, 1, 1, 78, '2013-02-07 01:02:13', '2013-02-07 01:36:34', 1),
-('201302070001', '121307002', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070002', '121307003', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070003', '121307005', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070004', '121307006', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070005', '121307007', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070006', '121307008', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070007', '121307009', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070008', '121307010', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070009', '121307011', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070010', '121307012', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070011', '121307013', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070012', '121307014', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070013', '121307015', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070014', '121307016', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070015', '121307017', 10, 1, 1, 1, 78, '2013-02-07 01:31:20', '2013-02-07 01:36:34', 1),
-('201302070016', '121307018', 10, 1, 1, 1, 50, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
-('201302070017', '121307019', 10, 1, 1, 1, 50, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
-('201302070018', '121307020', 10, 1, 1, 1, 50, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
-('201302070019', '121307021', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
-('201302070020', '121307022', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
-('201302070021', '121307004', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
-('201302070022', '121307023', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
-('201302070023', '121307024', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
-('201302070024', '121307025', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
-('201302070025', '121307026', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
-('201302070026', '121307027', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
-('201302070027', '121307028', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
-('201302070028', '121307029', 10, 1, 1, 1, 78, '2013-02-07 01:31:21', '2013-02-07 01:36:34', 1),
-('201302070029', '121307001', 10, 1, 1, 2, 85, '2013-02-07 01:36:39', '2013-02-07 01:37:02', 1),
-('201302070030', '121307002', 10, 1, 1, 2, 78, '2013-02-07 01:36:39', '2013-02-07 01:37:02', 1),
-('201302070031', '121307003', 10, 1, 1, 2, 78, '2013-02-07 01:36:39', '2013-02-07 01:37:02', 1),
-('201302070032', '121307005', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070033', '121307006', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070034', '121307007', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070035', '121307008', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070036', '121307009', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070037', '121307010', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070038', '121307011', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070039', '121307012', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070040', '121307013', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070041', '121307014', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070042', '121307015', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070043', '121307016', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070044', '121307017', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070045', '121307018', 10, 1, 1, 2, 50, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070046', '121307019', 10, 1, 1, 2, 50, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070047', '121307020', 10, 1, 1, 2, 50, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070048', '121307021', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070049', '121307022', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070050', '121307004', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070051', '121307023', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070052', '121307024', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070053', '121307025', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070054', '121307026', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070055', '121307027', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070056', '121307028', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070057', '121307029', 10, 1, 1, 2, 78, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070058', '121307030', 10, 1, 1, 2, 85, '2013-02-07 01:36:40', '2013-02-07 01:37:02', 1),
-('201302070059', '111207001', 13, 1, 1, 1, 80, '2013-02-07 01:54:03', '2013-02-07 01:54:03', 1);
+INSERT INTO `academic_score` (`score_id`, `score_student`, `score_teaching`, `score_type`, `score_value`, `score_status`, `score_entry`, `score_entry_update`) VALUES
+('201212130001', '121307001', '201212050001', 1, 80, 1, '2013-02-07 01:00:43', '2013-02-07 16:11:02'),
+('201212130002', '121307030', '201212050001', 1, 80, 1, '2013-02-07 01:02:13', '2013-02-07 16:11:03'),
+('201302070001', '121307002', '201212050001', 1, 80, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:02'),
+('201302070002', '121307003', '201212050001', 1, 78, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:02'),
+('201302070003', '121307005', '201212050001', 1, 80, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:02'),
+('201302070004', '121307006', '201212050001', 1, 78, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:02'),
+('201302070005', '121307007', '201212050001', 1, 78, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:02'),
+('201302070006', '121307008', '201212050001', 1, 78, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:02'),
+('201302070007', '121307009', '201212050001', 1, 78, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:02'),
+('201302070008', '121307010', '201212050001', 1, 78, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:02'),
+('201302070009', '121307011', '201212050001', 1, 78, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:03'),
+('201302070010', '121307012', '201212050001', 1, 78, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:03'),
+('201302070011', '121307013', '201212050001', 1, 78, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:03'),
+('201302070012', '121307014', '201212050001', 1, 78, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:03'),
+('201302070013', '121307015', '201212050001', 1, 78, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:03'),
+('201302070014', '121307016', '201212050001', 1, 78, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:03'),
+('201302070015', '121307017', '201212050001', 1, 78, 1, '2013-02-07 01:31:20', '2013-02-07 16:11:03'),
+('201302070016', '121307018', '201212050001', 1, 50, 1, '2013-02-07 01:31:21', '2013-02-07 16:11:03'),
+('201302070017', '121307019', '201212050001', 1, 50, 1, '2013-02-07 01:31:21', '2013-02-07 16:11:03'),
+('201302070018', '121307020', '201212050001', 1, 50, 1, '2013-02-07 01:31:21', '2013-02-07 16:11:03'),
+('201302070019', '121307021', '201212050001', 1, 78, 1, '2013-02-07 01:31:21', '2013-02-07 16:11:03'),
+('201302070020', '121307022', '201212050001', 1, 78, 1, '2013-02-07 01:31:21', '2013-02-07 16:11:03'),
+('201302070021', '121307004', '201212050001', 1, 78, 1, '2013-02-07 01:31:21', '2013-02-07 16:11:03'),
+('201302070022', '121307023', '201212050001', 1, 78, 1, '2013-02-07 01:31:21', '2013-02-07 16:11:03'),
+('201302070023', '121307024', '201212050001', 1, 78, 1, '2013-02-07 01:31:21', '2013-02-07 16:11:03'),
+('201302070024', '121307025', '201212050001', 1, 78, 1, '2013-02-07 01:31:21', '2013-02-07 16:11:03'),
+('201302070025', '121307026', '201212050001', 1, 78, 1, '2013-02-07 01:31:21', '2013-02-07 16:11:03'),
+('201302070026', '121307027', '201212050001', 1, 78, 1, '2013-02-07 01:31:21', '2013-02-07 16:11:03'),
+('201302070027', '121307028', '201212050001', 1, 78, 1, '2013-02-07 01:31:21', '2013-02-07 16:11:03'),
+('201302070028', '121307029', '201212050001', 1, 78, 1, '2013-02-07 01:31:21', '2013-02-07 16:11:03'),
+('201302070029', '121307001', '201212050001', 2, 80, 1, '2013-02-07 01:36:39', '2013-02-07 16:19:18'),
+('201302070030', '121307002', '201212050001', 2, 78, 1, '2013-02-07 01:36:39', '2013-02-07 16:19:18'),
+('201302070031', '121307003', '201212050001', 2, 78, 1, '2013-02-07 01:36:39', '2013-02-07 16:19:18'),
+('201302070032', '121307005', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070033', '121307006', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070034', '121307007', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070035', '121307008', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070036', '121307009', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070037', '121307010', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070038', '121307011', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070039', '121307012', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070040', '121307013', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070041', '121307014', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070042', '121307015', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070043', '121307016', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070044', '121307017', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070045', '121307018', '201212050001', 2, 50, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070046', '121307019', '201212050001', 2, 50, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070047', '121307020', '201212050001', 2, 50, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070048', '121307021', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070049', '121307022', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070050', '121307004', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070051', '121307023', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070052', '121307024', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070053', '121307025', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070054', '121307026', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070055', '121307027', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070056', '121307028', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070057', '121307029', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070058', '121307030', '201212050001', 2, 90, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
+('201302070059', '111207001', '201212050001', 1, 80, 1, '2013-02-07 01:54:03', '2013-02-07 01:54:03');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_score_attitude`
+-- Table structure for table `academic_score_attitude`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_attitude` (
@@ -968,7 +964,7 @@ CREATE TABLE IF NOT EXISTS `academic_score_attitude` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_score_attitude`
+-- Dumping data for table `academic_score_attitude`
 --
 
 INSERT INTO `academic_score_attitude` (`score_attitude_id`, `score_attitude_value`, `score_attitude_student`, `score_attitude_period`, `score_attitude_semester`, `score_attitude_subject`, `score_attitude_entry`, `score_attitude_entry_update`) VALUES
@@ -1006,7 +1002,7 @@ INSERT INTO `academic_score_attitude` (`score_attitude_id`, `score_attitude_valu
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_score_daily`
+-- Table structure for table `academic_score_daily`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_daily` (
@@ -1028,7 +1024,7 @@ CREATE TABLE IF NOT EXISTS `academic_score_daily` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_score_daily`
+-- Dumping data for table `academic_score_daily`
 --
 
 INSERT INTO `academic_score_daily` (`score_daily_id`, `score_daily_student`, `score_daily_period`, `score_daily_semester`, `score_daily_value`, `score_daily_competence`, `score_daily_type`, `score_daily_entry`, `score_daily_entry_update`) VALUES
@@ -1066,7 +1062,7 @@ INSERT INTO `academic_score_daily` (`score_daily_id`, `score_daily_student`, `sc
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_score_extracurricular`
+-- Table structure for table `academic_score_extracurricular`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_extracurricular` (
@@ -1086,7 +1082,7 @@ CREATE TABLE IF NOT EXISTS `academic_score_extracurricular` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_score_extracurricular`
+-- Dumping data for table `academic_score_extracurricular`
 --
 
 INSERT INTO `academic_score_extracurricular` (`score_extracurricular_id`, `score_extracurricular_student`, `score_extracurricular_value`, `score_extracurricular`, `score_extracurricular_period`, `score_extracurricular_semester`, `score_extracurricular_entry`, `score_extracurricular_entry_update`) VALUES
@@ -1095,7 +1091,7 @@ INSERT INTO `academic_score_extracurricular` (`score_extracurricular_id`, `score
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_score_final`
+-- Table structure for table `academic_score_final`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_final` (
@@ -1117,7 +1113,7 @@ CREATE TABLE IF NOT EXISTS `academic_score_final` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_score_mid`
+-- Table structure for table `academic_score_mid`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_mid` (
@@ -1139,7 +1135,7 @@ CREATE TABLE IF NOT EXISTS `academic_score_mid` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_score_percentase`
+-- Table structure for table `academic_score_percentase`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_percentase` (
@@ -1163,7 +1159,7 @@ CREATE TABLE IF NOT EXISTS `academic_score_percentase` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_score_percentase`
+-- Dumping data for table `academic_score_percentase`
 --
 
 INSERT INTO `academic_score_percentase` (`score_percentase_id`, `score_percentase_recap`, `score_percentase_teacher`, `score_percentase_subject`, `score_percentase_grade`, `score_percentase_period`, `score_percentase_semester`, `score_percentase_value`, `score_percentase_entry`, `score_percentase_entry_update`) VALUES
@@ -1177,7 +1173,7 @@ INSERT INTO `academic_score_percentase` (`score_percentase_id`, `score_percentas
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_score_status`
+-- Table structure for table `academic_score_status`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_status` (
@@ -1187,7 +1183,7 @@ CREATE TABLE IF NOT EXISTS `academic_score_status` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_score_status`
+-- Dumping data for table `academic_score_status`
 --
 
 INSERT INTO `academic_score_status` (`score_status_id`, `score_status_title`) VALUES
@@ -1196,7 +1192,7 @@ INSERT INTO `academic_score_status` (`score_status_id`, `score_status_title`) VA
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_score_task`
+-- Table structure for table `academic_score_task`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_task` (
@@ -1212,7 +1208,7 @@ CREATE TABLE IF NOT EXISTS `academic_score_task` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_score_task`
+-- Dumping data for table `academic_score_task`
 --
 
 INSERT INTO `academic_score_task` (`score_task_id`, `score_task_value`, `score_task_student`, `score_task_description`, `score_task_entry`, `score_task_entry_update`) VALUES
@@ -1250,7 +1246,7 @@ INSERT INTO `academic_score_task` (`score_task_id`, `score_task_value`, `score_t
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_score_type`
+-- Table structure for table `academic_score_type`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_score_type` (
@@ -1260,7 +1256,7 @@ CREATE TABLE IF NOT EXISTS `academic_score_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_score_type`
+-- Dumping data for table `academic_score_type`
 --
 
 INSERT INTO `academic_score_type` (`score_type_id`, `score_type_description`) VALUES
@@ -1270,7 +1266,7 @@ INSERT INTO `academic_score_type` (`score_type_id`, `score_type_description`) VA
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_semester`
+-- Table structure for table `academic_semester`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_semester` (
@@ -1280,7 +1276,7 @@ CREATE TABLE IF NOT EXISTS `academic_semester` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_semester`
+-- Dumping data for table `academic_semester`
 --
 
 INSERT INTO `academic_semester` (`semester_id`, `semester_name`) VALUES
@@ -1290,7 +1286,7 @@ INSERT INTO `academic_semester` (`semester_id`, `semester_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_student`
+-- Table structure for table `academic_student`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student` (
@@ -1336,7 +1332,7 @@ CREATE TABLE IF NOT EXISTS `academic_student` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_student`
+-- Dumping data for table `academic_student`
 --
 
 INSERT INTO `academic_student` (`student_nis`, `student_name`, `student_gender`, `student_nisn`, `student_nik`, `student_birthplace`, `student_birthdate`, `student_religion`, `student_religionother`, `student_residance`, `student_residanceother`, `student_address`, `student_rt`, `student_rw`, `student_village`, `student_subdisctrict`, `student_city`, `student_zipcode`, `student_distance`, `student_distanceother`, `student_transportation`, `student_phonenumber1`, `student_phonenumber2`, `student_email`, `student_height`, `student_weight`, `student_specialneeds`, `student_pin`, `student_entry`, `student_entry_update`, `student_status`) VALUES
@@ -1953,7 +1949,7 @@ INSERT INTO `academic_student` (`student_nis`, `student_name`, `student_gender`,
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_student_academic_history`
+-- Table structure for table `academic_student_academic_history`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_academic_history` (
@@ -1972,7 +1968,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_academic_history` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_student_achievement`
+-- Table structure for table `academic_student_achievement`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_achievement` (
@@ -1994,7 +1990,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_achievement` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_student_achievement_level`
+-- Table structure for table `academic_student_achievement_level`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_achievement_level` (
@@ -2006,7 +2002,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_achievement_level` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_student_achievement_level`
+-- Dumping data for table `academic_student_achievement_level`
 --
 
 INSERT INTO `academic_student_achievement_level` (`achievement_level_id`, `achievement_level_title`, `achievement_level_entry`, `achievement_level_entry_update`) VALUES
@@ -2020,7 +2016,7 @@ INSERT INTO `academic_student_achievement_level` (`achievement_level_id`, `achie
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_student_parent`
+-- Table structure for table `academic_student_parent`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_parent` (
@@ -2056,7 +2052,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_parent` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_student_parent_icome`
+-- Table structure for table `academic_student_parent_icome`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_parent_icome` (
@@ -2068,7 +2064,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_parent_icome` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_student_parent_icome`
+-- Dumping data for table `academic_student_parent_icome`
 --
 
 INSERT INTO `academic_student_parent_icome` (`student_parent_icome_id`, `student_parent_icome_description`, `student_parent_icome_entry`, `student_parent_icome_entry_update`) VALUES
@@ -2079,7 +2075,7 @@ INSERT INTO `academic_student_parent_icome` (`student_parent_icome_id`, `student
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_student_parent_identity`
+-- Table structure for table `academic_student_parent_identity`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_parent_identity` (
@@ -2091,7 +2087,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_parent_identity` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_student_parent_identity`
+-- Dumping data for table `academic_student_parent_identity`
 --
 
 INSERT INTO `academic_student_parent_identity` (`student_parent_identity_id`, `student_parent_identity_title`, `student_parent_identity_entry`, `student_parent_identity_entry_update`) VALUES
@@ -2102,7 +2098,7 @@ INSERT INTO `academic_student_parent_identity` (`student_parent_identity_id`, `s
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_student_residance`
+-- Table structure for table `academic_student_residance`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_residance` (
@@ -2115,7 +2111,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_residance` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_student_residance`
+-- Dumping data for table `academic_student_residance`
 --
 
 INSERT INTO `academic_student_residance` (`student_residance_id`, `student_residance_name`, `student_resident_isother`, `student_residance_entry`, `student_residance_entry_update`) VALUES
@@ -2129,7 +2125,7 @@ INSERT INTO `academic_student_residance` (`student_residance_id`, `student_resid
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_student_scholarship`
+-- Table structure for table `academic_student_scholarship`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_scholarship` (
@@ -2149,7 +2145,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_scholarship` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_student_scholarship_type`
+-- Table structure for table `academic_student_scholarship_type`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_scholarship_type` (
@@ -2162,7 +2158,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_scholarship_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_student_scholarship_type`
+-- Dumping data for table `academic_student_scholarship_type`
 --
 
 INSERT INTO `academic_student_scholarship_type` (`scholarship_type_id`, `scholarship_type_title`, `scholarship_isother`, `scholarship_type_entry`, `scholarship_type_entry_update`) VALUES
@@ -2175,7 +2171,7 @@ INSERT INTO `academic_student_scholarship_type` (`scholarship_type_id`, `scholar
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_student_special_needs`
+-- Table structure for table `academic_student_special_needs`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_student_special_needs` (
@@ -2188,7 +2184,7 @@ CREATE TABLE IF NOT EXISTS `academic_student_special_needs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_student_special_needs`
+-- Dumping data for table `academic_student_special_needs`
 --
 
 INSERT INTO `academic_student_special_needs` (`student_special_needs_id`, `student_special_needs_name`, `student_special_needs_isother`, `student_special_needs_entry`, `student_special_needs_entry_update`) VALUES
@@ -2218,7 +2214,7 @@ INSERT INTO `academic_student_special_needs` (`student_special_needs_id`, `stude
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_subject`
+-- Table structure for table `academic_subject`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_subject` (
@@ -2233,7 +2229,7 @@ CREATE TABLE IF NOT EXISTS `academic_subject` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_subject`
+-- Dumping data for table `academic_subject`
 --
 
 INSERT INTO `academic_subject` (`subject_id`, `subject_name`, `subject_category`, `subject_order`, `subject_entry`, `subject_entry_update`) VALUES
@@ -2254,7 +2250,7 @@ INSERT INTO `academic_subject` (`subject_id`, `subject_name`, `subject_category`
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_subject_category`
+-- Table structure for table `academic_subject_category`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_subject_category` (
@@ -2266,7 +2262,7 @@ CREATE TABLE IF NOT EXISTS `academic_subject_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_subject_category`
+-- Dumping data for table `academic_subject_category`
 --
 
 INSERT INTO `academic_subject_category` (`subject_category_id`, `subject_category_title`, `subject_category_entry`, `subject_category_entry_update`) VALUES
@@ -2277,7 +2273,7 @@ INSERT INTO `academic_subject_category` (`subject_category_id`, `subject_categor
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_task_description`
+-- Table structure for table `academic_task_description`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_task_description` (
@@ -2301,7 +2297,7 @@ CREATE TABLE IF NOT EXISTS `academic_task_description` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_task_description`
+-- Dumping data for table `academic_task_description`
 --
 
 INSERT INTO `academic_task_description` (`task_description_id`, `task_description_subject`, `task_description_teacher`, `task_description_period`, `task_description_semester`, `task_description_garde`, `task_description_title`, `task_description`, `task_description_mlc`, `task_description_entry`, `task_description_entry_update`) VALUES
@@ -2311,7 +2307,7 @@ INSERT INTO `academic_task_description` (`task_description_id`, `task_descriptio
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_teaching`
+-- Table structure for table `academic_teaching`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_teaching` (
@@ -2333,7 +2329,7 @@ CREATE TABLE IF NOT EXISTS `academic_teaching` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_teaching`
+-- Dumping data for table `academic_teaching`
 --
 
 INSERT INTO `academic_teaching` (`teaching_id`, `teaching_teacher`, `teaching_classgroup`, `teaching_subject`, `teaching_total_time`, `teaching_period`, `teaching_semester`, `teaching_entry`, `teaching_entry_update`) VALUES
@@ -2687,7 +2683,7 @@ INSERT INTO `academic_teaching` (`teaching_id`, `teaching_teacher`, `teaching_cl
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `asset_infrastructure`
+-- Table structure for table `asset_infrastructure`
 --
 
 CREATE TABLE IF NOT EXISTS `asset_infrastructure` (
@@ -2703,7 +2699,7 @@ CREATE TABLE IF NOT EXISTS `asset_infrastructure` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `asset_infrastructure`
+-- Dumping data for table `asset_infrastructure`
 --
 
 INSERT INTO `asset_infrastructure` (`infrastructure_id`, `infrastructure_name`, `infrastructure_wide`, `infrastructure_description`, `infrastructure_condition`, `infrastructure_entry`, `infrastructure_entry_update`) VALUES
@@ -2712,7 +2708,7 @@ INSERT INTO `asset_infrastructure` (`infrastructure_id`, `infrastructure_name`, 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `asset_infrastructure_condition`
+-- Table structure for table `asset_infrastructure_condition`
 --
 
 CREATE TABLE IF NOT EXISTS `asset_infrastructure_condition` (
@@ -2724,7 +2720,7 @@ CREATE TABLE IF NOT EXISTS `asset_infrastructure_condition` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `asset_infrastructure_condition`
+-- Dumping data for table `asset_infrastructure_condition`
 --
 
 INSERT INTO `asset_infrastructure_condition` (`infrastructure_condition_id`, `infrastructure_condition_title`, `infrastructure_condition_entry`, `infrastructure_condition_update`) VALUES
@@ -2735,7 +2731,7 @@ INSERT INTO `asset_infrastructure_condition` (`infrastructure_condition_id`, `in
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `employees`
+-- Table structure for table `employees`
 --
 
 CREATE TABLE IF NOT EXISTS `employees` (
@@ -2781,7 +2777,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `employees`
+-- Dumping data for table `employees`
 --
 
 INSERT INTO `employees` (`employees_id`, `employees_nik`, `employees_nip`, `employees_nuptk`, `employess_name`, `employees_gender`, `employees_birthplace`, `employees_birthdate`, `employees_religion`, `employees_religionother`, `employees_address`, `employees_rt`, `employees_rw`, `employees_village`, `employees_subdisctrict`, `employees_city`, `employees_zipcode`, `employees_transportation`, `employees_distance`, `employees_distanceother`, `employees_phone1`, `employees_phone2`, `employees_email`, `employees_photo`, `employees_desc`, `employees_marriage_status`, `employees_total_children`, `employees_mother_name`, `employees_status`, `employees_entry`, `employees_entry_update`) VALUES
@@ -2851,7 +2847,7 @@ INSERT INTO `employees` (`employees_id`, `employees_nik`, `employees_nip`, `empl
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `employees_jobdescription`
+-- Table structure for table `employees_jobdescription`
 --
 
 CREATE TABLE IF NOT EXISTS `employees_jobdescription` (
@@ -2864,7 +2860,7 @@ CREATE TABLE IF NOT EXISTS `employees_jobdescription` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `employees_jobdescription`
+-- Dumping data for table `employees_jobdescription`
 --
 
 INSERT INTO `employees_jobdescription` (`jobdescription_id`, `jobdescription_title`, `jobdescription_status`, `jobdescription_entry`, `jobdescription_entry_update`) VALUES
@@ -2881,7 +2877,7 @@ INSERT INTO `employees_jobdescription` (`jobdescription_id`, `jobdescription_tit
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `employees_marriage_status`
+-- Table structure for table `employees_marriage_status`
 --
 
 CREATE TABLE IF NOT EXISTS `employees_marriage_status` (
@@ -2893,7 +2889,7 @@ CREATE TABLE IF NOT EXISTS `employees_marriage_status` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `employees_marriage_status`
+-- Dumping data for table `employees_marriage_status`
 --
 
 INSERT INTO `employees_marriage_status` (`marriage_status_id`, `marriage_status_title`, `marriage_status_entry`, `marriage_status_entry_update`) VALUES
@@ -2904,7 +2900,7 @@ INSERT INTO `employees_marriage_status` (`marriage_status_id`, `marriage_status_
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `employees_status`
+-- Table structure for table `employees_status`
 --
 
 CREATE TABLE IF NOT EXISTS `employees_status` (
@@ -2916,7 +2912,7 @@ CREATE TABLE IF NOT EXISTS `employees_status` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `employees_status`
+-- Dumping data for table `employees_status`
 --
 
 INSERT INTO `employees_status` (`employees_status_id`, `employees_status_title`, `employees_status_entry`, `employees_status_entry_update`) VALUES
@@ -2932,7 +2928,7 @@ INSERT INTO `employees_status` (`employees_status_id`, `employees_status_title`,
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `myschool_apps`
+-- Table structure for table `myschool_apps`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_apps` (
@@ -2948,7 +2944,7 @@ CREATE TABLE IF NOT EXISTS `myschool_apps` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `myschool_apps`
+-- Dumping data for table `myschool_apps`
 --
 
 INSERT INTO `myschool_apps` (`apps_id`, `apps_alias`, `apps_name`, `apps_short_description`, `apps_baner`, `apps_status`, `apps_entry`, `apps_entry_update`) VALUES
@@ -2958,7 +2954,7 @@ INSERT INTO `myschool_apps` (`apps_id`, `apps_alias`, `apps_name`, `apps_short_d
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `myschool_apps_access`
+-- Table structure for table `myschool_apps_access`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_apps_access` (
@@ -2976,7 +2972,7 @@ CREATE TABLE IF NOT EXISTS `myschool_apps_access` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `myschool_apps_accessdetail`
+-- Table structure for table `myschool_apps_accessdetail`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_apps_accessdetail` (
@@ -2997,7 +2993,7 @@ CREATE TABLE IF NOT EXISTS `myschool_apps_accessdetail` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `myschool_apps_menu`
+-- Table structure for table `myschool_apps_menu`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_apps_menu` (
@@ -3016,7 +3012,7 @@ CREATE TABLE IF NOT EXISTS `myschool_apps_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `myschool_apps_menu`
+-- Dumping data for table `myschool_apps_menu`
 --
 
 INSERT INTO `myschool_apps_menu` (`menu_id`, `menu_apps`, `menu_title`, `menu_link`, `menu_level`, `menu_parent`, `menu_icons`, `menu_status`, `menu_entry`, `menu_entry_update`) VALUES
@@ -3027,7 +3023,7 @@ INSERT INTO `myschool_apps_menu` (`menu_id`, `menu_apps`, `menu_title`, `menu_li
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `myschool_apps_modul`
+-- Table structure for table `myschool_apps_modul`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_apps_modul` (
@@ -3044,7 +3040,7 @@ CREATE TABLE IF NOT EXISTS `myschool_apps_modul` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `myschool_apps_modul`
+-- Dumping data for table `myschool_apps_modul`
 --
 
 INSERT INTO `myschool_apps_modul` (`modul_id`, `modul_apps`, `modul_name`, `modul_description`, `modul_parent`, `modul_status`, `modul_entry`, `modul_update`) VALUES
@@ -3053,7 +3049,7 @@ INSERT INTO `myschool_apps_modul` (`modul_id`, `modul_apps`, `modul_name`, `modu
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `myschool_isa`
+-- Table structure for table `myschool_isa`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_isa` (
@@ -3066,7 +3062,7 @@ CREATE TABLE IF NOT EXISTS `myschool_isa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `myschool_isa`
+-- Dumping data for table `myschool_isa`
 --
 
 INSERT INTO `myschool_isa` (`isa_id`, `isa_title`, `isa_dbroot`, `isa_entry`, `isa_update`) VALUES
@@ -3076,7 +3072,7 @@ INSERT INTO `myschool_isa` (`isa_id`, `isa_title`, `isa_dbroot`, `isa_entry`, `i
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `myschool_user`
+-- Table structure for table `myschool_user`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_user` (
@@ -3095,7 +3091,7 @@ CREATE TABLE IF NOT EXISTS `myschool_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `myschool_user`
+-- Dumping data for table `myschool_user`
 --
 
 INSERT INTO `myschool_user` (`user_id`, `user_references`, `user_name`, `user_password`, `user_about`, `user_photo_profile`, `user_isa`, `user_entry`, `user_update`, `user_status`) VALUES
@@ -3149,7 +3145,7 @@ INSERT INTO `myschool_user` (`user_id`, `user_references`, `user_name`, `user_pa
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `myschool_usergroup`
+-- Table structure for table `myschool_usergroup`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_usergroup` (
@@ -3164,7 +3160,7 @@ CREATE TABLE IF NOT EXISTS `myschool_usergroup` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `myschool_userprivilege`
+-- Table structure for table `myschool_userprivilege`
 --
 
 CREATE TABLE IF NOT EXISTS `myschool_userprivilege` (
@@ -3180,7 +3176,7 @@ CREATE TABLE IF NOT EXISTS `myschool_userprivilege` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `public_city`
+-- Table structure for table `public_city`
 --
 
 CREATE TABLE IF NOT EXISTS `public_city` (
@@ -3195,7 +3191,7 @@ CREATE TABLE IF NOT EXISTS `public_city` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `public_city`
+-- Dumping data for table `public_city`
 --
 
 INSERT INTO `public_city` (`city_id`, `city_name`, `city_province`, `city_status`, `city_entry`, `city_entry_update`) VALUES
@@ -3600,7 +3596,7 @@ INSERT INTO `public_city` (`city_id`, `city_name`, `city_province`, `city_status
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `public_country`
+-- Table structure for table `public_country`
 --
 
 CREATE TABLE IF NOT EXISTS `public_country` (
@@ -3612,7 +3608,7 @@ CREATE TABLE IF NOT EXISTS `public_country` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `public_country`
+-- Dumping data for table `public_country`
 --
 
 INSERT INTO `public_country` (`country_id`, `country_name`, `country_entry`, `country_entry_update`) VALUES
@@ -3621,7 +3617,7 @@ INSERT INTO `public_country` (`country_id`, `country_name`, `country_entry`, `co
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `public_distance`
+-- Table structure for table `public_distance`
 --
 
 CREATE TABLE IF NOT EXISTS `public_distance` (
@@ -3634,7 +3630,7 @@ CREATE TABLE IF NOT EXISTS `public_distance` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `public_distance`
+-- Dumping data for table `public_distance`
 --
 
 INSERT INTO `public_distance` (`distance_id`, `distance_title`, `distance_isother`, `distance_entry`, `distance_entry_update`) VALUES
@@ -3644,7 +3640,7 @@ INSERT INTO `public_distance` (`distance_id`, `distance_title`, `distance_isothe
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `public_education`
+-- Table structure for table `public_education`
 --
 
 CREATE TABLE IF NOT EXISTS `public_education` (
@@ -3656,7 +3652,7 @@ CREATE TABLE IF NOT EXISTS `public_education` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `public_education`
+-- Dumping data for table `public_education`
 --
 
 INSERT INTO `public_education` (`education_id`, `educaition_title`, `education_entry`, `education_entry_update`) VALUES
@@ -3674,7 +3670,7 @@ INSERT INTO `public_education` (`education_id`, `educaition_title`, `education_e
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `public_gender`
+-- Table structure for table `public_gender`
 --
 
 CREATE TABLE IF NOT EXISTS `public_gender` (
@@ -3684,7 +3680,7 @@ CREATE TABLE IF NOT EXISTS `public_gender` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `public_gender`
+-- Dumping data for table `public_gender`
 --
 
 INSERT INTO `public_gender` (`gender_id`, `gender_title`) VALUES
@@ -3694,7 +3690,7 @@ INSERT INTO `public_gender` (`gender_id`, `gender_title`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `public_job`
+-- Table structure for table `public_job`
 --
 
 CREATE TABLE IF NOT EXISTS `public_job` (
@@ -3707,7 +3703,7 @@ CREATE TABLE IF NOT EXISTS `public_job` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `public_job`
+-- Dumping data for table `public_job`
 --
 
 INSERT INTO `public_job` (`job_id`, `job_name`, `job_isother`, `job_entry`, `job_entry_update`) VALUES
@@ -3728,7 +3724,7 @@ INSERT INTO `public_job` (`job_id`, `job_name`, `job_isother`, `job_entry`, `job
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `public_province`
+-- Table structure for table `public_province`
 --
 
 CREATE TABLE IF NOT EXISTS `public_province` (
@@ -3743,7 +3739,7 @@ CREATE TABLE IF NOT EXISTS `public_province` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `public_province`
+-- Dumping data for table `public_province`
 --
 
 INSERT INTO `public_province` (`province_id`, `province_name`, `province_country`, `province_status`, `province_entry`, `province_entry_update`) VALUES
@@ -3784,7 +3780,7 @@ INSERT INTO `public_province` (`province_id`, `province_name`, `province_country
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `public_religion`
+-- Table structure for table `public_religion`
 --
 
 CREATE TABLE IF NOT EXISTS `public_religion` (
@@ -3797,7 +3793,7 @@ CREATE TABLE IF NOT EXISTS `public_religion` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `public_religion`
+-- Dumping data for table `public_religion`
 --
 
 INSERT INTO `public_religion` (`religion_id`, `religion_name`, `religion_isother`, `religion_entry`, `religion_entry_update`) VALUES
@@ -3812,7 +3808,7 @@ INSERT INTO `public_religion` (`religion_id`, `religion_name`, `religion_isother
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `public_transportation`
+-- Table structure for table `public_transportation`
 --
 
 CREATE TABLE IF NOT EXISTS `public_transportation` (
@@ -3825,7 +3821,7 @@ CREATE TABLE IF NOT EXISTS `public_transportation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `public_transportation`
+-- Dumping data for table `public_transportation`
 --
 
 INSERT INTO `public_transportation` (`transportation_id`, `transportation_name`, `transportation_isother`, `transportation_entry`, `transportation_update`) VALUES
@@ -3839,11 +3835,11 @@ INSERT INTO `public_transportation` (`transportation_id`, `transportation_name`,
 (7, 'Perahu Penyebrangan/Rakit/Getek', 0, '2012-11-10 09:22:19', '2012-11-10 09:22:21');
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `academic_base_competence`
+-- Constraints for table `academic_base_competence`
 --
 ALTER TABLE `academic_base_competence`
   ADD CONSTRAINT `academic_base_competence_fk1` FOREIGN KEY (`base_competence_teacher`) REFERENCES `employees` (`employees_id`) ON UPDATE CASCADE,
@@ -3853,7 +3849,7 @@ ALTER TABLE `academic_base_competence`
   ADD CONSTRAINT `academic_base_competence_fk5` FOREIGN KEY (`base_competence_grade`) REFERENCES `academic_grade` (`grade_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_classgroup`
+-- Constraints for table `academic_classgroup`
 --
 ALTER TABLE `academic_classgroup`
   ADD CONSTRAINT `academic_classgroup_fk1` FOREIGN KEY (`classgroup_grade`) REFERENCES `academic_grade` (`grade_id`) ON UPDATE CASCADE,
@@ -3864,7 +3860,7 @@ ALTER TABLE `academic_classgroup`
   ADD CONSTRAINT `academic_classgroup_fk6` FOREIGN KEY (`classgroup_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_classhistory`
+-- Constraints for table `academic_classhistory`
 --
 ALTER TABLE `academic_classhistory`
   ADD CONSTRAINT `academic_classhistory_fk1` FOREIGN KEY (`classhistory_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
@@ -3872,7 +3868,7 @@ ALTER TABLE `academic_classhistory`
   ADD CONSTRAINT `academic_classhistory_fk3` FOREIGN KEY (`classhistory_status`) REFERENCES `academic_classhistory_status` (`classhistory_status_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_extracurricular_coach_history`
+-- Constraints for table `academic_extracurricular_coach_history`
 --
 ALTER TABLE `academic_extracurricular_coach_history`
   ADD CONSTRAINT `academic_extracurricular_coach_history_fk1` FOREIGN KEY (`extracurricular_coach_history_name`) REFERENCES `employees` (`employees_id`) ON UPDATE CASCADE,
@@ -3880,7 +3876,7 @@ ALTER TABLE `academic_extracurricular_coach_history`
   ADD CONSTRAINT `academic_extracurricular_coach_history_fk3` FOREIGN KEY (`extracurricular_coach_history_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_mlc`
+-- Constraints for table `academic_mlc`
 --
 ALTER TABLE `academic_mlc`
   ADD CONSTRAINT `academic_mlc_fk1` FOREIGN KEY (`mlc_subject`) REFERENCES `academic_subject` (`subject_id`) ON UPDATE CASCADE,
@@ -3889,7 +3885,7 @@ ALTER TABLE `academic_mlc`
   ADD CONSTRAINT `academic_mlc_fk4` FOREIGN KEY (`mlc_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_report_publishing`
+-- Constraints for table `academic_report_publishing`
 --
 ALTER TABLE `academic_report_publishing`
   ADD CONSTRAINT `academic_report_publishing_fk1` FOREIGN KEY (`report_publishing_type`) REFERENCES `academic_score_type` (`score_type_id`) ON UPDATE CASCADE,
@@ -3897,18 +3893,16 @@ ALTER TABLE `academic_report_publishing`
   ADD CONSTRAINT `academic_report_publishing_fk3` FOREIGN KEY (`report_publishing_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_score`
+-- Constraints for table `academic_score`
 --
 ALTER TABLE `academic_score`
-  ADD CONSTRAINT `academic_score_fk1` FOREIGN KEY (`score_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `academic_score_fk2` FOREIGN KEY (`score_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_score_fk6` FOREIGN KEY (`score_type`) REFERENCES `academic_score_type` (`score_type_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_score_fk1` FOREIGN KEY (`score_teaching`) REFERENCES `academic_teaching` (`teaching_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_score_fk3` FOREIGN KEY (`score_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `academic_score_fk4` FOREIGN KEY (`score_subject`) REFERENCES `academic_subject` (`subject_id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `academic_score_fk5` FOREIGN KEY (`score_status`) REFERENCES `academic_score_status` (`score_status_id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `academic_score_fk6` FOREIGN KEY (`score_type`) REFERENCES `academic_score_type` (`score_type_id`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `academic_score_fk5` FOREIGN KEY (`score_status`) REFERENCES `academic_score_status` (`score_status_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_score_attitude`
+-- Constraints for table `academic_score_attitude`
 --
 ALTER TABLE `academic_score_attitude`
   ADD CONSTRAINT `academic_score_attitude_fk1` FOREIGN KEY (`score_attitude_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
@@ -3917,7 +3911,7 @@ ALTER TABLE `academic_score_attitude`
   ADD CONSTRAINT `academic_score_attitude_fk4` FOREIGN KEY (`score_attitude_subject`) REFERENCES `academic_subject` (`subject_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_score_daily`
+-- Constraints for table `academic_score_daily`
 --
 ALTER TABLE `academic_score_daily`
   ADD CONSTRAINT `academic_score_daily_fk2` FOREIGN KEY (`score_daily_competence`) REFERENCES `academic_base_competence` (`base_competence_id`) ON UPDATE CASCADE,
@@ -3926,7 +3920,7 @@ ALTER TABLE `academic_score_daily`
   ADD CONSTRAINT `academic_score_daily_fk6` FOREIGN KEY (`score_daily_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_score_extracurricular`
+-- Constraints for table `academic_score_extracurricular`
 --
 ALTER TABLE `academic_score_extracurricular`
   ADD CONSTRAINT `academic_score_extracurricular_fk1` FOREIGN KEY (`score_extracurricular`) REFERENCES `academic_extracurricular` (`extracurricular_id`) ON UPDATE CASCADE,
@@ -3935,7 +3929,7 @@ ALTER TABLE `academic_score_extracurricular`
   ADD CONSTRAINT `academic_score_extracurricular_fk4` FOREIGN KEY (`score_extracurricular_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_score_final`
+-- Constraints for table `academic_score_final`
 --
 ALTER TABLE `academic_score_final`
   ADD CONSTRAINT `academic_score_final_fk1` FOREIGN KEY (`score_final_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
@@ -3944,7 +3938,7 @@ ALTER TABLE `academic_score_final`
   ADD CONSTRAINT `academic_score_final_fk4` FOREIGN KEY (`score_final_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_score_mid`
+-- Constraints for table `academic_score_mid`
 --
 ALTER TABLE `academic_score_mid`
   ADD CONSTRAINT `academic_score_mid_fk1` FOREIGN KEY (`score_mid_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
@@ -3953,7 +3947,7 @@ ALTER TABLE `academic_score_mid`
   ADD CONSTRAINT `academic_score_mid_fk4` FOREIGN KEY (`score_mid_subject`) REFERENCES `academic_subject` (`subject_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_score_percentase`
+-- Constraints for table `academic_score_percentase`
 --
 ALTER TABLE `academic_score_percentase`
   ADD CONSTRAINT `academic_score_percentase_fk1` FOREIGN KEY (`score_percentase_recap`) REFERENCES `academic_recapitulation_type` (`recapitulation_type_id`) ON UPDATE CASCADE,
@@ -3964,14 +3958,14 @@ ALTER TABLE `academic_score_percentase`
   ADD CONSTRAINT `academic_score_percentase_fk6` FOREIGN KEY (`score_percentase_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_score_task`
+-- Constraints for table `academic_score_task`
 --
 ALTER TABLE `academic_score_task`
   ADD CONSTRAINT `academic_score_task_fk1` FOREIGN KEY (`score_task_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_score_task_fk2` FOREIGN KEY (`score_task_description`) REFERENCES `academic_task_description` (`task_description_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_student`
+-- Constraints for table `academic_student`
 --
 ALTER TABLE `academic_student`
   ADD CONSTRAINT `academic_student_fk1` FOREIGN KEY (`student_gender`) REFERENCES `public_gender` (`gender_id`) ON UPDATE CASCADE,
@@ -3983,14 +3977,14 @@ ALTER TABLE `academic_student`
   ADD CONSTRAINT `academic_student_fk7` FOREIGN KEY (`student_distance`) REFERENCES `public_distance` (`distance_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_student_academic_history`
+-- Constraints for table `academic_student_academic_history`
 --
 ALTER TABLE `academic_student_academic_history`
   ADD CONSTRAINT `academic_student_academic_history_fk1` FOREIGN KEY (`academic_history_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_student_academic_history_fk2` FOREIGN KEY (`academic_history_level`) REFERENCES `public_education` (`education_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_student_achievement`
+-- Constraints for table `academic_student_achievement`
 --
 ALTER TABLE `academic_student_achievement`
   ADD CONSTRAINT `academic_student_achievement_fk1` FOREIGN KEY (`student_achievement_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
@@ -3998,7 +3992,7 @@ ALTER TABLE `academic_student_achievement`
   ADD CONSTRAINT `academic_student_achievement_fk3` FOREIGN KEY (`student_achievement_contest_type`) REFERENCES `academic_achievement_contest_type` (`achievement_contest_type_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_student_parent`
+-- Constraints for table `academic_student_parent`
 --
 ALTER TABLE `academic_student_parent`
   ADD CONSTRAINT `academic_student_parent_fk1` FOREIGN KEY (`student_parent_of`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
@@ -4010,20 +4004,20 @@ ALTER TABLE `academic_student_parent`
   ADD CONSTRAINT `academic_student_parent_fk7` FOREIGN KEY (`student_parent_religion`) REFERENCES `public_religion` (`religion_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_student_scholarship`
+-- Constraints for table `academic_student_scholarship`
 --
 ALTER TABLE `academic_student_scholarship`
   ADD CONSTRAINT `academic_student_scholarship_fk1` FOREIGN KEY (`student_scholarship_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_student_scholarship_fk2` FOREIGN KEY (`student_scholarship_type`) REFERENCES `academic_student_scholarship_type` (`scholarship_type_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_subject`
+-- Constraints for table `academic_subject`
 --
 ALTER TABLE `academic_subject`
   ADD CONSTRAINT `academic_subject_fk1` FOREIGN KEY (`subject_category`) REFERENCES `academic_subject_category` (`subject_category_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_task_description`
+-- Constraints for table `academic_task_description`
 --
 ALTER TABLE `academic_task_description`
   ADD CONSTRAINT `academic_task_description_fk1` FOREIGN KEY (`task_description_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE,
@@ -4033,7 +4027,7 @@ ALTER TABLE `academic_task_description`
   ADD CONSTRAINT `academic_task_description_fk5` FOREIGN KEY (`task_description_garde`) REFERENCES `academic_grade` (`grade_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `academic_teaching`
+-- Constraints for table `academic_teaching`
 --
 ALTER TABLE `academic_teaching`
   ADD CONSTRAINT `academic_teaching_fk1` FOREIGN KEY (`teaching_teacher`) REFERENCES `employees` (`employees_id`) ON UPDATE CASCADE,
@@ -4043,13 +4037,13 @@ ALTER TABLE `academic_teaching`
   ADD CONSTRAINT `academic_teaching_fk5` FOREIGN KEY (`teaching_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `asset_infrastructure`
+-- Constraints for table `asset_infrastructure`
 --
 ALTER TABLE `asset_infrastructure`
   ADD CONSTRAINT `asset_infrastructure_fk1` FOREIGN KEY (`infrastructure_condition`) REFERENCES `asset_infrastructure_condition` (`infrastructure_condition_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `employees`
+-- Constraints for table `employees`
 --
 ALTER TABLE `employees`
   ADD CONSTRAINT `employees_fk1` FOREIGN KEY (`employees_desc`) REFERENCES `employees_jobdescription` (`jobdescription_id`) ON UPDATE CASCADE,
@@ -4061,52 +4055,52 @@ ALTER TABLE `employees`
   ADD CONSTRAINT `employees_fk7` FOREIGN KEY (`employees_marriage_status`) REFERENCES `employees_marriage_status` (`marriage_status_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `myschool_apps_access`
+-- Constraints for table `myschool_apps_access`
 --
 ALTER TABLE `myschool_apps_access`
   ADD CONSTRAINT `myschool_apps_access_fk1` FOREIGN KEY (`access_usergroup`) REFERENCES `myschool_usergroup` (`usergroup_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `myschool_apps_access_fk2` FOREIGN KEY (`access_apps`) REFERENCES `myschool_apps` (`apps_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `myschool_apps_accessdetail`
+-- Constraints for table `myschool_apps_accessdetail`
 --
 ALTER TABLE `myschool_apps_accessdetail`
   ADD CONSTRAINT `myschool_apps_accessdetail_fk1` FOREIGN KEY (`accessdetail_access`) REFERENCES `myschool_apps_access` (`access_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `myschool_apps_accessdetail_fk2` FOREIGN KEY (`accessdetail_modul`) REFERENCES `myschool_apps_modul` (`modul_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `myschool_apps_menu`
+-- Constraints for table `myschool_apps_menu`
 --
 ALTER TABLE `myschool_apps_menu`
   ADD CONSTRAINT `myschool_apps_menu_fk1` FOREIGN KEY (`menu_apps`) REFERENCES `myschool_apps` (`apps_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `myschool_apps_modul`
+-- Constraints for table `myschool_apps_modul`
 --
 ALTER TABLE `myschool_apps_modul`
   ADD CONSTRAINT `myschool_apps_modul_fk1` FOREIGN KEY (`modul_apps`) REFERENCES `myschool_apps` (`apps_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `myschool_user`
+-- Constraints for table `myschool_user`
 --
 ALTER TABLE `myschool_user`
   ADD CONSTRAINT `myschool_user_fk1` FOREIGN KEY (`user_isa`) REFERENCES `myschool_isa` (`isa_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `myschool_userprivilege`
+-- Constraints for table `myschool_userprivilege`
 --
 ALTER TABLE `myschool_userprivilege`
   ADD CONSTRAINT `myschool_userprivilege_fk1` FOREIGN KEY (`userprivilege_user`) REFERENCES `myschool_user` (`user_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `myschool_userprivilege_fk2` FOREIGN KEY (`userprivilege_group`) REFERENCES `myschool_usergroup` (`usergroup_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `public_city`
+-- Constraints for table `public_city`
 --
 ALTER TABLE `public_city`
   ADD CONSTRAINT `public_city_fk1` FOREIGN KEY (`city_province`) REFERENCES `public_province` (`province_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `public_province`
+-- Constraints for table `public_province`
 --
 ALTER TABLE `public_province`
   ADD CONSTRAINT `public_province_fk1` FOREIGN KEY (`province_country`) REFERENCES `public_country` (`country_id`) ON UPDATE CASCADE;
