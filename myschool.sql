@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 07, 2013 at 10:24 AM
+-- Generation Time: Feb 08, 2013 at 12:34 PM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -673,21 +673,47 @@ CREATE TABLE IF NOT EXISTS `academic_extracurricular_coach_history` (
   `extracurricular_coach_history_name` varchar(12) NOT NULL,
   `extracurricular_coach_history_field` tinyint(4) NOT NULL,
   `extracurricular_coach_history_period` tinyint(4) NOT NULL,
+  `extracurricular_coach_history_semester` tinyint(1) NOT NULL,
   `extracurricular_coach_history_totaltime` int(11) NOT NULL,
   `extracurricular_coach_history_entry` date NOT NULL,
   `extracurricular_coach_history_entry_update` date NOT NULL,
   PRIMARY KEY (`extracurricular_coach_history_id`),
   KEY `academic_extracurricular_coach_history_fk2` (`extracurricular_coach_history_field`),
   KEY `academic_extracurricular_coach_history_fk3` (`extracurricular_coach_history_period`),
-  KEY `academic_extracurricular_coach_history_fk1` (`extracurricular_coach_history_name`)
+  KEY `academic_extracurricular_coach_history_fk1` (`extracurricular_coach_history_name`),
+  KEY `academic_extracurricular_coach_history_fk4` (`extracurricular_coach_history_semester`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `academic_extracurricular_coach_history`
 --
 
-INSERT INTO `academic_extracurricular_coach_history` (`extracurricular_coach_history_id`, `extracurricular_coach_history_name`, `extracurricular_coach_history_field`, `extracurricular_coach_history_period`, `extracurricular_coach_history_totaltime`, `extracurricular_coach_history_entry`, `extracurricular_coach_history_entry_update`) VALUES
-('201212140001', '201212010049', 1, 1, 2, '2012-12-14', '2012-12-14');
+INSERT INTO `academic_extracurricular_coach_history` (`extracurricular_coach_history_id`, `extracurricular_coach_history_name`, `extracurricular_coach_history_field`, `extracurricular_coach_history_period`, `extracurricular_coach_history_semester`, `extracurricular_coach_history_totaltime`, `extracurricular_coach_history_entry`, `extracurricular_coach_history_entry_update`) VALUES
+('201212140001', '201212010049', 1, 1, 1, 2, '2012-12-14', '2012-12-14');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `academic_extracurricular_participant`
+--
+
+CREATE TABLE IF NOT EXISTS `academic_extracurricular_participant` (
+  `extracurricular_participant_id` varchar(12) NOT NULL,
+  `extracurricular_participant_name` varchar(10) NOT NULL,
+  `extracurricular_participant_activity` varchar(12) NOT NULL,
+  `extracurricular_participant_entry` datetime NOT NULL,
+  `extracurricular_participant_entry_update` datetime NOT NULL,
+  PRIMARY KEY (`extracurricular_participant_id`),
+  KEY `academic_extracurricular_participant_fk1` (`extracurricular_participant_name`),
+  KEY `academic_extracurricular_participant_fk2` (`extracurricular_participant_activity`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `academic_extracurricular_participant`
+--
+
+INSERT INTO `academic_extracurricular_participant` (`extracurricular_participant_id`, `extracurricular_participant_name`, `extracurricular_participant_activity`, `extracurricular_participant_entry`, `extracurricular_participant_entry_update`) VALUES
+('201302080001', '121307001', '201212140001', '2013-02-08 11:16:34', '2013-02-08 11:16:37');
 
 -- --------------------------------------------------------
 
@@ -939,7 +965,8 @@ INSERT INTO `academic_score` (`score_id`, `score_student`, `score_teaching`, `sc
 ('201302070056', '121307028', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
 ('201302070057', '121307029', '201212050001', 2, 78, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
 ('201302070058', '121307030', '201212050001', 2, 90, 1, '2013-02-07 01:36:40', '2013-02-07 16:19:18'),
-('201302070059', '111207001', '201212050001', 1, 80, 1, '2013-02-07 01:54:03', '2013-02-07 01:54:03');
+('201302070059', '111207001', '201212050001', 1, 80, 1, '2013-02-07 01:54:03', '2013-02-07 01:54:03'),
+('201302080001', '121307001', '201212130141', 1, 80, 1, '2013-02-08 18:26:10', '2013-02-08 18:26:12');
 
 -- --------------------------------------------------------
 
@@ -1068,25 +1095,24 @@ INSERT INTO `academic_score_daily` (`score_daily_id`, `score_daily_student`, `sc
 CREATE TABLE IF NOT EXISTS `academic_score_extracurricular` (
   `score_extracurricular_id` varchar(12) NOT NULL,
   `score_extracurricular_student` varchar(10) NOT NULL,
+  `score_extracurricular` varchar(12) NOT NULL,
+  `score_extracurricular_type` tinyint(1) NOT NULL,
   `score_extracurricular_value` char(1) NOT NULL COMMENT 'nilai diisi dengan huruf',
-  `score_extracurricular` tinyint(4) NOT NULL,
-  `score_extracurricular_period` tinyint(4) NOT NULL,
-  `score_extracurricular_semester` tinyint(1) NOT NULL,
   `score_extracurricular_entry` datetime NOT NULL,
   `score_extracurricular_entry_update` datetime NOT NULL,
   PRIMARY KEY (`score_extracurricular_id`),
+  KEY `academic_score_extracurricular_fk2` (`score_extracurricular_type`),
   KEY `academic_score_extracurricular_fk1` (`score_extracurricular`),
-  KEY `academic_score_extracurricular_fk3` (`score_extracurricular_semester`),
-  KEY `academic_score_extracurricular_fk2` (`score_extracurricular_period`),
-  KEY `academic_score_extracurricular_fk4` (`score_extracurricular_student`)
+  KEY `academic_score_extracurricular_fk3` (`score_extracurricular_student`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `academic_score_extracurricular`
 --
 
-INSERT INTO `academic_score_extracurricular` (`score_extracurricular_id`, `score_extracurricular_student`, `score_extracurricular_value`, `score_extracurricular`, `score_extracurricular_period`, `score_extracurricular_semester`, `score_extracurricular_entry`, `score_extracurricular_entry_update`) VALUES
-('201212140001', '121307001', 'B', 1, 1, 1, '2012-12-14 00:59:16', '2012-12-14 00:59:19');
+INSERT INTO `academic_score_extracurricular` (`score_extracurricular_id`, `score_extracurricular_student`, `score_extracurricular`, `score_extracurricular_type`, `score_extracurricular_value`, `score_extracurricular_entry`, `score_extracurricular_entry_update`) VALUES
+('201302080001', '121307001', '201212140001', 1, 'B', '2013-02-08 15:30:56', '2013-02-08 17:47:20'),
+('201302080002', '121307001', '201212140001', 2, 'C', '2013-02-08 18:06:15', '2013-02-08 18:06:15');
 
 -- --------------------------------------------------------
 
@@ -2948,7 +2974,7 @@ CREATE TABLE IF NOT EXISTS `myschool_apps` (
 --
 
 INSERT INTO `myschool_apps` (`apps_id`, `apps_alias`, `apps_name`, `apps_short_description`, `apps_baner`, `apps_status`, `apps_entry`, `apps_entry_update`) VALUES
-('1', 'nilaionline', 'Nilai Online', 'This is a website for check score of student.', NULL, 1, '2012-10-09 15:12:19', '2012-10-09 15:12:22'),
+('1', 'nilaionline', 'Nilai Online', 'Aplikasi Pengolahan Data Nilai Siswa SMP Negeri 1 Subang', NULL, 1, '2012-10-09 15:12:19', '2012-10-09 15:12:22'),
 ('2', 'hots', 'HOTS', 'Heigher Order Thinking Skill', NULL, 0, '2012-10-09 15:14:13', '2012-10-09 15:14:16');
 
 -- --------------------------------------------------------
@@ -3873,7 +3899,15 @@ ALTER TABLE `academic_classhistory`
 ALTER TABLE `academic_extracurricular_coach_history`
   ADD CONSTRAINT `academic_extracurricular_coach_history_fk1` FOREIGN KEY (`extracurricular_coach_history_name`) REFERENCES `employees` (`employees_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_extracurricular_coach_history_fk2` FOREIGN KEY (`extracurricular_coach_history_field`) REFERENCES `academic_extracurricular` (`extracurricular_id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `academic_extracurricular_coach_history_fk3` FOREIGN KEY (`extracurricular_coach_history_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `academic_extracurricular_coach_history_fk3` FOREIGN KEY (`extracurricular_coach_history_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_extracurricular_coach_history_fk4` FOREIGN KEY (`extracurricular_coach_history_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
+
+--
+-- Constraints for table `academic_extracurricular_participant`
+--
+ALTER TABLE `academic_extracurricular_participant`
+  ADD CONSTRAINT `academic_extracurricular_participant_fk1` FOREIGN KEY (`extracurricular_participant_name`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_extracurricular_participant_fk2` FOREIGN KEY (`extracurricular_participant_activity`) REFERENCES `academic_extracurricular_coach_history` (`extracurricular_coach_history_id`) ON UPDATE CASCADE;
 
 --
 -- Constraints for table `academic_mlc`
@@ -3896,10 +3930,10 @@ ALTER TABLE `academic_report_publishing`
 -- Constraints for table `academic_score`
 --
 ALTER TABLE `academic_score`
-  ADD CONSTRAINT `academic_score_fk6` FOREIGN KEY (`score_type`) REFERENCES `academic_score_type` (`score_type_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_score_fk1` FOREIGN KEY (`score_teaching`) REFERENCES `academic_teaching` (`teaching_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_score_fk3` FOREIGN KEY (`score_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `academic_score_fk5` FOREIGN KEY (`score_status`) REFERENCES `academic_score_status` (`score_status_id`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `academic_score_fk5` FOREIGN KEY (`score_status`) REFERENCES `academic_score_status` (`score_status_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_score_fk6` FOREIGN KEY (`score_type`) REFERENCES `academic_score_type` (`score_type_id`) ON UPDATE CASCADE;
 
 --
 -- Constraints for table `academic_score_attitude`
@@ -3923,10 +3957,9 @@ ALTER TABLE `academic_score_daily`
 -- Constraints for table `academic_score_extracurricular`
 --
 ALTER TABLE `academic_score_extracurricular`
-  ADD CONSTRAINT `academic_score_extracurricular_fk1` FOREIGN KEY (`score_extracurricular`) REFERENCES `academic_extracurricular` (`extracurricular_id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `academic_score_extracurricular_fk2` FOREIGN KEY (`score_extracurricular_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `academic_score_extracurricular_fk3` FOREIGN KEY (`score_extracurricular_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `academic_score_extracurricular_fk4` FOREIGN KEY (`score_extracurricular_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `academic_score_extracurricular_fk3` FOREIGN KEY (`score_extracurricular_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_score_extracurricular_fk1` FOREIGN KEY (`score_extracurricular`) REFERENCES `academic_extracurricular_coach_history` (`extracurricular_coach_history_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_score_extracurricular_fk2` FOREIGN KEY (`score_extracurricular_type`) REFERENCES `academic_score_type` (`score_type_id`) ON UPDATE CASCADE;
 
 --
 -- Constraints for table `academic_score_final`
