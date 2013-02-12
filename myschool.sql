@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 11, 2013 at 05:42 AM
+-- Generation Time: Feb 12, 2013 at 12:14 PM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -44,6 +44,49 @@ INSERT INTO `academic_achievement_contest_type` (`achievement_contest_type_id`, 
 (2, 'Seni', 0, '2012-11-10 08:46:23', '2012-11-10 08:46:28'),
 (3, 'Olahraga', 0, '2012-11-10 08:46:50', '2012-11-10 08:46:54'),
 (4, 'Lain-Lain', 1, '2012-11-10 08:47:11', '2012-11-10 08:47:14');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `academic_attendance`
+--
+
+CREATE TABLE IF NOT EXISTS `academic_attendance` (
+  `attendance_id` varchar(12) NOT NULL,
+  `attendance_student` varchar(10) NOT NULL,
+  `attendance_guidance` varchar(12) NOT NULL,
+  `attendance_sick` int(11) NOT NULL,
+  `attendance_leave` int(11) NOT NULL,
+  `attendance_alpha` int(11) NOT NULL,
+  `attendance_score_type` tinyint(4) NOT NULL,
+  `attendance_entry` datetime NOT NULL,
+  `attendance_entry_update` datetime NOT NULL,
+  PRIMARY KEY (`attendance_id`),
+  KEY `academic_attendance_fk1` (`attendance_student`),
+  KEY `academic_attendance_fk2` (`attendance_guidance`),
+  KEY `academic_attendance_fk3` (`attendance_score_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `academic_attitude`
+--
+
+CREATE TABLE IF NOT EXISTS `academic_attitude` (
+  `attitude_id` varchar(12) NOT NULL,
+  `attitude_student` varchar(12) NOT NULL,
+  `attitude_guidance` varchar(12) NOT NULL,
+  `attitude_morals` char(1) NOT NULL,
+  `attitude_personality` char(1) NOT NULL,
+  `attitude_score_type` tinyint(4) NOT NULL,
+  `attitude_entry` datetime NOT NULL,
+  `attitude_entry_update` datetime NOT NULL,
+  PRIMARY KEY (`attitude_id`),
+  KEY `academic_attitude_fk1` (`attitude_student`),
+  KEY `academic_attitude_fk2` (`attitude_guidance`),
+  KEY `academic_attitude_fk3` (`attitude_score_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -744,6 +787,34 @@ INSERT INTO `academic_grade` (`grade_id`, `grade_title`, `grade_name`, `grade_en
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `academic_guidance`
+--
+
+CREATE TABLE IF NOT EXISTS `academic_guidance` (
+  `guidance_id` varchar(12) NOT NULL,
+  `guidance_classgroup` varchar(12) NOT NULL,
+  `guidance_teacher` varchar(12) NOT NULL,
+  `guidance_period` tinyint(4) NOT NULL,
+  `guidance_semester` tinyint(1) NOT NULL,
+  `guidance_entry` datetime NOT NULL,
+  `guidance_entry_update` datetime NOT NULL,
+  PRIMARY KEY (`guidance_id`),
+  KEY `academic_guidance_fk1` (`guidance_classgroup`),
+  KEY `academic_guidance_fk2` (`guidance_teacher`),
+  KEY `academic_guidance_fk3` (`guidance_period`),
+  KEY `academic_guidance_fk4` (`guidance_semester`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `academic_guidance`
+--
+
+INSERT INTO `academic_guidance` (`guidance_id`, `guidance_classgroup`, `guidance_teacher`, `guidance_period`, `guidance_semester`, `guidance_entry`, `guidance_entry_update`) VALUES
+('201302120001', '1', '201212010049', 1, 1, '2013-02-12 09:37:06', '2013-02-12 09:37:08');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `academic_mlc`
 --
 
@@ -1059,7 +1130,29 @@ INSERT INTO `academic_score` (`score_id`, `score_student`, `score_teaching`, `sc
 ('201302110087', '121307027', '201212130055', 1, 78, 1, '2013-02-11 10:33:56', '2013-02-11 10:33:56'),
 ('201302110088', '121307028', '201212130055', 1, 78, 1, '2013-02-11 10:33:56', '2013-02-11 10:33:56'),
 ('201302110089', '121307029', '201212130055', 1, 78, 1, '2013-02-11 10:33:56', '2013-02-11 10:33:56'),
-('201302110090', '121307030', '201212130055', 1, 78, 1, '2013-02-11 10:33:56', '2013-02-11 10:33:56');
+('201302110090', '121307030', '201212130055', 1, 78, 1, '2013-02-11 10:33:56', '2013-02-11 10:33:56'),
+('201302120001', '111207186', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120002', '111207076', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120003', '111207158', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120004', '111207026', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120005', '111207132', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120006', '111207107', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120007', '111207031', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120008', '111207161', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120009', '111207112', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120010', '111207057', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120011', '111207172', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120012', '111207194', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120013', '111207141', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120014', '111207041', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120015', '111207195', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120016', '111207092', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120017', '111207068', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120018', '111207123', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120019', '111207043', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120020', '111207204', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120021', '111207205', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07'),
+('201302120022', '111207099', '201212130111', 1, 80, 1, '2013-02-12 09:51:07', '2013-02-12 09:51:07');
 
 -- --------------------------------------------------------
 
@@ -3960,6 +4053,22 @@ INSERT INTO `public_transportation` (`transportation_id`, `transportation_name`,
 --
 
 --
+-- Constraints for table `academic_attendance`
+--
+ALTER TABLE `academic_attendance`
+  ADD CONSTRAINT `academic_attendance_fk1` FOREIGN KEY (`attendance_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_attendance_fk2` FOREIGN KEY (`attendance_guidance`) REFERENCES `academic_guidance` (`guidance_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_attendance_fk3` FOREIGN KEY (`attendance_score_type`) REFERENCES `academic_score_type` (`score_type_id`) ON UPDATE CASCADE;
+
+--
+-- Constraints for table `academic_attitude`
+--
+ALTER TABLE `academic_attitude`
+  ADD CONSTRAINT `academic_attitude_fk1` FOREIGN KEY (`attitude_student`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_attitude_fk2` FOREIGN KEY (`attitude_guidance`) REFERENCES `academic_guidance` (`guidance_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_attitude_fk3` FOREIGN KEY (`attitude_score_type`) REFERENCES `academic_score_type` (`score_type_id`) ON UPDATE CASCADE;
+
+--
 -- Constraints for table `academic_base_competence`
 --
 ALTER TABLE `academic_base_competence`
@@ -4003,6 +4112,15 @@ ALTER TABLE `academic_extracurricular_coach_history`
 ALTER TABLE `academic_extracurricular_participant`
   ADD CONSTRAINT `academic_extracurricular_participant_fk1` FOREIGN KEY (`extracurricular_participant_name`) REFERENCES `academic_student` (`student_nis`) ON UPDATE CASCADE,
   ADD CONSTRAINT `academic_extracurricular_participant_fk2` FOREIGN KEY (`extracurricular_participant_activity`) REFERENCES `academic_extracurricular_coach_history` (`extracurricular_coach_history_id`) ON UPDATE CASCADE;
+
+--
+-- Constraints for table `academic_guidance`
+--
+ALTER TABLE `academic_guidance`
+  ADD CONSTRAINT `academic_guidance_fk1` FOREIGN KEY (`guidance_classgroup`) REFERENCES `academic_classgroup` (`classgroup_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_guidance_fk2` FOREIGN KEY (`guidance_teacher`) REFERENCES `employees` (`employees_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_guidance_fk3` FOREIGN KEY (`guidance_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `academic_guidance_fk4` FOREIGN KEY (`guidance_semester`) REFERENCES `academic_semester` (`semester_id`) ON UPDATE CASCADE;
 
 --
 -- Constraints for table `academic_mlc`
