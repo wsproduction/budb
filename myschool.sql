@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 26, 2013 at 02:09 AM
+-- Generation Time: Mar 11, 2013 at 11:47 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -1428,7 +1428,8 @@ INSERT INTO `academic_extracurricular` (`extracurricular_id`, `extracurricular_n
 (19, 'Yoyo', '2013-02-14', '2013-02-14'),
 (20, 'Robotika', '2013-02-14', '2013-02-14'),
 (21, 'Biola', '2013-02-14', '2013-02-14'),
-(22, 'KIR (Karya Ilmiah Remaja)', '2013-02-14', '2013-02-14');
+(22, 'KIR (Karya Ilmiah Remaja)', '2013-02-14', '2013-02-14'),
+(23, 'Paduan Suara', '2013-03-05', '2013-03-05');
 
 -- --------------------------------------------------------
 
