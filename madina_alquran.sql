@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 27, 2013 at 01:59 PM
+-- Generation Time: Mar 28, 2013 at 02:37 PM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -27,9 +27,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `product` (
-  `product_id` varchar(6) NOT NULL,
-  `product_category` varchar(5) NOT NULL,
-  `product_type` varchar(5) NOT NULL,
+  `product_id` varchar(8) NOT NULL,
+  `product_type` varchar(8) NOT NULL,
   `product_code` int(3) unsigned zerofill NOT NULL,
   `product_name` varchar(100) NOT NULL,
   `product_description` text,
@@ -37,7 +36,6 @@ CREATE TABLE IF NOT EXISTS `product` (
   `product_entry` datetime NOT NULL,
   `product_entry_update` datetime NOT NULL,
   PRIMARY KEY (`product_id`),
-  KEY `product_fk1` (`product_category`),
   KEY `product_fk2` (`product_type`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -45,9 +43,9 @@ CREATE TABLE IF NOT EXISTS `product` (
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`product_id`, `product_category`, `product_type`, `product_code`, `product_name`, `product_description`, `product_status`, `product_entry`, `product_entry_update`) VALUES
-('130001', '13001', '13003', 001, 'Shock Pink', 'Al-Quran + Cover + Inspiring Story + Asmaulhusna', 1, '2013-03-26 23:04:11', '2013-03-26 23:04:13'),
-('130002', '13002', '13007', 001, 'Shock Pink', 'Just Cover', 1, '2013-03-26 23:31:21', '2013-03-26 23:31:24');
+INSERT INTO `product` (`product_id`, `product_type`, `product_code`, `product_name`, `product_description`, `product_status`, `product_entry`, `product_entry_update`) VALUES
+('13030001', '13030001', 001, 'Shock Pink', 'Al-quran + Cover + Pin + Inspairing Stori', 1, '2013-03-28 18:00:14', '2013-03-28 18:00:17'),
+('13030002', '13030002', 001, 'Shock Pink', 'Cover', 1, '2013-03-28 18:02:16', '2013-03-28 18:02:18');
 
 -- --------------------------------------------------------
 
@@ -84,8 +82,7 @@ CREATE TABLE IF NOT EXISTS `product_size` (
   `size_description` varchar(20) NOT NULL,
   `size_entry` datetime NOT NULL,
   `size_entry_update` datetime NOT NULL,
-  PRIMARY KEY (`size_id`),
-  KEY `product_size_fk1` (`size_category`)
+  PRIMARY KEY (`size_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -99,32 +96,67 @@ INSERT INTO `product_size` (`size_id`, `size_category`, `size_description`, `siz
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `product_size_aggregation`
+--
+
+CREATE TABLE IF NOT EXISTS `product_size_aggregation` (
+  `aggregation_id` varchar(8) NOT NULL,
+  `aggregation_size` varchar(5) NOT NULL,
+  `aggregation_category` varchar(5) NOT NULL,
+  PRIMARY KEY (`aggregation_id`),
+  KEY `product_size_aggregation_fk1` (`aggregation_size`),
+  KEY `product_size_aggregation_fk2` (`aggregation_category`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `product_type`
 --
 
 CREATE TABLE IF NOT EXISTS `product_type` (
   `type_id` varchar(5) NOT NULL,
-  `type_category` varchar(5) NOT NULL,
   `type_code` varchar(2) NOT NULL,
   `type_name` varchar(100) NOT NULL,
   `type_entry` datetime NOT NULL,
   `type_entry_update` datetime NOT NULL,
-  PRIMARY KEY (`type_id`),
-  KEY `product_type_fk1` (`type_category`)
+  PRIMARY KEY (`type_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `product_type`
 --
 
-INSERT INTO `product_type` (`type_id`, `type_category`, `type_code`, `type_name`, `type_entry`, `type_entry_update`) VALUES
-('13001', '13001', 'MR', 'Madina Raihan', '2013-03-26 22:40:06', '2013-03-26 22:40:09'),
-('13002', '13001', 'ZD', 'Zhafira Denim', '2013-03-26 22:39:31', '2013-03-26 22:39:33'),
-('13003', '13001', 'ZF', 'Zhafira Flower', '2013-03-26 22:40:56', '2013-03-26 22:40:58'),
-('13004', '13001', 'ZG', 'Zhafira Geometric', '2013-03-26 22:38:28', '2013-03-26 22:38:30'),
-('13005', '13001', 'ZL', 'Zhafira Line', '2013-03-26 22:37:48', '2013-03-26 22:37:50'),
-('13006', '13001', 'ZP', 'Zhafira Paisley', '2013-03-26 22:39:03', '2013-03-26 22:39:05'),
-('13007', '13002', 'MR', 'Madina Raihan', '2013-03-26 23:51:47', '2013-03-26 23:51:49');
+INSERT INTO `product_type` (`type_id`, `type_code`, `type_name`, `type_entry`, `type_entry_update`) VALUES
+('13001', 'MR', 'Madina Raihan', '2013-03-26 22:40:06', '2013-03-26 22:40:09'),
+('13002', 'ZD', 'Zhafira Denim', '2013-03-26 22:39:31', '2013-03-26 22:39:33'),
+('13003', 'ZF', 'Zhafira Flower', '2013-03-26 22:40:56', '2013-03-26 22:40:58'),
+('13004', 'ZG', 'Zhafira Geometric', '2013-03-26 22:38:28', '2013-03-26 22:38:30'),
+('13005', 'ZL', 'Zhafira Line', '2013-03-26 22:37:48', '2013-03-26 22:37:50'),
+('13006', 'ZP', 'Zhafira Paisley', '2013-03-26 22:39:03', '2013-03-26 22:39:05');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product_type_aggregation`
+--
+
+CREATE TABLE IF NOT EXISTS `product_type_aggregation` (
+  `aggregation_id` varchar(8) NOT NULL,
+  `aggregation_type` varchar(5) NOT NULL,
+  `aggregation_category` varchar(5) NOT NULL,
+  PRIMARY KEY (`aggregation_id`),
+  KEY `product_type_aggregation_fk1` (`aggregation_type`),
+  KEY `product_type_aggregation_fk2` (`aggregation_category`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `product_type_aggregation`
+--
+
+INSERT INTO `product_type_aggregation` (`aggregation_id`, `aggregation_type`, `aggregation_category`) VALUES
+('13030001', '13003', '13001'),
+('13030002', '13003', '13002');
 
 -- --------------------------------------------------------
 
@@ -134,8 +166,8 @@ INSERT INTO `product_type` (`type_id`, `type_category`, `type_code`, `type_name`
 
 CREATE TABLE IF NOT EXISTS `pruduct_item` (
   `item_id` varchar(8) NOT NULL,
-  `item_product` varchar(6) NOT NULL,
-  `item_size` varchar(5) NOT NULL,
+  `item_product` varchar(8) NOT NULL,
+  `item_size` varchar(8) NOT NULL,
   `item_stock` int(11) NOT NULL,
   `item_price` int(11) NOT NULL,
   `item_discount` int(11) NOT NULL,
@@ -143,16 +175,8 @@ CREATE TABLE IF NOT EXISTS `pruduct_item` (
   `item_entry_update` datetime NOT NULL,
   PRIMARY KEY (`item_id`),
   KEY `product_item_fk1` (`item_product`),
-  KEY `product_item` (`item_size`)
+  KEY `product_item_fk2` (`item_size`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `pruduct_item`
---
-
-INSERT INTO `pruduct_item` (`item_id`, `item_product`, `item_size`, `item_stock`, `item_price`, `item_discount`, `item_entry`, `item_entry_update`) VALUES
-('13030001', '130001', '13001', 20, 72500, 20, '2013-03-26 23:20:25', '2013-03-26 23:20:44'),
-('13030002', '130002', '13002', 15, 29000, 20, '2013-03-26 23:34:20', '2013-03-26 23:34:23');
 
 -- --------------------------------------------------------
 
@@ -188,27 +212,28 @@ CREATE TABLE IF NOT EXISTS `reseller` (
 -- Constraints for table `product`
 --
 ALTER TABLE `product`
-  ADD CONSTRAINT `product_fk1` FOREIGN KEY (`product_category`) REFERENCES `product_category` (`category_id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `product_fk2` FOREIGN KEY (`product_type`) REFERENCES `product_type` (`type_id`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `product_fk2` FOREIGN KEY (`product_type`) REFERENCES `product_type_aggregation` (`aggregation_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `product_size`
+-- Constraints for table `product_size_aggregation`
 --
-ALTER TABLE `product_size`
-  ADD CONSTRAINT `product_size_fk1` FOREIGN KEY (`size_category`) REFERENCES `product_category` (`category_id`) ON UPDATE CASCADE;
+ALTER TABLE `product_size_aggregation`
+  ADD CONSTRAINT `product_size_aggregation_fk2` FOREIGN KEY (`aggregation_category`) REFERENCES `product_category` (`category_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `product_size_aggregation_fk1` FOREIGN KEY (`aggregation_size`) REFERENCES `product_size` (`size_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `product_type`
+-- Constraints for table `product_type_aggregation`
 --
-ALTER TABLE `product_type`
-  ADD CONSTRAINT `product_type_fk1` FOREIGN KEY (`type_category`) REFERENCES `product_category` (`category_id`) ON UPDATE CASCADE;
+ALTER TABLE `product_type_aggregation`
+  ADD CONSTRAINT `product_type_aggregation_fk2` FOREIGN KEY (`aggregation_category`) REFERENCES `product_category` (`category_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `product_type_aggregation_fk1` FOREIGN KEY (`aggregation_type`) REFERENCES `product_type` (`type_id`) ON UPDATE CASCADE;
 
 --
 -- Constraints for table `pruduct_item`
 --
 ALTER TABLE `pruduct_item`
-  ADD CONSTRAINT `product_item` FOREIGN KEY (`item_size`) REFERENCES `product_size` (`size_id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `product_item_fk1` FOREIGN KEY (`item_product`) REFERENCES `product` (`product_id`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `product_item_fk1` FOREIGN KEY (`item_product`) REFERENCES `product` (`product_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `product_item_fk2` FOREIGN KEY (`item_size`) REFERENCES `product_size_aggregation` (`aggregation_id`) ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
