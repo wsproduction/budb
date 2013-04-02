@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Waktu pembuatan: 01. April 2013 jam 16:21
--- Versi Server: 5.5.16
--- Versi PHP: 5.3.8
+-- Generation Time: Apr 02, 2013 at 07:22 PM
+-- Server version: 5.5.16
+-- PHP Version: 5.3.8
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,12 +23,46 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `orders`
+-- Table structure for table `members`
+--
+
+CREATE TABLE IF NOT EXISTS `members` (
+  `members_id` varchar(10) NOT NULL,
+  `members_name` varchar(50) NOT NULL,
+  `members_nickname` varchar(10) NOT NULL,
+  `members_gender` char(1) NOT NULL,
+  `members_address` varchar(250) NOT NULL,
+  `members_birthplace` varchar(30) NOT NULL,
+  `members_birthdate` date NOT NULL,
+  `members_last_education` varchar(20) DEFAULT NULL,
+  `members_jobs` varchar(20) DEFAULT NULL,
+  `members_phone_number` varchar(12) DEFAULT NULL,
+  `members_email` varchar(50) DEFAULT NULL,
+  `members_facebook` varchar(50) DEFAULT NULL,
+  `members_twitter` varchar(50) DEFAULT NULL,
+  `members_status` tinyint(1) NOT NULL,
+  `members_entry` datetime NOT NULL,
+  `members_entry_update` datetime NOT NULL,
+  PRIMARY KEY (`members_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `members`
+--
+
+INSERT INTO `members` (`members_id`, `members_name`, `members_nickname`, `members_gender`, `members_address`, `members_birthplace`, `members_birthdate`, `members_last_education`, `members_jobs`, `members_phone_number`, `members_email`, `members_facebook`, `members_twitter`, `members_status`, `members_entry`, `members_entry_update`) VALUES
+('1303290001', 'Warman Suganda', 'Warman', '1', 'Jawura RT. 08/02 Pagaden Subang 41252', 'Subang', '1988-09-22', 'S1', 'Staff IT', '085222229880', 'warman.suganda@gmail.com', 'warman.suganda', '@WarmanSuganda', 0, '2013-03-29 08:51:50', '2013-03-29 08:51:54'),
+('1303290002', 'Indra Irawan', 'Indra', '0', 'Cibogo wetan', 'Cianjur', '1988-02-01', 'S1', 'Marketing', '0997748739', 'indra@gmail.com', 'indra.irawan', '@indra_irawan', 0, '2013-03-29 13:00:49', '2013-03-29 13:42:52');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orders`
 --
 
 CREATE TABLE IF NOT EXISTS `orders` (
-  `oder_id` varchar(10) NOT NULL,
-  `order_reseller` varchar(10) NOT NULL,
+  `order_id` varchar(10) NOT NULL,
+  `order_members` varchar(10) NOT NULL,
   `order_note` varchar(250) DEFAULT NULL,
   `order_status` int(11) NOT NULL,
   `order_entry` datetime NOT NULL,
@@ -41,22 +75,22 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `shipping_date` date DEFAULT NULL,
   `shipping_courier` varchar(30) DEFAULT NULL,
   `shipping_cost` int(11) DEFAULT NULL,
-  PRIMARY KEY (`oder_id`),
-  KEY `order_fk1` (`order_reseller`),
-  KEY `order_fk2` (`payment_type`)
+  PRIMARY KEY (`order_id`),
+  KEY `order_fk2` (`payment_type`),
+  KEY `order_fk1` (`order_members`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `orders`
+-- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`oder_id`, `order_reseller`, `order_note`, `order_status`, `order_entry`, `order_entry_update`, `payment_status`, `payment_type`, `payment_note`, `shipping_status`, `shipping_address`, `shipping_date`, `shipping_courier`, `shipping_cost`) VALUES
-('1203290001', '1303290001', ' ', 1, '2013-03-29 14:46:25', '2013-03-29 14:46:29', 0, -1, NULL, 0, 'Jln. Letjen Soeprapto 105 Subang 41211', NULL, NULL, NULL);
+INSERT INTO `orders` (`order_id`, `order_members`, `order_note`, `order_status`, `order_entry`, `order_entry_update`, `payment_status`, `payment_type`, `payment_note`, `shipping_status`, `shipping_address`, `shipping_date`, `shipping_courier`, `shipping_cost`) VALUES
+('1203290001', '1303290001', ' ', 1, '2013-03-29 14:46:25', '2013-03-29 14:46:29', 0, -1, NULL, 0, 'Jln. Letjen Soeprapto 105 Subang 41211', NULL, NULL, 8000);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `order_detail`
+-- Table structure for table `order_detail`
 --
 
 CREATE TABLE IF NOT EXISTS `order_detail` (
@@ -69,12 +103,12 @@ CREATE TABLE IF NOT EXISTS `order_detail` (
   `detail_ready_quantity` int(11) DEFAULT NULL,
   `detail_status` tinyint(1) NOT NULL,
   PRIMARY KEY (`detail_id`),
-  KEY `order_detail_fk1` (`detail_order`),
-  KEY `order_detail_fk2` (`detail_item`)
+  KEY `order_detail_fk2` (`detail_item`),
+  KEY `order_detail_fk1` (`detail_order`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `order_detail`
+-- Dumping data for table `order_detail`
 --
 
 INSERT INTO `order_detail` (`detail_id`, `detail_order`, `detail_item`, `detail_price`, `detail_discount`, `detail_order_quantity`, `detail_ready_quantity`, `detail_status`) VALUES
@@ -83,7 +117,7 @@ INSERT INTO `order_detail` (`detail_id`, `detail_order`, `detail_item`, `detail_
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `payment_type`
+-- Table structure for table `payment_type`
 --
 
 CREATE TABLE IF NOT EXISTS `payment_type` (
@@ -93,7 +127,7 @@ CREATE TABLE IF NOT EXISTS `payment_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `payment_type`
+-- Dumping data for table `payment_type`
 --
 
 INSERT INTO `payment_type` (`payment_type_id`, `payment_type_name`) VALUES
@@ -104,7 +138,7 @@ INSERT INTO `payment_type` (`payment_type_id`, `payment_type_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `product`
+-- Table structure for table `product`
 --
 
 CREATE TABLE IF NOT EXISTS `product` (
@@ -121,7 +155,7 @@ CREATE TABLE IF NOT EXISTS `product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `product`
+-- Dumping data for table `product`
 --
 
 INSERT INTO `product` (`product_id`, `product_type`, `product_code`, `product_name`, `product_description`, `product_status`, `product_entry`, `product_entry_update`) VALUES
@@ -134,7 +168,7 @@ INSERT INTO `product` (`product_id`, `product_type`, `product_code`, `product_na
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `product_category`
+-- Table structure for table `product_category`
 --
 
 CREATE TABLE IF NOT EXISTS `product_category` (
@@ -147,7 +181,7 @@ CREATE TABLE IF NOT EXISTS `product_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `product_category`
+-- Dumping data for table `product_category`
 --
 
 INSERT INTO `product_category` (`category_id`, `category_name`, `category_status`, `category_entry`, `category_entry_update`) VALUES
@@ -157,7 +191,7 @@ INSERT INTO `product_category` (`category_id`, `category_name`, `category_status
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `product_size`
+-- Table structure for table `product_size`
 --
 
 CREATE TABLE IF NOT EXISTS `product_size` (
@@ -169,7 +203,7 @@ CREATE TABLE IF NOT EXISTS `product_size` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `product_size`
+-- Dumping data for table `product_size`
 --
 
 INSERT INTO `product_size` (`size_id`, `size_description`, `size_entry`, `size_entry_update`) VALUES
@@ -178,7 +212,7 @@ INSERT INTO `product_size` (`size_id`, `size_description`, `size_entry`, `size_e
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `product_size_aggregation`
+-- Table structure for table `product_size_aggregation`
 --
 
 CREATE TABLE IF NOT EXISTS `product_size_aggregation` (
@@ -191,7 +225,7 @@ CREATE TABLE IF NOT EXISTS `product_size_aggregation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `product_size_aggregation`
+-- Dumping data for table `product_size_aggregation`
 --
 
 INSERT INTO `product_size_aggregation` (`aggregation_id`, `aggregation_size`, `aggregation_category`) VALUES
@@ -201,7 +235,7 @@ INSERT INTO `product_size_aggregation` (`aggregation_id`, `aggregation_size`, `a
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `product_type`
+-- Table structure for table `product_type`
 --
 
 CREATE TABLE IF NOT EXISTS `product_type` (
@@ -214,7 +248,7 @@ CREATE TABLE IF NOT EXISTS `product_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `product_type`
+-- Dumping data for table `product_type`
 --
 
 INSERT INTO `product_type` (`type_id`, `type_code`, `type_name`, `type_entry`, `type_entry_update`) VALUES
@@ -228,7 +262,7 @@ INSERT INTO `product_type` (`type_id`, `type_code`, `type_name`, `type_entry`, `
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `product_type_aggregation`
+-- Table structure for table `product_type_aggregation`
 --
 
 CREATE TABLE IF NOT EXISTS `product_type_aggregation` (
@@ -241,7 +275,7 @@ CREATE TABLE IF NOT EXISTS `product_type_aggregation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `product_type_aggregation`
+-- Dumping data for table `product_type_aggregation`
 --
 
 INSERT INTO `product_type_aggregation` (`aggregation_id`, `aggregation_type`, `aggregation_category`) VALUES
@@ -251,7 +285,7 @@ INSERT INTO `product_type_aggregation` (`aggregation_id`, `aggregation_type`, `a
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pruduct_item`
+-- Table structure for table `pruduct_item`
 --
 
 CREATE TABLE IF NOT EXISTS `pruduct_item` (
@@ -270,7 +304,7 @@ CREATE TABLE IF NOT EXISTS `pruduct_item` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `pruduct_item`
+-- Dumping data for table `pruduct_item`
 --
 
 INSERT INTO `pruduct_item` (`item_id`, `item_product`, `item_size`, `item_stock`, `item_price`, `item_discount`, `item_status`, `item_entry`, `item_entry_update`) VALUES
@@ -279,80 +313,46 @@ INSERT INTO `pruduct_item` (`item_id`, `item_product`, `item_size`, `item_stock`
 ('13030003', '13030005', '13030001', 30, 72500, 20, 0, '2013-03-29 08:08:03', '2013-03-29 08:41:18'),
 ('13030004', '13030002', '13030002', 15, 29000, 20, 0, '2013-03-29 10:28:23', '2013-03-29 10:28:38');
 
--- --------------------------------------------------------
-
 --
--- Struktur dari tabel `reseller`
---
-
-CREATE TABLE IF NOT EXISTS `reseller` (
-  `reseller_id` varchar(10) NOT NULL,
-  `reseller_name` varchar(50) NOT NULL,
-  `reseller_nickname` varchar(10) NOT NULL,
-  `reseller_gender` char(1) NOT NULL,
-  `reseller_address` varchar(250) NOT NULL,
-  `reseller_birthplace` varchar(30) NOT NULL,
-  `reseller_birthdate` date NOT NULL,
-  `reseller_last_education` varchar(20) DEFAULT NULL,
-  `reseller_jobs` varchar(20) DEFAULT NULL,
-  `reseller_phone_number` varchar(12) DEFAULT NULL,
-  `reseller_email` varchar(50) DEFAULT NULL,
-  `reseller_facebook` varchar(50) DEFAULT NULL,
-  `reseller_twitter` varchar(50) DEFAULT NULL,
-  `reseller_status` tinyint(1) NOT NULL,
-  `reseller_entry` datetime NOT NULL,
-  `reseller_entry_update` datetime NOT NULL,
-  PRIMARY KEY (`reseller_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `reseller`
---
-
-INSERT INTO `reseller` (`reseller_id`, `reseller_name`, `reseller_nickname`, `reseller_gender`, `reseller_address`, `reseller_birthplace`, `reseller_birthdate`, `reseller_last_education`, `reseller_jobs`, `reseller_phone_number`, `reseller_email`, `reseller_facebook`, `reseller_twitter`, `reseller_status`, `reseller_entry`, `reseller_entry_update`) VALUES
-('1303290001', 'Warman Suganda', 'Warman', '1', 'Jawura RT. 08/02 Pagaden Subang 41252', 'Subang', '1988-09-22', 'S1', 'Staff IT', '085222229880', 'warman.suganda@gmail.com', 'warman.suganda', '@WarmanSuganda', 0, '2013-03-29 08:51:50', '2013-03-29 08:51:54'),
-('1303290002', 'Indra Irawan', 'Indra', '0', 'Cibogo wetan', 'Cianjur', '1988-02-01', 'S1', 'Marketing', '0997748739', 'indra@gmail.com', 'indra.irawan', '@indra_irawan', 0, '2013-03-29 13:00:49', '2013-03-29 13:42:52');
-
---
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `orders`
+-- Constraints for table `orders`
 --
 ALTER TABLE `orders`
-  ADD CONSTRAINT `order_fk1` FOREIGN KEY (`order_reseller`) REFERENCES `reseller` (`reseller_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `order_fk1` FOREIGN KEY (`order_members`) REFERENCES `members` (`members_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `order_fk2` FOREIGN KEY (`payment_type`) REFERENCES `payment_type` (`payment_type_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `order_detail`
+-- Constraints for table `order_detail`
 --
 ALTER TABLE `order_detail`
-  ADD CONSTRAINT `order_detail_fk1` FOREIGN KEY (`detail_order`) REFERENCES `orders` (`oder_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `order_detail_fk1` FOREIGN KEY (`detail_order`) REFERENCES `orders` (`order_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `order_detail_fk2` FOREIGN KEY (`detail_item`) REFERENCES `pruduct_item` (`item_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `product`
+-- Constraints for table `product`
 --
 ALTER TABLE `product`
   ADD CONSTRAINT `product_fk2` FOREIGN KEY (`product_type`) REFERENCES `product_type_aggregation` (`aggregation_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `product_size_aggregation`
+-- Constraints for table `product_size_aggregation`
 --
 ALTER TABLE `product_size_aggregation`
   ADD CONSTRAINT `product_size_aggregation_fk1` FOREIGN KEY (`aggregation_size`) REFERENCES `product_size` (`size_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `product_size_aggregation_fk2` FOREIGN KEY (`aggregation_category`) REFERENCES `product_category` (`category_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `product_type_aggregation`
+-- Constraints for table `product_type_aggregation`
 --
 ALTER TABLE `product_type_aggregation`
   ADD CONSTRAINT `product_type_aggregation_fk1` FOREIGN KEY (`aggregation_type`) REFERENCES `product_type` (`type_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `product_type_aggregation_fk2` FOREIGN KEY (`aggregation_category`) REFERENCES `product_category` (`category_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `pruduct_item`
+-- Constraints for table `pruduct_item`
 --
 ALTER TABLE `pruduct_item`
   ADD CONSTRAINT `product_item_fk1` FOREIGN KEY (`item_product`) REFERENCES `product` (`product_id`) ON UPDATE CASCADE,
