@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 02, 2013 at 07:22 PM
+-- Generation Time: Apr 04, 2013 at 07:59 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -51,8 +51,8 @@ CREATE TABLE IF NOT EXISTS `members` (
 --
 
 INSERT INTO `members` (`members_id`, `members_name`, `members_nickname`, `members_gender`, `members_address`, `members_birthplace`, `members_birthdate`, `members_last_education`, `members_jobs`, `members_phone_number`, `members_email`, `members_facebook`, `members_twitter`, `members_status`, `members_entry`, `members_entry_update`) VALUES
-('1303290001', 'Warman Suganda', 'Warman', '1', 'Jawura RT. 08/02 Pagaden Subang 41252', 'Subang', '1988-09-22', 'S1', 'Staff IT', '085222229880', 'warman.suganda@gmail.com', 'warman.suganda', '@WarmanSuganda', 0, '2013-03-29 08:51:50', '2013-03-29 08:51:54'),
-('1303290002', 'Indra Irawan', 'Indra', '0', 'Cibogo wetan', 'Cianjur', '1988-02-01', 'S1', 'Marketing', '0997748739', 'indra@gmail.com', 'indra.irawan', '@indra_irawan', 0, '2013-03-29 13:00:49', '2013-03-29 13:42:52');
+('1303290001', 'Warman Suganda', 'Warman', '1', 'Jawura RT. 08/02 Pagaden Subang 41252', 'Subang', '1988-09-22', 'S1', 'Staff IT', '085222229880', 'warman.suganda@gmail.com', 'warman.suganda', '@WarmanSuganda', 1, '2013-03-29 08:51:50', '2013-04-04 10:56:47'),
+('1303290002', 'Indra Irawan', 'Indra', '0', 'Cibogo wetan', 'Cianjur', '1988-02-01', 'S1', 'Marketing', '0997748739', 'indra@gmail.com', 'indra.irawan', '@indra_irawan', 1, '2013-03-29 13:00:49', '2013-04-04 11:24:44');
 
 -- --------------------------------------------------------
 
