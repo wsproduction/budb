@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 05, 2013 at 10:37 AM
--- Server version: 5.5.16
--- PHP Version: 5.3.8
+-- Waktu pembuatan: 08. April 2013 jam 03:17
+-- Versi Server: 5.5.16
+-- Versi PHP: 5.3.8
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `members`
+-- Struktur dari tabel `members`
 --
 
 CREATE TABLE IF NOT EXISTS `members` (
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `members` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `members`
+-- Dumping data untuk tabel `members`
 --
 
 INSERT INTO `members` (`members_id`, `members_name`, `members_nickname`, `members_gender`, `members_address`, `members_birthplace`, `members_birthdate`, `members_last_education`, `members_jobs`, `members_phone_number`, `members_email`, `members_facebook`, `members_twitter`, `members_status`, `members_entry`, `members_entry_update`) VALUES
@@ -57,7 +57,7 @@ INSERT INTO `members` (`members_id`, `members_name`, `members_nickname`, `member
 -- --------------------------------------------------------
 
 --
--- Table structure for table `orders`
+-- Struktur dari tabel `orders`
 --
 
 CREATE TABLE IF NOT EXISTS `orders` (
@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `orders`
+-- Dumping data untuk tabel `orders`
 --
 
 INSERT INTO `orders` (`order_id`, `order_members`, `order_note`, `order_status`, `order_entry`, `order_entry_update`, `payment_status`, `payment_type`, `payment_note`, `shipping_status`, `shipping_address`, `shipping_date`, `shipping_courier`, `shipping_cost`) VALUES
@@ -90,7 +90,7 @@ INSERT INTO `orders` (`order_id`, `order_members`, `order_note`, `order_status`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `order_detail`
+-- Struktur dari tabel `order_detail`
 --
 
 CREATE TABLE IF NOT EXISTS `order_detail` (
@@ -108,7 +108,7 @@ CREATE TABLE IF NOT EXISTS `order_detail` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `order_detail`
+-- Dumping data untuk tabel `order_detail`
 --
 
 INSERT INTO `order_detail` (`detail_id`, `detail_order`, `detail_item`, `detail_price`, `detail_discount`, `detail_order_quantity`, `detail_ready_quantity`, `detail_status`) VALUES
@@ -117,7 +117,7 @@ INSERT INTO `order_detail` (`detail_id`, `detail_order`, `detail_item`, `detail_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `payment_type`
+-- Struktur dari tabel `payment_type`
 --
 
 CREATE TABLE IF NOT EXISTS `payment_type` (
@@ -127,7 +127,7 @@ CREATE TABLE IF NOT EXISTS `payment_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `payment_type`
+-- Dumping data untuk tabel `payment_type`
 --
 
 INSERT INTO `payment_type` (`payment_type_id`, `payment_type_name`) VALUES
@@ -138,7 +138,7 @@ INSERT INTO `payment_type` (`payment_type_id`, `payment_type_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product`
+-- Struktur dari tabel `product`
 --
 
 CREATE TABLE IF NOT EXISTS `product` (
@@ -155,7 +155,7 @@ CREATE TABLE IF NOT EXISTS `product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `product`
+-- Dumping data untuk tabel `product`
 --
 
 INSERT INTO `product` (`product_id`, `product_type`, `product_code`, `product_name`, `product_description`, `product_status`, `product_entry`, `product_entry_update`) VALUES
@@ -168,7 +168,7 @@ INSERT INTO `product` (`product_id`, `product_type`, `product_code`, `product_na
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product_category`
+-- Struktur dari tabel `product_category`
 --
 
 CREATE TABLE IF NOT EXISTS `product_category` (
@@ -181,7 +181,7 @@ CREATE TABLE IF NOT EXISTS `product_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `product_category`
+-- Dumping data untuk tabel `product_category`
 --
 
 INSERT INTO `product_category` (`category_id`, `category_name`, `category_status`, `category_entry`, `category_entry_update`) VALUES
@@ -191,7 +191,7 @@ INSERT INTO `product_category` (`category_id`, `category_name`, `category_status
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product_size`
+-- Struktur dari tabel `product_size`
 --
 
 CREATE TABLE IF NOT EXISTS `product_size` (
@@ -203,7 +203,7 @@ CREATE TABLE IF NOT EXISTS `product_size` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `product_size`
+-- Dumping data untuk tabel `product_size`
 --
 
 INSERT INTO `product_size` (`size_id`, `size_description`, `size_entry`, `size_entry_update`) VALUES
@@ -212,7 +212,7 @@ INSERT INTO `product_size` (`size_id`, `size_description`, `size_entry`, `size_e
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product_size_aggregation`
+-- Struktur dari tabel `product_size_aggregation`
 --
 
 CREATE TABLE IF NOT EXISTS `product_size_aggregation` (
@@ -225,7 +225,7 @@ CREATE TABLE IF NOT EXISTS `product_size_aggregation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `product_size_aggregation`
+-- Dumping data untuk tabel `product_size_aggregation`
 --
 
 INSERT INTO `product_size_aggregation` (`aggregation_id`, `aggregation_size`, `aggregation_category`) VALUES
@@ -235,7 +235,7 @@ INSERT INTO `product_size_aggregation` (`aggregation_id`, `aggregation_size`, `a
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product_type`
+-- Struktur dari tabel `product_type`
 --
 
 CREATE TABLE IF NOT EXISTS `product_type` (
@@ -248,7 +248,7 @@ CREATE TABLE IF NOT EXISTS `product_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `product_type`
+-- Dumping data untuk tabel `product_type`
 --
 
 INSERT INTO `product_type` (`type_id`, `type_code`, `type_name`, `type_entry`, `type_entry_update`) VALUES
@@ -262,7 +262,7 @@ INSERT INTO `product_type` (`type_id`, `type_code`, `type_name`, `type_entry`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product_type_aggregation`
+-- Struktur dari tabel `product_type_aggregation`
 --
 
 CREATE TABLE IF NOT EXISTS `product_type_aggregation` (
@@ -275,7 +275,7 @@ CREATE TABLE IF NOT EXISTS `product_type_aggregation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `product_type_aggregation`
+-- Dumping data untuk tabel `product_type_aggregation`
 --
 
 INSERT INTO `product_type_aggregation` (`aggregation_id`, `aggregation_type`, `aggregation_category`) VALUES
@@ -285,7 +285,7 @@ INSERT INTO `product_type_aggregation` (`aggregation_id`, `aggregation_type`, `a
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pruduct_item`
+-- Struktur dari tabel `pruduct_item`
 --
 
 CREATE TABLE IF NOT EXISTS `pruduct_item` (
@@ -304,7 +304,7 @@ CREATE TABLE IF NOT EXISTS `pruduct_item` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `pruduct_item`
+-- Dumping data untuk tabel `pruduct_item`
 --
 
 INSERT INTO `pruduct_item` (`item_id`, `item_product`, `item_size`, `item_stock`, `item_price`, `item_discount`, `item_status`, `item_entry`, `item_entry_update`) VALUES
@@ -314,45 +314,45 @@ INSERT INTO `pruduct_item` (`item_id`, `item_product`, `item_size`, `item_stock`
 ('13030004', '13030002', '13030002', 15, 29000, 20, 0, '2013-03-29 10:28:23', '2013-03-29 10:28:38');
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `orders`
+-- Ketidakleluasaan untuk tabel `orders`
 --
 ALTER TABLE `orders`
   ADD CONSTRAINT `order_fk1` FOREIGN KEY (`order_members`) REFERENCES `members` (`members_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `order_fk2` FOREIGN KEY (`payment_type`) REFERENCES `payment_type` (`payment_type_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `order_detail`
+-- Ketidakleluasaan untuk tabel `order_detail`
 --
 ALTER TABLE `order_detail`
   ADD CONSTRAINT `order_detail_fk1` FOREIGN KEY (`detail_order`) REFERENCES `orders` (`order_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `order_detail_fk2` FOREIGN KEY (`detail_item`) REFERENCES `pruduct_item` (`item_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `product`
+-- Ketidakleluasaan untuk tabel `product`
 --
 ALTER TABLE `product`
   ADD CONSTRAINT `product_fk2` FOREIGN KEY (`product_type`) REFERENCES `product_type_aggregation` (`aggregation_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `product_size_aggregation`
+-- Ketidakleluasaan untuk tabel `product_size_aggregation`
 --
 ALTER TABLE `product_size_aggregation`
   ADD CONSTRAINT `product_size_aggregation_fk1` FOREIGN KEY (`aggregation_size`) REFERENCES `product_size` (`size_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `product_size_aggregation_fk2` FOREIGN KEY (`aggregation_category`) REFERENCES `product_category` (`category_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `product_type_aggregation`
+-- Ketidakleluasaan untuk tabel `product_type_aggregation`
 --
 ALTER TABLE `product_type_aggregation`
   ADD CONSTRAINT `product_type_aggregation_fk1` FOREIGN KEY (`aggregation_type`) REFERENCES `product_type` (`type_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `product_type_aggregation_fk2` FOREIGN KEY (`aggregation_category`) REFERENCES `product_category` (`category_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `pruduct_item`
+-- Ketidakleluasaan untuk tabel `pruduct_item`
 --
 ALTER TABLE `pruduct_item`
   ADD CONSTRAINT `product_item_fk1` FOREIGN KEY (`item_product`) REFERENCES `product` (`product_id`) ON UPDATE CASCADE,
