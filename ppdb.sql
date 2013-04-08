@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Waktu pembuatan: 08. April 2013 jam 03:17
--- Versi Server: 5.5.16
--- Versi PHP: 5.3.8
+-- Generation Time: Apr 08, 2013 at 11:55 AM
+-- Server version: 5.5.16
+-- PHP Version: 5.3.8
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `academic_period`
+-- Table structure for table `academic_period`
 --
 
 CREATE TABLE IF NOT EXISTS `academic_period` (
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `academic_period` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `academic_period`
+-- Dumping data for table `academic_period`
 --
 
 INSERT INTO `academic_period` (`period_id`, `period_years_start`, `period_years_end`, `period_status`, `period_entry`, `period_entry_update`) VALUES
@@ -47,7 +47,7 @@ INSERT INTO `academic_period` (`period_id`, `period_years_start`, `period_years_
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ppdb_appilicant_family`
+-- Table structure for table `ppdb_appilicant_family`
 --
 
 CREATE TABLE IF NOT EXISTS `ppdb_appilicant_family` (
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `ppdb_appilicant_family` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ppdb_applicant_profile`
+-- Table structure for table `ppdb_applicant_profile`
 --
 
 CREATE TABLE IF NOT EXISTS `ppdb_applicant_profile` (
@@ -100,12 +100,12 @@ CREATE TABLE IF NOT EXISTS `ppdb_applicant_profile` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ppdb_school_profile`
+-- Table structure for table `ppdb_school_profile`
 --
 
 CREATE TABLE IF NOT EXISTS `ppdb_school_profile` (
   `school_id` varchar(8) NOT NULL,
-  `school_npsn` varchar(8) DEFAULT NULL,
+  `school_nss` varchar(12) DEFAULT NULL,
   `school_name` varchar(100) NOT NULL,
   `school_address` varchar(250) NOT NULL,
   `school_rt` varchar(5) DEFAULT NULL,
@@ -113,6 +113,7 @@ CREATE TABLE IF NOT EXISTS `ppdb_school_profile` (
   `school_village` varchar(50) DEFAULT NULL,
   `school_subdistric` varchar(50) DEFAULT NULL,
   `school_distric` varchar(50) DEFAULT NULL,
+  `school_province` varchar(50) DEFAULT NULL,
   `school_zipcode` varchar(5) DEFAULT NULL,
   `school_phone` varchar(12) DEFAULT NULL,
   `school_entry` datetime NOT NULL,
@@ -121,16 +122,17 @@ CREATE TABLE IF NOT EXISTS `ppdb_school_profile` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `ppdb_school_profile`
+-- Dumping data for table `ppdb_school_profile`
 --
 
-INSERT INTO `ppdb_school_profile` (`school_id`, `school_npsn`, `school_name`, `school_address`, `school_rt`, `school_rw`, `school_village`, `school_subdistric`, `school_distric`, `school_zipcode`, `school_phone`, `school_entry`, `school_entry_update`) VALUES
-('12345678', NULL, 'SD Negeri Sumbersari', 'Kp. Jawura', NULL, NULL, 'Sumbersari', 'Pagaden', 'Subang', '41252', NULL, '2013-04-07 10:48:11', '2013-04-07 10:48:14');
+INSERT INTO `ppdb_school_profile` (`school_id`, `school_nss`, `school_name`, `school_address`, `school_rt`, `school_rw`, `school_village`, `school_subdistric`, `school_distric`, `school_province`, `school_zipcode`, `school_phone`, `school_entry`, `school_entry_update`) VALUES
+('12040001', '72144524', 'SD Negeri Sumbersari', 'Kp. Jawura', NULL, NULL, 'Sumbersari', 'Pagaden', 'Subang', NULL, '41252', NULL, '2013-04-07 10:48:11', '2013-04-08 11:02:54'),
+('13040001', '101136003005', 'hasewelehj', 'f', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2013-04-08 11:18:23', '2013-04-08 11:20:09');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ppdb_school_score_un`
+-- Table structure for table `ppdb_school_score_un`
 --
 
 CREATE TABLE IF NOT EXISTS `ppdb_school_score_un` (
@@ -152,7 +154,7 @@ CREATE TABLE IF NOT EXISTS `ppdb_school_score_un` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ppdb_school_student`
+-- Table structure for table `ppdb_school_student`
 --
 
 CREATE TABLE IF NOT EXISTS `ppdb_school_student` (
@@ -171,7 +173,7 @@ CREATE TABLE IF NOT EXISTS `ppdb_school_student` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ppdb_school_teacher`
+-- Table structure for table `ppdb_school_teacher`
 --
 
 CREATE TABLE IF NOT EXISTS `ppdb_school_teacher` (
@@ -191,7 +193,7 @@ CREATE TABLE IF NOT EXISTS `ppdb_school_teacher` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ppdb_subject`
+-- Table structure for table `ppdb_subject`
 --
 
 CREATE TABLE IF NOT EXISTS `ppdb_subject` (
@@ -205,7 +207,7 @@ CREATE TABLE IF NOT EXISTS `ppdb_subject` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `public_blood_group`
+-- Table structure for table `public_blood_group`
 --
 
 CREATE TABLE IF NOT EXISTS `public_blood_group` (
@@ -217,7 +219,7 @@ CREATE TABLE IF NOT EXISTS `public_blood_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `public_blood_group`
+-- Dumping data for table `public_blood_group`
 --
 
 INSERT INTO `public_blood_group` (`blood_id`, `blood_name`, `blood_entry`, `blood_entry_update`) VALUES
@@ -229,7 +231,7 @@ INSERT INTO `public_blood_group` (`blood_id`, `blood_name`, `blood_entry`, `bloo
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `public_disease`
+-- Table structure for table `public_disease`
 --
 
 CREATE TABLE IF NOT EXISTS `public_disease` (
@@ -243,7 +245,7 @@ CREATE TABLE IF NOT EXISTS `public_disease` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `public_education`
+-- Table structure for table `public_education`
 --
 
 CREATE TABLE IF NOT EXISTS `public_education` (
@@ -255,7 +257,7 @@ CREATE TABLE IF NOT EXISTS `public_education` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `public_education`
+-- Dumping data for table `public_education`
 --
 
 INSERT INTO `public_education` (`education_id`, `educaition_title`, `education_entry`, `education_entry_update`) VALUES
@@ -274,7 +276,7 @@ INSERT INTO `public_education` (`education_id`, `educaition_title`, `education_e
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `public_gender`
+-- Table structure for table `public_gender`
 --
 
 CREATE TABLE IF NOT EXISTS `public_gender` (
@@ -284,7 +286,7 @@ CREATE TABLE IF NOT EXISTS `public_gender` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `public_gender`
+-- Dumping data for table `public_gender`
 --
 
 INSERT INTO `public_gender` (`gender_id`, `gender_title`) VALUES
@@ -294,7 +296,7 @@ INSERT INTO `public_gender` (`gender_id`, `gender_title`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `public_religion`
+-- Table structure for table `public_religion`
 --
 
 CREATE TABLE IF NOT EXISTS `public_religion` (
@@ -307,7 +309,7 @@ CREATE TABLE IF NOT EXISTS `public_religion` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `public_religion`
+-- Dumping data for table `public_religion`
 --
 
 INSERT INTO `public_religion` (`religion_id`, `religion_name`, `religion_isother`, `religion_entry`, `religion_entry_update`) VALUES
@@ -320,18 +322,18 @@ INSERT INTO `public_religion` (`religion_id`, `religion_name`, `religion_isother
 (6, 'Khong Hu Chu', 0, '2012-11-10 08:23:09', '2012-11-10 08:23:22');
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `ppdb_appilicant_family`
+-- Constraints for table `ppdb_appilicant_family`
 --
 ALTER TABLE `ppdb_appilicant_family`
   ADD CONSTRAINT `ppdb_applicant_family_fk1` FOREIGN KEY (`family_applicant`) REFERENCES `ppdb_applicant_profile` (`applicant_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `ppdb_applicant_family_fk2` FOREIGN KEY (`family_lasteducation`) REFERENCES `public_education` (`education_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `ppdb_applicant_profile`
+-- Constraints for table `ppdb_applicant_profile`
 --
 ALTER TABLE `ppdb_applicant_profile`
   ADD CONSTRAINT `ppdb_applicant_profile_fk1` FOREIGN KEY (`applicant_school`) REFERENCES `ppdb_school_profile` (`school_id`) ON UPDATE CASCADE,
@@ -342,7 +344,7 @@ ALTER TABLE `ppdb_applicant_profile`
   ADD CONSTRAINT `ppdb_applicant_profile_fk6` FOREIGN KEY (`applicant_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `ppdb_school_score_un`
+-- Constraints for table `ppdb_school_score_un`
 --
 ALTER TABLE `ppdb_school_score_un`
   ADD CONSTRAINT `ppdb_school_score_un_fk1` FOREIGN KEY (`score_un_school`) REFERENCES `ppdb_school_profile` (`school_id`) ON UPDATE CASCADE,
@@ -350,13 +352,13 @@ ALTER TABLE `ppdb_school_score_un`
   ADD CONSTRAINT `ppdb_school_score_un_fk3` FOREIGN KEY (`score_un_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `ppdb_school_student`
+-- Constraints for table `ppdb_school_student`
 --
 ALTER TABLE `ppdb_school_student`
   ADD CONSTRAINT `ppdb_school_student_fk1` FOREIGN KEY (`student_school`) REFERENCES `ppdb_school_profile` (`school_id`) ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `ppdb_school_teacher`
+-- Constraints for table `ppdb_school_teacher`
 --
 ALTER TABLE `ppdb_school_teacher`
   ADD CONSTRAINT `ppdb_school_teacher_fk1` FOREIGN KEY (`teacher_school`) REFERENCES `ppdb_school_profile` (`school_id`) ON UPDATE CASCADE,
