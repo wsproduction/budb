@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 08, 2013 at 11:55 AM
+-- Generation Time: Apr 10, 2013 at 11:00 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -81,10 +81,10 @@ CREATE TABLE IF NOT EXISTS `ppdb_applicant_profile` (
   `applicant_religion` tinyint(2) NOT NULL,
   `applicant_blood_group` int(11) DEFAULT NULL,
   `applicant_birthplace` varchar(50) NOT NULL,
-  `applicant_birthdate` datetime NOT NULL,
+  `applicant_birthdate` date NOT NULL,
   `applicant_height` float DEFAULT NULL,
   `applicant_weight` float DEFAULT NULL,
-  `applicant_disease` int(11) DEFAULT NULL,
+  `applicant_disease` varchar(50) DEFAULT NULL,
   `applicant_period` tinyint(4) NOT NULL,
   `applicant_entry` datetime NOT NULL,
   `applicant_entry_update` datetime NOT NULL,
@@ -93,9 +93,73 @@ CREATE TABLE IF NOT EXISTS `ppdb_applicant_profile` (
   KEY `ppdb_applicant_profile_fk2` (`applicant_gender`),
   KEY `ppdb_applicant_profile_fk3` (`applicant_religion`),
   KEY `ppdb_applicant_profile_fk4` (`applicant_blood_group`),
-  KEY `ppdb_applicant_profile_fk5` (`applicant_disease`),
   KEY `ppdb_applicant_profile_fk6` (`applicant_period`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ppdb_applicant_profile`
+--
+
+INSERT INTO `ppdb_applicant_profile` (`applicant_id`, `applicant_school`, `applicant_name`, `applicant_gender`, `applicant_religion`, `applicant_blood_group`, `applicant_birthplace`, `applicant_birthdate`, `applicant_height`, `applicant_weight`, `applicant_disease`, `applicant_period`, `applicant_entry`, `applicant_entry_update`) VALUES
+('13040001', '12040001', 'Warman Suganda', 1, 1, 2, 'Subang', '1988-09-24', 175, 64, NULL, 1, '2013-04-09 14:16:53', '2013-04-09 15:14:33'),
+('13040002', '12040001', 'Risnandar', 1, 1, 1, 'Ciamis', '1992-01-23', 178, 78, NULL, 1, '2013-04-10 09:07:48', '2013-04-10 09:07:48');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ppdb_rank_class`
+--
+
+CREATE TABLE IF NOT EXISTS `ppdb_rank_class` (
+  `rank_class_id` varchar(8) NOT NULL,
+  `rank_class_applicant` varchar(8) NOT NULL,
+  `rank_class_r4_smt1` int(11) DEFAULT NULL,
+  `rank_class_s4_smt1` int(11) DEFAULT NULL,
+  `rank_class_r4_smt2` int(11) DEFAULT NULL,
+  `rank_class_s4_smt2` int(11) DEFAULT NULL,
+  `rank_class_r5_smt1` int(11) DEFAULT NULL,
+  `rank_class_s5_smt1` int(11) DEFAULT NULL,
+  `rank_class_r5_smt2` int(11) DEFAULT NULL,
+  `rank_class_s5_smt2` int(11) DEFAULT NULL,
+  `rank_class_r6_smt1` int(11) DEFAULT NULL,
+  `rank_class_s6_smt2` int(11) DEFAULT NULL,
+  `rank_class_entry` datetime NOT NULL,
+  `rank_class_entry_update` datetime DEFAULT NULL,
+  PRIMARY KEY (`rank_class_id`),
+  KEY `ppdb_rank_class_fk1` (`rank_class_applicant`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ppdb_report_score`
+--
+
+CREATE TABLE IF NOT EXISTS `ppdb_report_score` (
+  `score_id` varchar(10) NOT NULL,
+  `score_applicant` varchar(8) NOT NULL,
+  `score_subject` int(11) NOT NULL,
+  `score_c4_smt1` int(11) NOT NULL,
+  `score_c4_smt2` int(11) NOT NULL,
+  `score_c5_smt1` int(11) NOT NULL,
+  `score_c5_smt2` int(11) NOT NULL,
+  `score_c6_smt1` int(11) NOT NULL,
+  `score_entry` datetime NOT NULL,
+  `score_entry_update` datetime NOT NULL,
+  PRIMARY KEY (`score_id`),
+  KEY `ppdb_report_score_fk1` (`score_applicant`),
+  KEY `ppdb_report_score_fk2` (`score_subject`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ppdb_report_score`
+--
+
+INSERT INTO `ppdb_report_score` (`score_id`, `score_applicant`, `score_subject`, `score_c4_smt1`, `score_c4_smt2`, `score_c5_smt1`, `score_c5_smt2`, `score_c6_smt1`, `score_entry`, `score_entry_update`) VALUES
+('1304000001', '13040001', 1, 6, 8, 11, 11, 10, '2013-04-10 09:01:59', '2013-04-10 09:01:59'),
+('1304000002', '13040001', 2, 9, 4, 2, 16, 14, '2013-04-10 09:01:59', '2013-04-10 09:01:59'),
+('1304000003', '13040001', 3, 23, 7, 7, 18, 4, '2013-04-10 09:01:59', '2013-04-10 09:01:59'),
+('1304000004', '13040001', 4, 16, 18, 16, 8, 19, '2013-04-10 09:01:59', '2013-04-10 09:01:59');
 
 -- --------------------------------------------------------
 
@@ -126,8 +190,7 @@ CREATE TABLE IF NOT EXISTS `ppdb_school_profile` (
 --
 
 INSERT INTO `ppdb_school_profile` (`school_id`, `school_nss`, `school_name`, `school_address`, `school_rt`, `school_rw`, `school_village`, `school_subdistric`, `school_distric`, `school_province`, `school_zipcode`, `school_phone`, `school_entry`, `school_entry_update`) VALUES
-('12040001', '72144524', 'SD Negeri Sumbersari', 'Kp. Jawura', NULL, NULL, 'Sumbersari', 'Pagaden', 'Subang', NULL, '41252', NULL, '2013-04-07 10:48:11', '2013-04-08 11:02:54'),
-('13040001', '101136003005', 'hasewelehj', 'f', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2013-04-08 11:18:23', '2013-04-08 11:20:09');
+('12040001', '72144524', 'SDN Sumbersari', 'Kp. Jawura', NULL, NULL, 'Sumbersari', 'Pagaden', 'Subang', NULL, '41252', NULL, '2013-04-07 10:48:11', '2013-04-09 15:15:10');
 
 -- --------------------------------------------------------
 
@@ -204,6 +267,16 @@ CREATE TABLE IF NOT EXISTS `ppdb_subject` (
   PRIMARY KEY (`subject_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `ppdb_subject`
+--
+
+INSERT INTO `ppdb_subject` (`subject_id`, `subject_name`, `subject_entry`, `subject_entry_update`) VALUES
+(1, 'Bahasa Indonesia', '2013-04-09 16:06:24', '2013-04-09 16:06:26'),
+(2, 'Matematika', '2013-04-09 16:06:37', '2013-04-09 16:06:39'),
+(3, 'IPA', '2013-04-09 16:06:47', '2013-04-09 16:06:49'),
+(4, 'IPS', '2013-04-09 16:06:56', '2013-04-09 16:06:58');
+
 -- --------------------------------------------------------
 
 --
@@ -227,20 +300,6 @@ INSERT INTO `public_blood_group` (`blood_id`, `blood_name`, `blood_entry`, `bloo
 (2, 'B', '2013-04-05 11:03:50', '2013-04-05 11:03:52'),
 (3, 'O', '2013-04-05 11:38:22', '2013-04-05 11:38:24'),
 (4, 'AB', '2013-04-05 11:38:32', '2013-04-05 11:38:34');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `public_disease`
---
-
-CREATE TABLE IF NOT EXISTS `public_disease` (
-  `disease_id` int(11) NOT NULL,
-  `disease_name` varchar(30) NOT NULL,
-  `disease_entry` datetime NOT NULL,
-  `disease_entry_update` datetime NOT NULL,
-  PRIMARY KEY (`disease_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -340,8 +399,20 @@ ALTER TABLE `ppdb_applicant_profile`
   ADD CONSTRAINT `ppdb_applicant_profile_fk2` FOREIGN KEY (`applicant_gender`) REFERENCES `public_gender` (`gender_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `ppdb_applicant_profile_fk3` FOREIGN KEY (`applicant_religion`) REFERENCES `public_religion` (`religion_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `ppdb_applicant_profile_fk4` FOREIGN KEY (`applicant_blood_group`) REFERENCES `public_blood_group` (`blood_id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `ppdb_applicant_profile_fk5` FOREIGN KEY (`applicant_disease`) REFERENCES `public_disease` (`disease_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `ppdb_applicant_profile_fk6` FOREIGN KEY (`applicant_period`) REFERENCES `academic_period` (`period_id`) ON UPDATE CASCADE;
+
+--
+-- Constraints for table `ppdb_rank_class`
+--
+ALTER TABLE `ppdb_rank_class`
+  ADD CONSTRAINT `ppdb_rank_class_fk1` FOREIGN KEY (`rank_class_applicant`) REFERENCES `ppdb_applicant_profile` (`applicant_id`) ON UPDATE CASCADE;
+
+--
+-- Constraints for table `ppdb_report_score`
+--
+ALTER TABLE `ppdb_report_score`
+  ADD CONSTRAINT `ppdb_report_score_fk1` FOREIGN KEY (`score_applicant`) REFERENCES `ppdb_applicant_profile` (`applicant_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `ppdb_report_score_fk2` FOREIGN KEY (`score_subject`) REFERENCES `ppdb_subject` (`subject_id`) ON UPDATE CASCADE;
 
 --
 -- Constraints for table `ppdb_school_score_un`
