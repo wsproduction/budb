@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 10, 2013 at 11:00 AM
+-- Generation Time: Apr 12, 2013 at 12:01 PM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -76,6 +76,7 @@ CREATE TABLE IF NOT EXISTS `ppdb_appilicant_family` (
 CREATE TABLE IF NOT EXISTS `ppdb_applicant_profile` (
   `applicant_id` varchar(8) NOT NULL COMMENT 'AABBXXXX',
   `applicant_school` varchar(8) NOT NULL,
+  `applicant_nisn` varchar(11) NOT NULL,
   `applicant_name` varchar(50) NOT NULL,
   `applicant_gender` tinyint(1) NOT NULL,
   `applicant_religion` tinyint(2) NOT NULL,
@@ -100,9 +101,10 @@ CREATE TABLE IF NOT EXISTS `ppdb_applicant_profile` (
 -- Dumping data for table `ppdb_applicant_profile`
 --
 
-INSERT INTO `ppdb_applicant_profile` (`applicant_id`, `applicant_school`, `applicant_name`, `applicant_gender`, `applicant_religion`, `applicant_blood_group`, `applicant_birthplace`, `applicant_birthdate`, `applicant_height`, `applicant_weight`, `applicant_disease`, `applicant_period`, `applicant_entry`, `applicant_entry_update`) VALUES
-('13040001', '12040001', 'Warman Suganda', 1, 1, 2, 'Subang', '1988-09-24', 175, 64, NULL, 1, '2013-04-09 14:16:53', '2013-04-09 15:14:33'),
-('13040002', '12040001', 'Risnandar', 1, 1, 1, 'Ciamis', '1992-01-23', 178, 78, NULL, 1, '2013-04-10 09:07:48', '2013-04-10 09:07:48');
+INSERT INTO `ppdb_applicant_profile` (`applicant_id`, `applicant_school`, `applicant_nisn`, `applicant_name`, `applicant_gender`, `applicant_religion`, `applicant_blood_group`, `applicant_birthplace`, `applicant_birthdate`, `applicant_height`, `applicant_weight`, `applicant_disease`, `applicant_period`, `applicant_entry`, `applicant_entry_update`) VALUES
+('13040001', '12040001', '01247521475', 'Warman Suganda', 1, 1, 2, 'Subang', '1988-09-24', 175, 64, NULL, 1, '2013-04-09 14:16:53', '2013-04-09 15:14:33'),
+('13040002', '12040001', '00001485478', 'Risnandar', 1, 1, 1, 'Ciamis', '1992-01-23', 178, 78, NULL, 1, '2013-04-10 09:07:48', '2013-04-10 09:07:48'),
+('13040003', '12040001', '12345678901', 'Warsu Heseweleh', 1, -1, 1, 'subang', '1992-01-01', 120, 50, NULL, 1, '2013-04-12 13:58:50', '2013-04-12 15:56:27');
 
 -- --------------------------------------------------------
 
@@ -122,12 +124,20 @@ CREATE TABLE IF NOT EXISTS `ppdb_rank_class` (
   `rank_class_r5_smt2` int(11) DEFAULT NULL,
   `rank_class_s5_smt2` int(11) DEFAULT NULL,
   `rank_class_r6_smt1` int(11) DEFAULT NULL,
-  `rank_class_s6_smt2` int(11) DEFAULT NULL,
+  `rank_class_s6_smt1` int(11) DEFAULT NULL,
   `rank_class_entry` datetime NOT NULL,
   `rank_class_entry_update` datetime DEFAULT NULL,
   PRIMARY KEY (`rank_class_id`),
   KEY `ppdb_rank_class_fk1` (`rank_class_applicant`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ppdb_rank_class`
+--
+
+INSERT INTO `ppdb_rank_class` (`rank_class_id`, `rank_class_applicant`, `rank_class_r4_smt1`, `rank_class_s4_smt1`, `rank_class_r4_smt2`, `rank_class_s4_smt2`, `rank_class_r5_smt1`, `rank_class_s5_smt1`, `rank_class_r5_smt2`, `rank_class_s5_smt2`, `rank_class_r6_smt1`, `rank_class_s6_smt1`, `rank_class_entry`, `rank_class_entry_update`) VALUES
+('13040001', '13040001', 1, 23, 7, 24, 3, 25, 6, 26, 5, 27, '2013-04-11 10:29:33', '2013-04-12 13:30:44'),
+('13040002', '13040002', 1, 21, 1, 1, 1, 1, 6, 30, 1, 1, '2013-04-11 13:16:27', '2013-04-11 13:16:44');
 
 -- --------------------------------------------------------
 
