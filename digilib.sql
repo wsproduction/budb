@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 11, 2013 at 11:47 AM
--- Server version: 5.5.16
--- PHP Version: 5.3.8
+-- Waktu pembuatan: 24. Mei 2013 jam 04:21
+-- Versi Server: 5.5.16
+-- Versi PHP: 5.3.8
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_author`
+-- Struktur dari tabel `digilib_author`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_author` (
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `digilib_author` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_author`
+-- Dumping data untuk tabel `digilib_author`
 --
 
 INSERT INTO `digilib_author` (`author_id`, `author_firstname`, `author_lastname`, `author_front_degree`, `author_back_degree`, `author_entry`, `author_entry_update`, `author_status`, `author_description`) VALUES
@@ -847,12 +847,138 @@ INSERT INTO `digilib_author` (`author_id`, `author_firstname`, `author_lastname`
 (799, 'Widyantara', NULL, NULL, NULL, '2013-02-13', '2013-02-13', 1, 2),
 (800, 'Syaiful', 'Qomar', NULL, NULL, '2013-02-14', '2013-02-14', 1, 1),
 (801, 'Diah', 'Iswari', 'Ir.', NULL, '2013-02-14', '2013-02-14', 1, 1),
-(802, 'Erni', 'Priyatini', NULL, NULL, '2013-02-14', '2013-02-14', 1, 2);
+(802, 'Erni', 'Priyatini', NULL, NULL, '2013-02-14', '2013-02-14', 1, 2),
+(803, 'Yudi', 'Purbowinanto', NULL, NULL, '2013-02-21', '2013-02-21', 1, 1),
+(804, 'M. Fahmi', 'Zaki', NULL, NULL, '2013-02-21', '2013-02-21', 1, 1),
+(805, 'Dadan', 'Sutisna', NULL, NULL, '2013-02-22', '2013-02-22', 1, 1),
+(806, 'Darpan,', NULL, NULL, 'S.Pd.', '2013-02-22', '2013-02-22', 1, 1),
+(807, 'Yudhiatna,', NULL, NULL, 'S.Pd.', '2013-02-22', '2013-02-22', 1, 1),
+(808, 'Amakoten', NULL, NULL, NULL, '2013-02-25', '2013-02-25', 1, 1),
+(809, 'Poppy H.', 'Loekito', NULL, NULL, '2013-02-25', '2013-02-25', 1, 1),
+(810, 'Anang', 'Saepuloh', NULL, NULL, '2013-03-23', '2013-03-23', 1, 1),
+(811, 'Eep', 'Hidayat', NULL, NULL, '2013-03-23', '2013-03-23', 1, 1),
+(812, 'Abdullah', 'Mustappa', NULL, NULL, '2013-03-23', '2013-03-23', 1, 1),
+(813, 'Samsoedi', NULL, NULL, NULL, '2013-03-23', '2013-03-23', 1, 1),
+(814, 'Usep', 'Romli H.M', NULL, NULL, '2013-03-23', '2013-03-23', 1, 1),
+(815, 'Ahmad', 'Bakri', NULL, NULL, '2013-03-23', '2013-03-23', 1, 1),
+(816, 'Enny', 'Sukasih', NULL, NULL, '2013-04-01', '2013-04-01', 1, 1),
+(817, 'Nur', 'Jannatun', NULL, NULL, '2013-04-01', '2013-04-01', 1, 2),
+(818, 'Narti', 'Suparti', NULL, NULL, '2013-04-01', '2013-04-01', 1, 1),
+(819, 'Tatang', 'Sumarsono', NULL, NULL, '2013-04-01', '2013-04-01', 1, 1),
+(820, 'Taufik', 'Faturohman', NULL, NULL, '2013-04-01', '2013-04-01', 1, 1),
+(821, 'Ibnu', 'Suroyo', NULL, NULL, '2013-04-01', '2013-04-01', 1, 1),
+(822, 'Ranti', 'Rusli', NULL, NULL, '2013-04-01', '2013-04-01', 1, 2),
+(823, 'Siti', 'Zulaikah', 'Dr.', NULL, '2013-04-02', '2013-04-02', 1, 1),
+(824, 'Moliere', NULL, NULL, NULL, '2013-04-03', '2013-04-03', 1, 1),
+(825, 'M.', 'Nashir Adzkia', NULL, NULL, '2013-04-03', '2013-04-03', 1, 1),
+(826, 'Siti', 'Rukoyah', NULL, NULL, '2013-04-03', '2013-04-03', 1, 2),
+(827, 'Lia', 'Sumantri', NULL, NULL, '2013-04-03', '2013-04-03', 1, 1),
+(828, 'Kiki', 'Dinar', NULL, NULL, '2013-04-04', '2013-04-04', 1, 1),
+(829, 'Terbit', 'Chairil', NULL, NULL, '2013-04-04', '2013-04-04', 1, 1),
+(830, 'Aminudin', NULL, NULL, NULL, '2013-04-04', '2013-04-04', 1, 2),
+(831, 'Dendi', NULL, NULL, 'S.A.R.', '2013-04-04', '2013-04-04', 1, 1),
+(832, 'Bayu Indra', 'Kusuma', NULL, NULL, '2013-04-04', '2013-04-04', 1, 2),
+(833, 'suharno', NULL, 'Drs.', 'PH', '2013-04-04', '2013-04-04', 1, 1),
+(834, 'Usep', 'Romli H.M', 'H.', NULL, '2013-04-04', '2013-04-04', 1, 1),
+(835, 'Djumri', 'Obeng', NULL, NULL, '2013-04-04', '2013-04-04', 1, 1),
+(836, 'Adi B.', 'Darmadi', NULL, NULL, '2013-05-07', '2013-05-07', 1, 2),
+(837, 'Nia M', 'Kagiarti', NULL, NULL, '2013-05-15', '2013-05-15', 1, 1),
+(838, 'Kitty', 'Blount', NULL, NULL, '2013-05-15', '2013-05-15', 1, 2),
+(839, 'Julian', 'Holland', NULL, NULL, '2013-05-15', '2013-05-15', 1, 2),
+(840, 'Norman', 'Brooke', NULL, NULL, '2013-05-15', '2013-05-15', 1, 2),
+(841, 'Sakib', 'Nursalim', NULL, NULL, '2013-05-15', '2013-05-15', 1, 2),
+(842, 'Lynn', 'Bresler', NULL, NULL, '2013-05-15', '2013-05-15', 1, 2),
+(843, 'Dewi', 'Susiloningtyas', NULL, NULL, '2013-05-15', '2013-05-15', 1, 3),
+(844, 'Ary', 'Dartoyo', NULL, NULL, '2013-05-15', '2013-05-15', 1, 3),
+(845, 'Emmy', 'Kartika', NULL, NULL, '2013-05-15', '2013-05-15', 1, 3),
+(846, 'Ika', 'Fajar L', NULL, NULL, '2013-05-15', '2013-05-15', 1, 1),
+(847, 'Tuswanto', NULL, 'W.', 'SN.', '2013-05-16', '2013-05-16', 1, 1),
+(848, 'Miftahul A.', NULL, NULL, NULL, '2013-05-16', '2013-05-16', 1, 1),
+(849, 'Junaedi', NULL, 'M.R.', NULL, '2013-05-16', '2013-05-16', 1, 1),
+(850, 'A. Krisna', 'Slamet', NULL, NULL, '2013-05-16', '2013-05-16', 1, 1),
+(851, 'M.', 'Ruslin', NULL, NULL, '2013-05-16', '2013-05-16', 1, 2),
+(852, 'Reza', 'Saputra', NULL, NULL, '2013-05-20', '2013-05-20', 1, 1),
+(853, 'Permata', 'Shariati,', NULL, 'S.Si.', '2013-05-20', '2013-05-20', 1, 2),
+(854, 'M. Ikhsan', 'Shiddieqy,', NULL, 'S.Pt.', '2013-05-20', '2013-05-20', 1, 2),
+(855, 'Sigit', 'Rais,', NULL, 'S.S.', '2013-05-20', '2013-05-20', 1, 2),
+(856, 'Wahyudin', NULL, 'Dr.', NULL, '2013-05-20', '2013-05-20', 1, 1),
+(857, 'Sudrajat,', NULL, 'Drs.', 'M.Pd.', '2013-05-20', '2013-05-20', 1, 1),
+(858, 'Hardiyanti', 'Rukmana', NULL, NULL, '2013-05-20', '2013-05-20', 1, 2),
+(859, 'Endang', 'Firdaus', NULL, NULL, '2013-05-20', '2013-05-20', 1, 2),
+(860, 'Mardiani', 'Pandego', NULL, NULL, '2013-05-20', '2013-05-20', 1, 1),
+(861, 'Rachael', 'Firth', NULL, NULL, '2013-05-20', '2013-05-20', 1, 1),
+(862, 'D.', 'Sihombing', NULL, NULL, '2013-05-20', '2013-05-20', 1, 3),
+(863, 'Suhardi,', NULL, 'Drs.', 'M.Pd.', '2013-05-20', '2013-05-20', 1, 1),
+(864, 'T.', 'Bachtiar', NULL, NULL, '2013-05-20', '2013-05-20', 1, 1),
+(865, 'Sam', 'Taplin', NULL, NULL, '2013-05-20', '2013-05-20', 1, 1),
+(866, 'Anik', 'Nur Cahyati', NULL, NULL, '2013-05-20', '2013-05-20', 1, 2),
+(867, 'sudiro', NULL, NULL, NULL, '2013-05-20', '2013-05-20', 1, 1),
+(868, 'Saleh', NULL, 'B.A.', NULL, '2013-05-21', '2013-05-21', 1, 1),
+(869, 'Dana', 'Listiana', NULL, NULL, '2013-05-21', '2013-05-21', 1, 2),
+(871, 'Ita', 'Rosfita', NULL, NULL, '2013-05-21', '2013-05-21', 1, 2),
+(872, 'Wawan Priyo', 'Harmono', NULL, NULL, '2013-05-21', '2013-05-21', 1, 2),
+(873, 'Ari Wahyu', 'Aryandi', NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(874, 'Ria', 'Kurniawatin', NULL, NULL, '2013-05-21', '2013-05-21', 1, 2),
+(875, 'Syah Alam', 'Tirtadireja,', NULL, 'S.S.', '2013-05-21', '2013-05-21', 1, 2),
+(876, 'Ichsan', 'Suhada', NULL, NULL, '2013-05-21', '2013-05-21', 1, 2),
+(877, 'Rohmat', 'Kurnia', NULL, NULL, '2013-05-21', '2013-05-21', 1, 2),
+(878, 'Nursanti', 'Riandini', NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(879, 'Firman', 'Sujadi', NULL, NULL, '2013-05-21', '2013-05-21', 1, 2),
+(880, 'Hikmat', 'Kusumaningrat', NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(881, 'Anah', 'Elhisani', NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(882, 'Lina', 'Marlina', NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(883, 'Idatul', 'Fitri', NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(884, 'Aryo', NULL, NULL, NULL, '2013-05-21', '2013-05-21', 1, 2),
+(885, 'Arif', 'Supriono', NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(886, 'Anang Solihin', 'Wardan', NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(887, 'Mohammad', 'Shoelhi', NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(888, 'Sucipto', NULL, NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(889, 'Suminto', NULL, NULL, NULL, '2013-05-21', '2013-05-21', 1, 2),
+(890, 'Sholehuddin', NULL, NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(891, 'Saefullah', NULL, NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(892, 'Herlina', 'Rahmawati', NULL, 'S.Si', '2013-05-21', '2013-05-21', 1, 1),
+(893, 'Aang', 'Athorida,', NULL, 'S.Pd, M.M.Pd', '2013-05-21', '2013-05-21', 1, 1),
+(894, 'L.', 'Colvin', NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(895, 'E.', 'Speare', NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(896, 'Yama Shita', 'A', NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(897, 'Rohmat', 'K', NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(898, 'N.S.', 'Adiwiyono', NULL, NULL, '2013-05-21', '2013-05-21', 1, 1),
+(899, 'Ruswandi', 'Herwandi', NULL, NULL, '2013-05-22', '2013-05-22', 1, 1),
+(900, 'Sukanda', 'Permana', NULL, NULL, '2013-05-22', '2013-05-22', 1, 1),
+(901, 'Risdawati', NULL, NULL, NULL, '2013-05-22', '2013-05-22', 1, 2),
+(902, 'Yogie Nugraha', 'Aryasetia', NULL, NULL, '2013-05-22', '2013-05-22', 1, 2),
+(903, 'St.Mohammad', 'Rasjid', 'Mr.', NULL, '2013-05-22', '2013-05-22', 1, 1),
+(904, 'Ella Yulaelawati', NULL, NULL, NULL, '2013-05-22', '2013-05-22', 1, 1),
+(905, 'Sudarmanto', NULL, 'YB.', NULL, '2013-05-22', '2013-05-22', 1, 2),
+(906, 'Miharja', NULL, 'ST.', NULL, '2013-05-22', '2013-05-22', 1, 1),
+(907, 'Buya', 'Ast', 'R.M', NULL, '2013-05-22', '2013-05-22', 1, 1),
+(908, 'Kamal Z.', 'Noor', NULL, NULL, '2013-05-22', '2013-05-22', 1, 1),
+(909, 'Mardanas', 'Safwan', NULL, NULL, '2013-05-22', '2013-05-22', 1, 1),
+(910, 'Amrin', 'Imran', 'Drs.', NULL, '2013-05-22', '2013-05-22', 1, 1),
+(911, 'Sutrisno', 'Kutoyo', NULL, NULL, '2013-05-22', '2013-05-22', 1, 1),
+(912, 'A.', 'Handoyo', NULL, NULL, '2013-05-22', '2013-05-22', 1, 1),
+(913, 'Ari', 'P', NULL, NULL, '2013-05-22', '2013-05-22', 1, 1),
+(914, 'Asmid Kamal', 'Chaniago', 'Drs.', NULL, '2013-05-22', '2013-05-22', 1, 1),
+(915, 'Andrie', 'Sheva', NULL, NULL, '2013-05-22', '2013-05-22', 1, 1),
+(916, 'Saiful', 'Anam', NULL, NULL, '2013-05-23', '2013-05-23', 1, 1),
+(917, 'I Nyoman', 'Sukatha', NULL, NULL, '2013-05-23', '2013-05-23', 1, 1),
+(918, 'I.B', 'Mayun', NULL, NULL, '2013-05-23', '2013-05-23', 1, 1),
+(919, 'Wayan', 'Rupa', NULL, NULL, '2013-05-23', '2013-05-23', 1, 1),
+(920, 'Nina Herlina', 'Lubis,', 'Prop.Dr.', 'M.S', '2013-05-23', '2013-05-23', 1, 1),
+(921, 'Hardi', NULL, NULL, NULL, '2013-05-23', '2013-05-23', 1, 1),
+(922, 'Ruben', 'Nalenan', 'Drs.', NULL, '2013-05-23', '2013-05-23', 1, 2),
+(923, 'Nugroho', 'Notosusanto', NULL, NULL, '2013-05-23', '2013-05-23', 1, 1),
+(924, 'D.', 'Budimansyah,', 'Drs.', 'M.Si', '2013-05-23', '2013-05-23', 1, 1),
+(925, 'Ika', 'Listiyarini', NULL, NULL, '2013-05-23', '2013-05-23', 1, 2),
+(926, 'Edy', 'Wahyono', NULL, NULL, '2013-05-23', '2013-05-23', 1, 2),
+(927, 'Agus', 'G.S', NULL, NULL, '2013-05-23', '2013-05-23', 1, 2),
+(928, 'Maman', 'Abdurrachman', 'Dr.', NULL, '2013-05-23', '2013-05-23', 1, 2),
+(929, 'Asnawi Mangku', 'Alam', NULL, NULL, '2013-05-23', '2013-05-23', 1, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_author_description`
+-- Struktur dari tabel `digilib_author_description`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_author_description` (
@@ -867,7 +993,7 @@ CREATE TABLE IF NOT EXISTS `digilib_author_description` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_author_description`
+-- Dumping data untuk tabel `digilib_author_description`
 --
 
 INSERT INTO `digilib_author_description` (`author_description_id`, `author_description_title`, `author_description_level`, `author_description_entry`, `author_description_entry_update`) VALUES
@@ -878,7 +1004,7 @@ INSERT INTO `digilib_author_description` (`author_description_id`, `author_descr
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_book`
+-- Struktur dari tabel `digilib_book`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_book` (
@@ -917,7 +1043,7 @@ CREATE TABLE IF NOT EXISTS `digilib_book` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_book`
+-- Dumping data untuk tabel `digilib_book`
 --
 
 INSERT INTO `digilib_book` (`book_id`, `book_title`, `book_foreign_title`, `book_publisher`, `book_publishing`, `book_edition`, `book_copy`, `book_isbn`, `book_roman_number`, `book_pages_number`, `book_bibliography`, `book_ilustration`, `book_index`, `book_width`, `book_height`, `book_weight`, `book_accounting_symbol`, `book_price`, `book_resource`, `book_fund`, `book_review`, `book_classification`, `book_cover`, `book_file`, `book_entry`, `book_entry_update`) VALUES
@@ -1628,12 +1754,192 @@ INSERT INTO `digilib_book` (`book_id`, `book_title`, `book_foreign_title`, `book
 ('130213005', 'Mengenal Lebih Dekat Tanaman Mendong ''Primadona Kerajinan Tasikmalaya''', NULL, 90, 2009, '2', 1, '978-979-005-030-3', 'vi', 66, '49', 1, 1, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 3820, NULL, NULL, '2013-02-13', '2013-02-13'),
 ('130213006', 'Jari-Jari tangan yang Terampil', NULL, 113, 2006, 'Revisi', 1, '979-744-391-4', 'iv', 60, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 3802, NULL, NULL, '2013-02-13', '2013-02-13'),
 ('130214001', 'Berkreasi dengan Janur', NULL, 70, 2010, NULL, 1, '979-9386-42-X', 'iv', 52, NULL, 1, 0, 15.5, 23.5, 0.2, NULL, 0, 2, NULL, NULL, 3821, NULL, NULL, '2013-02-14', '2013-02-14'),
-('130214002', 'Kreasi Hiasan Dinding dari Janur', NULL, 70, 2010, NULL, 1, '979-3567-39-2', 'iv', 52, NULL, 1, 0, 15.5, 23.5, 0.2, NULL, 0, 2, NULL, NULL, 3822, NULL, NULL, '2013-02-14', '2013-02-14');
+('130214002', 'Kreasi Hiasan Dinding dari Janur', NULL, 70, 2010, NULL, 1, '979-3567-39-2', 'iv', 52, NULL, 1, 0, 15.5, 23.5, 0.2, NULL, 0, 2, NULL, NULL, 3822, NULL, NULL, '2013-02-14', '2013-02-14'),
+('130221001', 'Pengolahan Air Gambut Menjadi Air Minum', NULL, 113, 2006, NULL, 1, '979-15405-7-8', 'iv', 60, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 2478, NULL, NULL, '2013-02-21', '2013-02-21'),
+('130221002', 'Kamus Visual Hewan', NULL, 114, 2010, NULL, 3, '978-979-465-539-9', 'iv', 156, '156', 1, 0, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 3731, NULL, NULL, '2013-02-21', '2013-02-21'),
+('130221003', 'Mari Bercerita', NULL, 23, 2009, NULL, 1, '978-979-678-345-8', 'iv', 52, '50', 1, 1, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1212, NULL, NULL, '2013-02-21', '2013-02-21'),
+('130222001', 'Nu Ngageugeuh Legok Kiara', NULL, 82, 2012, NULL, 4, '979-3631-70-8', NULL, 51, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1218, NULL, NULL, '2013-02-22', '2013-02-22'),
+('130222002', 'Dongeng  - Dongeng ti Karawang', NULL, 82, 2012, NULL, 4, '978-979-8001-16-1', NULL, 66, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1218, NULL, NULL, '2013-02-22', '2013-02-22'),
+('130225001', 'Merintis Masa Depan', NULL, 75, 2007, NULL, 2, '978-979-573-153-5', 'vii', 64, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1197, NULL, NULL, '2013-02-25', '2013-02-25'),
+('130225002', 'Smock Untuk Pemula', NULL, 70, 2010, NULL, 1, '979-3567-47-3', 'vi', 48, NULL, 1, 0, 15.5, 23.5, 0.1, NULL, 0, 2, NULL, NULL, 3802, NULL, NULL, '2013-02-25', '2013-02-25'),
+('130316001', 'Hate Awewe', NULL, 82, 2011, NULL, 1, NULL, NULL, 209, NULL, 0, 0, 14.5, 21, 0.2, NULL, 0, 2, NULL, NULL, 1218, NULL, NULL, '2013-03-16', '2013-03-16'),
+('130323001', 'Penuntun Pembelajaran Pendidikan Lingkungan Hidup', NULL, 144, 2011, NULL, 1, NULL, 'viii', 102, '96-97', 1, 1, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1960, NULL, NULL, '2013-03-23', '2013-03-23'),
+('130323002', 'Anaking Jimat Awaking', NULL, 145, 2006, NULL, 1, NULL, 'viii', 40, NULL, 1, 0, 17.5, 25, 0.1, 1, 50000, 2, NULL, NULL, 1218, NULL, NULL, '2013-03-23', '2013-03-23'),
+('130323003', 'Lembur Singkur', NULL, 82, 2009, NULL, 3, NULL, NULL, 51, NULL, 0, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1218, NULL, NULL, '2013-03-23', '2013-03-23'),
+('130323004', 'Ba Balik Pikir', NULL, 82, 2011, NULL, 4, NULL, NULL, 72, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1218, NULL, NULL, '2013-03-23', '2013-03-23'),
+('130323005', 'Bentang Pasantren', NULL, 82, 2011, NULL, 4, NULL, NULL, 70, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1218, NULL, NULL, '2013-03-23', '2013-03-23');
+INSERT INTO `digilib_book` (`book_id`, `book_title`, `book_foreign_title`, `book_publisher`, `book_publishing`, `book_edition`, `book_copy`, `book_isbn`, `book_roman_number`, `book_pages_number`, `book_bibliography`, `book_ilustration`, `book_index`, `book_width`, `book_height`, `book_weight`, `book_accounting_symbol`, `book_price`, `book_resource`, `book_fund`, `book_review`, `book_classification`, `book_cover`, `book_file`, `book_entry`, `book_entry_update`) VALUES
+('130323006', 'Sudagar Batik', NULL, 82, 2009, NULL, 4, '979-3631-17-1', NULL, 81, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1218, NULL, NULL, '2013-03-23', '2013-03-23'),
+('130401001', 'Mengenal Tokoh-Tokoh Pergerakan Nasional', NULL, 55, 2008, NULL, 1, '9797399737', 'iv', 60, '60', 1, 0, 17.5, 25, 0.1, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-04-01', '2013-04-01'),
+('130401002', 'Salapan Pahlawan Istri', NULL, 40, 2009, NULL, 1, '978-979-24-1744-9', NULL, 64, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-04-01', '2013-04-01'),
+('130401003', 'Membuat Aneka Kerajinan dari Kain Perca', NULL, 70, 2010, NULL, 1, '979-9386-04-7', 'vi', 54, NULL, 1, 0, 15.5, 23.5, 0.1, NULL, 0, 2, NULL, NULL, 3801, NULL, NULL, '2013-04-01', '2013-04-01'),
+('130401004', 'Si Paser', NULL, 146, 2012, NULL, 4, NULL, NULL, 80, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1218, NULL, NULL, '2013-04-01', '2013-04-01'),
+('130401005', 'Patepung di Bandung', NULL, 146, 2012, NULL, 3, NULL, NULL, 112, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1218, NULL, NULL, '2013-04-01', '2013-04-01'),
+('130401006', 'Merintis Masa Depan', NULL, 75, 2007, NULL, 2, '978-979-573-153-5', NULL, 61, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1199, NULL, NULL, '2013-04-01', '2013-04-01'),
+('130401007', 'Agung Anak Transmigran', NULL, 113, 2008, NULL, 1, '979-744-456-2', 'v', 98, NULL, 1, 0, 14.5, 21, 0.2, NULL, 0, 2, NULL, NULL, 1211, NULL, NULL, '2013-04-01', '2013-04-01'),
+('130401008', 'Indahnya Negri Tanpa Kekerasan', NULL, 51, 2009, NULL, 1, '979-692-939-2', 'xii', 223, '222', 1, 1, 14.5, 21, 0.2, NULL, 0, 2, NULL, NULL, 1343, NULL, NULL, '2013-04-01', '2013-04-01'),
+('130402001', 'Aneka Kerajinan Tali', NULL, 16, 2008, '2', 1, '979-9282-88-8', 'vi', 66, '61', 1, 1, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 3802, NULL, NULL, '2013-04-02', '2013-04-02'),
+('130402002', 'Ensiklopedi Fisika 3 : Sejarah Pengukuran & Desain Peralatan Untuk Pendidikan Menengah dan Umum', NULL, 23, 2009, NULL, 2, '978-979-678-141-6', 'vi', 98, '92', 1, 0, 21, 30, 0.2, NULL, 0, 2, NULL, NULL, 3298, NULL, NULL, '2013-04-02', '2013-04-02'),
+('130403001', 'Akal Bulus Scapin', NULL, 15, 2002, NULL, 4, '979-419-262-7', NULL, 74, NULL, 1, 0, 13, 19, 0.1, NULL, 0, 2, NULL, NULL, 1211, NULL, NULL, '2013-04-03', '2013-04-03'),
+('130403002', 'Cika-Cika ngalalana', NULL, 23, 2009, NULL, 1, '978-979-678-280-2', NULL, 56, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1218, NULL, NULL, '2013-04-03', '2013-04-03'),
+('130403003', 'Jujumputan', NULL, 37, 2009, NULL, 1, '978-602-8317-33-5', NULL, 64, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1191, NULL, NULL, '2013-04-03', '2013-04-03'),
+('130404001', 'Pengembala Itik', NULL, 118, 2005, NULL, 1, '979-3802-77-4', NULL, 63, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1212, NULL, NULL, '2013-04-04', '2013-04-04'),
+('130404002', 'Jagoan Cilik', NULL, 147, 2010, NULL, 1, '979-3414-14-6', 'viii', 87, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1212, NULL, NULL, '2013-04-04', '2013-04-04'),
+('130404003', 'Aku Ingin Menjadi Arsitek', NULL, 9, 2009, 'II', 1, '978-979-749-092-8', 'vi', 66, '60', 1, 1, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1212, NULL, NULL, '2013-04-04', '2013-04-04'),
+('130404004', 'Pembuatan Minyak Kalapa', NULL, 6, 2006, NULL, 1, '979-744-451-1', 'iv', 100, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1212, NULL, NULL, '2013-04-04', '2013-04-04'),
+('130404005', 'Keluarga Pencinta lingkungan', NULL, 6, 2007, NULL, 1, '978-979-571-481-1', 'iv', 76, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1212, NULL, NULL, '2013-04-04', '2013-04-04'),
+('130404006', 'Kumpulan Cerita Pondok', 'Para Calon', 40, 2009, NULL, 1, '978-979-24-1742-5', NULL, 64, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1212, NULL, NULL, '2013-04-04', '2013-04-04'),
+('130404007', 'Suku Dayak  : Kumpulan Puisi', NULL, 61, 1995, NULL, 1, '979-407-356-3', NULL, 38, NULL, 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1197, NULL, NULL, '2013-04-04', '2013-04-04'),
+('130507001', 'BENTANG PASANTREN', NULL, 82, 2011, NULL, 4, '979-3631-71-6', NULL, 5, NULL, 0, 1, 14, 21, 0.4, NULL, 0, 2, NULL, NULL, 1218, NULL, NULL, '2013-05-07', '2013-05-07'),
+('130507002', 'Mengenal Organisasi Internasional', NULL, 29, 2008, NULL, 1, '978-979-1491-97-6', NULL, 55, '56', 1, 0, 14, 21, 0.5, NULL, 0, 2, NULL, NULL, 337, NULL, NULL, '2013-05-07', '2013-05-07'),
+('130507003', 'MEMPERSIAPKAN Pemain Basket Berprestasi', NULL, 104, 2009, NULL, 2, '978-602-8264-16', 'iv', 68, '67', 1, 0, 17, 25, 0.5, NULL, 0, 2, NULL, NULL, 3809, NULL, NULL, '2013-05-07', '2013-05-07'),
+('130507004', 'SERI BINATANG I : MARI BELAJAR SAINS Untuk Anak', NULL, 102, 2008, NULL, 1, '978-979-3077-35-2', 'vi', 98, '97', 1, 0, 20, 28, 0.8, NULL, 0, 2, NULL, NULL, 1955, NULL, NULL, '2013-05-07', '2013-05-07'),
+('130507005', 'MENGENAL BAHAYA NARKOBA', NULL, 128, 2006, NULL, 1, '979-758-269-8', NULL, 64, '63', 1, 0, 20, 25, 0.5, NULL, 0, 2, NULL, NULL, 2151, NULL, NULL, '2013-05-07', '2013-05-07'),
+('130507006', 'PATEPUNG BANDUNG', NULL, 146, 2012, NULL, 3, NULL, NULL, 112, NULL, 1, 0, 14.5, 21, 0.8, NULL, 0, 2, NULL, NULL, 1218, NULL, NULL, '2013-05-07', '2013-05-07'),
+('130507007', 'Dinosaurus dan Kehidupan Purba', NULL, 24, 2004, NULL, 1, NULL, NULL, 64, NULL, 1, 0, 22, 27, 0.5, NULL, 0, 2, NULL, NULL, 1472, NULL, NULL, '2013-05-07', '2013-05-07'),
+('130507008', 'BABALI PIKIR', NULL, 82, 2011, NULL, 4, NULL, NULL, 72, NULL, 1, 0, 15, 20, 0.5, NULL, 0, 2, NULL, NULL, 1218, NULL, NULL, '2013-05-07', '2013-05-07'),
+('130507009', 'Pemain Voli Berprestasi', NULL, 104, 2009, NULL, 2, '978-602-8264-17-4', 'iv', 67, '67', 1, 0, 17, 25, 0.2, NULL, 0, 2, NULL, NULL, 3805, NULL, NULL, '2013-05-07', '2013-05-07'),
+('130507010', 'Aku Cinta Damai', NULL, 29, 2008, NULL, 1, '978-602-8123-02-0', 'vi', 58, '58', 1, 0, 15, 21, 0.5, NULL, 0, 2, NULL, NULL, 1197, NULL, NULL, '2013-05-07', '2013-05-07'),
+('130507011', 'Membuat Aneka Boneka dari Sarung Tangan', NULL, 70, 2010, NULL, 1, '979-8955-94-3', 'vi', 58, NULL, 1, 0, 15.5, 23.5, 0.2, NULL, 0, 2, NULL, NULL, 3801, NULL, NULL, '2013-05-07', '2013-05-07'),
+('130515001', 'Evolution And Genetics', NULL, 148, 2008, NULL, 1, '978-1-59339-388-5', NULL, 101, NULL, 1, 1, 22, 28, 0.5, NULL, 0, 2, 1, NULL, 3266, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515002', 'Plants,Algae,And Fungi', NULL, 148, 2008, NULL, 1, '978-1-59339-394-6', NULL, 101, NULL, 1, 1, 21, 27, 0.5, NULL, 0, 2, 1, NULL, 3728, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515003', 'UNIVERSE', NULL, 148, 2008, NULL, 1, NULL, NULL, 101, NULL, 1, 1, 21, 27, 0.5, NULL, 0, 2, 1, NULL, 3266, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515004', 'Invertebrates', NULL, 148, 2008, NULL, 1, '978-1-59339-392-2', NULL, 101, NULL, 1, 1, 21, 27, 0.5, NULL, 0, 2, 1, NULL, 3800, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515005', 'TECHNOLOGY', NULL, 148, 2008, NULL, 1, '978-1-59339-398-4', NULL, 101, NULL, 1, 1, 21, 27, 0.5, NULL, 0, 2, 1, NULL, 3808, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515006', 'Reptiles And Dinosaurus', NULL, 148, 2008, NULL, 1, '978-1-59339-395-3', NULL, 101, NULL, 1, 1, 21, 27, 0.5, NULL, 0, 2, 1, NULL, 3779, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515007', 'Fish And Amphibians', NULL, 148, 2008, NULL, 1, '978-1-59339-389-2', NULL, 101, NULL, 1, 1, 21, NULL, 27, NULL, 0, 2, 1, NULL, 3776, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515008', 'Rocks And Minerals', NULL, 148, 2008, NULL, 1, '978-1-59339-396-0', NULL, 101, NULL, 1, 1, 21, 27, 0.5, NULL, 0, 2, 1, NULL, 3490, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515009', 'WEATHER', NULL, 148, 2008, NULL, 1, '978-1-59339-386-1', NULL, 101, NULL, 1, 1, 21, 27, 0.5, NULL, 0, 2, 1, NULL, 3471, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515010', 'Mammalias', NULL, 148, 2008, NULL, 1, '978-1-59339-393-9', NULL, 101, NULL, 1, 1, 21, 27, 0.5, NULL, 0, 2, 1, NULL, 3733, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515011', 'Energy And Movement', NULL, 148, 2008, NULL, 1, '978-1-59339-387-8', NULL, 101, NULL, 1, 1, 21, 27, 0.5, NULL, 0, 2, 1, NULL, 3315, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515012', 'SPACE EXPLORATION', NULL, 148, 2008, NULL, 1, '978-1-59339-397-7', NULL, 101, NULL, 1, 1, 21, 27, 0.5, NULL, 0, 2, 1, NULL, 1365, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515013', 'Birds', NULL, 148, 2008, NULL, 1, '978-1-59339-385-4', NULL, 101, NULL, 1, 1, 21, 27, 0.5, NULL, 0, 2, 1, NULL, 3780, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515014', 'VOLCANOES AND EARTH QUAKES', NULL, 148, 2008, NULL, 1, '978-1-59339-400-4', NULL, 100, NULL, 1, 1, 21, 27, 0.5, NULL, 0, 2, 1, NULL, 1342, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515015', 'KERAJAAN NUSANTARA', NULL, 93, 2009, NULL, 1, '978-602-8489-35-5', 'iv', 180, '179', 1, 1, 21, 27, NULL, NULL, 0, 2, 1, NULL, 1352, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515016', 'Fisika 3 SMP', NULL, 93, 1990, NULL, 1, NULL, 'ii', 28, NULL, 1, 0, 22, 29, 0.4, NULL, 0, 2, NULL, NULL, 3351, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515017', 'Fisika 1 SMP', NULL, 93, 1990, NULL, 1, NULL, 'ii', 44, NULL, 1, 0, 22, 29, 0.4, NULL, 0, 2, NULL, NULL, 3307, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515018', 'FISIKA 2 SMP', NULL, 101, 1990, NULL, 2, NULL, 'ii', 38, NULL, 1, 0, 29, 22, 0.5, NULL, 0, 2, NULL, NULL, 3325, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515019', 'Lebih Dekat dengan Bumiku : Panduan bagi pelajar dalam melestarikan bumi', NULL, 130, 2007, NULL, 1, '979-758-521--2', NULL, 55, NULL, 1, 1, 21, 30, 0.4, NULL, 0, 2, NULL, NULL, 1366, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515020', 'Bumi dan Tata Surya 3', NULL, 110, 2007, NULL, 1, '979145137-0', 'iv', 64, '57-64', 1, 0, 21, 27, 0.4, NULL, 0, 2, NULL, NULL, 3269, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515021', 'SEJARAH DAN BUDAYA', NULL, 149, 2009, NULL, 2, '978-979-3535-41-8', NULL, 478, NULL, 1, 1, 29, 22, 0.5, NULL, 0, 2, NULL, NULL, 1346, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515022', 'Muatan Lokal Ensiklopedia Geografi Indonesia Mengenal 33 Provinsi Di Tanah Air', NULL, 110, 2009, NULL, 3, '979-3535-16-4', NULL, 183, NULL, 1, 0, 22, 29.5, 1.5, NULL, 0, 2, NULL, NULL, 1370, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515023', 'ENSIKLOPEDIA GEOGRAFI : ENSIKLOPEDIA GEOGRAFI UNTUK PELAJAR DAN UMUM', NULL, 149, 2009, NULL, 3, '979-3535-10-5', NULL, 488, NULL, 1, 1, 29, 22, 0.5, NULL, 0, 2, NULL, NULL, 1362, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130515024', 'Siklus Hidup Tumbuhan', NULL, 110, 2008, NULL, 1, '978-979-042-042-006-', NULL, 60, '59-60', 1, 0, 21.5, 28, 0.4, NULL, 0, 2, NULL, NULL, 3686, NULL, NULL, '2013-05-15', '2013-05-15'),
+('130516001', 'Seri Percobaan Sains 1 : Percobaan Terhadap Air', NULL, 60, 2010, NULL, 3, '978-602-838-201-4', 'iv', 68, '65', 1, 1, 18, 25, 0.5, NULL, 0, 2, NULL, NULL, 1955, NULL, NULL, '2013-05-16', '2013-05-16'),
+('130516002', 'Seri Percobaan Sains 5 : Percobaan Terhadap Udara dan Bunyi', NULL, 60, 2010, NULL, 3, '978-602-8382-05-2', 'iv', 67, '66', 1, 1, 18, 25, 0.2, NULL, 0, 2, NULL, NULL, 1955, NULL, NULL, '2013-05-16', '2013-05-16'),
+('130516003', 'Seri Percobaan Sains 1 : Percobaan Terhadap Magnet', NULL, 60, 2008, NULL, 2, '978-602-8382-04-5', 'iv', 75, '74', 1, 1, 18, 25, 0.2, NULL, 0, 2, NULL, NULL, 1955, NULL, NULL, '2013-05-16', '2013-05-16'),
+('130516004', 'Seri Percobaan Sains 2 : Percobaan Terhadap Cahaya', NULL, 60, 2010, NULL, 3, '978-602-8382-02-1', 'iv', 76, '75', 1, 1, 18, 25, 0.2, NULL, 0, 2, NULL, NULL, 1955, NULL, NULL, '2013-05-16', '2013-05-16'),
+('130520001', '(1) ENSIKLOPEDIA MATEMATIKA UNTUK ANAK-ANAK : Mengenal Bilangan', NULL, 85, 2009, NULL, 1, '978-602-8363-00-6', 'iii', 92, '91', 1, 1, 18, 25.5, 0.4, NULL, 0, 2, NULL, NULL, 1959, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520002', '(2) ENSIKLOPEDIA MATEMATIKA UNTUK ANAK-ANAK : Mengenal Pecahan', NULL, 85, 2009, NULL, 1, '978-602-8363-01-3', 'iii', 60, '59', 1, 1, 18, 25.5, 0.4, NULL, 0, 2, NULL, NULL, 1959, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520003', '(3) ENSIKLOPEDIA MATEMATIKA UNTUK ANAK-ANAK : Mengenal Pengukuran', NULL, 85, 2009, NULL, 1, '978-602-8363-02-0', 'iii', 76, '75', 1, 1, 18, 25.5, 0.4, NULL, 0, 2, NULL, NULL, 3188, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520004', '(4) ENSIKLOPEDIA MATEMATIKA UNTUK ANAK-ANAK : Mengenal Bangun Datar', NULL, 85, 2000, NULL, 1, '978-602-8363-03-7', 'iii', 68, '67', 1, 1, 18, 25.5, 4, NULL, 0, 2, NULL, NULL, 1959, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520005', '(5) ENSIKLOPEDIA MATEMATIKA UNTUK ANAK-ANAK : Mengenal Bangun Ruang', NULL, 85, 2009, NULL, 1, '978-602-8363-04-4', 'iii', 52, '51', 1, 1, 18, 25.5, 0.4, NULL, 0, 2, NULL, NULL, 1959, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520006', '(6) ENSIKLOPEDIA MATEMATIKA UNTUK ANAK-ANAK : Mengenal Statistika', NULL, 85, 2009, NULL, 1, '978-602-8363-05-1', 'iii', 52, '51', 1, 1, 18, 25.5, 0.4, NULL, 0, 2, NULL, NULL, 1959, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520007', 'Pahlawan Nasional : Hj. Fatimah Siti Hartinah Soeharto', NULL, 150, 1997, NULL, 1, '979-8796-04-7', 'xv', 447, NULL, 1, 0, 29.5, 23, 1, NULL, 0, 2, 3, NULL, 1408, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520008', 'Keajaiban Piramida', NULL, 14, 2007, 'Bilingual', 1, '978-979-9268-64-4', NULL, 71, NULL, 1, 0, 25, 17.5, 2, NULL, 0, 2, NULL, NULL, 1200, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520009', 'Seri Teladan Nabi Ibrahim a.s : Penghancur Berhala', 'Sclupture Destroyer', 151, 2010, NULL, 4, NULL, NULL, 55, '56', 1, 0, 21, 15, 0.2, NULL, 0, 2, NULL, NULL, 1194, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520010', 'Seri Teladan Nabi Yaqub a.s : Keluarga Bani Israil', 'Bani Israil Family', 151, 2010, NULL, 4, '978-979-9475-32-9', NULL, 55, '56', 1, 0, 15, 21, 0.2, NULL, 0, 2, NULL, NULL, 1194, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520011', 'Seri Teladan Nabi Shaleh a.s : Unta Kiriman Allah', 'Camel From Allah', 151, 2010, NULL, 4, '978-979-9475-28-2', NULL, 55, '56', 1, 0, 15, 21, 0.2, NULL, 0, 2, NULL, NULL, 1194, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520012', 'Keajaiban Bigben', NULL, 14, 2007, 'Bilingual', 1, '978-979-9282-61-3', NULL, 87, NULL, 1, 0, 25, 17.5, 0.2, NULL, 0, 2, NULL, NULL, 1200, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520013', 'Seri Teladan Nabi Luth a.s : Para Utusan', 'The Messengers', 151, 2010, NULL, 4, '978-979-9475-30-5', NULL, 55, '56', 1, 0, 15, 21, 0.2, NULL, 0, 2, NULL, NULL, 1194, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520014', 'Keajaiban Tajmahal', NULL, 14, 2007, 'Bilingual', 1, '978-979-9282-65-1', NULL, 71, NULL, 1, 0, 25, 17.5, 0.2, NULL, 0, 2, NULL, NULL, 1200, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520015', 'Seri Teladan Nabi Zulkifly a.s : Memegang Janji', 'Keeping Promise', 151, 2010, NULL, 4, '978-979-9475-38-1', NULL, 55, '56', 1, 0, 15, 21, 0.2, NULL, 0, 2, NULL, NULL, 1194, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520016', 'Seri Teladan Nabi Ilyas a.s : Kaum Baalbek', 'Baalbek People', 151, 2010, NULL, 4, '978-979-9475-41-1', NULL, 55, '56', 1, 0, 15, 21, 0.2, NULL, 0, 2, NULL, NULL, 1194, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520017', 'Seri Teladan Nabi Ayyub a.s : Nabi Yang Sabar', 'The Patient Prophet', 151, 2010, NULL, 4, '978-979-9475-34-3', NULL, 55, '56', 1, 0, 15, 21, 0.2, NULL, 0, 2, NULL, NULL, 1194, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520018', 'Keajaiban Tembok Besar Cina', NULL, 14, 2007, 'Bilingual', 2, '979-9282-66-7', NULL, 55, NULL, 1, 0, 25, 17.5, 0.2, NULL, 0, 2, NULL, NULL, 1200, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520019', 'Seri Teladan Nabi Harun : Patung Sapi Emas', 'Golden Cow Sclupture', 151, 2010, NULL, 4, '978-979-9475-37-4', NULL, 55, '56', 1, 0, 15, 21, 0.2, NULL, 0, 2, NULL, NULL, 1194, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520020', 'Menjelajah Ke Kota Air (Venesia)', NULL, 127, 2007, '2007', 1, '978-979-3711-26-3', NULL, 80, NULL, 1, 0, 25, 17.5, 0.2, NULL, 0, 2, NULL, NULL, 1196, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520021', 'Seri Teladan Nabi Shaleh a.s : Unta Kiriman Allah', 'Camel From Allah', 151, 2010, NULL, 4, '978-979-9475-28-2', NULL, 55, '56', 1, 0, 15, 21, 0.2, NULL, 0, 2, NULL, NULL, 1194, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520022', 'Referensi Matematika Dalam Kehidupan Manusia 1', NULL, 102, 2009, NULL, 1, '978-979-3077-28-4', 'iv', 80, '80', 1, 0, 21.5, 23, 0.3, NULL, 0, 2, NULL, NULL, 3185, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520023', 'Referensi Matematika Dalam Kehidupan Manusia 2', NULL, 102, 2008, NULL, 1, '978-979-3077-29-1', 'vi', 122, '121', 1, 0, 21.5, 23, 0.3, NULL, 0, 2, NULL, NULL, 3185, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520024', 'BUTIR-BUTIR BUDAYA JAWA : Hanggayuh Kasampurnaning Hurip Berbudi Bawaleksana Ngudi Sajatining Becik', NULL, 152, 2011, NULL, 5, '979-8103-00-9', 'xiv', 205, NULL, 1, 0, 27, 20, 0.8, NULL, 0, 2, NULL, NULL, 1581, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520025', 'Referensi Matematika Dalam Kehidupan Manusia 3', NULL, 102, 2008, NULL, 1, '978-979-3077-30-7', 'vi', 60, '59-60', 1, 0, 21.5, 23, 0.2, NULL, 0, 2, NULL, NULL, 3185, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520026', 'Referensi Matematika Dalam Kehidupan Manusia 4', NULL, 102, 2008, NULL, 1, '978-979-3077-31-4', 'vi', 56, '55', 1, 0, 21.5, 23, 0.2, NULL, 0, 2, NULL, NULL, 3185, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520027', 'Gurun dan Gunung', NULL, 24, 2009, NULL, 1, '978-979-3846-97-2', 'iv', 53, '54', 1, 0, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 3733, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520028', 'Ensiklopedi Indonesia Seri Fauna : Serangga', NULL, 154, 1992, NULL, 3, '979-8276-18-3', NULL, 256, NULL, 1, 1, 19, 26.5, 1, NULL, 0, 2, NULL, NULL, 318, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520029', 'PUTRI LOEHA DAN PAYUNG SAKTINYA : Kumpulan Cerita Rakyat dari sekitar danau Matano', NULL, 153, 2010, NULL, 3, '978-979-91-0117-4', 'ix', 51, NULL, 1, 0, 30, 21, 0.5, NULL, 0, 2, NULL, NULL, 2049, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520030', 'Ensiklopedia Pertama SAINS', NULL, 24, 2007, NULL, NULL, '979-3846-32-1', NULL, 64, NULL, 1, 1, 21.5, 28, 0.2, NULL, 0, 2, NULL, NULL, 2057, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520031', 'Media Pendidikan Biologi Avertebrata', NULL, 13, 2007, NULL, 1, '979-5173-45-6', 'viii', 134, '132', 1, 1, 21, 29, 0.3, NULL, 0, 2, NULL, NULL, 3736, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520032', 'Ensiklopedi Matematika : Untuk SLTP (Topik-topik Pengayaan Matematika)', NULL, 155, 2003, NULL, 3, '979-8855-07-8', 'x', 286, '285', 1, 1, 21.5, 28.5, 2, NULL, 0, 2, NULL, NULL, 3188, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520033', 'Kehidupan Masyarakat Bajau', NULL, 113, 2006, NULL, 1, '979-744-472-4', 'v', 55, '56', 1, 0, 20.5, 14.5, 0.2, NULL, 0, 2, NULL, NULL, 1218, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520034', 'Ensiklopedi Pertama : Dinosaurus dan  Kehidupan Purba', NULL, 24, 2004, NULL, NULL, NULL, NULL, 64, NULL, 1, 1, 21.5, 28, 0.2, NULL, 0, 2, NULL, NULL, 1472, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520035', 'Prasejarah', NULL, 51, 2009, NULL, 4, '979-514-547-9', 'vii', 52, '52', 1, 0, 21, 29.5, 0.2, NULL, 0, 2, NULL, NULL, 1391, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520036', 'Selayang Pandang Indonesia : Sekilas tentang sejarah,geografi,penduduk,dan kebudayaan provinsi di Indonesia', NULL, 8, 2007, NULL, 2, '978-979-018-143-4', 'viii', 136, '136', 1, 0, 20, 27, 0.3, NULL, 0, 2, NULL, NULL, 1376, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130520037', 'PELANGI KEHIDUPAN', NULL, 156, 1986, NULL, 1, '978-412-020-0', 'xiv', 604, NULL, 1, 1, 20.5, 14.5, 0.7, NULL, 0, 2, 4, NULL, 1207, NULL, NULL, '2013-05-20', '2013-05-20'),
+('130521001', 'Seri Pahlawan Nasional : Kiai Haji Ahmad Dahlan', NULL, 19, 2007, 'januari', 1, '979-9281-68-7', 'iv', 83, '83', 1, 0, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1343, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521002', 'KARAKTER KEPAHLAWANANAN', NULL, 67, 2011, NULL, 1, NULL, NULL, 66, NULL, 1, 1, 30, 21, 0.2, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521003', 'Seri Pahlawan Nasional : Dr. Sutumo', NULL, 19, 2007, 'januari', 1, '979-9281-66-0', 'iv', 51, '51', 1, 0, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521004', 'Seri Pahlawan Nasional : Mohammad Hatta', NULL, 19, 2007, 'januari', 1, '979-9281-72-5', 'iv', 115, '114', 0, 0, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521005', 'Seri Pahlawan Nasional : Raden Ajeng Kartini', NULL, 19, 2007, 'januari', 1, '979-9281-69-5', 'iv', 84, '83', 1, 0, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521006', 'Berpetualang di Planet Bumi', NULL, 23, 2009, NULL, 1, '978-979-678-383-0', NULL, 63, '64', 1, 1, 30, 21, 0.2, NULL, 0, 2, NULL, NULL, 1391, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521007', 'Seri Pahlawan Nasional : Panglima Besar Jendral Sudirman', NULL, 19, 2007, 'januari', 1, '979-9281-73-3', 'iv', 67, '67', 1, 0, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521008', 'Seri Pahlawan Nasional : H.O.S Tjokroaminoto', NULL, 19, 2007, 'januari', 1, '979-9281-67-9', 'iv', 67, '67', 1, 0, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521009', 'BIOGRAFI ILMUWAN FISIKA : Ensiklopedia Fisika 4', NULL, 23, 2009, NULL, 2, '978-979-678-142-3', 'xi', 155, '149', 1, 0, 30, 21, 0, NULL, 0, 2, NULL, NULL, 1427, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521010', 'Menjelajah Alam Semesta', NULL, 23, 2009, NULL, 1, '978-979-678-377-9', NULL, 56, '54', 1, 1, 30, 21, 0.2, NULL, 0, 2, NULL, NULL, 1365, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521011', 'Indahnya dan Rusaknya Alamku', NULL, 23, 2009, NULL, 1, '978-979-678-375-5', NULL, 63, '64', 1, 1, 30, 21, 0.2, NULL, 0, 2, NULL, NULL, 1342, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521012', 'MENGENAL DUNIA DENGAN PETA', NULL, 23, 2009, NULL, 1, '978-979-678-371-7', NULL, 56, '56', 1, 1, 30, 21, 0.2, NULL, 0, 2, NULL, NULL, 1379, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521013', 'ZAMBRUD KHATULISTIWA INDONESIA', NULL, 157, 2010, NULL, 2, '978-979-151-81-5-4', NULL, 75, '76', 1, 0, 21.5, 14.5, 0.2, NULL, 0, 2, NULL, NULL, 1362, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521014', 'Menata Kembali Kehidupan Bangsa', NULL, 51, 2009, NULL, 1, '979-692-938-4', 'x', 182, '182', 1, 0, 14.5, 21, 0.2, NULL, 0, 2, NULL, NULL, 1343, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521015', 'Memberdayakan Ekonomi Rakyat Kecil', NULL, 51, 2009, NULL, 1, '979-692-942-2', 'xvi', 192, '191', 1, 0, 14.5, 21, 0.2, NULL, 0, 2, NULL, NULL, 1343, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521016', 'KERAJAAN NUSANTARA', NULL, 113, 2009, NULL, 1, '978-602-8583-07-9', 'iv', 76, '75', 1, 0, 17.6, 25, 0.2, NULL, 0, 2, NULL, NULL, 1362, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521017', 'Adil Tanpa Pandang Bulu', NULL, 51, 2009, NULL, 1, '979-692-940-6', 'vii', 200, '197', 1, 0, 14.5, 25, 2, NULL, 0, 2, NULL, NULL, 1343, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521018', 'Jalan Panjang Menuju Istana', NULL, 51, 2009, NULL, 1, '979-692-937-6', 'xii', 220, '220', 1, 0, 14.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1343, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521019', 'INDONESIA BAGIAN DARI DUNIA', NULL, 66, 2010, NULL, 3, '978-602-8262-29-3', NULL, 64, '62', 1, 1, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521020', 'Peduli Kemiskinan', NULL, 51, 2009, NULL, 1, '979-692-941-4', 'viii', 244, '242', 1, 0, 14.5, 21, 0.3, NULL, 0, 2, NULL, NULL, 1343, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521021', 'Berbakti Untuk Bumi', NULL, 51, 2009, NULL, 1, '979-692-944-9', 'ix', 234, '233', 1, 0, 14.5, 21, 0.1, NULL, 0, 2, NULL, NULL, 1343, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521022', 'Diplomasi Damai', NULL, 51, 2009, NULL, 1, '979-692-943-0', 'xvi', 252, '250', 1, 0, 14.5, 21, 0.2, NULL, 0, 2, NULL, NULL, 1343, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521023', 'Perkembangan Masyarakat pada Masa Kerajaan Hindu dan Buddha serta Peninggalannya', NULL, 8, 2009, NULL, 1, '978-979-045-686-0', 'iv', 50, '49', 1, 0, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1581, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521024', 'Seri Bencana Alam', NULL, 93, 2009, NULL, 1, '978-979-1276-40-5', 'iv', 48, '47', 1, 0, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1342, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521025', 'BANGSAKU BANGSA YANG BESAR', NULL, 12, 2010, NULL, 1, '978-979-056-065-9', 'vi', 85, '84', 1, 0, 17.5, 25, 0.4, NULL, 0, 2, NULL, NULL, 1345, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521026', 'Mengenal Lingkungan Sekitar Kita', NULL, 29, 2008, NULL, 1, '978-602-8123-29-7', 'vi', 84, '85', 1, 0, 17.5, 25, 0.4, NULL, 0, 2, NULL, NULL, 1366, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521027', 'PERANAN GENERASI MUDA DALAM MENJUNJUNG NAMA BANGSA', NULL, 158, 2011, NULL, 1, NULL, 'vi', 114, '114', 1, 0, 17.5, 25, 0.5, NULL, 0, 2, NULL, NULL, 1342, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521028', 'INDONESIA BAGIAN DARI DUNIA', NULL, 87, 2008, NULL, 1, NULL, 'iv', 72, NULL, 1, 0, 17.5, 25, 0.4, 1, 25000, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521029', 'Indonesia Heroes Stories', NULL, 87, 2008, NULL, 1, NULL, 'iv', 72, NULL, 1, 0, 17.5, 25, 0.4, 1, 25000, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521030', 'Alam Sekitar Kita', 'The Living World Encyclopedia', 24, 2009, 'Bahasa Indonesia', 1, '978-979-3846-95-8', 'iii', 62, '62', 1, 0, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521031', 'Pesona Indonesia Pariwisata, Budaya, dan Sosial : Lebih Dekat Mengenal Pulau Kalimantan', NULL, 141, 2009, NULL, 1, '978-979-3745-71-8', 'iv', 164, '163', 1, 0, 17.5, 25, 0.5, NULL, 0, 2, NULL, NULL, 1362, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521032', 'MENGENAL PAHLAWAN', NULL, 66, 2010, NULL, 3, '978-602-8262-28-6', 'iv', 60, '60', 1, 1, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130521033', 'TEKNIK MEMBACA PETA DAN KOMPAS', NULL, 98, 2008, 'Revisi', 1, '978-979-665-548-2', 'viii', 96, '90', 1, 0, 17.5, 25, 0.4, NULL, 0, 2, NULL, NULL, 1379, NULL, NULL, '2013-05-21', '2013-05-21'),
+('130522001', 'Kebakaran', NULL, 93, 2009, NULL, 1, '978-979-1276-40-5', 'iv', 48, '47-48', 1, 1, 17.5, 25, 0.2, NULL, 0, 2, NULL, NULL, 1342, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522002', 'Kerajaan-kerajaan di indonesia : Seri IPS [Sejarah]', NULL, 13, 2010, NULL, 1, '979517541-6', 'vi', 64, '62', 1, 1, 14.5, 21, 0.2, 1, 24000, 2, NULL, NULL, 1362, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522003', 'Kehidupan pada Masa Pra-Indonesia Zaman Pergerakan', NULL, 74, 2009, 'ii', 1, '978-979-037-033-6', 'viii', 88, '82-83', 1, 1, 14.5, 21, 0.2, NULL, 0, 2, NULL, NULL, 1581, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522004', 'DI SEKITAR PDRI (Pemerintah Darurat Republik Indonesia)', NULL, 159, 1984, NULL, 2, NULL, NULL, 66, NULL, 1, 1, 14.4, 20, 0.2, NULL, 0, 2, NULL, NULL, 1581, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522005', 'MENCERDASI BENCANA', NULL, 139, 2008, NULL, 1, '978-979-0254-44', 'x', 162, '157-162', 1, 1, 15, 23, 0.3, NULL, 0, 2, NULL, NULL, 1342, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522006', 'SULTAN HASANUDIN', NULL, 23, 2009, NULL, 1, '978-979-678-266-6', NULL, 52, NULL, 1, 0, 14.5, 21, 0.2, NULL, 0, 2, NULL, NULL, 1572, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522007', 'PEMBERONTAKAN MADIUN (Mr.Amir Syarifuddin)', NULL, 23, 2009, NULL, 1, '978-979-678-309-0', NULL, 52, '49', 1, 1, 14.5, 21, 0.2, NULL, 0, 2, NULL, NULL, 1572, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522008', 'Seri Cerita Sejarah : Sultan Suriansyah', NULL, 97, 2009, NULL, 1, '978-979-9133-75-5', NULL, 56, '53', 1, 1, 14.5, 20.5, 0.2, NULL, 0, 2, NULL, NULL, 1572, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522009', 'Cut Meuthina', NULL, 23, 2009, NULL, 1, '978-979-678-306-9', NULL, 56, '54', 1, 1, 14.5, 20.5, 0.2, NULL, 0, 2, NULL, NULL, 1572, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522010', 'Seri Cerita Sejarah : Putra Banten', NULL, 97, 2009, NULL, 1, '978-979-9133-66-3', NULL, 52, '500', 1, 1, 14.5, 20.5, 0.2, NULL, 0, 2, NULL, NULL, 1572, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522011', 'Danudirja Setiabudhi (Douwes Dekker)', NULL, 23, 2009, NULL, 1, '978-979-678-307-6', NULL, 56, NULL, 1, 0, 14.5, 20.5, 0.2, NULL, 0, 2, NULL, NULL, 1572, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522012', 'Seri Pahlawan Nasional : H.Agus Salim', NULL, 160, 2010, NULL, NULL, '978-979-9331-13-7', 'vi', 62, '62', 1, 0, 14.5, 20.5, 0.2, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522013', 'Seri Pahlawan Nasional : Gerungan Saul Samuel Jacob Ratulangi', NULL, 160, 2010, NULL, NULL, '978-979-3311-18-8', 'v', 62, '62', 1, 1, 14.5, 20.54, 0.2, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522014', 'Seri Pahlawan Nasional : Letjen Oerip Soemohardjjo', NULL, 160, 2010, NULL, NULL, '978-979-9331-12-9', 'iv', 72, '70-71', 1, 0, 14.5, 20.5, 0.2, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522015', 'Seri Pahlawan Nasional : Hasanudin', NULL, 160, 2010, NULL, NULL, '978-979-9331-14-10', 'iv', 50, '50', 1, 0, 14.5, 20.5, 0.5, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522016', 'Seri Pahlawan Nasional : Sultan Mahmud Badaruddin II', NULL, 160, 2010, NULL, NULL, '78-979-9331-57-9', 'v', 76, '76', 1, 0, 14.5, 20.5, 0.2, NULL, 0, 2, NULL, NULL, 1358, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522017', 'Seri Pahlawan Nasional : Sultan Syarif Kasim II', NULL, 160, 2010, NULL, NULL, '978-979-9331-55-2', 'v', 74, '74', 1, 0, 14.5, 20.5, 0.2, NULL, 0, 2, NULL, NULL, 1359, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522018', 'Seri Pahlawan Nasional : Muhammad Husni Thamrin', NULL, 160, 2010, NULL, NULL, '978-979-9331-16-1', 'vi', 52, '51', 1, 0, 14.5, 20.5, 0.2, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522019', 'Cintai Negriku : Membangun Kelestarian Alam dan Kepedulian Sosial', NULL, 161, 2011, NULL, 1, '978-979-3847-25-2', 'vi', 70, '69-70', 1, 1, 17.5, 25, 0.3, NULL, 0, 2, NULL, NULL, 1392, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522020', 'Padamu Pertiwi : Pendidikan Sejarah Perjuangan Bangsa', NULL, 162, 1986, '1', NULL, NULL, 'ii', 52, '52', 1, 0, 14.3, 20.3, 0.2, NULL, 0, 2, NULL, NULL, 1345, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522021', 'Teknik Terbaik', NULL, 163, 2011, NULL, 1, NULL, 'vi', 74, '73-74', 1, 0, 14.5, 20.5, 0.3, NULL, 0, 2, NULL, NULL, 1456, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522022', 'Prof.H.MUHAMMAD YAMIN S.H.', NULL, 119, 1986, NULL, 1, NULL, 'viii', 136, '133-136', 0, 0, 14.5, 20.5, 0.3, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522023', 'Bencana Alan Bencana Manusia', NULL, 112, 2008, NULL, 1, '978-602-8169-01-1', 'vi', 78, '75-77', 1, 0, 14.5, 21, 0.2, NULL, 0, 2, NULL, NULL, 1342, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130522024', 'Tokoh Pahlawan : Seri Perjuangan Kemerdekaan', NULL, 164, 2010, NULL, 1, '978-602-8982-11-5', 'ii', 54, '53-54', 1, 0, 14.5, 21, 0.2, NULL, 0, 2, NULL, NULL, 1342, NULL, NULL, '2013-05-22', '2013-05-22'),
+('130523001', 'INDRA DJAtI SIDI : Dari ItB Untuk Pembaruan Pendidikan', NULL, 165, 2005, NULL, 1, '979-3603-46-1', 'xxv', 571, '553-555', 1, 1, 16, 24.3, 1.3, NULL, 0, 2, NULL, NULL, 1480, NULL, NULL, '2013-05-23', '2013-05-23'),
+('130523002', 'KIDUNG KAKI TUWA : Sebuah Kajian Konversi Budaya dan Nilai', NULL, 119, 1996, NULL, 1, NULL, 'ix', 107, '107-108', 0, 0, 14.5, 21.4, 0.3, NULL, 0, 2, NULL, NULL, 1204, NULL, NULL, '2013-05-23', '2013-05-23'),
+('130523003', 'Sejarah Provinsi Jawa Barat : jilid 2', NULL, 166, 2011, NULL, 1, '978-602-98118-8-9', 'xxv', 6116, NULL, 1, 0, 15, 21.5, 0.8, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-23', '2013-05-23'),
+('130523004', 'Sejarah Provinsi Jawa Barat : jilid 1', NULL, 166, 2011, NULL, 1, '978-602-98118-8-9', 'xxvi', 557, NULL, 1, 0, 15, 21.5, 0.8, NULL, 0, 2, NULL, NULL, 1338, NULL, NULL, '2013-05-23', '2013-05-23'),
+('130523005', 'API NASIONALISME : Cuplikan Pengalaman', NULL, 167, 1983, NULL, 1, NULL, 'xi', 246, NULL, 1, 1, 14.2, 21, 0.4, NULL, 0, 2, NULL, NULL, 1456, NULL, NULL, '2013-05-23', '2013-05-23'),
+('130523006', 'Sejarah Nasional Indonesia 3 : Untuk Sekolah lanjutan Tingkat Lanjutan', NULL, 119, 1991, NULL, 10, '979-462-141-2', NULL, 190, NULL, 1, 0, 15, 21, 0.4, NULL, 0, 2, NULL, NULL, 1581, NULL, NULL, '2013-05-23', '2013-05-23'),
+('130523007', 'Memenuhi Panggilan Tugas Jilid 5 : Kenangan Masa Orde Lama', NULL, 138, 1989, NULL, 2, '927-412-124-x', 'xiv', 501, NULL, 1, 1, 14.5, 21, 0.5, 1, 15000, 2, NULL, NULL, 1394, NULL, NULL, '2013-05-23', '2013-05-23'),
+('130523008', 'Geografi Untuk SLTP : Kelas 1', NULL, 151, 1995, NULL, 2, NULL, 'v', 205, '207', 1, 0, 15, 21, 0.3, NULL, 0, 2, NULL, NULL, 1365, NULL, NULL, '2013-05-23', '2013-05-23'),
+('130523009', 'Leksikon Susasttra Indonesia', NULL, 138, 2000, NULL, 1, '979-666-358-9', 'xv', 576, NULL, 1, 1, 15, 21, 0.7, NULL, 0, 2, NULL, NULL, 1456, NULL, NULL, '2013-05-23', '2013-05-23'),
+('130523010', 'Geografi Untuk SLTP : Kelas 3', NULL, 151, 1997, NULL, 2, NULL, 'v', 194, '195', 1, 0, 15, 21, 0.4, NULL, 0, 2, NULL, NULL, 1365, NULL, NULL, '2013-05-23', '2013-05-23'),
+('130523011', 'Bung Hatta Kita  Dalam Pandangan Masyarakat', NULL, 36, 1980, NULL, 1, NULL, NULL, 291, NULL, 1, 1, 14.5, 21, 0.3, NULL, 0, 2, NULL, NULL, 1418, NULL, NULL, '2013-05-23', '2013-05-23'),
+('130523012', 'PADAMU TERLETAK QADAR : Sebuah Autobiografi', NULL, 138, 1989, NULL, 1, '979-412-126-6', 'x', 373, NULL, 1, 1, 14.5, 21, 0.4, NULL, 0, 2, NULL, NULL, 1394, NULL, NULL, '2013-05-23', '2013-05-23');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_book_aurthor`
+-- Struktur dari tabel `digilib_book_aurthor`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_book_aurthor` (
@@ -1646,10 +1952,303 @@ CREATE TABLE IF NOT EXISTS `digilib_book_aurthor` (
   KEY `digilib_book_author_fk3` (`book_aurthor_name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `digilib_book_aurthor`
+--
+
+INSERT INTO `digilib_book_aurthor` (`book_aurthor_id`, `book_aurthor_book`, `book_aurthor_name`, `book_aurthor_primary`) VALUES
+(1, '130221001', 803, 1),
+(2, '130221002', 750, 0),
+(3, '130221002', 751, 0),
+(4, '130221003', 380, 0),
+(5, '130221003', 804, 1),
+(6, '130222001', 805, 1),
+(7, '130222002', 806, 1),
+(8, '130222002', 807, 0),
+(9, '130225001', 739, 0),
+(10, '130225001', 808, 1),
+(11, '130225002', 809, 1),
+(12, '130225002', 801, 0),
+(13, '130225002', 213, 0),
+(14, '130316001', 544, 1),
+(15, '130323001', 810, 1),
+(16, '130323002', 811, 1),
+(17, '130323003', 812, 1),
+(18, '130323004', 813, 1),
+(19, '130323005', 814, 1),
+(20, '130323006', 815, 1),
+(21, '130401001', 816, 1),
+(22, '130401001', 817, 0),
+(23, '130401002', 818, 1),
+(24, '130401003', 494, 1),
+(25, '130401003', 802, 0),
+(26, '130401004', 819, 1),
+(27, '130401005', 820, 1),
+(28, '130401006', 739, 0),
+(29, '130401006', 808, 1),
+(30, '130401007', 821, 1),
+(31, '130401007', 822, 0),
+(32, '130401008', 616, 1),
+(33, '130402001', 214, 1),
+(34, '130402001', 220, 0),
+(35, '130402002', 823, 1),
+(36, '130403001', 824, 1),
+(37, '130403002', 825, 1),
+(38, '130403002', 826, 0),
+(39, '130403003', 826, 0),
+(40, '130403003', 827, 1),
+(41, '130404001', 828, 1),
+(42, '130404002', 692, 0),
+(43, '130404002', 829, 1),
+(44, '130404003', 780, 1),
+(45, '130404003', 781, 0),
+(46, '130404003', 830, 0),
+(47, '130404003', 231, 0),
+(48, '130404004', 831, 1),
+(49, '130404004', 832, 0),
+(50, '130404005', 833, 1),
+(51, '130404006', 834, 1),
+(52, '130404007', 835, 1),
+(53, '130507001', 814, 0),
+(54, '130507002', 22, 0),
+(55, '130507003', 435, 0),
+(56, '130507004', 534, 0),
+(57, '130507004', 535, 0),
+(58, '130507005', 81, 0),
+(59, '130507005', 18, 0),
+(60, '130507005', 836, 0),
+(61, '130507006', 820, 0),
+(62, '130507007', 274, 0),
+(63, '130507007', 275, 0),
+(64, '130507008', 813, 0),
+(65, '130507009', 435, 1),
+(66, '130507009', 625, 0),
+(67, '130507010', 22, 0),
+(68, '130507011', 494, 1),
+(69, '130515016', 837, 0),
+(70, '130515018', 837, 0),
+(71, '130515019', 838, 0),
+(72, '130515020', 426, 0),
+(73, '130515021', 839, 0),
+(74, '130515021', 840, 0),
+(75, '130515022', 841, 0),
+(76, '130515023', 839, 0),
+(77, '130515023', 842, 0),
+(78, '130515023', 843, 0),
+(79, '130515023', 844, 0),
+(80, '130515023', 845, 0),
+(81, '130515024', 846, 0),
+(82, '130516001', 847, 1),
+(83, '130516002', 310, 0),
+(84, '130516002', 848, 1),
+(85, '130516003', 91, 0),
+(86, '130516003', 849, 1),
+(87, '130516004', 850, 1),
+(88, '130516004', 851, 0),
+(89, '130520001', 852, 0),
+(90, '130520003', 852, 0),
+(91, '130520004', 852, 0),
+(92, '130520005', 852, 0),
+(93, '130520006', 852, 0),
+(94, '130520008', 303, 0),
+(95, '130520008', 853, 0),
+(96, '130520009', 630, 0),
+(97, '130520010', 630, 0),
+(98, '130520010', 631, 0),
+(99, '130520011', 630, 0),
+(100, '130520011', 631, 0),
+(101, '130520012', 427, 0),
+(102, '130520012', 854, 0),
+(103, '130520013', 630, 0),
+(104, '130520013', 631, 0),
+(105, '130520014', 763, 0),
+(106, '130520014', 855, 0),
+(107, '130520015', 630, 0),
+(108, '130520015', 631, 0),
+(109, '130520016', 630, 0),
+(110, '130520016', 631, 0),
+(111, '130520017', 630, 0),
+(112, '130520017', 631, 0),
+(113, '130520018', 233, 0),
+(114, '130520018', 518, 0),
+(115, '130520019', 630, 0),
+(116, '130520019', 631, 0),
+(117, '130520020', 719, 0),
+(118, '130520020', 854, 0),
+(119, '130520021', 630, 0),
+(120, '130520021', 631, 0),
+(121, '130520022', 856, 1),
+(122, '130520022', 857, 0),
+(123, '130520023', 856, 1),
+(124, '130520023', 857, 0),
+(125, '130520024', 858, 0),
+(126, '130520025', 856, 1),
+(127, '130520025', 857, 0),
+(128, '130520026', 856, 1),
+(129, '130520026', 857, 0),
+(130, '130520029', 859, 0),
+(131, '130520029', 860, 0),
+(132, '130520030', 861, 1),
+(133, '130520030', 272, 0),
+(134, '130520030', 862, 0),
+(135, '130520031', 863, 1),
+(136, '130520032', 856, 1),
+(137, '130520032', 857, 0),
+(138, '130520033', 471, 0),
+(139, '130520033', 864, 0),
+(140, '130520034', 865, 0),
+(141, '130520036', 866, 0),
+(142, '130520037', 867, 0),
+(143, '130521001', 868, 1),
+(144, '130521001', 869, 0),
+(145, '130521001', 298, 0),
+(146, '130521002', 497, 0),
+(147, '130521003', 868, 0),
+(148, '130521003', 871, 0),
+(149, '130521003', 872, 0),
+(150, '130521003', 298, 0),
+(151, '130521004', 868, 1),
+(152, '130521004', 869, 0),
+(153, '130521004', 298, 0),
+(154, '130521005', 868, 1),
+(155, '130521005', 875, 0),
+(156, '130521005', 298, 0),
+(157, '130521006', 873, 1),
+(158, '130521006', 874, 0),
+(159, '130521007', 868, 1),
+(160, '130521007', 875, 0),
+(161, '130521007', 869, 0),
+(162, '130521007', 298, 0),
+(163, '130521008', 868, 1),
+(164, '130521008', 872, 0),
+(165, '130521008', 298, 0),
+(166, '130521009', 823, 1),
+(167, '130521010', 873, 1),
+(168, '130521010', 876, 0),
+(169, '130521011', 49, 1),
+(170, '130521011', 877, 0),
+(171, '130521012', 49, 1),
+(172, '130521012', 874, 0),
+(173, '130521013', 878, 1),
+(174, '130521013', 879, 0),
+(175, '130521014', 880, 1),
+(176, '130521014', 527, 0),
+(177, '130521014', 528, 0),
+(178, '130521014', 530, 0),
+(179, '130521014', 529, 0),
+(180, '130521015', 527, 0),
+(181, '130521015', 528, 0),
+(182, '130521015', 529, 0),
+(183, '130521015', 530, 0),
+(184, '130521015', 880, 1),
+(185, '130521016', 881, 0),
+(186, '130521016', 882, 0),
+(187, '130521016', 883, 0),
+(188, '130521016', 884, 0),
+(189, '130521017', 885, 1),
+(190, '130521017', 527, 0),
+(191, '130521017', 528, 0),
+(192, '130521017', 530, 0),
+(193, '130521017', 529, 0),
+(194, '130521018', 526, 1),
+(195, '130521018', 527, 0),
+(196, '130521018', 528, 0),
+(197, '130521018', 529, 0),
+(198, '130521018', 530, 0),
+(199, '130521019', 49, 0),
+(200, '130521019', 177, 0),
+(201, '130521020', 886, 1),
+(202, '130521020', 527, 0),
+(203, '130521020', 528, 0),
+(204, '130521020', 529, 0),
+(205, '130521020', 530, 0),
+(206, '130521021', 526, 1),
+(207, '130521021', 527, 0),
+(208, '130521021', 528, 0),
+(209, '130521021', 529, 0),
+(210, '130521021', 530, 0),
+(211, '130521022', 887, 1),
+(212, '130521022', 527, 0),
+(213, '130521022', 528, 0),
+(214, '130521022', 529, 0),
+(215, '130521022', 530, 0),
+(216, '130521023', 888, 1),
+(217, '130521023', 889, 0),
+(218, '130521024', 430, 1),
+(219, '130521025', 890, 1),
+(220, '130521025', 891, 0),
+(221, '130521025', 83, 0),
+(222, '130521026', 210, 0),
+(223, '130521026', 892, 1),
+(224, '130521027', 893, 1),
+(225, '130521028', 284, 1),
+(226, '130521028', 285, 0),
+(227, '130521029', 284, 1),
+(228, '130521029', 285, 0),
+(229, '130521030', 894, 1),
+(230, '130521030', 895, 0),
+(231, '130521031', 724, 0),
+(232, '130521031', 504, 0),
+(233, '130521031', 896, 1),
+(234, '130521031', 897, 0),
+(235, '130521031', 204, 0),
+(236, '130521032', 49, 1),
+(237, '130521032', 50, 0),
+(238, '130521033', 898, 1),
+(239, '130522001', 430, 1),
+(240, '130522001', 692, 0),
+(241, '130522002', 396, 0),
+(242, '130522003', 899, 1),
+(243, '130522003', 900, 0),
+(244, '130522003', 901, 0),
+(245, '130522003', 902, 0),
+(246, '130522004', 903, 0),
+(247, '130522005', 904, 1),
+(248, '130522005', 905, 0),
+(249, '130522006', 758, 0),
+(250, '130522007', 759, 0),
+(251, '130522007', 906, 1),
+(252, '130522008', 907, 0),
+(253, '130522009', 758, 0),
+(254, '130522011', 759, 0),
+(255, '130522011', 908, 0),
+(256, '130522012', 435, 0),
+(257, '130522013', 909, 0),
+(258, '130522014', 910, 0),
+(259, '130522015', 911, 0),
+(260, '130522016', 909, 0),
+(261, '130522017', 909, 0),
+(262, '130522018', 909, 1),
+(263, '130522018', 911, 0),
+(264, '130522019', 912, 0),
+(265, '130522020', 913, 1),
+(266, '130522020', 914, 0),
+(267, '130522021', 915, 0),
+(268, '130522022', 911, 0),
+(269, '130522023', 425, 0),
+(270, '130522024', 247, 0),
+(271, '130523001', 916, 0),
+(272, '130523002', 917, 1),
+(273, '130523002', 918, 0),
+(274, '130523002', 919, 0),
+(275, '130523003', 920, 1),
+(276, '130523004', 920, 1),
+(277, '130523005', 921, 0),
+(278, '130523005', 922, 0),
+(279, '130523006', 923, 1),
+(280, '130523008', 924, 1),
+(281, '130523009', 738, 0),
+(282, '130523009', 925, 0),
+(283, '130523009', 926, 0),
+(284, '130523009', 927, 0),
+(285, '130523010', 924, 1),
+(286, '130523010', 928, 0),
+(287, '130523012', 929, 1);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_book_author_temp`
+-- Struktur dari tabel `digilib_book_author_temp`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_book_author_temp` (
@@ -1665,7 +2264,7 @@ CREATE TABLE IF NOT EXISTS `digilib_book_author_temp` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_book_condition`
+-- Struktur dari tabel `digilib_book_condition`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_book_condition` (
@@ -1676,7 +2275,7 @@ CREATE TABLE IF NOT EXISTS `digilib_book_condition` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_book_condition`
+-- Dumping data untuk tabel `digilib_book_condition`
 --
 
 INSERT INTO `digilib_book_condition` (`book_condition_id`, `book_condition`) VALUES
@@ -1687,7 +2286,7 @@ INSERT INTO `digilib_book_condition` (`book_condition_id`, `book_condition`) VAL
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_book_fund`
+-- Struktur dari tabel `digilib_book_fund`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_book_fund` (
@@ -1701,18 +2300,19 @@ CREATE TABLE IF NOT EXISTS `digilib_book_fund` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_book_fund`
+-- Dumping data untuk tabel `digilib_book_fund`
 --
 
 INSERT INTO `digilib_book_fund` (`book_fund_id`, `book_fund_title`, `book_fund_status`, `book_fund_entry`, `book_fund_entry_update`) VALUES
 (1, 'BOS ( Bantuan Operasional Sekolah)', 1, '2012-10-16', '2012-10-16'),
 (2, 'Komite Sekolah', 1, '2012-10-16', '2012-10-16'),
-(3, 'Perpustakaan Nasional RI', 1, '2012-11-29', '2012-11-29');
+(3, 'Perpustakaan Nasional RI', 1, '2012-11-29', '2012-11-29'),
+(4, 'PERPUSTAKAAN YAYASAN IDAYU', 0, '2013-05-20', '2013-05-20');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_book_language`
+-- Struktur dari tabel `digilib_book_language`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_book_language` (
@@ -1725,7 +2325,7 @@ CREATE TABLE IF NOT EXISTS `digilib_book_language` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_book_language`
+-- Dumping data untuk tabel `digilib_book_language`
 --
 
 INSERT INTO `digilib_book_language` (`book_language_id`, `book_id`, `book_language`) VALUES
@@ -2481,12 +3081,206 @@ INSERT INTO `digilib_book_language` (`book_language_id`, `book_id`, `book_langua
 (750, '130213005', 1),
 (751, '130213006', 1),
 (752, '130214001', 1),
-(753, '130214002', 1);
+(753, '130214002', 1),
+(754, '130221001', 1),
+(755, '130221002', 1),
+(756, '130221003', 1),
+(757, '130222001', 3),
+(758, '130222002', 3),
+(759, '130225001', 1),
+(760, '130225002', 1),
+(761, '130316001', 3),
+(762, '130323001', 1),
+(763, '130323003', 3),
+(764, '130323004', 3),
+(765, '130323005', 3),
+(766, '130323006', 3),
+(767, '130401001', 1),
+(768, '130401002', 3),
+(769, '130401003', 1),
+(770, '130401004', 3),
+(771, '130401005', 3),
+(772, '130401006', 1),
+(773, '130401007', 1),
+(774, '130401008', 1),
+(775, '130402001', 1),
+(776, '130402002', 1),
+(777, '130403001', 1),
+(778, '130403002', 3),
+(779, '130403003', 3),
+(780, '130404001', 1),
+(781, '130404002', 1),
+(782, '130404003', 1),
+(783, '130404004', 3),
+(784, '130404005', 1),
+(785, '130404006', 3),
+(786, '130404007', 1),
+(787, '130507001', 3),
+(788, '130507002', 1),
+(789, '130507003', 1),
+(790, '130507004', 1),
+(791, '130507005', 1),
+(792, '130507006', 3),
+(793, '130507007', 1),
+(794, '130507008', 3),
+(795, '130507009', 1),
+(796, '130507010', 1),
+(797, '130507011', 1),
+(798, '130515001', 2),
+(799, '130515002', 2),
+(800, '130515003', 2),
+(801, '130515004', 2),
+(802, '130515005', 2),
+(803, '130515006', 2),
+(804, '130515007', 2),
+(805, '130515008', 2),
+(806, '130515009', 2),
+(807, '130515010', 2),
+(808, '130515011', 2),
+(809, '130515012', 2),
+(810, '130515013', 2),
+(811, '130515015', 1),
+(812, '130515016', 1),
+(813, '130515017', 1),
+(814, '130515018', 1),
+(815, '130515019', 1),
+(816, '130515020', 1),
+(817, '130515021', 2),
+(818, '130515022', 1),
+(819, '130515023', 1),
+(820, '130515024', 1),
+(821, '130516001', 1),
+(822, '130516002', 1),
+(823, '130516003', 1),
+(824, '130516004', 1),
+(825, '130520001', 1),
+(826, '130520002', 1),
+(827, '130520003', 1),
+(828, '130520004', 1),
+(829, '130520005', 1),
+(830, '130520006', 1),
+(831, '130520007', 1),
+(832, '130520008', 1),
+(833, '130520008', 2),
+(834, '130520009', 1),
+(835, '130520009', 2),
+(836, '130520010', 1),
+(837, '130520010', 2),
+(838, '130520011', 1),
+(839, '130520011', 2),
+(840, '130520012', 1),
+(841, '130520012', 2),
+(842, '130520013', 1),
+(843, '130520013', 2),
+(844, '130520014', 1),
+(845, '130520014', 2),
+(846, '130520015', 1),
+(847, '130520015', 2),
+(848, '130520016', 1),
+(849, '130520016', 2),
+(850, '130520017', 1),
+(851, '130520017', 2),
+(852, '130520018', 1),
+(853, '130520018', 2),
+(854, '130520019', 1),
+(855, '130520019', 2),
+(856, '130520020', 1),
+(857, '130520020', 2),
+(858, '130520021', 1),
+(859, '130520021', 2),
+(860, '130520022', 1),
+(861, '130520023', 1),
+(862, '130520024', 1),
+(863, '130520024', 2),
+(864, '130520024', 6),
+(865, '130520025', 1),
+(866, '130520026', 1),
+(867, '130520027', 1),
+(868, '130520028', 1),
+(869, '130520029', 1),
+(870, '130520030', 1),
+(871, '130520031', 1),
+(872, '130520032', 1),
+(873, '130520033', 1),
+(874, '130520034', 1),
+(875, '130520035', 1),
+(876, '130520036', 1),
+(877, '130520037', 1),
+(878, '130521001', 1),
+(879, '130521002', 1),
+(880, '130521003', 1),
+(881, '130521004', 1),
+(882, '130521005', 1),
+(883, '130521006', 1),
+(884, '130521007', 1),
+(885, '130521008', 1),
+(886, '130521009', 1),
+(887, '130521009', 2),
+(888, '130521010', 1),
+(889, '130521011', 1),
+(890, '130521012', 1),
+(891, '130521013', 1),
+(892, '130521014', 1),
+(893, '130521015', 1),
+(894, '130521016', 1),
+(895, '130521017', 1),
+(896, '130521018', 1),
+(897, '130521019', 1),
+(898, '130521020', 1),
+(899, '130521021', 1),
+(900, '130521022', 1),
+(901, '130521023', 1),
+(902, '130521024', 1),
+(903, '130521025', 1),
+(904, '130521026', 1),
+(905, '130521027', 1),
+(906, '130521028', 2),
+(907, '130521029', 2),
+(908, '130521030', 1),
+(909, '130521031', 1),
+(910, '130521032', 1),
+(911, '130521033', 1),
+(912, '130522001', 1),
+(913, '130522002', 1),
+(914, '130522003', 1),
+(915, '130522004', 1),
+(916, '130522005', 1),
+(917, '130522006', 1),
+(918, '130522007', 1),
+(919, '130522008', 1),
+(920, '130522009', 1),
+(921, '130522010', 1),
+(922, '130522011', 1),
+(923, '130522012', 1),
+(924, '130522013', 1),
+(925, '130522014', 1),
+(926, '130522015', 1),
+(927, '130522016', 1),
+(928, '130522017', 1),
+(929, '130522018', 1),
+(930, '130522019', 1),
+(931, '130522020', 1),
+(932, '130522021', 1),
+(933, '130522022', 1),
+(934, '130522023', 1),
+(935, '130522024', 1),
+(936, '130523001', 1),
+(937, '130523002', 1),
+(938, '130523003', 1),
+(939, '130523004', 1),
+(940, '130523005', 4),
+(941, '130523006', 1),
+(942, '130523007', 1),
+(943, '130523008', 1),
+(944, '130523009', 1),
+(945, '130523010', 1),
+(946, '130523011', 1),
+(947, '130523012', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_book_language_temp`
+-- Struktur dari tabel `digilib_book_language_temp`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_book_language_temp` (
@@ -2498,10 +3292,24 @@ CREATE TABLE IF NOT EXISTS `digilib_book_language_temp` (
   KEY `digilib_book_language_temp_fk1` (`book_language`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `digilib_book_language_temp`
+--
+
+INSERT INTO `digilib_book_language_temp` (`book_language_temp_id`, `book_language_temp_session`, `book_language`) VALUES
+(2, '0p5fam2sov56o22ma70nqulcs4', 1),
+(10, '6bc3enmk89ef3vhhp899ru83t6', 1),
+(4, '9eoqo35s6mob6081co2bb7h1h6', 1),
+(3, 'b0rdeh1npens4963kh43055p91', 1),
+(1, 'daohhqt9d46sq7ntlmcepr5m65', 3),
+(11, 'ed2cvb2od50elveqt7flj6npl1', 1),
+(9, 'f3p72kel29349blcsh7jd23330', 1),
+(5, 'mamsu4gabqd1phq3shqojhobo7', 1);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_book_register`
+-- Struktur dari tabel `digilib_book_register`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_book_register` (
@@ -2515,7 +3323,7 @@ CREATE TABLE IF NOT EXISTS `digilib_book_register` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_book_register`
+-- Dumping data untuk tabel `digilib_book_register`
 --
 
 INSERT INTO `digilib_book_register` (`book_register_id`, `book_id`, `book_condition`, `book_entry`) VALUES
@@ -3897,12 +4705,627 @@ INSERT INTO `digilib_book_register` (`book_register_id`, `book_id`, `book_condit
 ('130214001001', '130214001', 1, '2013-02-14'),
 ('130214001002', '130214001', 1, '2013-02-14'),
 ('130214002001', '130214002', 1, '2013-02-14'),
-('130214002002', '130214002', 1, '2013-02-14');
+('130214002002', '130214002', 1, '2013-02-14'),
+('130221001001', '130221001', 1, '2013-02-21'),
+('130221002001', '130221002', 1, '2013-02-21'),
+('130221003001', '130221003', 1, '2013-02-21'),
+('130222001001', '130222001', 1, '2013-02-22'),
+('130222001002', '130222001', 1, '2013-02-22'),
+('130222001003', '130222001', 1, '2013-02-22'),
+('130222001004', '130222001', 1, '2013-02-22'),
+('130222001005', '130222001', 1, '2013-02-22'),
+('130222001006', '130222001', 1, '2013-02-22'),
+('130222001007', '130222001', 1, '2013-02-22'),
+('130222001008', '130222001', 1, '2013-02-22'),
+('130222001009', '130222001', 1, '2013-02-22'),
+('130222001010', '130222001', 1, '2013-02-22'),
+('130222001011', '130222001', 1, '2013-02-22'),
+('130222001012', '130222001', 1, '2013-02-22'),
+('130222001013', '130222001', 1, '2013-02-22'),
+('130222001014', '130222001', 1, '2013-02-22'),
+('130222001015', '130222001', 1, '2013-02-22'),
+('130222001016', '130222001', 1, '2013-02-22'),
+('130222001017', '130222001', 1, '2013-02-22'),
+('130222001018', '130222001', 1, '2013-02-22'),
+('130222001019', '130222001', 1, '2013-02-22'),
+('130222001020', '130222001', 1, '2013-02-22'),
+('130222001021', '130222001', 1, '2013-02-22'),
+('130222001022', '130222001', 1, '2013-02-22'),
+('130222001023', '130222001', 1, '2013-02-22'),
+('130222001024', '130222001', 1, '2013-02-22'),
+('130222001025', '130222001', 1, '2013-02-22'),
+('130222001026', '130222001', 1, '2013-02-22'),
+('130222001027', '130222001', 1, '2013-02-22'),
+('130222001028', '130222001', 1, '2013-02-22'),
+('130222001029', '130222001', 1, '2013-02-22'),
+('130222001030', '130222001', 1, '2013-02-22'),
+('130222001031', '130222001', 1, '2013-02-22'),
+('130222001032', '130222001', 1, '2013-02-22'),
+('130222001033', '130222001', 1, '2013-02-22'),
+('130222001034', '130222001', 1, '2013-02-22'),
+('130222001035', '130222001', 1, '2013-02-22'),
+('130222001036', '130222001', 1, '2013-02-22'),
+('130222001037', '130222001', 1, '2013-02-22'),
+('130222001038', '130222001', 1, '2013-02-22'),
+('130222001039', '130222001', 1, '2013-02-22'),
+('130222001040', '130222001', 1, '2013-02-22'),
+('130222001041', '130222001', 1, '2013-02-22'),
+('130222001042', '130222001', 1, '2013-02-22'),
+('130222001043', '130222001', 1, '2013-02-22'),
+('130222001044', '130222001', 1, '2013-02-22'),
+('130222001045', '130222001', 1, '2013-02-22'),
+('130222001046', '130222001', 1, '2013-02-22'),
+('130222002001', '130222002', 1, '2013-02-22'),
+('130222002002', '130222002', 1, '2013-02-22'),
+('130222002003', '130222002', 1, '2013-02-22'),
+('130222002004', '130222002', 1, '2013-02-22'),
+('130222002005', '130222002', 1, '2013-02-22'),
+('130222002006', '130222002', 1, '2013-02-22'),
+('130222002007', '130222002', 1, '2013-02-22'),
+('130222002008', '130222002', 1, '2013-02-22'),
+('130222002009', '130222002', 1, '2013-02-22'),
+('130222002010', '130222002', 1, '2013-02-22'),
+('130222002011', '130222002', 1, '2013-02-22'),
+('130222002012', '130222002', 1, '2013-02-22'),
+('130222002013', '130222002', 1, '2013-02-22'),
+('130222002014', '130222002', 1, '2013-02-22'),
+('130222002015', '130222002', 1, '2013-02-22'),
+('130222002016', '130222002', 1, '2013-02-22'),
+('130222002017', '130222002', 1, '2013-02-22'),
+('130222002018', '130222002', 1, '2013-02-22'),
+('130222002019', '130222002', 1, '2013-02-22'),
+('130222002020', '130222002', 1, '2013-02-22'),
+('130222002021', '130222002', 1, '2013-02-22'),
+('130222002022', '130222002', 1, '2013-02-22'),
+('130222002023', '130222002', 1, '2013-02-22'),
+('130222002024', '130222002', 1, '2013-02-22'),
+('130222002025', '130222002', 1, '2013-02-22'),
+('130222002026', '130222002', 1, '2013-02-22'),
+('130222002027', '130222002', 1, '2013-02-22'),
+('130222002028', '130222002', 1, '2013-02-22'),
+('130222002029', '130222002', 1, '2013-02-22'),
+('130222002030', '130222002', 1, '2013-02-22'),
+('130222002031', '130222002', 1, '2013-02-22'),
+('130222002032', '130222002', 1, '2013-02-22'),
+('130222002033', '130222002', 1, '2013-02-22'),
+('130222002034', '130222002', 1, '2013-02-22'),
+('130222002035', '130222002', 1, '2013-02-22'),
+('130222002036', '130222002', 1, '2013-02-22'),
+('130222002037', '130222002', 1, '2013-02-22'),
+('130222002038', '130222002', 1, '2013-02-22'),
+('130222002039', '130222002', 1, '2013-02-22'),
+('130222002040', '130222002', 1, '2013-02-22'),
+('130222002041', '130222002', 1, '2013-02-22'),
+('130222002042', '130222002', 1, '2013-02-22'),
+('130222002043', '130222002', 1, '2013-02-22'),
+('130222002044', '130222002', 1, '2013-02-22'),
+('130222002045', '130222002', 1, '2013-02-22'),
+('130222002046', '130222002', 1, '2013-02-22'),
+('130222002047', '130222002', 1, '2013-02-22'),
+('130225001001', '130225001', 1, '2013-02-25'),
+('130225002001', '130225002', 1, '2013-02-25'),
+('130316001001', '130316001', 1, '2013-03-16'),
+('130316001002', '130316001', 1, '2013-03-16'),
+('130316001003', '130316001', 1, '2013-03-16'),
+('130316001004', '130316001', 1, '2013-03-16'),
+('130316001005', '130316001', 1, '2013-03-16'),
+('130316001006', '130316001', 1, '2013-03-16'),
+('130316001007', '130316001', 1, '2013-03-16'),
+('130316001008', '130316001', 1, '2013-03-16'),
+('130316001009', '130316001', 1, '2013-03-16'),
+('130316001010', '130316001', 1, '2013-03-16'),
+('130316001011', '130316001', 1, '2013-03-16'),
+('130316001012', '130316001', 1, '2013-03-16'),
+('130316001013', '130316001', 1, '2013-03-16'),
+('130316001014', '130316001', 1, '2013-03-16'),
+('130316001015', '130316001', 1, '2013-03-16'),
+('130316001016', '130316001', 1, '2013-03-16'),
+('130316001017', '130316001', 1, '2013-03-16'),
+('130316001018', '130316001', 1, '2013-03-16'),
+('130316001019', '130316001', 1, '2013-03-16'),
+('130316001020', '130316001', 1, '2013-03-16'),
+('130323001001', '130323001', 1, '2013-03-23'),
+('130323001002', '130323001', 1, '2013-03-23'),
+('130323001003', '130323001', 1, '2013-03-23'),
+('130323001004', '130323001', 1, '2013-03-23'),
+('130323001005', '130323001', 1, '2013-03-23'),
+('130323001006', '130323001', 1, '2013-03-23'),
+('130323001007', '130323001', 1, '2013-03-23'),
+('130323001008', '130323001', 1, '2013-03-23'),
+('130323001009', '130323001', 1, '2013-03-23'),
+('130323001010', '130323001', 1, '2013-03-23'),
+('130323001011', '130323001', 1, '2013-03-23'),
+('130323001012', '130323001', 1, '2013-03-23'),
+('130323001013', '130323001', 1, '2013-03-23'),
+('130323001014', '130323001', 1, '2013-03-23'),
+('130323001015', '130323001', 1, '2013-03-23'),
+('130323001016', '130323001', 1, '2013-03-23'),
+('130323001017', '130323001', 1, '2013-03-23'),
+('130323001018', '130323001', 1, '2013-03-23'),
+('130323001019', '130323001', 1, '2013-03-23'),
+('130323001020', '130323001', 1, '2013-03-23'),
+('130323001021', '130323001', 1, '2013-03-23'),
+('130323001022', '130323001', 1, '2013-03-23'),
+('130323001023', '130323001', 1, '2013-03-23'),
+('130323001024', '130323001', 1, '2013-03-23'),
+('130323001025', '130323001', 1, '2013-03-23'),
+('130323001026', '130323001', 1, '2013-03-23'),
+('130323001027', '130323001', 1, '2013-03-23'),
+('130323001028', '130323001', 1, '2013-03-23'),
+('130323001029', '130323001', 1, '2013-03-23'),
+('130323001030', '130323001', 1, '2013-03-23'),
+('130323001031', '130323001', 1, '2013-03-23'),
+('130323001032', '130323001', 1, '2013-03-23'),
+('130323001033', '130323001', 1, '2013-03-23'),
+('130323001034', '130323001', 1, '2013-03-23'),
+('130323001035', '130323001', 1, '2013-03-23'),
+('130323001036', '130323001', 1, '2013-03-23'),
+('130323001037', '130323001', 1, '2013-03-23'),
+('130323001038', '130323001', 1, '2013-03-23'),
+('130323001039', '130323001', 1, '2013-03-23'),
+('130323001040', '130323001', 1, '2013-03-23'),
+('130323001041', '130323001', 1, '2013-03-23'),
+('130323001042', '130323001', 1, '2013-03-23'),
+('130323001043', '130323001', 1, '2013-03-23'),
+('130323001044', '130323001', 1, '2013-03-23'),
+('130323001045', '130323001', 1, '2013-03-23'),
+('130323001046', '130323001', 1, '2013-03-23'),
+('130323001047', '130323001', 1, '2013-03-23'),
+('130323001048', '130323001', 1, '2013-03-23'),
+('130323001049', '130323001', 1, '2013-03-23'),
+('130323001050', '130323001', 1, '2013-03-23'),
+('130323002001', '130323002', 1, '2013-03-23'),
+('130323002002', '130323002', 1, '2013-03-23'),
+('130323002003', '130323002', 1, '2013-03-23'),
+('130323002004', '130323002', 1, '2013-03-23'),
+('130323002005', '130323002', 1, '2013-03-23'),
+('130323002006', '130323002', 1, '2013-03-23'),
+('130323002007', '130323002', 1, '2013-03-23'),
+('130323002008', '130323002', 1, '2013-03-23'),
+('130323003001', '130323003', 1, '2013-03-23'),
+('130323003002', '130323003', 1, '2013-03-23'),
+('130323003003', '130323003', 1, '2013-03-23'),
+('130323003004', '130323003', 1, '2013-03-23'),
+('130323004001', '130323004', 1, '2013-03-23'),
+('130323004002', '130323004', 1, '2013-03-23'),
+('130323004003', '130323004', 1, '2013-03-23'),
+('130323004004', '130323004', 1, '2013-03-23'),
+('130323004005', '130323004', 1, '2013-03-23'),
+('130323004006', '130323004', 1, '2013-03-23'),
+('130323004007', '130323004', 1, '2013-03-23'),
+('130323005001', '130323005', 1, '2013-03-23'),
+('130323005002', '130323005', 1, '2013-03-23'),
+('130323005003', '130323005', 1, '2013-03-23'),
+('130323005004', '130323005', 1, '2013-03-23'),
+('130323005005', '130323005', 1, '2013-03-23'),
+('130323005006', '130323005', 1, '2013-03-23'),
+('130323005007', '130323005', 1, '2013-03-23'),
+('130323005008', '130323005', 1, '2013-03-23'),
+('130323005009', '130323005', 1, '2013-03-23'),
+('130323005010', '130323005', 1, '2013-03-23'),
+('130323005011', '130323005', 1, '2013-03-23'),
+('130323006001', '130323006', 1, '2013-03-23'),
+('130323006002', '130323006', 1, '2013-03-23'),
+('130323006003', '130323006', 1, '2013-03-23'),
+('130323006004', '130323006', 1, '2013-03-23'),
+('130323006005', '130323006', 1, '2013-03-23'),
+('130323006006', '130323006', 1, '2013-03-23'),
+('130323006007', '130323006', 1, '2013-03-23'),
+('130323006008', '130323006', 1, '2013-03-23'),
+('130323006009', '130323006', 1, '2013-03-23'),
+('130401001001', '130401001', 1, '2013-04-01'),
+('130401002001', '130401002', 1, '2013-04-01'),
+('130401002002', '130401002', 1, '2013-04-01'),
+('130401003001', '130401003', 1, '2013-04-01'),
+('130401004001', '130401004', 1, '2013-04-01'),
+('130401004002', '130401004', 1, '2013-04-01'),
+('130401004003', '130401004', 1, '2013-04-01'),
+('130401004004', '130401004', 1, '2013-04-01'),
+('130401004005', '130401004', 1, '2013-04-01'),
+('130401004006', '130401004', 1, '2013-04-01'),
+('130401004007', '130401004', 1, '2013-04-01'),
+('130401004008', '130401004', 1, '2013-04-01'),
+('130401004009', '130401004', 1, '2013-04-01'),
+('130401004010', '130401004', 1, '2013-04-01'),
+('130401004011', '130401004', 1, '2013-04-01'),
+('130401004012', '130401004', 1, '2013-04-01'),
+('130401004013', '130401004', 1, '2013-04-01'),
+('130401004014', '130401004', 1, '2013-04-01'),
+('130401004015', '130401004', 1, '2013-04-01'),
+('130401004016', '130401004', 1, '2013-04-01'),
+('130401004017', '130401004', 1, '2013-04-01'),
+('130401004018', '130401004', 1, '2013-04-01'),
+('130401004019', '130401004', 1, '2013-04-01'),
+('130401004020', '130401004', 1, '2013-04-01'),
+('130401004021', '130401004', 1, '2013-04-01'),
+('130401004022', '130401004', 1, '2013-04-01'),
+('130401004023', '130401004', 1, '2013-04-01'),
+('130401004024', '130401004', 1, '2013-04-01'),
+('130401004025', '130401004', 1, '2013-04-01'),
+('130401004026', '130401004', 1, '2013-04-01'),
+('130401004027', '130401004', 1, '2013-04-01'),
+('130401004028', '130401004', 1, '2013-04-01'),
+('130401004029', '130401004', 1, '2013-04-01'),
+('130401004030', '130401004', 1, '2013-04-01'),
+('130401004031', '130401004', 1, '2013-04-01'),
+('130401004032', '130401004', 1, '2013-04-01'),
+('130401004033', '130401004', 1, '2013-04-01'),
+('130401004034', '130401004', 1, '2013-04-01'),
+('130401004035', '130401004', 1, '2013-04-01'),
+('130401004036', '130401004', 1, '2013-04-01'),
+('130401004037', '130401004', 1, '2013-04-01'),
+('130401004038', '130401004', 1, '2013-04-01'),
+('130401004039', '130401004', 1, '2013-04-01'),
+('130401004040', '130401004', 1, '2013-04-01'),
+('130401004041', '130401004', 1, '2013-04-01'),
+('130401004042', '130401004', 1, '2013-04-01'),
+('130401004043', '130401004', 1, '2013-04-01'),
+('130401004044', '130401004', 1, '2013-04-01'),
+('130401004045', '130401004', 1, '2013-04-01'),
+('130401004046', '130401004', 1, '2013-04-01'),
+('130401004047', '130401004', 1, '2013-04-01'),
+('130401004048', '130401004', 1, '2013-04-01'),
+('130401004049', '130401004', 1, '2013-04-01'),
+('130401004050', '130401004', 1, '2013-04-01'),
+('130401004051', '130401004', 1, '2013-04-01'),
+('130401005001', '130401005', 1, '2013-04-01'),
+('130401005002', '130401005', 1, '2013-04-01'),
+('130401005003', '130401005', 1, '2013-04-01'),
+('130401005004', '130401005', 1, '2013-04-01'),
+('130401005005', '130401005', 1, '2013-04-01'),
+('130401005006', '130401005', 1, '2013-04-01'),
+('130401005007', '130401005', 1, '2013-04-01'),
+('130401005008', '130401005', 1, '2013-04-01'),
+('130401005009', '130401005', 1, '2013-04-01'),
+('130401005010', '130401005', 1, '2013-04-01'),
+('130401005011', '130401005', 1, '2013-04-01'),
+('130401005012', '130401005', 1, '2013-04-01'),
+('130401005013', '130401005', 1, '2013-04-01'),
+('130401005014', '130401005', 1, '2013-04-01'),
+('130401005015', '130401005', 1, '2013-04-01'),
+('130401005016', '130401005', 1, '2013-04-01'),
+('130401005017', '130401005', 1, '2013-04-01'),
+('130401005018', '130401005', 1, '2013-04-01'),
+('130401005019', '130401005', 1, '2013-04-01'),
+('130401005020', '130401005', 1, '2013-04-01'),
+('130401005021', '130401005', 1, '2013-04-01'),
+('130401005022', '130401005', 1, '2013-04-01'),
+('130401005023', '130401005', 1, '2013-04-01'),
+('130401005024', '130401005', 1, '2013-04-01'),
+('130401005025', '130401005', 1, '2013-04-01'),
+('130401005026', '130401005', 1, '2013-04-01'),
+('130401005027', '130401005', 1, '2013-04-01'),
+('130401005028', '130401005', 1, '2013-04-01'),
+('130401005029', '130401005', 1, '2013-04-01'),
+('130401005030', '130401005', 1, '2013-04-01'),
+('130401005031', '130401005', 1, '2013-04-01'),
+('130401005032', '130401005', 1, '2013-04-01'),
+('130401005033', '130401005', 1, '2013-04-01'),
+('130401005034', '130401005', 1, '2013-04-01'),
+('130401005035', '130401005', 1, '2013-04-01'),
+('130401005036', '130401005', 1, '2013-04-01'),
+('130401005037', '130401005', 1, '2013-04-01'),
+('130401005038', '130401005', 1, '2013-04-01'),
+('130401005039', '130401005', 1, '2013-04-01'),
+('130401005040', '130401005', 1, '2013-04-01'),
+('130401005041', '130401005', 1, '2013-04-01'),
+('130401005042', '130401005', 1, '2013-04-01'),
+('130401005043', '130401005', 1, '2013-04-01'),
+('130401005044', '130401005', 1, '2013-04-01'),
+('130401005045', '130401005', 1, '2013-04-01'),
+('130401005046', '130401005', 1, '2013-04-01'),
+('130401005047', '130401005', 1, '2013-04-01'),
+('130401005048', '130401005', 1, '2013-04-01'),
+('130401005049', '130401005', 1, '2013-04-01'),
+('130401005050', '130401005', 1, '2013-04-01'),
+('130401005051', '130401005', 1, '2013-04-01'),
+('130401006001', '130401006', 1, '2013-04-01'),
+('130401007001', '130401007', 1, '2013-04-01'),
+('130401008001', '130401008', 1, '2013-04-01'),
+('130402001001', '130402001', 1, '2013-04-02'),
+('130402002001', '130402002', 1, '2013-04-02'),
+('130403001001', '130403001', 1, '2013-04-03'),
+('130403002001', '130403002', 1, '2013-04-03'),
+('130403003001', '130403003', 1, '2013-04-03'),
+('130404001001', '130404001', 1, '2013-04-04'),
+('130404002001', '130404002', 1, '2013-04-04'),
+('130404003001', '130404003', 1, '2013-04-04'),
+('130404004001', '130404004', 1, '2013-04-04'),
+('130404005001', '130404005', 1, '2013-04-04'),
+('130404006001', '130404006', 1, '2013-04-04'),
+('130404007001', '130404007', 1, '2013-04-04'),
+('130507001001', '130507001', 1, '2013-05-07'),
+('130507002001', '130507002', 1, '2013-05-07'),
+('130507003001', '130507003', 1, '2013-05-07'),
+('130507004001', '130507004', 1, '2013-05-07'),
+('130507005001', '130507005', 1, '2013-05-07'),
+('130507006001', '130507006', 1, '2013-05-07'),
+('130507007001', '130507007', 1, '2013-05-07'),
+('130507008001', '130507008', 1, '2013-05-07'),
+('130507009001', '130507009', 1, '2013-05-07'),
+('130507010001', '130507010', 1, '2013-05-07'),
+('130507011001', '130507011', 1, '2013-05-07'),
+('130515001001', '130515001', 1, '2013-05-15'),
+('130515001002', '130515001', 1, '2013-05-15'),
+('130515001003', '130515001', 1, '2013-05-15'),
+('130515001004', '130515001', 1, '2013-05-15'),
+('130515002001', '130515002', 1, '2013-05-15'),
+('130515002002', '130515002', 1, '2013-05-15'),
+('130515002003', '130515002', 1, '2013-05-15'),
+('130515003001', '130515003', 1, '2013-05-15'),
+('130515003002', '130515003', 1, '2013-05-15'),
+('130515004001', '130515004', 1, '2013-05-15'),
+('130515004002', '130515004', 1, '2013-05-15'),
+('130515004003', '130515004', 1, '2013-05-15'),
+('130515004004', '130515004', 1, '2013-05-15'),
+('130515005001', '130515005', 1, '2013-05-15'),
+('130515005002', '130515005', 1, '2013-05-15'),
+('130515006001', '130515006', 1, '2013-05-15'),
+('130515006002', '130515006', 1, '2013-05-15'),
+('130515006003', '130515006', 1, '2013-05-15'),
+('130515007001', '130515007', 1, '2013-05-15'),
+('130515007002', '130515007', 1, '2013-05-15'),
+('130515008001', '130515008', 1, '2013-05-15'),
+('130515008002', '130515008', 1, '2013-05-15'),
+('130515008003', '130515008', 1, '2013-05-15'),
+('130515009001', '130515009', 1, '2013-05-15'),
+('130515009002', '130515009', 1, '2013-05-15'),
+('130515009003', '130515009', 1, '2013-05-15'),
+('130515009004', '130515009', 1, '2013-05-15'),
+('130515010001', '130515010', 1, '2013-05-15'),
+('130515010002', '130515010', 1, '2013-05-15'),
+('130515010003', '130515010', 1, '2013-05-15'),
+('130515010004', '130515010', 1, '2013-05-15'),
+('130515011001', '130515011', 1, '2013-05-15'),
+('130515011002', '130515011', 1, '2013-05-15'),
+('130515011003', '130515011', 1, '2013-05-15'),
+('130515011004', '130515011', 1, '2013-05-15'),
+('130515012001', '130515012', 1, '2013-05-15'),
+('130515012002', '130515012', 1, '2013-05-15'),
+('130515012003', '130515012', 1, '2013-05-15'),
+('130515012004', '130515012', 1, '2013-05-15'),
+('130515013001', '130515013', 1, '2013-05-15'),
+('130515013002', '130515013', 1, '2013-05-15'),
+('130515013003', '130515013', 1, '2013-05-15'),
+('130515014001', '130515014', 1, '2013-05-15'),
+('130515014002', '130515014', 1, '2013-05-15'),
+('130515014003', '130515014', 1, '2013-05-15'),
+('130515014004', '130515014', 1, '2013-05-15'),
+('130515015001', '130515015', 1, '2013-05-15'),
+('130515015002', '130515015', 1, '2013-05-15'),
+('130515016001', '130515016', 1, '2013-05-15'),
+('130515017001', '130515017', 1, '2013-05-15'),
+('130515018001', '130515018', 1, '2013-05-15'),
+('130515018002', '130515018', 1, '2013-05-15'),
+('130515019001', '130515019', 1, '2013-05-15'),
+('130515019002', '130515019', 1, '2013-05-15'),
+('130515019003', '130515019', 1, '2013-05-15'),
+('130515020001', '130515020', 1, '2013-05-15'),
+('130515021001', '130515021', 1, '2013-05-15'),
+('130515021002', '130515021', 1, '2013-05-15'),
+('130515021003', '130515021', 1, '2013-05-15'),
+('130515021004', '130515021', 1, '2013-05-15'),
+('130515021005', '130515021', 1, '2013-05-15'),
+('130515022001', '130515022', 1, '2013-05-15'),
+('130515023001', '130515023', 1, '2013-05-15'),
+('130515024001', '130515024', 1, '2013-05-15'),
+('130515024002', '130515024', 1, '2013-05-15'),
+('130516001001', '130516001', 1, '2013-05-16'),
+('130516001002', '130516001', 1, '2013-05-16'),
+('130516002001', '130516002', 1, '2013-05-16'),
+('130516003001', '130516003', 1, '2013-05-16'),
+('130516004001', '130516004', 1, '2013-05-16'),
+('130520001001', '130520001', 1, '2013-05-20'),
+('130520001002', '130520001', 1, '2013-05-20'),
+('130520002001', '130520002', 1, '2013-05-20'),
+('130520002002', '130520002', 1, '2013-05-20'),
+('130520003001', '130520003', 1, '2013-05-20'),
+('130520003002', '130520003', 1, '2013-05-20'),
+('130520003003', '130520003', 1, '2013-05-20'),
+('130520004001', '130520004', 1, '2013-05-20'),
+('130520004002', '130520004', 1, '2013-05-20'),
+('130520004003', '130520004', 1, '2013-05-20'),
+('130520005001', '130520005', 1, '2013-05-20'),
+('130520005002', '130520005', 1, '2013-05-20'),
+('130520005003', '130520005', 1, '2013-05-20'),
+('130520006001', '130520006', 1, '2013-05-20'),
+('130520006002', '130520006', 1, '2013-05-20'),
+('130520007001', '130520007', 1, '2013-05-20'),
+('130520008001', '130520008', 1, '2013-05-20'),
+('130520009001', '130520009', 1, '2013-05-20'),
+('130520010001', '130520010', 1, '2013-05-20'),
+('130520010002', '130520010', 1, '2013-05-20'),
+('130520010003', '130520010', 1, '2013-05-20'),
+('130520010004', '130520010', 1, '2013-05-20'),
+('130520010005', '130520010', 1, '2013-05-20'),
+('130520010006', '130520010', 1, '2013-05-20'),
+('130520010007', '130520010', 1, '2013-05-20'),
+('130520010008', '130520010', 1, '2013-05-20'),
+('130520010009', '130520010', 1, '2013-05-20'),
+('130520010010', '130520010', 1, '2013-05-20'),
+('130520010011', '130520010', 1, '2013-05-20'),
+('130520011001', '130520011', 1, '2013-05-20'),
+('130520012001', '130520012', 1, '2013-05-20'),
+('130520013001', '130520013', 1, '2013-05-20'),
+('130520014001', '130520014', 1, '2013-05-20'),
+('130520014002', '130520014', 1, '2013-05-20'),
+('130520014003', '130520014', 1, '2013-05-20'),
+('130520015001', '130520015', 1, '2013-05-20'),
+('130520016001', '130520016', 1, '2013-05-20'),
+('130520017001', '130520017', 1, '2013-05-20'),
+('130520018001', '130520018', 1, '2013-05-20'),
+('130520018002', '130520018', 1, '2013-05-20'),
+('130520018003', '130520018', 1, '2013-05-20'),
+('130520019001', '130520019', 1, '2013-05-20'),
+('130520020001', '130520020', 1, '2013-05-20'),
+('130520021001', '130520021', 1, '2013-05-20'),
+('130520022001', '130520022', 1, '2013-05-20'),
+('130520023001', '130520023', 1, '2013-05-20'),
+('130520024001', '130520024', 1, '2013-05-20'),
+('130520025001', '130520025', 1, '2013-05-20'),
+('130520026001', '130520026', 1, '2013-05-20'),
+('130520027001', '130520027', 1, '2013-05-20'),
+('130520028001', '130520028', 1, '2013-05-20'),
+('130520029001', '130520029', 1, '2013-05-20'),
+('130520030001', '130520030', 1, '2013-05-20'),
+('130520030002', '130520030', 1, '2013-05-20'),
+('130520031001', '130520031', 1, '2013-05-20'),
+('130520031002', '130520031', 1, '2013-05-20'),
+('130520032001', '130520032', 1, '2013-05-20'),
+('130520033001', '130520033', 1, '2013-05-20'),
+('130520033002', '130520033', 1, '2013-05-20'),
+('130520034001', '130520034', 1, '2013-05-20'),
+('130520034002', '130520034', 1, '2013-05-20'),
+('130520034003', '130520034', 1, '2013-05-20'),
+('130520034004', '130520034', 1, '2013-05-20'),
+('130520034005', '130520034', 1, '2013-05-20'),
+('130520034006', '130520034', 1, '2013-05-20'),
+('130520035001', '130520035', 1, '2013-05-20'),
+('130520035002', '130520035', 1, '2013-05-20'),
+('130520036001', '130520036', 1, '2013-05-20'),
+('130520036002', '130520036', 1, '2013-05-20'),
+('130520037001', '130520037', 1, '2013-05-20'),
+('130521001001', '130521001', 1, '2013-05-21'),
+('130521001002', '130521001', 1, '2013-05-21'),
+('130521001003', '130521001', 1, '2013-05-21'),
+('130521001004', '130521001', 1, '2013-05-21'),
+('130521002001', '130521002', 1, '2013-05-21'),
+('130521002002', '130521002', 1, '2013-05-21'),
+('130521002003', '130521002', 1, '2013-05-21'),
+('130521003001', '130521003', 1, '2013-05-21'),
+('130521003002', '130521003', 1, '2013-05-21'),
+('130521003003', '130521003', 1, '2013-05-21'),
+('130521003004', '130521003', 1, '2013-05-21'),
+('130521004001', '130521004', 1, '2013-05-21'),
+('130521004002', '130521004', 1, '2013-05-21'),
+('130521004003', '130521004', 1, '2013-05-21'),
+('130521004004', '130521004', 1, '2013-05-21'),
+('130521005001', '130521005', 1, '2013-05-21'),
+('130521005002', '130521005', 1, '2013-05-21'),
+('130521005003', '130521005', 1, '2013-05-21'),
+('130521005004', '130521005', 1, '2013-05-21'),
+('130521006001', '130521006', 1, '2013-05-21'),
+('130521006002', '130521006', 1, '2013-05-21'),
+('130521007001', '130521007', 1, '2013-05-21'),
+('130521007002', '130521007', 1, '2013-05-21'),
+('130521007003', '130521007', 1, '2013-05-21'),
+('130521007004', '130521007', 1, '2013-05-21'),
+('130521008001', '130521008', 1, '2013-05-21'),
+('130521008002', '130521008', 1, '2013-05-21'),
+('130521008003', '130521008', 1, '2013-05-21'),
+('130521008004', '130521008', 1, '2013-05-21'),
+('130521009001', '130521009', 1, '2013-05-21'),
+('130521009002', '130521009', 1, '2013-05-21'),
+('130521009003', '130521009', 1, '2013-05-21'),
+('130521010001', '130521010', 1, '2013-05-21'),
+('130521011001', '130521011', 1, '2013-05-21'),
+('130521012001', '130521012', 1, '2013-05-21'),
+('130521012002', '130521012', 1, '2013-05-21'),
+('130521013001', '130521013', 1, '2013-05-21'),
+('130521014001', '130521014', 1, '2013-05-21'),
+('130521014002', '130521014', 1, '2013-05-21'),
+('130521014003', '130521014', 1, '2013-05-21'),
+('130521015001', '130521015', 1, '2013-05-21'),
+('130521015002', '130521015', 1, '2013-05-21'),
+('130521015003', '130521015', 1, '2013-05-21'),
+('130521016001', '130521016', 1, '2013-05-21'),
+('130521017001', '130521017', 1, '2013-05-21'),
+('130521017002', '130521017', 1, '2013-05-21'),
+('130521018001', '130521018', 1, '2013-05-21'),
+('130521019001', '130521019', 1, '2013-05-21'),
+('130521020001', '130521020', 1, '2013-05-21'),
+('130521020002', '130521020', 1, '2013-05-21'),
+('130521020003', '130521020', 1, '2013-05-21'),
+('130521020004', '130521020', 1, '2013-05-21'),
+('130521020005', '130521020', 1, '2013-05-21'),
+('130521021001', '130521021', 1, '2013-05-21'),
+('130521021002', '130521021', 1, '2013-05-21'),
+('130521021003', '130521021', 1, '2013-05-21'),
+('130521021004', '130521021', 1, '2013-05-21'),
+('130521021005', '130521021', 1, '2013-05-21'),
+('130521021006', '130521021', 1, '2013-05-21'),
+('130521022001', '130521022', 1, '2013-05-21'),
+('130521022002', '130521022', 1, '2013-05-21'),
+('130521022003', '130521022', 1, '2013-05-21'),
+('130521022004', '130521022', 1, '2013-05-21'),
+('130521022005', '130521022', 1, '2013-05-21'),
+('130521022006', '130521022', 1, '2013-05-21'),
+('130521023001', '130521023', 1, '2013-05-21'),
+('130521024001', '130521024', 1, '2013-05-21'),
+('130521024002', '130521024', 1, '2013-05-21'),
+('130521025001', '130521025', 1, '2013-05-21'),
+('130521025002', '130521025', 1, '2013-05-21'),
+('130521025003', '130521025', 1, '2013-05-21'),
+('130521026001', '130521026', 1, '2013-05-21'),
+('130521026002', '130521026', 1, '2013-05-21'),
+('130521027001', '130521027', 1, '2013-05-21'),
+('130521027002', '130521027', 1, '2013-05-21'),
+('130521027003', '130521027', 1, '2013-05-21'),
+('130521028001', '130521028', 1, '2013-05-21'),
+('130521028002', '130521028', 1, '2013-05-21'),
+('130521029001', '130521029', 1, '2013-05-21'),
+('130521029002', '130521029', 1, '2013-05-21'),
+('130521030001', '130521030', 1, '2013-05-21'),
+('130521030002', '130521030', 1, '2013-05-21'),
+('130521031001', '130521031', 1, '2013-05-21'),
+('130521031002', '130521031', 1, '2013-05-21'),
+('130521031003', '130521031', 1, '2013-05-21'),
+('130521032001', '130521032', 1, '2013-05-21'),
+('130521032002', '130521032', 1, '2013-05-21'),
+('130521033001', '130521033', 1, '2013-05-21'),
+('130521033002', '130521033', 1, '2013-05-21'),
+('130522001001', '130522001', 1, '2013-05-22'),
+('130522001002', '130522001', 1, '2013-05-22'),
+('130522002001', '130522002', 1, '2013-05-22'),
+('130522002002', '130522002', 1, '2013-05-22'),
+('130522003001', '130522003', 1, '2013-05-22'),
+('130522003002', '130522003', 1, '2013-05-22'),
+('130522004001', '130522004', 1, '2013-05-22'),
+('130522004002', '130522004', 1, '2013-05-22'),
+('130522005001', '130522005', 1, '2013-05-22'),
+('130522005002', '130522005', 1, '2013-05-22'),
+('130522005003', '130522005', 1, '2013-05-22'),
+('130522006001', '130522006', 1, '2013-05-22'),
+('130522007001', '130522007', 1, '2013-05-22'),
+('130522008001', '130522008', 1, '2013-05-22'),
+('130522008002', '130522008', 1, '2013-05-22'),
+('130522009001', '130522009', 1, '2013-05-22'),
+('130522009002', '130522009', 1, '2013-05-22'),
+('130522010001', '130522010', 1, '2013-05-22'),
+('130522011001', '130522011', 1, '2013-05-22'),
+('130522012001', '130522012', 1, '2013-05-22'),
+('130522013001', '130522013', 1, '2013-05-22'),
+('130522014001', '130522014', 1, '2013-05-22'),
+('130522014002', '130522014', 1, '2013-05-22'),
+('130522015001', '130522015', 1, '2013-05-22'),
+('130522016001', '130522016', 1, '2013-05-22'),
+('130522017001', '130522017', 1, '2013-05-22'),
+('130522018001', '130522018', 1, '2013-05-22'),
+('130522019001', '130522019', 1, '2013-05-22'),
+('130522019002', '130522019', 1, '2013-05-22'),
+('130522019003', '130522019', 1, '2013-05-22'),
+('130522020001', '130522020', 1, '2013-05-22'),
+('130522021001', '130522021', 1, '2013-05-22'),
+('130522022001', '130522022', 1, '2013-05-22'),
+('130522023001', '130522023', 1, '2013-05-22'),
+('130522024001', '130522024', 1, '2013-05-22'),
+('130523001001', '130523001', 1, '2013-05-23'),
+('130523002001', '130523002', 1, '2013-05-23'),
+('130523003001', '130523003', 1, '2013-05-23'),
+('130523004001', '130523004', 1, '2013-05-23'),
+('130523005001', '130523005', 1, '2013-05-23'),
+('130523006001', '130523006', 1, '2013-05-23'),
+('130523007001', '130523007', 1, '2013-05-23'),
+('130523008001', '130523008', 1, '2013-05-23'),
+('130523009001', '130523009', 1, '2013-05-23'),
+('130523010001', '130523010', 1, '2013-05-23'),
+('130523011001', '130523011', 1, '2013-05-23'),
+('130523012001', '130523012', 1, '2013-05-23');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_book_resource`
+-- Struktur dari tabel `digilib_book_resource`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_book_resource` (
@@ -3913,7 +5336,7 @@ CREATE TABLE IF NOT EXISTS `digilib_book_resource` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_book_resource`
+-- Dumping data untuk tabel `digilib_book_resource`
 --
 
 INSERT INTO `digilib_book_resource` (`book_resource_id`, `book_resource_title`) VALUES
@@ -3924,7 +5347,7 @@ INSERT INTO `digilib_book_resource` (`book_resource_id`, `book_resource_title`) 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_book_temp_barcodeprint`
+-- Struktur dari tabel `digilib_book_temp_barcodeprint`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_book_temp_barcodeprint` (
@@ -3935,10 +5358,108 @@ CREATE TABLE IF NOT EXISTS `digilib_book_temp_barcodeprint` (
   UNIQUE KEY `digilib_book_temp_barcodeprint_u1` (`book_temp_barcodeprint_register`,`book_temp_barcodeprint_session`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `digilib_book_temp_barcodeprint`
+--
+
+INSERT INTO `digilib_book_temp_barcodeprint` (`book_temp_barcodeprint`, `book_temp_barcodeprint_register`, `book_temp_barcodeprint_session`) VALUES
+(97, '121126001001', '2a2a9b44582cst7kep5hrq0q51'),
+(95, '121126001001', 'uun1sbv9rifbdr9hq5k7r2i8h3'),
+(96, '121126001002', 'uun1sbv9rifbdr9hq5k7r2i8h3'),
+(41, '121206016001', '5ssnuqa0gj494ubgk22dap75c4'),
+(42, '121206016002', '5ssnuqa0gj494ubgk22dap75c4'),
+(43, '121206016003', '5ssnuqa0gj494ubgk22dap75c4'),
+(44, '121206016004', '5ssnuqa0gj494ubgk22dap75c4'),
+(45, '121206016005', '5ssnuqa0gj494ubgk22dap75c4'),
+(46, '121206016006', '5ssnuqa0gj494ubgk22dap75c4'),
+(47, '121206016007', '5ssnuqa0gj494ubgk22dap75c4'),
+(48, '121206016008', '5ssnuqa0gj494ubgk22dap75c4'),
+(49, '121206016009', '5ssnuqa0gj494ubgk22dap75c4'),
+(50, '121206016010', '5ssnuqa0gj494ubgk22dap75c4'),
+(51, '121206016011', '5ssnuqa0gj494ubgk22dap75c4'),
+(52, '121206016012', '5ssnuqa0gj494ubgk22dap75c4'),
+(53, '121206016013', '5ssnuqa0gj494ubgk22dap75c4'),
+(54, '121206016014', '5ssnuqa0gj494ubgk22dap75c4'),
+(55, '121206017001', '5ssnuqa0gj494ubgk22dap75c4'),
+(56, '121206017002', '5ssnuqa0gj494ubgk22dap75c4'),
+(57, '121206017003', '5ssnuqa0gj494ubgk22dap75c4'),
+(58, '121206017004', '5ssnuqa0gj494ubgk22dap75c4'),
+(59, '121206017005', '5ssnuqa0gj494ubgk22dap75c4'),
+(60, '121206017006', '5ssnuqa0gj494ubgk22dap75c4'),
+(61, '121206017007', '5ssnuqa0gj494ubgk22dap75c4'),
+(62, '121206017008', '5ssnuqa0gj494ubgk22dap75c4'),
+(63, '121206017009', '5ssnuqa0gj494ubgk22dap75c4'),
+(64, '121206017010', '5ssnuqa0gj494ubgk22dap75c4'),
+(65, '121206017011', '5ssnuqa0gj494ubgk22dap75c4'),
+(66, '121206017012', '5ssnuqa0gj494ubgk22dap75c4'),
+(67, '121206017013', '5ssnuqa0gj494ubgk22dap75c4'),
+(68, '121206017014', '5ssnuqa0gj494ubgk22dap75c4'),
+(98, '130206001001', 'ehts0bdlqp13f21vm0h2jpsp62'),
+(99, '130206001002', 'ehts0bdlqp13f21vm0h2jpsp62'),
+(100, '130206010001', 'ehts0bdlqp13f21vm0h2jpsp62'),
+(101, '130206010002', 'ehts0bdlqp13f21vm0h2jpsp62'),
+(104, '130207011001', 'ehts0bdlqp13f21vm0h2jpsp62'),
+(105, '130207011002', 'ehts0bdlqp13f21vm0h2jpsp62'),
+(102, '130207012001', 'ehts0bdlqp13f21vm0h2jpsp62'),
+(103, '130207012002', 'ehts0bdlqp13f21vm0h2jpsp62'),
+(8, '130515002001', 'd8gph3q5ursh89o0k8u1iaj251'),
+(9, '130515002002', 'd8gph3q5ursh89o0k8u1iaj251'),
+(10, '130515002003', 'd8gph3q5ursh89o0k8u1iaj251'),
+(35, '130515003001', '5ssnuqa0gj494ubgk22dap75c4'),
+(36, '130515003002', '5ssnuqa0gj494ubgk22dap75c4'),
+(37, '130515005001', '5ssnuqa0gj494ubgk22dap75c4'),
+(38, '130515005002', '5ssnuqa0gj494ubgk22dap75c4'),
+(5, '130515006001', 'd8gph3q5ursh89o0k8u1iaj251'),
+(6, '130515006002', 'd8gph3q5ursh89o0k8u1iaj251'),
+(7, '130515006003', 'd8gph3q5ursh89o0k8u1iaj251'),
+(11, '130515007001', 'd8gph3q5ursh89o0k8u1iaj251'),
+(12, '130515007002', 'd8gph3q5ursh89o0k8u1iaj251'),
+(13, '130515008001', 'd8gph3q5ursh89o0k8u1iaj251'),
+(14, '130515008002', 'd8gph3q5ursh89o0k8u1iaj251'),
+(15, '130515008003', 'd8gph3q5ursh89o0k8u1iaj251'),
+(16, '130515009001', 'd8gph3q5ursh89o0k8u1iaj251'),
+(17, '130515009002', 'd8gph3q5ursh89o0k8u1iaj251'),
+(18, '130515009003', 'd8gph3q5ursh89o0k8u1iaj251'),
+(19, '130515009004', 'd8gph3q5ursh89o0k8u1iaj251'),
+(1, '130515010001', 'd8gph3q5ursh89o0k8u1iaj251'),
+(2, '130515010002', 'd8gph3q5ursh89o0k8u1iaj251'),
+(3, '130515010003', 'd8gph3q5ursh89o0k8u1iaj251'),
+(4, '130515010004', 'd8gph3q5ursh89o0k8u1iaj251'),
+(20, '130515011001', 'd8gph3q5ursh89o0k8u1iaj251'),
+(21, '130515011002', 'd8gph3q5ursh89o0k8u1iaj251'),
+(22, '130515011003', 'd8gph3q5ursh89o0k8u1iaj251'),
+(23, '130515011004', 'd8gph3q5ursh89o0k8u1iaj251'),
+(24, '130515012001', 'd8gph3q5ursh89o0k8u1iaj251'),
+(25, '130515012002', 'd8gph3q5ursh89o0k8u1iaj251'),
+(26, '130515012003', 'd8gph3q5ursh89o0k8u1iaj251'),
+(27, '130515012004', 'd8gph3q5ursh89o0k8u1iaj251'),
+(32, '130515013001', 'd8gph3q5ursh89o0k8u1iaj251'),
+(33, '130515013002', 'd8gph3q5ursh89o0k8u1iaj251'),
+(34, '130515013003', 'd8gph3q5ursh89o0k8u1iaj251'),
+(28, '130515014001', 'd8gph3q5ursh89o0k8u1iaj251'),
+(29, '130515014002', 'd8gph3q5ursh89o0k8u1iaj251'),
+(30, '130515014003', 'd8gph3q5ursh89o0k8u1iaj251'),
+(31, '130515014004', 'd8gph3q5ursh89o0k8u1iaj251'),
+(39, '130515015001', '5ssnuqa0gj494ubgk22dap75c4'),
+(40, '130515015002', '5ssnuqa0gj494ubgk22dap75c4'),
+(72, '130515016001', 'kmpc7qiijh4de6o7lntdfctqn6'),
+(69, '130515017001', 'kmpc7qiijh4de6o7lntdfctqn6'),
+(70, '130515018001', 'kmpc7qiijh4de6o7lntdfctqn6'),
+(71, '130515018002', 'kmpc7qiijh4de6o7lntdfctqn6'),
+(73, '130515020001', 'kmpc7qiijh4de6o7lntdfctqn6'),
+(75, '130515022001', 'kmpc7qiijh4de6o7lntdfctqn6'),
+(74, '130515023001', 'kmpc7qiijh4de6o7lntdfctqn6'),
+(81, '130521023001', 'g5jetdbbn7ureaisbgreogrfd5'),
+(78, '130521025001', 'g5jetdbbn7ureaisbgreogrfd5'),
+(79, '130521025002', 'g5jetdbbn7ureaisbgreogrfd5'),
+(80, '130521025003', 'g5jetdbbn7ureaisbgreogrfd5'),
+(76, '130521026001', 'g5jetdbbn7ureaisbgreogrfd5'),
+(77, '130521026002', 'g5jetdbbn7ureaisbgreogrfd5');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_borrowed_history`
+-- Struktur dari tabel `digilib_borrowed_history`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_borrowed_history` (
@@ -3957,10 +5478,17 @@ CREATE TABLE IF NOT EXISTS `digilib_borrowed_history` (
   KEY `digilib_borrowed_history_fk3` (`borrowed_history_book`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `digilib_borrowed_history`
+--
+
+INSERT INTO `digilib_borrowed_history` (`borrowed_history_id`, `borrowed_history_type`, `borrowed_history_members`, `borrowed_history_book`, `borrowed_history_star`, `borrowed_history_finish`, `borrowed_history_status`, `borrowed_history_return`, `borrowed_history_penalty`) VALUES
+(1, 1, '1314010257', '121126012001', '2013-03-06', '2013-03-07', 0, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_borrowed_return_temp`
+-- Struktur dari tabel `digilib_borrowed_return_temp`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_borrowed_return_temp` (
@@ -3974,7 +5502,7 @@ CREATE TABLE IF NOT EXISTS `digilib_borrowed_return_temp` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_borrowed_temp`
+-- Struktur dari tabel `digilib_borrowed_temp`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_borrowed_temp` (
@@ -3993,7 +5521,7 @@ CREATE TABLE IF NOT EXISTS `digilib_borrowed_temp` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_borrowed_type`
+-- Struktur dari tabel `digilib_borrowed_type`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_borrowed_type` (
@@ -4007,7 +5535,7 @@ CREATE TABLE IF NOT EXISTS `digilib_borrowed_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_borrowed_type`
+-- Dumping data untuk tabel `digilib_borrowed_type`
 --
 
 INSERT INTO `digilib_borrowed_type` (`borrowed_type_id`, `borrowed_type_title`, `borrowed_type_interval`, `borrowed_type_max`, `borrowed_type_entry`, `borrowed_type_entry_update`) VALUES
@@ -4018,7 +5546,7 @@ INSERT INTO `digilib_borrowed_type` (`borrowed_type_id`, `borrowed_type_title`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_ddc`
+-- Struktur dari tabel `digilib_ddc`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_ddc` (
@@ -4032,7 +5560,7 @@ CREATE TABLE IF NOT EXISTS `digilib_ddc` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3823 ;
 
 --
--- Dumping data for table `digilib_ddc`
+-- Dumping data untuk tabel `digilib_ddc`
 --
 
 INSERT INTO `digilib_ddc` (`ddc_id`, `ddc_classification_number`, `ddc_title`, `ddc_description`, `ddc_level`, `ddc_parent`) VALUES
@@ -7742,7 +9270,7 @@ INSERT INTO `digilib_ddc` (`ddc_id`, `ddc_classification_number`, `ddc_title`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_isa`
+-- Struktur dari tabel `digilib_isa`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_isa` (
@@ -7755,7 +9283,7 @@ CREATE TABLE IF NOT EXISTS `digilib_isa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_isa`
+-- Dumping data untuk tabel `digilib_isa`
 --
 
 INSERT INTO `digilib_isa` (`isa_id`, `isa_title`, `isa_dbroot`, `isa_entry`, `isa_entry_update`) VALUES
@@ -7766,7 +9294,7 @@ INSERT INTO `digilib_isa` (`isa_id`, `isa_title`, `isa_dbroot`, `isa_entry`, `is
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_members`
+-- Struktur dari tabel `digilib_members`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_members` (
@@ -7791,7 +9319,7 @@ CREATE TABLE IF NOT EXISTS `digilib_members` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_members`
+-- Dumping data untuk tabel `digilib_members`
 --
 
 INSERT INTO `digilib_members` (`members_id`, `members_name`, `members_gender`, `members_birthplace`, `members_birthdate`, `members_address`, `members_phone1`, `members_phone2`, `members_email`, `members_photo`, `members_isa`, `members_desc`, `members_status`, `members_entry`, `members_entry_update`) VALUES
@@ -8315,7 +9843,7 @@ INSERT INTO `digilib_members` (`members_id`, `members_name`, `members_gender`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_members_temp_printcard`
+-- Struktur dari tabel `digilib_members_temp_printcard`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_members_temp_printcard` (
@@ -8327,24 +9855,31 @@ CREATE TABLE IF NOT EXISTS `digilib_members_temp_printcard` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_members_temp_printcard`
+-- Dumping data untuk tabel `digilib_members_temp_printcard`
 --
 
 INSERT INTO `digilib_members_temp_printcard` (`temp_id`, `temp_members`, `temp_session`) VALUES
-(5, '1213100001', '5e3cd71tb10f1uu4pglsmn3716'),
-(3, '1213100001', 'i473slcbji4c5aa8me40hvv546'),
-(1, '1213100001', 'ijf1srhcu2oi6uqru2r3dlrr10'),
-(2, '1213100001', 'oeuqj0cdo6rkth4icm349djsi5'),
-(6, '1314010009', 'u76la2qscdporb4bsupq358h90'),
-(7, '1314010010', 'u76la2qscdporb4bsupq358h90'),
-(4, '1314010220', 'ahe0q3hre8sqlgv1devpr0ib20'),
-(8, '1314010221', 'o33kvjti5tv8guu9er8boigml7'),
-(9, '1314010222', 'o33kvjti5tv8guu9er8boigml7');
+(1, '1314030089', '8ah2lnusqbi07ssogeq5so84g3'),
+(2, '1314030090', '8ah2lnusqbi07ssogeq5so84g3'),
+(3, '1314030091', '8ah2lnusqbi07ssogeq5so84g3'),
+(4, '1314030092', '8ah2lnusqbi07ssogeq5so84g3'),
+(5, '1314030093', '8ah2lnusqbi07ssogeq5so84g3'),
+(6, '1314030094', '8ah2lnusqbi07ssogeq5so84g3'),
+(7, '1314030095', '8ah2lnusqbi07ssogeq5so84g3'),
+(8, '1314030096', '8ah2lnusqbi07ssogeq5so84g3'),
+(9, '1314030097', '0gmh2tv9491hb2tsq1p3cjgv13'),
+(10, '1314030098', '0gmh2tv9491hb2tsq1p3cjgv13'),
+(11, '1314030099', '0gmh2tv9491hb2tsq1p3cjgv13'),
+(12, '1314030100', '0gmh2tv9491hb2tsq1p3cjgv13'),
+(13, '1314030101', '0gmh2tv9491hb2tsq1p3cjgv13'),
+(14, '1314030102', '0gmh2tv9491hb2tsq1p3cjgv13'),
+(15, '1314030103', '0gmh2tv9491hb2tsq1p3cjgv13'),
+(16, '1314030104', '0gmh2tv9491hb2tsq1p3cjgv13');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_publisher`
+-- Struktur dari tabel `digilib_publisher`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_publisher` (
@@ -8358,7 +9893,7 @@ CREATE TABLE IF NOT EXISTS `digilib_publisher` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_publisher`
+-- Dumping data untuk tabel `digilib_publisher`
 --
 
 INSERT INTO `digilib_publisher` (`publisher_id`, `publisher_name`, `publisher_description`, `publisher_entry`, `publisher_entry_update`) VALUES
@@ -8504,12 +10039,36 @@ INSERT INTO `digilib_publisher` (`publisher_id`, `publisher_name`, `publisher_de
 (140, 'Acarya Media Utama', '-', '2013-01-29', '2013-01-29'),
 (141, 'Bintang Ilmu', '-', '2013-01-31', '2013-01-31'),
 (142, 'Bumi Aksara', '-', '2013-02-04', '2013-02-04'),
-(143, 'Pustaka Buana', '-', '2013-02-04', '2013-02-04');
+(143, 'Pustaka Buana', '-', '2013-02-04', '2013-02-04'),
+(144, 'Wahana Iptek Bandung', NULL, '2013-03-23', '2013-03-23'),
+(145, 'Pemda Kabupaten Subang', '-', '2013-03-23', '2013-03-23'),
+(146, 'Geger Sunten', '-', '2013-04-01', '2013-04-01'),
+(147, 'Eranovfis', '-', '2013-04-04', '2013-04-04'),
+(148, 'Britannica', '-', '2013-05-15', '2013-05-15'),
+(149, 'Lentera Abadi', '-', '2013-05-15', '2013-05-15'),
+(150, 'Citra Media Persada', '-', '2013-05-20', '2013-05-20'),
+(151, 'Epsilon Grup', '-', '2013-05-20', '2013-05-20'),
+(152, 'Yayasan Purna Bhakti Pertiwi', '-', '2013-05-20', '2013-05-20'),
+(153, 'KPG (KEPUSTAKAAN POPULER GRAMEDIA)', '-', '2013-05-20', '2013-05-20'),
+(154, 'Ichtar Baru Van Moeve', '-', '2013-05-20', '2013-05-20'),
+(155, 'Tarity Samudra Berlian', '-', '2013-05-20', '2013-05-20'),
+(156, 'PT. INTI IDAYU PRESS', '-', '2013-05-20', '2013-05-20'),
+(157, 'Bee Media Indonesia', '-', '2013-05-21', '2013-05-21'),
+(158, 'CV. ARTHA SEDYATAMA', '-', '2013-05-21', '2013-05-21'),
+(159, 'SPECTRUM', NULL, '2013-05-22', '2013-05-22'),
+(160, 'Mutiara Sumber Widya', NULL, '2013-05-22', '2013-05-22'),
+(161, 'Rakyan Adhi Putra', '-', '2013-05-22', '2013-05-22'),
+(162, 'INTAN', '-', '2013-05-22', '2013-05-22'),
+(163, 'Sanggabuana', '-', '2013-05-22', '2013-05-22'),
+(164, 'Lestari Kiranapama', NULL, '2013-05-22', '2013-05-22'),
+(165, 'Mizan Publika', '-', '2013-05-23', '2013-05-23'),
+(166, 'Pemerinta Provinsi Jawa Barat', '-', '2013-05-23', '2013-05-23'),
+(167, 'Gunung Agung', '-', '2013-05-23', '2013-05-23');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_publisher_office`
+-- Struktur dari tabel `digilib_publisher_office`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_publisher_office` (
@@ -8532,7 +10091,7 @@ CREATE TABLE IF NOT EXISTS `digilib_publisher_office` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_publisher_office`
+-- Dumping data untuk tabel `digilib_publisher_office`
 --
 
 INSERT INTO `digilib_publisher_office` (`publisher_office_id`, `publisher_office_name`, `publisher_office_address`, `publisher_office_city`, `publisher_office_zipcode`, `publisher_office_phone`, `publisher_office_fax`, `publisher_office_email`, `publisher_office_website`, `publisher_office_department`, `publisher_office_entry`, `publisher_office_entry_update`) VALUES
@@ -8678,12 +10237,36 @@ INSERT INTO `digilib_publisher_office` (`publisher_office_id`, `publisher_office
 (140, 140, 'Jl. Rumah sakit No. 58 Ujungberung Gedebage', 10, 0, '0227800233', '', '', '', 1, '2013-01-29', '2013-01-29'),
 (141, 141, 'Jl. Karah Agung I No. 70', 108, 0, '0318273775', '0318270775', '', '', 1, '2013-01-31', '2013-01-31'),
 (142, 142, 'Jl.Sawo Raya No. 18', 4, 13220, '', '', '', '', 1, '2013-02-04', '2013-02-04'),
-(143, 143, '', 10, 0, '', '', '', '', 1, '2013-02-04', '2013-02-04');
+(143, 143, '', 10, 0, '', '', '', '', 1, '2013-02-04', '2013-02-04'),
+(144, 144, 'Jl. Ahmad Yani 452', 10, 40272, '0227213150', '', '', '', 1, '2013-03-23', '2013-03-23'),
+(145, 145, '', 19, 0, '', '', '', '', 1, '2013-03-23', '2013-03-23'),
+(146, 146, 'Jl. Dr. Setiabudi No. 228', 10, 40140, '0222016922', '0222016921', '', '', 1, '2013-04-01', '2013-04-01'),
+(147, 147, 'Jl. Selamet Riyadi 485 H Ngendroprasto,Pajang', 425, 2717, '0271726283', '', '', '', 1, '2013-04-04', '2013-04-04'),
+(148, 148, '', 357, 0, '', '', '', '', 1, '2013-05-15', '2013-05-15'),
+(149, 149, 'Jakarta', 4, 0, '', '', '', '', 1, '2013-05-15', '2013-05-15'),
+(150, 150, '', 4, 0, '', '', '', '', 1, '2013-05-20', '2013-05-20'),
+(151, 151, 'Jl.Marga Asri', 10, 40287, '0227567826', '0227509792', '', '', 2, '2013-05-20', '2013-05-20'),
+(152, 152, '', 4, 0, '', '', '', '', 1, '2013-05-20', '2013-05-20'),
+(153, 153, 'Gedung Kompas Gramedia, Blok 1 Lt. 3 jl. Palmerah Barat 29-37', 4, 10270, '02153650110', '53698044', '', '', 1, '2013-05-20', '2013-05-20'),
+(154, 154, '', 4, 0, '', '', '', '', 1, '2013-05-20', '2013-05-20'),
+(155, 155, '', 4, 0, '', '', '', '', 1, '2013-05-20', '2013-05-20'),
+(156, 156, 'Jl. Kwitang No. 8', 2, 10420, '', '', '', '', 1, '2013-05-20', '2013-05-20'),
+(157, 157, 'Jl. Kebon Nanas Selatan VIII No. 40', 3, 13340, '', '', '', '', 1, '2013-05-21', '2013-05-21'),
+(158, 158, 'Komplek Griya Cakara - Bandung', 10, 0, '', '', '', '', 1, '2013-05-21', '2013-05-21'),
+(159, 159, 'Jakarta pusat', 4, 0, '', '', '', '', 1, '2013-05-22', '2013-05-22'),
+(160, 160, 'Jakarta', 4, 0, '', '', '', '', 1, '2013-05-22', '2013-05-22'),
+(161, 161, 'Jakarta Timur', 3, 0, '', '', '', '', 1, '2013-05-22', '2013-05-22'),
+(162, 162, 'klaten', 41, 0, '', '', '', '', 1, '2013-05-22', '2013-05-22'),
+(163, 163, 'Jl.Sudimampir No.70 Padalarang', 10, 0, '', '', '', '', 1, '2013-05-22', '2013-05-22'),
+(164, 164, 'Jakara', 4, 0, '', '', '', '', 1, '2013-05-22', '2013-05-22'),
+(165, 165, 'Jakarta selatan', 2, 0, '', '', '', '', 1, '2013-05-23', '2013-05-23'),
+(166, 166, '', 10, 0, '', '', '', '', 1, '2013-05-23', '2013-05-23'),
+(167, 167, 'Kwiang no 8 Jakarta Pusat', 4, 0, '', '', '', '', 1, '2013-05-23', '2013-05-23');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_publisher_office_department`
+-- Struktur dari tabel `digilib_publisher_office_department`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_publisher_office_department` (
@@ -8693,7 +10276,7 @@ CREATE TABLE IF NOT EXISTS `digilib_publisher_office_department` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `digilib_publisher_office_department`
+-- Dumping data untuk tabel `digilib_publisher_office_department`
 --
 
 INSERT INTO `digilib_publisher_office_department` (`publisher_office_department_id`, `publisher_office_department_name`) VALUES
@@ -8703,7 +10286,7 @@ INSERT INTO `digilib_publisher_office_department` (`publisher_office_department_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_publisher_office_temp`
+-- Struktur dari tabel `digilib_publisher_office_temp`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_publisher_office_temp` (
@@ -8725,7 +10308,7 @@ CREATE TABLE IF NOT EXISTS `digilib_publisher_office_temp` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_user`
+-- Struktur dari tabel `digilib_user`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_user` (
@@ -8739,7 +10322,7 @@ CREATE TABLE IF NOT EXISTS `digilib_user` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `digilib_user`
+-- Dumping data untuk tabel `digilib_user`
 --
 
 INSERT INTO `digilib_user` (`user_id`, `username`, `password`, `user_group_id`, `full_name`) VALUES
@@ -8749,7 +10332,7 @@ INSERT INTO `digilib_user` (`user_id`, `username`, `password`, `user_group_id`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `digilib_user_group`
+-- Struktur dari tabel `digilib_user_group`
 --
 
 CREATE TABLE IF NOT EXISTS `digilib_user_group` (
@@ -8759,7 +10342,7 @@ CREATE TABLE IF NOT EXISTS `digilib_user_group` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `digilib_user_group`
+-- Dumping data untuk tabel `digilib_user_group`
 --
 
 INSERT INTO `digilib_user_group` (`user_group_id`, `user_group_name`) VALUES
@@ -8769,7 +10352,7 @@ INSERT INTO `digilib_user_group` (`user_group_id`, `user_group_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_accounting_symbol`
+-- Struktur dari tabel `public_accounting_symbol`
 --
 
 CREATE TABLE IF NOT EXISTS `public_accounting_symbol` (
@@ -8784,7 +10367,7 @@ CREATE TABLE IF NOT EXISTS `public_accounting_symbol` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_accounting_symbol`
+-- Dumping data untuk tabel `public_accounting_symbol`
 --
 
 INSERT INTO `public_accounting_symbol` (`accounting_symbol_id`, `accounting_symbol_title`, `accounting_symbol`, `accounting_symbol_status`, `accounting_symbol_entry`, `accounting_symbol_entry_update`) VALUES
@@ -8794,7 +10377,7 @@ INSERT INTO `public_accounting_symbol` (`accounting_symbol_id`, `accounting_symb
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_city`
+-- Struktur dari tabel `public_city`
 --
 
 CREATE TABLE IF NOT EXISTS `public_city` (
@@ -8810,7 +10393,7 @@ CREATE TABLE IF NOT EXISTS `public_city` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_city`
+-- Dumping data untuk tabel `public_city`
 --
 
 INSERT INTO `public_city` (`city_id`, `city_name`, `city_province`, `city_status`, `city_entry`, `city_entry_update`) VALUES
@@ -9215,7 +10798,7 @@ INSERT INTO `public_city` (`city_id`, `city_name`, `city_province`, `city_status
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_country`
+-- Struktur dari tabel `public_country`
 --
 
 CREATE TABLE IF NOT EXISTS `public_country` (
@@ -9229,7 +10812,7 @@ CREATE TABLE IF NOT EXISTS `public_country` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_country`
+-- Dumping data untuk tabel `public_country`
 --
 
 INSERT INTO `public_country` (`country_id`, `country_name`, `country_status`, `country_entry`, `country_entry_update`) VALUES
@@ -9238,7 +10821,7 @@ INSERT INTO `public_country` (`country_id`, `country_name`, `country_status`, `c
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_gender`
+-- Struktur dari tabel `public_gender`
 --
 
 CREATE TABLE IF NOT EXISTS `public_gender` (
@@ -9249,7 +10832,7 @@ CREATE TABLE IF NOT EXISTS `public_gender` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_gender`
+-- Dumping data untuk tabel `public_gender`
 --
 
 INSERT INTO `public_gender` (`gender_id`, `gender_title`) VALUES
@@ -9259,7 +10842,7 @@ INSERT INTO `public_gender` (`gender_id`, `gender_title`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_language`
+-- Struktur dari tabel `public_language`
 --
 
 CREATE TABLE IF NOT EXISTS `public_language` (
@@ -9273,7 +10856,7 @@ CREATE TABLE IF NOT EXISTS `public_language` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_language`
+-- Dumping data untuk tabel `public_language`
 --
 
 INSERT INTO `public_language` (`language_id`, `language_name`, `language_status`, `language_entry`, `language_entry_update`) VALUES
@@ -9281,12 +10864,13 @@ INSERT INTO `public_language` (`language_id`, `language_name`, `language_status`
 (2, 'English', 1, '2012-10-19', '2012-10-19'),
 (3, 'Bahasa Sunda', 1, '2012-10-19', '2012-10-19'),
 (4, 'Bahasa Arab', 1, '2012-11-30', '2012-11-30'),
-(5, 'Bahasa Gorontalo', 1, '2012-12-05', '2012-12-05');
+(5, 'Bahasa Gorontalo', 1, '2012-12-05', '2012-12-05'),
+(6, 'Bahasa Jawa', 1, '2013-05-20', '2013-05-20');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_menu`
+-- Struktur dari tabel `public_menu`
 --
 
 CREATE TABLE IF NOT EXISTS `public_menu` (
@@ -9305,7 +10889,7 @@ CREATE TABLE IF NOT EXISTS `public_menu` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=27 ;
 
 --
--- Dumping data for table `public_menu`
+-- Dumping data untuk tabel `public_menu`
 --
 
 INSERT INTO `public_menu` (`menu_id`, `menu_title`, `menu_link`, `menu_parent`, `menu_group`, `menu_order`, `level`, `web_id`, `is_protect`, `is_active`) VALUES
@@ -9337,7 +10921,7 @@ INSERT INTO `public_menu` (`menu_id`, `menu_title`, `menu_link`, `menu_parent`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_period`
+-- Struktur dari tabel `public_period`
 --
 
 CREATE TABLE IF NOT EXISTS `public_period` (
@@ -9349,7 +10933,7 @@ CREATE TABLE IF NOT EXISTS `public_period` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_period`
+-- Dumping data untuk tabel `public_period`
 --
 
 INSERT INTO `public_period` (`period_id`, `period_start`, `period_finish`, `period_status`) VALUES
@@ -9359,7 +10943,7 @@ INSERT INTO `public_period` (`period_id`, `period_start`, `period_finish`, `peri
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_province`
+-- Struktur dari tabel `public_province`
 --
 
 CREATE TABLE IF NOT EXISTS `public_province` (
@@ -9375,7 +10959,7 @@ CREATE TABLE IF NOT EXISTS `public_province` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `public_province`
+-- Dumping data untuk tabel `public_province`
 --
 
 INSERT INTO `public_province` (`province_id`, `province_name`, `province_country`, `province_status`, `province_entry`, `province_entry_update`) VALUES
@@ -9416,7 +11000,7 @@ INSERT INTO `public_province` (`province_id`, `province_name`, `province_country
 -- --------------------------------------------------------
 
 --
--- Table structure for table `public_web`
+-- Struktur dari tabel `public_web`
 --
 
 CREATE TABLE IF NOT EXISTS `public_web` (
@@ -9429,7 +11013,7 @@ CREATE TABLE IF NOT EXISTS `public_web` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `public_web`
+-- Dumping data untuk tabel `public_web`
 --
 
 INSERT INTO `public_web` (`web_id`, `web_name`, `web_parent`, `web_level`, `web_description`) VALUES
@@ -9437,17 +11021,17 @@ INSERT INTO `public_web` (`web_id`, `web_name`, `web_parent`, `web_level`, `web_
 (2, 'DIGITAL LIBRARY', NULL, 'main', '');
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `digilib_author`
+-- Ketidakleluasaan untuk tabel `digilib_author`
 --
 ALTER TABLE `digilib_author`
   ADD CONSTRAINT `digilib_author_fk1` FOREIGN KEY (`author_description`) REFERENCES `digilib_author_description` (`author_description_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `digilib_book`
+-- Ketidakleluasaan untuk tabel `digilib_book`
 --
 ALTER TABLE `digilib_book`
   ADD CONSTRAINT `digilib_book_fk1` FOREIGN KEY (`book_classification`) REFERENCES `digilib_ddc` (`ddc_id`) ON UPDATE CASCADE,
@@ -9457,46 +11041,46 @@ ALTER TABLE `digilib_book`
   ADD CONSTRAINT `digilib_book_fk7` FOREIGN KEY (`book_fund`) REFERENCES `digilib_book_fund` (`book_fund_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `digilib_book_aurthor`
+-- Ketidakleluasaan untuk tabel `digilib_book_aurthor`
 --
 ALTER TABLE `digilib_book_aurthor`
   ADD CONSTRAINT `digilib_book_author_fk1` FOREIGN KEY (`book_aurthor_book`) REFERENCES `digilib_book` (`book_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `digilib_book_author_fk3` FOREIGN KEY (`book_aurthor_name`) REFERENCES `digilib_author` (`author_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `digilib_book_author_temp`
+-- Ketidakleluasaan untuk tabel `digilib_book_author_temp`
 --
 ALTER TABLE `digilib_book_author_temp`
   ADD CONSTRAINT `digilib_book_author_temp` FOREIGN KEY (`book_author_temp_name`) REFERENCES `digilib_author` (`author_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `digilib_book_language`
+-- Ketidakleluasaan untuk tabel `digilib_book_language`
 --
 ALTER TABLE `digilib_book_language`
   ADD CONSTRAINT `digilib_book_language_fk1` FOREIGN KEY (`book_language`) REFERENCES `public_language` (`language_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `digilib_book_language_fk2` FOREIGN KEY (`book_id`) REFERENCES `digilib_book` (`book_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `digilib_book_language_temp`
+-- Ketidakleluasaan untuk tabel `digilib_book_language_temp`
 --
 ALTER TABLE `digilib_book_language_temp`
   ADD CONSTRAINT `digilib_book_language_temp_fk1` FOREIGN KEY (`book_language`) REFERENCES `public_language` (`language_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `digilib_book_register`
+-- Ketidakleluasaan untuk tabel `digilib_book_register`
 --
 ALTER TABLE `digilib_book_register`
   ADD CONSTRAINT `digilib_book_register_fk1` FOREIGN KEY (`book_id`) REFERENCES `digilib_book` (`book_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `digilib_book_register_fk2` FOREIGN KEY (`book_condition`) REFERENCES `digilib_book_condition` (`book_condition_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `digilib_book_temp_barcodeprint`
+-- Ketidakleluasaan untuk tabel `digilib_book_temp_barcodeprint`
 --
 ALTER TABLE `digilib_book_temp_barcodeprint`
   ADD CONSTRAINT `digilib_book_temp_barcodeprint_fk1` FOREIGN KEY (`book_temp_barcodeprint_register`) REFERENCES `digilib_book_register` (`book_register_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `digilib_borrowed_history`
+-- Ketidakleluasaan untuk tabel `digilib_borrowed_history`
 --
 ALTER TABLE `digilib_borrowed_history`
   ADD CONSTRAINT `digilib_borrowed_history_fk1` FOREIGN KEY (`borrowed_history_type`) REFERENCES `digilib_borrowed_type` (`borrowed_type_id`) ON UPDATE CASCADE,
@@ -9504,13 +11088,13 @@ ALTER TABLE `digilib_borrowed_history`
   ADD CONSTRAINT `digilib_borrowed_history_fk3` FOREIGN KEY (`borrowed_history_book`) REFERENCES `digilib_book_register` (`book_register_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `digilib_borrowed_return_temp`
+-- Ketidakleluasaan untuk tabel `digilib_borrowed_return_temp`
 --
 ALTER TABLE `digilib_borrowed_return_temp`
   ADD CONSTRAINT `digilib_borrowed_return_temp_fk1` FOREIGN KEY (`borrowed_return_temp_history`) REFERENCES `digilib_borrowed_history` (`borrowed_history_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `digilib_borrowed_temp`
+-- Ketidakleluasaan untuk tabel `digilib_borrowed_temp`
 --
 ALTER TABLE `digilib_borrowed_temp`
   ADD CONSTRAINT `digilib_borrowed_temp_fk1` FOREIGN KEY (`borrowed_temp_type`) REFERENCES `digilib_borrowed_type` (`borrowed_type_id`) ON UPDATE CASCADE,
@@ -9518,20 +11102,20 @@ ALTER TABLE `digilib_borrowed_temp`
   ADD CONSTRAINT `digilib_borrowed_temp_fk3` FOREIGN KEY (`borrowed_temp_member`) REFERENCES `digilib_members` (`members_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `digilib_members`
+-- Ketidakleluasaan untuk tabel `digilib_members`
 --
 ALTER TABLE `digilib_members`
   ADD CONSTRAINT `digilib_members` FOREIGN KEY (`members_isa`) REFERENCES `digilib_isa` (`isa_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `digilib_members_fk1` FOREIGN KEY (`members_gender`) REFERENCES `public_gender` (`gender_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `digilib_members_temp_printcard`
+-- Ketidakleluasaan untuk tabel `digilib_members_temp_printcard`
 --
 ALTER TABLE `digilib_members_temp_printcard`
   ADD CONSTRAINT `digilib_members_temp_printcard_fk1` FOREIGN KEY (`temp_members`) REFERENCES `digilib_members` (`members_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `digilib_publisher_office`
+-- Ketidakleluasaan untuk tabel `digilib_publisher_office`
 --
 ALTER TABLE `digilib_publisher_office`
   ADD CONSTRAINT `digilib_publisher_office_fk1` FOREIGN KEY (`publisher_office_name`) REFERENCES `digilib_publisher` (`publisher_id`) ON UPDATE CASCADE,
@@ -9539,26 +11123,26 @@ ALTER TABLE `digilib_publisher_office`
   ADD CONSTRAINT `digilib_publisher_office_fk3` FOREIGN KEY (`publisher_office_department`) REFERENCES `digilib_publisher_office_department` (`publisher_office_department_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `digilib_publisher_office_temp`
+-- Ketidakleluasaan untuk tabel `digilib_publisher_office_temp`
 --
 ALTER TABLE `digilib_publisher_office_temp`
   ADD CONSTRAINT `digilib_publisher_office_temp_fk1` FOREIGN KEY (`publisher_office_temp_department`) REFERENCES `digilib_publisher_office_department` (`publisher_office_department_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `digilib_publisher_office_temp_fk3` FOREIGN KEY (`publisher_office_temp_city`) REFERENCES `public_city` (`city_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `public_city`
+-- Ketidakleluasaan untuk tabel `public_city`
 --
 ALTER TABLE `public_city`
   ADD CONSTRAINT `public_city_fk1` FOREIGN KEY (`city_province`) REFERENCES `public_province` (`province_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `public_menu`
+-- Ketidakleluasaan untuk tabel `public_menu`
 --
 ALTER TABLE `public_menu`
   ADD CONSTRAINT `fk_public_menu_web_id` FOREIGN KEY (`web_id`) REFERENCES `public_web` (`web_id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `public_province`
+-- Ketidakleluasaan untuk tabel `public_province`
 --
 ALTER TABLE `public_province`
   ADD CONSTRAINT `public_province_fk1` FOREIGN KEY (`province_country`) REFERENCES `public_country` (`country_id`) ON UPDATE CASCADE;
