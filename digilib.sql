@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 03, 2013 at 12:47 PM
+-- Generation Time: Jun 04, 2013 at 10:58 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -1942,7 +1942,7 @@ INSERT INTO `digilib_book` (`book_id`, `book_title`, `book_foreign_title`, `book
 ('130603004', 'sdf', NULL, 17, 2012, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 1021, NULL, NULL, '2013-06-03', '2013-06-03'),
 ('130603005', 'Spidol Hitam', NULL, 17, 2013, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 415, NULL, NULL, '2013-06-03', '2013-06-03'),
 ('130603006', 'Spidol Hitam', NULL, 17, 2013, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 415, NULL, NULL, '2013-06-03', '2013-06-03'),
-('130603007', 'Mantap Surantap', NULL, 17, 2013, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 798, NULL, NULL, '2013-06-03', '2013-06-03');
+('130603007', 'Mantap Surantap', 'Very Better', 17, 2013, 'Khusus Pencinta Kuliner', 2, '34567-546-5675-5677', 'xi', 90, '89-90', 0, 1, 10, 10, 1, 1, 10000, 1, 1, NULL, 800, NULL, NULL, '2013-06-03', '2013-06-04');
 
 -- --------------------------------------------------------
 
@@ -2254,7 +2254,8 @@ INSERT INTO `digilib_book_aurthor` (`book_aurthor_id`, `book_aurthor_book`, `boo
 (287, '130523012', 929, 1),
 (288, '130529001', 403, 1),
 (289, '130603007', 307, 1),
-(290, '130603007', 885, 0);
+(290, '130603007', 885, 0),
+(292, '130603007', 183, 0);
 
 -- --------------------------------------------------------
 
@@ -3300,7 +3301,8 @@ INSERT INTO `digilib_book_language` (`book_language_id`, `book_id`, `book_langua
 (946, '130523011', 1),
 (947, '130523012', 1),
 (948, '130529001', 4),
-(949, '130529001', 5);
+(949, '130529001', 5),
+(950, '130603007', 2);
 
 -- --------------------------------------------------------
 
@@ -9946,7 +9948,7 @@ INSERT INTO `digilib_publisher` (`publisher_id`, `publisher_name`, `publisher_de
 (11, 'Perca', '-', '2012-11-26', '2012-11-26'),
 (12, 'INTIMEDIA', '-', '2012-11-26', '2012-11-26'),
 (13, 'WIDIYA DUTA GRAFIKA', '-', '2012-11-26', '2012-11-26'),
-(14, 'Karya Kita', '-', '2012-11-26', '2012-11-26'),
+(14, 'Karya Kita', '-', '2012-11-26', '2013-06-04'),
 (15, 'Pustaka Jaya', '-', '2012-11-26', '2012-11-26'),
 (16, 'Anwar Press', '-', '2012-11-26', '2012-11-26'),
 (17, 'YRAMA WIDYA', '-', '2012-11-26', '2012-11-26'),
@@ -10099,7 +10101,10 @@ INSERT INTO `digilib_publisher` (`publisher_id`, `publisher_name`, `publisher_de
 (164, 'Lestari Kiranapama', NULL, '2013-05-22', '2013-05-22'),
 (165, 'Mizan Publika', '-', '2013-05-23', '2013-05-23'),
 (166, 'Pemerinta Provinsi Jawa Barat', '-', '2013-05-23', '2013-05-23'),
-(167, 'Gunung Agung', '-', '2013-05-23', '2013-05-23');
+(167, 'Gunung Agung', '-', '2013-05-23', '2013-05-23'),
+(168, 'jk', NULL, '2013-06-04', '2013-06-04'),
+(169, 'tyuityuityu', NULL, '2013-06-04', '2013-06-04'),
+(170, 'Aseleley Jos', 'sd', '2013-06-04', '2013-06-04');
 
 -- --------------------------------------------------------
 
@@ -10297,7 +10302,8 @@ INSERT INTO `digilib_publisher_office` (`publisher_office_id`, `publisher_office
 (164, 164, 'Jakara', 4, 0, '', '', '', '', 1, '2013-05-22', '2013-05-22'),
 (165, 165, 'Jakarta selatan', 2, 0, '', '', '', '', 1, '2013-05-23', '2013-05-23'),
 (166, 166, '', 10, 0, '', '', '', '', 1, '2013-05-23', '2013-05-23'),
-(167, 167, 'Kwiang no 8 Jakarta Pusat', 4, 0, '', '', '', '', 1, '2013-05-23', '2013-05-23');
+(167, 167, 'Kwiang no 8 Jakarta Pusat', 4, 0, '', '', '', '', 1, '2013-05-23', '2013-05-23'),
+(168, 170, 'sd', 116, 45674, '', '', '', '', 1, '2013-06-04', '2013-06-04');
 
 -- --------------------------------------------------------
 
@@ -10340,6 +10346,14 @@ CREATE TABLE IF NOT EXISTS `digilib_publisher_office_temp` (
   UNIQUE KEY `digilib_publisher_office_temp_u1` (`publisher_office_temp_city`,`publisher_office_temp_session`),
   KEY `digilib_publisher_office_temp_fk1` (`publisher_office_temp_department`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `digilib_publisher_office_temp`
+--
+
+INSERT INTO `digilib_publisher_office_temp` (`publisher_office_temp_id`, `publisher_office_temp_address`, `publisher_office_temp_city`, `publisher_office_temp_zipcode`, `publisher_office_temp_phone`, `publisher_office_temp_fax`, `publisher_office_temp_email`, `publisher_office_temp_website`, `publisher_office_temp_department`, `publisher_office_temp_session`) VALUES
+(1, 'Jln. Pasirwangi No. 2, Pasirluyu Soekarno-Hatta', 10, '40254', '0225206178', '0225202714', '', '', 1, 'cts80b6iflku9jk6f3ujp1n263'),
+(2, 'Jln. Pulokambing No. 9 KIP', 3, '', '0214612214', '0214612217', '', '', 1, 'cts80b6iflku9jk6f3ujp1n263');
 
 -- --------------------------------------------------------
 
@@ -11154,7 +11168,7 @@ ALTER TABLE `digilib_members_temp_printcard`
 -- Constraints for table `digilib_publisher_office`
 --
 ALTER TABLE `digilib_publisher_office`
-  ADD CONSTRAINT `digilib_publisher_office_fk1` FOREIGN KEY (`publisher_office_name`) REFERENCES `digilib_publisher` (`publisher_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `digilib_publisher_office_fk1` FOREIGN KEY (`publisher_office_name`) REFERENCES `digilib_publisher` (`publisher_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `digilib_publisher_office_fk2` FOREIGN KEY (`publisher_office_city`) REFERENCES `public_city` (`city_id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `digilib_publisher_office_fk3` FOREIGN KEY (`publisher_office_department`) REFERENCES `digilib_publisher_office_department` (`publisher_office_department_id`) ON UPDATE CASCADE;
 
