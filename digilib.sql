@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 04, 2013 at 10:58 AM
+-- Generation Time: Jun 07, 2013 at 05:36 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -10353,7 +10353,9 @@ CREATE TABLE IF NOT EXISTS `digilib_publisher_office_temp` (
 
 INSERT INTO `digilib_publisher_office_temp` (`publisher_office_temp_id`, `publisher_office_temp_address`, `publisher_office_temp_city`, `publisher_office_temp_zipcode`, `publisher_office_temp_phone`, `publisher_office_temp_fax`, `publisher_office_temp_email`, `publisher_office_temp_website`, `publisher_office_temp_department`, `publisher_office_temp_session`) VALUES
 (1, 'Jln. Pasirwangi No. 2, Pasirluyu Soekarno-Hatta', 10, '40254', '0225206178', '0225202714', '', '', 1, 'cts80b6iflku9jk6f3ujp1n263'),
-(2, 'Jln. Pulokambing No. 9 KIP', 3, '', '0214612214', '0214612217', '', '', 1, 'cts80b6iflku9jk6f3ujp1n263');
+(2, 'Jln. Pulokambing No. 9 KIP', 3, '', '0214612214', '0214612217', '', '', 1, 'cts80b6iflku9jk6f3ujp1n263'),
+(3, 'Jln. Pasirwangi No. 2, Pasirluyu Soekarno-Hatta', 10, '40254', '0225206178', '0225202714', '', '', 1, 'c873orrf4usc91vm12dagd5f50'),
+(4, 'Jln. Pulokambing No. 9 KIP', 3, '', '0214612214', '0214612217', '', '', 1, 'c873orrf4usc91vm12dagd5f50');
 
 -- --------------------------------------------------------
 
@@ -10367,6 +10369,14 @@ CREATE TABLE IF NOT EXISTS `digilib_user` (
   `password` varchar(50) DEFAULT NULL,
   `user_group_id` int(11) DEFAULT NULL,
   `full_name` varchar(50) DEFAULT NULL,
+  `address` varchar(250) DEFAULT NULL,
+  `gender` tinyint(1) DEFAULT NULL,
+  `phone_1` varchar(12) DEFAULT NULL,
+  `phone_2` varchar(12) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `photo` varchar(50) DEFAULT NULL,
+  `entry_date` datetime NOT NULL,
+  `entry_update` datetime NOT NULL,
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `digilib_user_u1` (`username`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
@@ -10375,9 +10385,9 @@ CREATE TABLE IF NOT EXISTS `digilib_user` (
 -- Dumping data for table `digilib_user`
 --
 
-INSERT INTO `digilib_user` (`user_id`, `username`, `password`, `user_group_id`, `full_name`) VALUES
-(1, 'admin', '2c835eeada294ff02febbeb45012fd0f', 1, 'Warman Suganda'),
-(2, 'operator', '4b583376b2767b923c3e1da60d10de59', 2, 'Purwanto');
+INSERT INTO `digilib_user` (`user_id`, `username`, `password`, `user_group_id`, `full_name`, `address`, `gender`, `phone_1`, `phone_2`, `email`, `photo`, `entry_date`, `entry_update`) VALUES
+(1, 'admin', '2c835eeada294ff02febbeb45012fd0f', 1, 'Warman Suganda', '-', 1, '098784', '0985948', 'warman.suganda@gmail.com', 'warman.png', '2013-06-05 22:17:09', '2013-06-05 22:17:12'),
+(2, 'operator', '2c835eeada294ff02febbeb45012fd0f', 2, 'Herda Safaringga', NULL, NULL, NULL, NULL, NULL, NULL, '2013-06-05 22:17:15', '2013-06-05 22:17:18');
 
 -- --------------------------------------------------------
 
