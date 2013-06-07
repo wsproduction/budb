@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 07, 2013 at 05:36 AM
+-- Generation Time: Jun 07, 2013 at 10:46 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -10371,6 +10371,8 @@ CREATE TABLE IF NOT EXISTS `digilib_user` (
   `full_name` varchar(50) DEFAULT NULL,
   `address` varchar(250) DEFAULT NULL,
   `gender` tinyint(1) DEFAULT NULL,
+  `birthplace` varchar(50) DEFAULT NULL,
+  `birthdate` date DEFAULT NULL,
   `phone_1` varchar(12) DEFAULT NULL,
   `phone_2` varchar(12) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
@@ -10385,9 +10387,9 @@ CREATE TABLE IF NOT EXISTS `digilib_user` (
 -- Dumping data for table `digilib_user`
 --
 
-INSERT INTO `digilib_user` (`user_id`, `username`, `password`, `user_group_id`, `full_name`, `address`, `gender`, `phone_1`, `phone_2`, `email`, `photo`, `entry_date`, `entry_update`) VALUES
-(1, 'admin', '2c835eeada294ff02febbeb45012fd0f', 1, 'Warman Suganda', '-', 1, '098784', '0985948', 'warman.suganda@gmail.com', 'warman.png', '2013-06-05 22:17:09', '2013-06-05 22:17:12'),
-(2, 'operator', '2c835eeada294ff02febbeb45012fd0f', 2, 'Herda Safaringga', NULL, NULL, NULL, NULL, NULL, NULL, '2013-06-05 22:17:15', '2013-06-05 22:17:18');
+INSERT INTO `digilib_user` (`user_id`, `username`, `password`, `user_group_id`, `full_name`, `address`, `gender`, `birthplace`, `birthdate`, `phone_1`, `phone_2`, `email`, `photo`, `entry_date`, `entry_update`) VALUES
+(1, 'admin', '5f4dcc3b5aa765d61d8327deb882cf99', 1, 'Warman Suganda, S.Kom.', '-', 1, 'Suabang', '1988-09-24', '098784', '0985948', 'warman.suganda@gmail.com', 'warman.png', '2013-06-05 22:17:09', '2013-06-07 13:52:44'),
+(2, 'operator', '2c835eeada294ff02febbeb45012fd0f', 2, 'Herda Safaringga', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2013-06-05 22:17:15', '2013-06-05 22:17:18');
 
 -- --------------------------------------------------------
 
