@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 07, 2013 at 10:46 AM
+-- Generation Time: Jun 10, 2013 at 05:33 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -19,6 +19,34 @@ SET time_zone = "+00:00";
 --
 -- Database: `digilib`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `digilib`
+--
+
+CREATE TABLE IF NOT EXISTS `digilib` (
+  `digilib_id` varchar(6) NOT NULL,
+  `digilib_name` varchar(50) DEFAULT NULL,
+  `digilib_email` varchar(50) DEFAULT NULL,
+  `digilib_website` varchar(50) DEFAULT NULL,
+  `digilib_agency_name` varchar(50) DEFAULT NULL,
+  `digilib_address` varchar(250) DEFAULT NULL,
+  `digilib_head_of_library` varchar(50) DEFAULT NULL,
+  `digilib_nip` varchar(30) DEFAULT NULL,
+  `digilib_vision` text,
+  `digilib_mision` text,
+  `digilib_rule_borrowing` text,
+  PRIMARY KEY (`digilib_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `digilib`
+--
+
+INSERT INTO `digilib` (`digilib_id`, `digilib_name`, `digilib_email`, `digilib_website`, `digilib_agency_name`, `digilib_address`, `digilib_head_of_library`, `digilib_nip`, `digilib_vision`, `digilib_mision`, `digilib_rule_borrowing`) VALUES
+('240988', 'PERPUSTAKAAN RANCAGE', 'rancage@smpn1subang.sch.id', 'rancage.smpn1subang.sch.id', 'SMP NEGERI 1 SUBANG', 'Jl. Letjen Soeprapto No. 105 Subang', 'Ii Heri Hermawan, S.Pd.', '123456790097654', '-', '-', '<ol>\r\n                        <li>Jika kartu anggota ini hilang segera melapor kepada Seksi Perpustakaan dan diganti dengan biaya Rp. 10.000,-</li>\r\n                        <li>Waktu peminjaman buku paling lama 7 (tujuh) hari.</li>\r\n                        <li>Peminjaman yang melewati batas waktu 7 (tujuh) hari dikenakan denda Rp. 2.000,-/hari/buku.</li>\r\n                        <li>Buku peminjaman yang hilang harus diganti dengan jenis buku yang sama atau dengan uang sebesar 2 (dua) kali lipat harga buku tersebut.</li>\r\n                        <li>Kartu anggota ini berlaku selama menjadi siswa SMP Negeri 1 Subang.</li>\r\n                    </ol>');
 
 -- --------------------------------------------------------
 
@@ -10388,7 +10416,7 @@ CREATE TABLE IF NOT EXISTS `digilib_user` (
 --
 
 INSERT INTO `digilib_user` (`user_id`, `username`, `password`, `user_group_id`, `full_name`, `address`, `gender`, `birthplace`, `birthdate`, `phone_1`, `phone_2`, `email`, `photo`, `entry_date`, `entry_update`) VALUES
-(1, 'admin', '5f4dcc3b5aa765d61d8327deb882cf99', 1, 'Warman Suganda, S.Kom.', '-', 1, 'Suabang', '1988-09-24', '098784', '0985948', 'warman.suganda@gmail.com', 'warman.png', '2013-06-05 22:17:09', '2013-06-07 13:52:44'),
+(1, 'admin', '2c835eeada294ff02febbeb45012fd0f', 1, 'Warman Suganda, S.Kom.', '-', 1, 'Suabang', '1988-09-24', '098784', '0985948', 'warman.suganda@gmail.com', 'warman.png', '2013-06-05 22:17:09', '2013-06-07 13:52:44'),
 (2, 'operator', '2c835eeada294ff02febbeb45012fd0f', 2, 'Herda Safaringga', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2013-06-05 22:17:15', '2013-06-05 22:17:18');
 
 -- --------------------------------------------------------
